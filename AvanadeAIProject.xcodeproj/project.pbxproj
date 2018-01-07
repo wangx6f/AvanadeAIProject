@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2546C5392001B7E80099A165 /* Intro.storyboard */; };
+		2546C53F200207820099A165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C53E200207820099A165 /* LoginViewController.swift */; };
+		2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C5402002150B0099A165 /* RegisterViewController.swift */; };
 		2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551C0182001A1A400FE28C9 /* AppDelegate.swift */; };
 		2551C01B2001A1A400FE28C9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551C01A2001A1A400FE28C9 /* FirstViewController.swift */; };
 		2551C01D2001A1A400FE28C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551C01C2001A1A400FE28C9 /* SecondViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2546C5392001B7E80099A165 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		2546C53E200207820099A165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2546C5402002150B0099A165 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2551C0152001A1A400FE28C9 /* AvanadeAIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvanadeAIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2551C0182001A1A400FE28C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2551C01A2001A1A400FE28C9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
 				2551C01A2001A1A400FE28C9 /* FirstViewController.swift */,
 				2551C01C2001A1A400FE28C9 /* SecondViewController.swift */,
+				2546C53E200207820099A165 /* LoginViewController.swift */,
+				2546C5402002150B0099A165 /* RegisterViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -56,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				2551C01E2001A1A400FE28C9 /* Main.storyboard */,
+				2546C5392001B7E80099A165 /* Intro.storyboard */,
 				2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -97,11 +106,11 @@
 		2551C0172001A1A400FE28C9 /* AvanadeAIProject */ = {
 			isa = PBXGroup;
 			children = (
-				2546C5382001B1070099A165 /* Supporting Files */,
 				2546C5372001B1010099A165 /* Model */,
 				2546C5362001B0F00099A165 /* View */,
 				2546C5352001B0DE0099A165 /* Controller */,
 				2551C0212001A1A400FE28C9 /* Assets.xcassets */,
+				2546C5382001B1070099A165 /* Supporting Files */,
 			);
 			path = AvanadeAIProject;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 				2551C0252001A1A400FE28C9 /* LaunchScreen.storyboard in Resources */,
 				2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */,
 				2551C0202001A1A400FE28C9 /* Main.storyboard in Resources */,
+				2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,10 +213,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftAzureMobile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -253,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2546C53F200207820099A165 /* LoginViewController.swift in Sources */,
+				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
 				2551C01D2001A1A400FE28C9 /* SecondViewController.swift in Sources */,
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* FirstViewController.swift in Sources */,

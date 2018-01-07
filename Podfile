@@ -9,5 +9,7 @@ target 'AvanadeAIProject' do
 
   # Pods for AvanadeAIProject
   pod 'MicrosoftAzureMobile', '~> 3.4.0'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'TransitionButton'
 
 end
