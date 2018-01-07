@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E6328C20E10927A7B048FCC69A946A /* MSTableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D5207F4DB56CE8AC8829E3FDF5A5F6E3 /* MSTableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03376DBC60BBCF2F559054DA5A5C11EE /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 76671581F5AE25DF23DCE63FD63EE736 /* MSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04BE3C44F0CD415B8D9BF7493C746A77 /* MSConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A8E5E540DE3925E91BF3CF79DC15D8 /* MSConnectionDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		071895565EFA10C4B516DAD546D24D63 /* MSTableRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8922A25A21A9A9E98F56B3CC1726E7A5 /* MSTableRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07CFBD7AEF6427FF1EA332C95A198E39 /* MSInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D7E478C688D416FC04E47EFF5D9174 /* MSInstallation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0AE08A86947878E23EC7BCA23FEF5B8B /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2222C87B711891922A553F3DADD311B1 /* MSAuthState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0CEA3BABBB0C79A681769FC4C25EDFAF /* MSTableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C1E4CE5F6CCE6794AB8B1E1B6BCE38 /* MSTableRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D5277D2D053465F603DBACAAF5E231B /* MSSyncContextInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 97EF79AFF122E302FD645EA5B72771A0 /* MSSyncContextInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		107C2518189656F9575FEA7E993A3F30 /* MSTableConfigValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BA991A01C976AB0B75A4CF8B78582D /* MSTableConfigValue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1176E40715D30D9E1BBAABC714DA049C /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 665819CBC600240216AD9FA13C3E601A /* MSPullSettingsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11CBCE9C5C394278B54641291C5C47C7 /* MSPushRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB0E885D0631BD47521543F8D88CA44 /* MSPushRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		130CBF234088DEE087822F4F098276ED /* MSLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EBA3E1E5D63B1488CBEA46D45D9D /* MSLogin.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		13274F665A41FDE3014780A0E3A4D75A /* MSInstallationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = B49F1ABB343FC8F7649D2D366D9BED1E /* MSInstallationTemplate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15EBB8E322D48CB4255B6F1BBD96F02C /* MSQueuePullOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 74D0E3574A2B78544D3EEF075B8ABB95 /* MSQueuePullOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25BE4156088282678C827E8C0433404A /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3344B4FA74F328C4D12712A8EE677E45 /* MSJSONSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26ECC798F9F54A7C7BA47E2E7466BC28 /* Pods-AvanadeAIProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		278E80BEE47282D987B3E428547CB987 /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4322CDDB3B91539203DA2E8CFC7D28 /* MSUserAgentBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28135650092420226A7CD86F29B6BE6D /* MSQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E766E2FDD1CF587A96AAC8497E3509 /* MSQuery.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A063C70698BEAD5610B69F6B44AF9E4 /* MSSyncContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 02296B90B26EE94316715C32CE01F1E0 /* MSSyncContext.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A6050D4186C7832FE172F55C8734F13 /* MSPullSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC01ED696C1650E2E3858526C264507 /* MSPullSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3012CC4A4181005C2C30F32CC6AB9AA9 /* MSQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 925425CDF0D8F01747FE92054DB8E09F /* MSQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C391775A9EBDD0F358E41A9095B273 /* MSTable.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF1FDDE72F727792428C6E0FE7B7BF9 /* MSTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3324CE8E23675AFD402259AD91E89DD7 /* MSSyncContextReadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE1C9FE38E36A264D86A6FD9066160E /* MSSyncContextReadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A93243125CD53E1D77F207F29F2048 /* MSTableConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 7461E1A8100DD1EADB3D73EB9AFF66D7 /* MSTableConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B146A1EE14063A8956DA04623198D4C /* MicrosoftAzureMobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 883487D56F339657CECF86C61CEA4F81 /* MicrosoftAzureMobile-dummy.m */; };
+		4204EBD98024EBD7054916BAB3409C27 /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EE114678D704B669607F160FA0D1 /* MSDateOffset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		440030D401BBBFD1E4BF99440113722D /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 023EE7A5A070B617314335F7FE916921 /* MSAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44D0A5B46284089889D7356B68EBBE4D /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7E3237A2161F3C6875652A5A4F853D /* MSFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44DAEEDD8F51E9FDF2E1BE6717D2E61A /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7361186754A46C1CC6347D61482880 /* MSJSONSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45380B8D025C58D4D80837E8A9B64ED5 /* MSSyncTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D3A696D13FE1621672D5A267B7E47 /* MSSyncTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4EFF00DB3F3A8486A96C365DA8E55690 /* MSLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EFED6F23C7A1D5BF4A42A6EE73C87A /* MSLogin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50B47CBE9B5B97B05F8F4F4A8551EC94 /* MSConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0A7A0EA86C2F72E1143D5BB161E187 /* MSConnectionDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5448F18D9375E40E8775CFF6F08D026F /* MSClientInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5ADEB83C76B1E995CD038D87E6BA3C /* MSClientInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54570F4891D4D7FB8543645812F0D081 /* MSCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 908B4CACEE3670A1646F19008E9A40F7 /* MSCoreDataStore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5598DDB43FDAFD45D67C13DE165AB5CE /* MSManagedObjectObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAE9C960E8DE2CEDF51F76C578942D /* MSManagedObjectObserver.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5BA27412EEAF0E4819E47BA2B5E068D0 /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A3EA26E43DE22D9BF69A8C11AFF879 /* MSURLBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C4D66B27EAE5F04EDECF1A6E1C85F03 /* MSSyncTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 515AFD556B463197905735028E1832BB /* MSSyncTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		603ED1E8A0266C3877308C4EB644C78D /* MicrosoftAzureMobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B0686839EDC0B09D9379A4B23BB581 /* MicrosoftAzureMobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A23AA3BC4DA0452DCC8CA14D012E66 /* MSLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8188531513F1A66E5762FEDA0BAF7597 /* MSLoginView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64298614E8017DA9DEC3118496248984 /* MSInstallationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F5404C3A66735E09879EBA4E2254B7 /* MSInstallationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		652E5092C9B9631C1E24868F39F8B7D8 /* MSQueryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0D4E85505D23B472AE0AE5EEF1789E /* MSQueryResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B5D6CF4B94182342B38F7D8EFB49B1 /* MSSDKFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDA741F2C132112FF9EBC2B9A4E919B /* MSSDKFeatures.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6C27EAAC0C492A14EA4C519384650462 /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BF07F17A3DAE9AD98AD0AB8871CCF1 /* MSLoginSafariViewControllerUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CE4F91C6170C8F4AB26A7B290925ED3 /* MSCoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = A78BF3D16E3218148AE10402FFE16AB1 /* MSCoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D32164632AACF96C8B11FA8507941C5 /* MSTableConfigValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 35AEE3D600589D3376D03EF2EF7E5DE7 /* MSTableConfigValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E083C5B8254BAA3C623A18C860A7B3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596A5E7C40FB07FDAA78D426185FA95B /* Foundation.framework */; };
+		6E1708444F5348931FFD5B7644E5638D /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DFEF6FFDC2F9969F7A2A6CF68FD9CD /* MSConnectionConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6F7A3E475B8F792ECAF66F5FE21A375A /* NSURLSessionTask+Completion.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D86900AAF337A601B69E27B869CA53 /* NSURLSessionTask+Completion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		701D5EBF37FF897BB1EB5794A18DB51F /* MSTableOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6E08227B48ECDBBCD2FCD9E6124E92 /* MSTableOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71FFA1346094A7BE535B084606B53493 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDB8272AF7DA52CED82F42852514AD3 /* WebKit.framework */; };
+		7380B8E0662CD558049FFA52B82F32B4 /* MSQueryInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B5389592921C90E17DF702A0C9C9CF /* MSQueryInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		760AAF9015312161C4376DFB1FC31790 /* MicrosoftAzureMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C15B34A73D3C6E10CD176EB37B3C678 /* MicrosoftAzureMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		762FA9F4AF8232B8D8DCCFF3FC3EAAD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596A5E7C40FB07FDAA78D426185FA95B /* Foundation.framework */; };
+		775ADC3E7F305193653774760B116CE4 /* MSTable.m in Sources */ = {isa = PBXBuildFile; fileRef = AF695997FA1D7F7666277A2D6BDA3853 /* MSTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79617F4B0FEC733E517C7228D8153798 /* MSQueuePurgeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBF65A86980E9A2F596B2BE4813CA01 /* MSQueuePurgeOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B25A96E2F26DF766A2A7571A5C5BE14 /* MSQueuePushOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C4FFCB1738B59A91A7D33A3B076CAB5C /* MSQueuePushOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E630D69F31CBE4B6C63DEFA3A6EB3A5 /* MSInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = BC878CB1DFA4F4681F8F8FA000888586 /* MSInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F7A5FEA5F1A0518FE81A99C53A4C58D /* MSAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF8A088609B220ACCA74F75E2E7D58E /* MSAPIRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8143F9390D8C3873818F06A19197135D /* MSAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 38748C713946C7768AE259B40F87F60B /* MSAPIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		826441E576A40B00F0DCC6E55A956D6C /* MSNaiveISODateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B16E9B316C4A58ED429DE93B672487 /* MSNaiveISODateFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		839802458F32EC7561BFCACF9ABEA981 /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D5A11FCA922445FE17810183F9DD5B /* MSClientConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84B94DD35A9D962C460D6FBF9290B560 /* MSPushRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D46151BE53E8D9C5A640EDA19825B /* MSPushRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		84BD7F6F3430B8F9E1405293B2E975BE /* Pods-AvanadeAIProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */; };
+		85AA12033FCED498F18C8BDEE393749D /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 88033F84633DF0F5734197E1435FC659 /* MSLoginSafariViewControllerUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		864DE1104D65E2413C3B18FD0DB1794C /* MSManagedObjectObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DDB847FF35DDAE48574FA0461B13F2 /* MSManagedObjectObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF745074E361D9729BBD2F91E0850AE /* MSPushConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 915FC4CB7A15478140E6B4953181A135 /* MSPushConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8F7A66B7ADCC362C507DFD638122BAEA /* MSTableOperationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE2F2FFCF8D1FFE03C6F68453B59FBD /* MSTableOperationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9209B3451742246599DACFE77A712494 /* MSPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 134006021825B25C37E7FE3148234E1F /* MSPush.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		939B24A7AEF5F2529C20137758AD995E /* MSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 718A4093F85CE4E57D7E6D93B08C5619 /* MSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941CFA8EFFEE65C82C061CA4565678F6 /* MSQueuePullOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C05068B6E03DCF054565E09A65E75F34 /* MSQueuePullOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94A15F2619BB7B278BB9971A2607B9C6 /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 601022164F0049AF9A58F70812670614 /* MSURLBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9550508E734C267F9F16BF8185D32645 /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1922180DFA9A217F48213BAB2A4D6B /* MSUser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9609951FC77077E0320B576FA12CCDBD /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7429F6DF6FF8D50127F2328C5BACC970 /* MSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98BEE1B79FBDEACB05A70C35AFF45072 /* MSOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3472ED7C5A6BDFA190A692FE0E4AC30B /* MSOperationQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9BCC6B45DFDBBA29322B41F8FA5B9D1E /* MSQueuePullOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = ED007B2A7F6B01081C09B1A3FEFD5788 /* MSQueuePullOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D0A39F94F0F9D17AE9118B638767EC4 /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 871B399F96D0578DEBF9EB572A27D7E4 /* MSSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DE844255DBAB564609DB4E3778CF83B /* MSPullSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB34E0E5083A88C304604B8D75E226A /* MSPullSettings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A222B11FB5329CD07ABA6596B0EEBEF2 /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B218657964AE2C283C9EE63684AD45 /* MSDateOffset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52BF70429060B8980F45EB63799D0EA /* MSSDKFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = E7AC4A97CA3234F5BDF0EDB716E90AD9 /* MSSDKFeatures.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A557671955E6812027E850628D78BCE1 /* MSQueuePurgeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9507EC09A35001C6EB0B4E8BBD7F13 /* MSQueuePurgeOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5CBD733CC425330F11A2D115D4D6E4B /* MSQueuePushOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4EB21FCF62AB7BEED30B6352999954 /* MSQueuePushOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AD228586780613942FE6BE7DE47456EE /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D21D8EDA4D2B9EB0DEE4E884D4FF79 /* MSClientConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AEA95ABF48DC1544E43EBA2CF25C803D /* MSPushConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1780564DD71A517ED351F1E89484D3 /* MSPushConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B10E3F853C47F43FB9593CA123A4AE07 /* MSNaiveISODateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A67DFF85089E2434191806DEF4177B57 /* MSNaiveISODateFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B44AB59B162AB1B995D0020177C051DB /* MSQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F70EB0E2E47F641B24C848F2C73437 /* MSQueryResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B4B6B9DA5943B409FBA2089BEEAAE95C /* MSOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF1A0A3EA744C70259B9FF8249F40F8 /* MSOperationQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5B2F71627986F6956F60F1983D1D824 /* MSLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0C95EE9ACB9FD492959744C9F484C2 /* MSLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA6CB135D6F073E84F56DCCCE5979577 /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFB0B6FAF75BC0E0FAD10D3063C73D5 /* MSConnectionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB1E377A2E354D7C9A81F588786FA59 /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F48BCCD766CB88B96FFABD7CDF27 /* MSError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CD7D6925744A154E91D9634B0726C04F /* MSAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E16E69F832A91457076D464341210A /* MSAPIConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CDC82A651AC986ACB40CBB16E4F6B536 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 525D4134A3F4F077D0684A7979CAD356 /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05E4CCFC71FD58CF4BD1F316AE36B94 /* MSSyncContextReadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D7601E05AED7906F6D9FB7BFA0D056F4 /* MSSyncContextReadResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D1BAD8DC442410A9F8306038B34607E5 /* MSPush.h in Headers */ = {isa = PBXBuildFile; fileRef = EDFF89E54A82CB382A5C99370327F89A /* MSPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DA5B76FC0DF9D7EF206C2D91E9DE58 /* MSPredicateTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 553F4A62FCB4F845CEA2E9767B45A63F /* MSPredicateTranslator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D40B5A41C991E32667CFC35A586426D0 /* MSSyncContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 718BF15F7FFA1D8018782CFEDEA38440 /* MSSyncContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA397E51528178CD82538CB1E69FE71A /* MSTableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C3632D8519794E1C34C7C59903A9A /* MSTableOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DCD5261C20A9C97F1D2CBBE68E353346 /* MSLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FA1C6422289B99B7136FB8633116DF /* MSLoginController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD229060F2E0146C53940F3071F198FC /* MSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5F5717E56A203B694157D77E46A63 /* MSLoginView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DF6AF2266A809E3F4090C1DD328BE50A /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A537B7FB9D87A59AE84550F789287CA5 /* MSLoginSafariViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E0EA50C8177BCF46882D6391A18EC183 /* MSPredicateTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D6B96AEE279EE4B87A016FA85AAFED /* MSPredicateTranslator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E550BFC265C9FB5692EB5B78CCF854EF /* MSTableConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C3311A5C4CDFAB1674588B9DEA192F00 /* MSTableConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E576F5CAD16B6A28377B640ECE511534 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DE7ACA14DDBBEA120B2EBFCC36594D /* MSUserAgentBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E657C4B29B4A6C780AC446A330657FB1 /* MSTableInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F67895D9328A1981790F54B445CC1EEB /* MSTableInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7D77E2D7B56A4C79839094BE7094E93 /* MSTableOperationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 600BADE14F44653960839F0BD229C361 /* MSTableOperationError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE9EFA8420BC6BBBE09CE6DAD8B3EAB1 /* MSAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BD90B255E8026C2FA2A18055326676E8 /* MSAPIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7909B528A6278FC355D7477B3E0A7E6 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B47B9BE9A0A44BF31C3F108B919ECEB1 /* MSLoginSafariViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F941E3456E81D696D5A5F298499E6CBB /* MSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0D0907D9866E9824A58EC44C280EB /* MSClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD47B7F807A5FFB8EEAA5E79A9FD2748 /* MSLoginSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D457644AA5EDE9F201CADD7D1BB45380 /* MSLoginSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF864B14C7CDEB89A4CAA4D8CC87FF9D /* MSLoginSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADA9551B1D4D88E8EC7E65CA048276A /* MSLoginSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF63BE8BE2B733AA3011A44FFB068264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A446A93C6B0D5CCB82340728320636;
+			remoteInfo = MicrosoftAzureMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D7E478C688D416FC04E47EFF5D9174 /* MSInstallation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallation.m; path = sdk/src/MSInstallation.m; sourceTree = "<group>"; };
+		02296B90B26EE94316715C32CE01F1E0 /* MSSyncContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContext.m; path = sdk/src/MSSyncContext.m; sourceTree = "<group>"; };
+		023EE7A5A070B617314335F7FE916921 /* MSAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAuthState.h; path = sdk/src/MSAuthState.h; sourceTree = "<group>"; };
+		02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AvanadeAIProject-dummy.m"; sourceTree = "<group>"; };
+		08D21D8EDA4D2B9EB0DEE4E884D4FF79 /* MSClientConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClientConnection.m; path = sdk/src/MSClientConnection.m; sourceTree = "<group>"; };
+		0BF0D0907D9866E9824A58EC44C280EB /* MSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClient.m; path = sdk/src/MSClient.m; sourceTree = "<group>"; };
+		10A8E5E540DE3925E91BF3CF79DC15D8 /* MSConnectionDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionDelegate.m; path = sdk/src/MSConnectionDelegate.m; sourceTree = "<group>"; };
+		12F5404C3A66735E09879EBA4E2254B7 /* MSInstallationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallationTemplate.h; path = sdk/src/MSInstallationTemplate.h; sourceTree = "<group>"; };
+		134006021825B25C37E7FE3148234E1F /* MSPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPush.m; path = sdk/src/MSPush.m; sourceTree = "<group>"; };
+		13BF07F17A3DAE9AD98AD0AB8871CCF1 /* MSLoginSafariViewControllerUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewControllerUtilities.h; path = sdk/src/MSLoginSafariViewControllerUtilities.h; sourceTree = "<group>"; };
+		14EFED6F23C7A1D5BF4A42A6EE73C87A /* MSLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLogin.h; path = sdk/src/MSLogin.h; sourceTree = "<group>"; };
+		18E5F48BCCD766CB88B96FFABD7CDF27 /* MSError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSError.m; path = sdk/src/MSError.m; sourceTree = "<group>"; };
+		1BF8A088609B220ACCA74F75E2E7D58E /* MSAPIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIRequest.m; path = sdk/src/MSAPIRequest.m; sourceTree = "<group>"; };
+		2222C87B711891922A553F3DADD311B1 /* MSAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAuthState.m; path = sdk/src/MSAuthState.m; sourceTree = "<group>"; };
+		24CE5486EA5E28610B967F90E2A98EDE /* MicrosoftAzureMobile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MicrosoftAzureMobile.xcconfig; sourceTree = "<group>"; };
+		2A0D4E85505D23B472AE0AE5EEF1789E /* MSQueryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryResult.h; path = sdk/src/MSQueryResult.h; sourceTree = "<group>"; };
+		2B4322CDDB3B91539203DA2E8CFC7D28 /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUserAgentBuilder.h; path = sdk/src/MSUserAgentBuilder.h; sourceTree = "<group>"; };
+		301C3632D8519794E1C34C7C59903A9A /* MSTableOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperation.m; path = sdk/src/MSTableOperation.m; sourceTree = "<group>"; };
+		3344B4FA74F328C4D12712A8EE677E45 /* MSJSONSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSJSONSerializer.h; path = sdk/src/MSJSONSerializer.h; sourceTree = "<group>"; };
+		3472ED7C5A6BDFA190A692FE0E4AC30B /* MSOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSOperationQueue.m; path = sdk/src/MSOperationQueue.m; sourceTree = "<group>"; };
+		35AEE3D600589D3376D03EF2EF7E5DE7 /* MSTableConfigValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConfigValue.h; path = sdk/src/MSTableConfigValue.h; sourceTree = "<group>"; };
+		36B16E9B316C4A58ED429DE93B672487 /* MSNaiveISODateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSNaiveISODateFormatter.m; path = sdk/src/MSNaiveISODateFormatter.m; sourceTree = "<group>"; };
+		36B5389592921C90E17DF702A0C9C9CF /* MSQueryInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryInternal.h; path = sdk/src/MSQueryInternal.h; sourceTree = "<group>"; };
+		37A3EA26E43DE22D9BF69A8C11AFF879 /* MSURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSURLBuilder.h; path = sdk/src/MSURLBuilder.h; sourceTree = "<group>"; };
+		37B34BDB013013528C18CBEF88BE81C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38748C713946C7768AE259B40F87F60B /* MSAPIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIRequest.h; path = sdk/src/MSAPIRequest.h; sourceTree = "<group>"; };
+		3A28A38E98BCCC98E5C679AEBD9C7477 /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
+		3C15B34A73D3C6E10CD176EB37B3C678 /* MicrosoftAzureMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MicrosoftAzureMobile.h; path = sdk/src/MicrosoftAzureMobile.h; sourceTree = "<group>"; };
+		3E9507EC09A35001C6EB0B4E8BBD7F13 /* MSQueuePurgeOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePurgeOperation.h; path = sdk/src/MSQueuePurgeOperation.h; sourceTree = "<group>"; };
+		3F1780564DD71A517ED351F1E89484D3 /* MSPushConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushConnection.h; path = sdk/src/MSPushConnection.h; sourceTree = "<group>"; };
+		4D0C95EE9ACB9FD492959744C9F484C2 /* MSLoginController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginController.h; path = sdk/src/MSLoginController.h; sourceTree = "<group>"; };
+		515AFD556B463197905735028E1832BB /* MSSyncTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncTable.h; path = sdk/src/MSSyncTable.h; sourceTree = "<group>"; };
+		525D4134A3F4F077D0684A7979CAD356 /* MSBlockDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSBlockDefinitions.h; path = sdk/src/MSBlockDefinitions.h; sourceTree = "<group>"; };
+		553F4A62FCB4F845CEA2E9767B45A63F /* MSPredicateTranslator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPredicateTranslator.h; path = sdk/src/MSPredicateTranslator.h; sourceTree = "<group>"; };
+		596A5E7C40FB07FDAA78D426185FA95B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BB34E0E5083A88C304604B8D75E226A /* MSPullSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPullSettings.m; path = sdk/src/MSPullSettings.m; sourceTree = "<group>"; };
+		5D6E08227B48ECDBBCD2FCD9E6124E92 /* MSTableOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationInternal.h; path = sdk/src/MSTableOperationInternal.h; sourceTree = "<group>"; };
+		5E7F56454641708EF2FBD9C21A3750E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE2F2FFCF8D1FFE03C6F68453B59FBD /* MSTableOperationError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationError.h; path = sdk/src/MSTableOperationError.h; sourceTree = "<group>"; };
+		600BADE14F44653960839F0BD229C361 /* MSTableOperationError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperationError.m; path = sdk/src/MSTableOperationError.m; sourceTree = "<group>"; };
+		601022164F0049AF9A58F70812670614 /* MSURLBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSURLBuilder.m; path = sdk/src/MSURLBuilder.m; sourceTree = "<group>"; };
+		653C46AD293DF9478FB76891F7AFF642 /* Pods-AvanadeAIProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AvanadeAIProject.modulemap"; sourceTree = "<group>"; };
+		665819CBC600240216AD9FA13C3E601A /* MSPullSettingsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettingsInternal.h; path = sdk/src/MSPullSettingsInternal.h; sourceTree = "<group>"; };
+		66DFEF6FFDC2F9969F7A2A6CF68FD9CD /* MSConnectionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionConfiguration.m; path = sdk/src/MSConnectionConfiguration.m; sourceTree = "<group>"; };
+		718A4093F85CE4E57D7E6D93B08C5619 /* MSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClient.h; path = sdk/src/MSClient.h; sourceTree = "<group>"; };
+		718BF15F7FFA1D8018782CFEDEA38440 /* MSSyncContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContext.h; path = sdk/src/MSSyncContext.h; sourceTree = "<group>"; };
+		7429F6DF6FF8D50127F2328C5BACC970 /* MSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSError.h; path = sdk/src/MSError.h; sourceTree = "<group>"; };
+		7461E1A8100DD1EADB3D73EB9AFF66D7 /* MSTableConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConnection.h; path = sdk/src/MSTableConnection.h; sourceTree = "<group>"; };
+		74B0686839EDC0B09D9379A4B23BB581 /* MicrosoftAzureMobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-umbrella.h"; sourceTree = "<group>"; };
+		74D0E3574A2B78544D3EEF075B8ABB95 /* MSQueuePullOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperation.h; path = sdk/src/MSQueuePullOperation.h; sourceTree = "<group>"; };
+		75FA1C6422289B99B7136FB8633116DF /* MSLoginController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginController.m; path = sdk/src/MSLoginController.m; sourceTree = "<group>"; };
+		76671581F5AE25DF23DCE63FD63EE736 /* MSUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUser.h; path = sdk/src/MSUser.h; sourceTree = "<group>"; };
+		7994EBA3E1E5D63B1488CBEA46D45D9D /* MSLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLogin.m; path = sdk/src/MSLogin.m; sourceTree = "<group>"; };
+		7CBF65A86980E9A2F596B2BE4813CA01 /* MSQueuePurgeOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePurgeOperation.m; path = sdk/src/MSQueuePurgeOperation.m; sourceTree = "<group>"; };
+		8000531D9C28471A115162406ED8AB4E /* MicrosoftAzureMobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MicrosoftAzureMobile.modulemap; sourceTree = "<group>"; };
+		80D5A11FCA922445FE17810183F9DD5B /* MSClientConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientConnection.h; path = sdk/src/MSClientConnection.h; sourceTree = "<group>"; };
+		8188531513F1A66E5762FEDA0BAF7597 /* MSLoginView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginView.h; path = sdk/src/MSLoginView.h; sourceTree = "<group>"; };
+		829D3A696D13FE1621672D5A267B7E47 /* MSSyncTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncTable.m; path = sdk/src/MSSyncTable.m; sourceTree = "<group>"; };
+		84DED4851B7040F1B9866E0D55D50B4A /* Pods-AvanadeAIProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvanadeAIProject-frameworks.sh"; sourceTree = "<group>"; };
+		871B399F96D0578DEBF9EB572A27D7E4 /* MSSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSerializer.h; path = sdk/src/MSSerializer.h; sourceTree = "<group>"; };
+		88033F84633DF0F5734197E1435FC659 /* MSLoginSafariViewControllerUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewControllerUtilities.m; path = sdk/src/MSLoginSafariViewControllerUtilities.m; sourceTree = "<group>"; };
+		883487D56F339657CECF86C61CEA4F81 /* MicrosoftAzureMobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MicrosoftAzureMobile-dummy.m"; sourceTree = "<group>"; };
+		8922A25A21A9A9E98F56B3CC1726E7A5 /* MSTableRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableRequest.h; path = sdk/src/MSTableRequest.h; sourceTree = "<group>"; };
+		8ADA9551B1D4D88E8EC7E65CA048276A /* MSLoginSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSerializer.h; path = sdk/src/MSLoginSerializer.h; sourceTree = "<group>"; };
+		901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
+		908B4CACEE3670A1646F19008E9A40F7 /* MSCoreDataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSCoreDataStore.m; path = sdk/src/MSCoreDataStore.m; sourceTree = "<group>"; };
+		915FC4CB7A15478140E6B4953181A135 /* MSPushConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushConnection.m; path = sdk/src/MSPushConnection.m; sourceTree = "<group>"; };
+		925425CDF0D8F01747FE92054DB8E09F /* MSQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQuery.h; path = sdk/src/MSQuery.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9601A0ADE90187B9415D5FA4B53B7B7B /* Pods-AvanadeAIProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AvanadeAIProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		97EF79AFF122E302FD645EA5B72771A0 /* MSSyncContextInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextInternal.h; path = sdk/src/MSSyncContextInternal.h; sourceTree = "<group>"; };
+		98E766E2FDD1CF587A96AAC8497E3509 /* MSQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQuery.m; path = sdk/src/MSQuery.m; sourceTree = "<group>"; };
+		99BEC9136A9C6ACFBBCDC47922F14A19 /* Pods-AvanadeAIProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvanadeAIProject-resources.sh"; sourceTree = "<group>"; };
+		99E16E69F832A91457076D464341210A /* MSAPIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIConnection.m; path = sdk/src/MSAPIConnection.m; sourceTree = "<group>"; };
+		9B29FA84895EDB0827C4877C598C52B0 /* Pods-AvanadeAIProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AvanadeAIProject-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B7361186754A46C1CC6347D61482880 /* MSJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSJSONSerializer.m; path = sdk/src/MSJSONSerializer.m; sourceTree = "<group>"; };
+		9CF490EF8310863E206C8C5DD76EE990 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AvanadeAIProject.framework; path = "Pods-AvanadeAIProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAAE9C960E8DE2CEDF51F76C578942D /* MSManagedObjectObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSManagedObjectObserver.m; path = sdk/src/MSManagedObjectObserver.m; sourceTree = "<group>"; };
+		A0F70EB0E2E47F641B24C848F2C73437 /* MSQueryResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueryResult.m; path = sdk/src/MSQueryResult.m; sourceTree = "<group>"; };
+		A4D86900AAF337A601B69E27B869CA53 /* NSURLSessionTask+Completion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionTask+Completion.h"; path = "sdk/src/NSURLSessionTask+Completion.h"; sourceTree = "<group>"; };
+		A537B7FB9D87A59AE84550F789287CA5 /* MSLoginSafariViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewController.m; path = sdk/src/MSLoginSafariViewController.m; sourceTree = "<group>"; };
+		A67DFF85089E2434191806DEF4177B57 /* MSNaiveISODateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSNaiveISODateFormatter.h; path = sdk/src/MSNaiveISODateFormatter.h; sourceTree = "<group>"; };
+		A78BF3D16E3218148AE10402FFE16AB1 /* MSCoreDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSCoreDataStore.h; path = sdk/src/MSCoreDataStore.h; sourceTree = "<group>"; };
+		A7BA991A01C976AB0B75A4CF8B78582D /* MSTableConfigValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConfigValue.m; path = sdk/src/MSTableConfigValue.m; sourceTree = "<group>"; };
+		AF1922180DFA9A217F48213BAB2A4D6B /* MSUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUser.m; path = sdk/src/MSUser.m; sourceTree = "<group>"; };
+		AF695997FA1D7F7666277A2D6BDA3853 /* MSTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTable.m; path = sdk/src/MSTable.m; sourceTree = "<group>"; };
+		B47B9BE9A0A44BF31C3F108B919ECEB1 /* MSLoginSafariViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewController.h; path = sdk/src/MSLoginSafariViewController.h; sourceTree = "<group>"; };
+		B49F1ABB343FC8F7649D2D366D9BED1E /* MSInstallationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallationTemplate.m; path = sdk/src/MSInstallationTemplate.m; sourceTree = "<group>"; };
+		B69D46151BE53E8D9C5A640EDA19825B /* MSPushRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushRequest.m; path = sdk/src/MSPushRequest.m; sourceTree = "<group>"; };
+		BA4D0870111FF6F60679AD713B2856BD /* MicrosoftAzureMobile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-prefix.pch"; sourceTree = "<group>"; };
+		BA7E3237A2161F3C6875652A5A4F853D /* MSFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSFilter.h; path = sdk/src/MSFilter.h; sourceTree = "<group>"; };
+		BC878CB1DFA4F4681F8F8FA000888586 /* MSInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallation.h; path = sdk/src/MSInstallation.h; sourceTree = "<group>"; };
+		BCB0E885D0631BD47521543F8D88CA44 /* MSPushRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushRequest.h; path = sdk/src/MSPushRequest.h; sourceTree = "<group>"; };
+		BCF1FDDE72F727792428C6E0FE7B7BF9 /* MSTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTable.h; path = sdk/src/MSTable.h; sourceTree = "<group>"; };
+		BD90B255E8026C2FA2A18055326676E8 /* MSAPIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIConnection.h; path = sdk/src/MSAPIConnection.h; sourceTree = "<group>"; };
+		BEC01ED696C1650E2E3858526C264507 /* MSPullSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettings.h; path = sdk/src/MSPullSettings.h; sourceTree = "<group>"; };
+		C05068B6E03DCF054565E09A65E75F34 /* MSQueuePullOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePullOperation.m; path = sdk/src/MSQueuePullOperation.m; sourceTree = "<group>"; };
+		C3311A5C4CDFAB1674588B9DEA192F00 /* MSTableConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConnection.m; path = sdk/src/MSTableConnection.m; sourceTree = "<group>"; };
+		C4FFCB1738B59A91A7D33A3B076CAB5C /* MSQueuePushOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePushOperation.h; path = sdk/src/MSQueuePushOperation.h; sourceTree = "<group>"; };
+		C5DE7ACA14DDBBEA120B2EBFCC36594D /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUserAgentBuilder.m; path = sdk/src/MSUserAgentBuilder.m; sourceTree = "<group>"; };
+		CBDA741F2C132112FF9EBC2B9A4E919B /* MSSDKFeatures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSDKFeatures.m; path = sdk/src/MSSDKFeatures.m; sourceTree = "<group>"; };
+		CEE1C9FE38E36A264D86A6FD9066160E /* MSSyncContextReadResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextReadResult.h; path = sdk/src/MSSyncContextReadResult.h; sourceTree = "<group>"; };
+		D0B218657964AE2C283C9EE63684AD45 /* MSDateOffset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDateOffset.h; path = sdk/src/MSDateOffset.h; sourceTree = "<group>"; };
+		D2DDB847FF35DDAE48574FA0461B13F2 /* MSManagedObjectObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSManagedObjectObserver.h; path = sdk/src/MSManagedObjectObserver.h; sourceTree = "<group>"; };
+		D2E6EE114678D704B669607F160FA0D1 /* MSDateOffset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDateOffset.m; path = sdk/src/MSDateOffset.m; sourceTree = "<group>"; };
+		D457644AA5EDE9F201CADD7D1BB45380 /* MSLoginSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSerializer.m; path = sdk/src/MSLoginSerializer.m; sourceTree = "<group>"; };
+		D5207F4DB56CE8AC8829E3FDF5A5F6E3 /* MSTableOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperation.h; path = sdk/src/MSTableOperation.h; sourceTree = "<group>"; };
+		D7601E05AED7906F6D9FB7BFA0D056F4 /* MSSyncContextReadResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContextReadResult.m; path = sdk/src/MSSyncContextReadResult.m; sourceTree = "<group>"; };
+		D9C1E4CE5F6CCE6794AB8B1E1B6BCE38 /* MSTableRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableRequest.m; path = sdk/src/MSTableRequest.m; sourceTree = "<group>"; };
+		DAF2E30571301A379D5C41618C54764E /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MicrosoftAzureMobile.framework; path = MicrosoftAzureMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A5F5717E56A203B694157D77E46A63 /* MSLoginView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginView.m; path = sdk/src/MSLoginView.m; sourceTree = "<group>"; };
+		E7AC4A97CA3234F5BDF0EDB716E90AD9 /* MSSDKFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSDKFeatures.h; path = sdk/src/MSSDKFeatures.h; sourceTree = "<group>"; };
+		EA0A7A0EA86C2F72E1143D5BB161E187 /* MSConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionDelegate.h; path = sdk/src/MSConnectionDelegate.h; sourceTree = "<group>"; };
+		EC5ADEB83C76B1E995CD038D87E6BA3C /* MSClientInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientInternal.h; path = sdk/src/MSClientInternal.h; sourceTree = "<group>"; };
+		ED007B2A7F6B01081C09B1A3FEFD5788 /* MSQueuePullOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperationInternal.h; path = sdk/src/MSQueuePullOperationInternal.h; sourceTree = "<group>"; };
+		EDDB8272AF7DA52CED82F42852514AD3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		EDFF89E54A82CB382A5C99370327F89A /* MSPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPush.h; path = sdk/src/MSPush.h; sourceTree = "<group>"; };
+		F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AvanadeAIProject-umbrella.h"; sourceTree = "<group>"; };
+		F67895D9328A1981790F54B445CC1EEB /* MSTableInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableInternal.h; path = sdk/src/MSTableInternal.h; sourceTree = "<group>"; };
+		F8D6B96AEE279EE4B87A016FA85AAFED /* MSPredicateTranslator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPredicateTranslator.m; path = sdk/src/MSPredicateTranslator.m; sourceTree = "<group>"; };
+		FAF1A0A3EA744C70259B9FF8249F40F8 /* MSOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSOperationQueue.h; path = sdk/src/MSOperationQueue.h; sourceTree = "<group>"; };
+		FAFB0B6FAF75BC0E0FAD10D3063C73D5 /* MSConnectionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionConfiguration.h; path = sdk/src/MSConnectionConfiguration.h; sourceTree = "<group>"; };
+		FB4EB21FCF62AB7BEED30B6352999954 /* MSQueuePushOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePushOperation.m; path = sdk/src/MSQueuePushOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C8E60498FD6E66C41C3D0120088F150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762FA9F4AF8232B8D8DCCFF3FC3EAAD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5BB4FC16545BA885B7DC24397C719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E083C5B8254BAA3C623A18C860A7B3D /* Foundation.framework in Frameworks */,
+				71FFA1346094A7BE535B084606B53493 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CDF9E14EEC0DE0DB38D1AE83506569B /* MicrosoftAzureMobile */ = {
+			isa = PBXGroup;
+			children = (
+				3C15B34A73D3C6E10CD176EB37B3C678 /* MicrosoftAzureMobile.h */,
+				BD90B255E8026C2FA2A18055326676E8 /* MSAPIConnection.h */,
+				99E16E69F832A91457076D464341210A /* MSAPIConnection.m */,
+				38748C713946C7768AE259B40F87F60B /* MSAPIRequest.h */,
+				1BF8A088609B220ACCA74F75E2E7D58E /* MSAPIRequest.m */,
+				023EE7A5A070B617314335F7FE916921 /* MSAuthState.h */,
+				2222C87B711891922A553F3DADD311B1 /* MSAuthState.m */,
+				525D4134A3F4F077D0684A7979CAD356 /* MSBlockDefinitions.h */,
+				718A4093F85CE4E57D7E6D93B08C5619 /* MSClient.h */,
+				0BF0D0907D9866E9824A58EC44C280EB /* MSClient.m */,
+				80D5A11FCA922445FE17810183F9DD5B /* MSClientConnection.h */,
+				08D21D8EDA4D2B9EB0DEE4E884D4FF79 /* MSClientConnection.m */,
+				EC5ADEB83C76B1E995CD038D87E6BA3C /* MSClientInternal.h */,
+				FAFB0B6FAF75BC0E0FAD10D3063C73D5 /* MSConnectionConfiguration.h */,
+				66DFEF6FFDC2F9969F7A2A6CF68FD9CD /* MSConnectionConfiguration.m */,
+				EA0A7A0EA86C2F72E1143D5BB161E187 /* MSConnectionDelegate.h */,
+				10A8E5E540DE3925E91BF3CF79DC15D8 /* MSConnectionDelegate.m */,
+				A78BF3D16E3218148AE10402FFE16AB1 /* MSCoreDataStore.h */,
+				908B4CACEE3670A1646F19008E9A40F7 /* MSCoreDataStore.m */,
+				D0B218657964AE2C283C9EE63684AD45 /* MSDateOffset.h */,
+				D2E6EE114678D704B669607F160FA0D1 /* MSDateOffset.m */,
+				7429F6DF6FF8D50127F2328C5BACC970 /* MSError.h */,
+				18E5F48BCCD766CB88B96FFABD7CDF27 /* MSError.m */,
+				BA7E3237A2161F3C6875652A5A4F853D /* MSFilter.h */,
+				BC878CB1DFA4F4681F8F8FA000888586 /* MSInstallation.h */,
+				00D7E478C688D416FC04E47EFF5D9174 /* MSInstallation.m */,
+				12F5404C3A66735E09879EBA4E2254B7 /* MSInstallationTemplate.h */,
+				B49F1ABB343FC8F7649D2D366D9BED1E /* MSInstallationTemplate.m */,
+				3344B4FA74F328C4D12712A8EE677E45 /* MSJSONSerializer.h */,
+				9B7361186754A46C1CC6347D61482880 /* MSJSONSerializer.m */,
+				14EFED6F23C7A1D5BF4A42A6EE73C87A /* MSLogin.h */,
+				7994EBA3E1E5D63B1488CBEA46D45D9D /* MSLogin.m */,
+				4D0C95EE9ACB9FD492959744C9F484C2 /* MSLoginController.h */,
+				75FA1C6422289B99B7136FB8633116DF /* MSLoginController.m */,
+				B47B9BE9A0A44BF31C3F108B919ECEB1 /* MSLoginSafariViewController.h */,
+				A537B7FB9D87A59AE84550F789287CA5 /* MSLoginSafariViewController.m */,
+				13BF07F17A3DAE9AD98AD0AB8871CCF1 /* MSLoginSafariViewControllerUtilities.h */,
+				88033F84633DF0F5734197E1435FC659 /* MSLoginSafariViewControllerUtilities.m */,
+				8ADA9551B1D4D88E8EC7E65CA048276A /* MSLoginSerializer.h */,
+				D457644AA5EDE9F201CADD7D1BB45380 /* MSLoginSerializer.m */,
+				8188531513F1A66E5762FEDA0BAF7597 /* MSLoginView.h */,
+				E4A5F5717E56A203B694157D77E46A63 /* MSLoginView.m */,
+				D2DDB847FF35DDAE48574FA0461B13F2 /* MSManagedObjectObserver.h */,
+				9FAAE9C960E8DE2CEDF51F76C578942D /* MSManagedObjectObserver.m */,
+				A67DFF85089E2434191806DEF4177B57 /* MSNaiveISODateFormatter.h */,
+				36B16E9B316C4A58ED429DE93B672487 /* MSNaiveISODateFormatter.m */,
+				FAF1A0A3EA744C70259B9FF8249F40F8 /* MSOperationQueue.h */,
+				3472ED7C5A6BDFA190A692FE0E4AC30B /* MSOperationQueue.m */,
+				553F4A62FCB4F845CEA2E9767B45A63F /* MSPredicateTranslator.h */,
+				F8D6B96AEE279EE4B87A016FA85AAFED /* MSPredicateTranslator.m */,
+				BEC01ED696C1650E2E3858526C264507 /* MSPullSettings.h */,
+				5BB34E0E5083A88C304604B8D75E226A /* MSPullSettings.m */,
+				665819CBC600240216AD9FA13C3E601A /* MSPullSettingsInternal.h */,
+				EDFF89E54A82CB382A5C99370327F89A /* MSPush.h */,
+				134006021825B25C37E7FE3148234E1F /* MSPush.m */,
+				3F1780564DD71A517ED351F1E89484D3 /* MSPushConnection.h */,
+				915FC4CB7A15478140E6B4953181A135 /* MSPushConnection.m */,
+				BCB0E885D0631BD47521543F8D88CA44 /* MSPushRequest.h */,
+				B69D46151BE53E8D9C5A640EDA19825B /* MSPushRequest.m */,
+				925425CDF0D8F01747FE92054DB8E09F /* MSQuery.h */,
+				98E766E2FDD1CF587A96AAC8497E3509 /* MSQuery.m */,
+				36B5389592921C90E17DF702A0C9C9CF /* MSQueryInternal.h */,
+				2A0D4E85505D23B472AE0AE5EEF1789E /* MSQueryResult.h */,
+				A0F70EB0E2E47F641B24C848F2C73437 /* MSQueryResult.m */,
+				74D0E3574A2B78544D3EEF075B8ABB95 /* MSQueuePullOperation.h */,
+				C05068B6E03DCF054565E09A65E75F34 /* MSQueuePullOperation.m */,
+				ED007B2A7F6B01081C09B1A3FEFD5788 /* MSQueuePullOperationInternal.h */,
+				3E9507EC09A35001C6EB0B4E8BBD7F13 /* MSQueuePurgeOperation.h */,
+				7CBF65A86980E9A2F596B2BE4813CA01 /* MSQueuePurgeOperation.m */,
+				C4FFCB1738B59A91A7D33A3B076CAB5C /* MSQueuePushOperation.h */,
+				FB4EB21FCF62AB7BEED30B6352999954 /* MSQueuePushOperation.m */,
+				E7AC4A97CA3234F5BDF0EDB716E90AD9 /* MSSDKFeatures.h */,
+				CBDA741F2C132112FF9EBC2B9A4E919B /* MSSDKFeatures.m */,
+				871B399F96D0578DEBF9EB572A27D7E4 /* MSSerializer.h */,
+				718BF15F7FFA1D8018782CFEDEA38440 /* MSSyncContext.h */,
+				02296B90B26EE94316715C32CE01F1E0 /* MSSyncContext.m */,
+				97EF79AFF122E302FD645EA5B72771A0 /* MSSyncContextInternal.h */,
+				CEE1C9FE38E36A264D86A6FD9066160E /* MSSyncContextReadResult.h */,
+				D7601E05AED7906F6D9FB7BFA0D056F4 /* MSSyncContextReadResult.m */,
+				515AFD556B463197905735028E1832BB /* MSSyncTable.h */,
+				829D3A696D13FE1621672D5A267B7E47 /* MSSyncTable.m */,
+				BCF1FDDE72F727792428C6E0FE7B7BF9 /* MSTable.h */,
+				AF695997FA1D7F7666277A2D6BDA3853 /* MSTable.m */,
+				35AEE3D600589D3376D03EF2EF7E5DE7 /* MSTableConfigValue.h */,
+				A7BA991A01C976AB0B75A4CF8B78582D /* MSTableConfigValue.m */,
+				7461E1A8100DD1EADB3D73EB9AFF66D7 /* MSTableConnection.h */,
+				C3311A5C4CDFAB1674588B9DEA192F00 /* MSTableConnection.m */,
+				F67895D9328A1981790F54B445CC1EEB /* MSTableInternal.h */,
+				D5207F4DB56CE8AC8829E3FDF5A5F6E3 /* MSTableOperation.h */,
+				301C3632D8519794E1C34C7C59903A9A /* MSTableOperation.m */,
+				5EE2F2FFCF8D1FFE03C6F68453B59FBD /* MSTableOperationError.h */,
+				600BADE14F44653960839F0BD229C361 /* MSTableOperationError.m */,
+				5D6E08227B48ECDBBCD2FCD9E6124E92 /* MSTableOperationInternal.h */,
+				8922A25A21A9A9E98F56B3CC1726E7A5 /* MSTableRequest.h */,
+				D9C1E4CE5F6CCE6794AB8B1E1B6BCE38 /* MSTableRequest.m */,
+				37A3EA26E43DE22D9BF69A8C11AFF879 /* MSURLBuilder.h */,
+				601022164F0049AF9A58F70812670614 /* MSURLBuilder.m */,
+				76671581F5AE25DF23DCE63FD63EE736 /* MSUser.h */,
+				AF1922180DFA9A217F48213BAB2A4D6B /* MSUser.m */,
+				2B4322CDDB3B91539203DA2E8CFC7D28 /* MSUserAgentBuilder.h */,
+				C5DE7ACA14DDBBEA120B2EBFCC36594D /* MSUserAgentBuilder.m */,
+				A4D86900AAF337A601B69E27B869CA53 /* NSURLSessionTask+Completion.h */,
+				B30D07E2F70FB33175E371FC8CB1B63C /* Support Files */,
+			);
+			name = MicrosoftAzureMobile;
+			path = MicrosoftAzureMobile;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				729C424472F1E074A2EF30A6BC5F7C43 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		729C424472F1E074A2EF30A6BC5F7C43 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				596A5E7C40FB07FDAA78D426185FA95B /* Foundation.framework */,
+				EDDB8272AF7DA52CED82F42852514AD3 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A4E607997FAE1B779AB815E72FC7195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CDF9E14EEC0DE0DB38D1AE83506569B /* MicrosoftAzureMobile */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				7A4E607997FAE1B779AB815E72FC7195 /* Pods */,
+				8612CFEE5330851D25B9A55CD0F93307 /* Products */,
+				D02CA8E1E3F01EE752D5AAF76DD3AAC1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8612CFEE5330851D25B9A55CD0F93307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF2E30571301A379D5C41618C54764E /* MicrosoftAzureMobile.framework */,
+				9CF490EF8310863E206C8C5DD76EE990 /* Pods_AvanadeAIProject.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B30D07E2F70FB33175E371FC8CB1B63C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37B34BDB013013528C18CBEF88BE81C9 /* Info.plist */,
+				8000531D9C28471A115162406ED8AB4E /* MicrosoftAzureMobile.modulemap */,
+				24CE5486EA5E28610B967F90E2A98EDE /* MicrosoftAzureMobile.xcconfig */,
+				883487D56F339657CECF86C61CEA4F81 /* MicrosoftAzureMobile-dummy.m */,
+				BA4D0870111FF6F60679AD713B2856BD /* MicrosoftAzureMobile-prefix.pch */,
+				74B0686839EDC0B09D9379A4B23BB581 /* MicrosoftAzureMobile-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MicrosoftAzureMobile";
+			sourceTree = "<group>";
+		};
+		C3C103437FEFE5CC0D384B4775342C1A /* Pods-AvanadeAIProject */ = {
+			isa = PBXGroup;
+			children = (
+				5E7F56454641708EF2FBD9C21A3750E1 /* Info.plist */,
+				653C46AD293DF9478FB76891F7AFF642 /* Pods-AvanadeAIProject.modulemap */,
+				9B29FA84895EDB0827C4877C598C52B0 /* Pods-AvanadeAIProject-acknowledgements.markdown */,
+				9601A0ADE90187B9415D5FA4B53B7B7B /* Pods-AvanadeAIProject-acknowledgements.plist */,
+				02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */,
+				84DED4851B7040F1B9866E0D55D50B4A /* Pods-AvanadeAIProject-frameworks.sh */,
+				99BEC9136A9C6ACFBBCDC47922F14A19 /* Pods-AvanadeAIProject-resources.sh */,
+				F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */,
+				3A28A38E98BCCC98E5C679AEBD9C7477 /* Pods-AvanadeAIProject.debug.xcconfig */,
+				901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */,
+			);
+			name = "Pods-AvanadeAIProject";
+			path = "Target Support Files/Pods-AvanadeAIProject";
+			sourceTree = "<group>";
+		};
+		D02CA8E1E3F01EE752D5AAF76DD3AAC1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C103437FEFE5CC0D384B4775342C1A /* Pods-AvanadeAIProject */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		798CAB2CC23D1C7C57EFB28D583D6E7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26ECC798F9F54A7C7BA47E2E7466BC28 /* Pods-AvanadeAIProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BF7DEF372EDF96090FFFD454C76458 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603ED1E8A0266C3877308C4EB644C78D /* MicrosoftAzureMobile-umbrella.h in Headers */,
+				760AAF9015312161C4376DFB1FC31790 /* MicrosoftAzureMobile.h in Headers */,
+				EE9EFA8420BC6BBBE09CE6DAD8B3EAB1 /* MSAPIConnection.h in Headers */,
+				8143F9390D8C3873818F06A19197135D /* MSAPIRequest.h in Headers */,
+				440030D401BBBFD1E4BF99440113722D /* MSAuthState.h in Headers */,
+				CDC82A651AC986ACB40CBB16E4F6B536 /* MSBlockDefinitions.h in Headers */,
+				939B24A7AEF5F2529C20137758AD995E /* MSClient.h in Headers */,
+				839802458F32EC7561BFCACF9ABEA981 /* MSClientConnection.h in Headers */,
+				5448F18D9375E40E8775CFF6F08D026F /* MSClientInternal.h in Headers */,
+				BA6CB135D6F073E84F56DCCCE5979577 /* MSConnectionConfiguration.h in Headers */,
+				50B47CBE9B5B97B05F8F4F4A8551EC94 /* MSConnectionDelegate.h in Headers */,
+				6CE4F91C6170C8F4AB26A7B290925ED3 /* MSCoreDataStore.h in Headers */,
+				A222B11FB5329CD07ABA6596B0EEBEF2 /* MSDateOffset.h in Headers */,
+				9609951FC77077E0320B576FA12CCDBD /* MSError.h in Headers */,
+				44D0A5B46284089889D7356B68EBBE4D /* MSFilter.h in Headers */,
+				7E630D69F31CBE4B6C63DEFA3A6EB3A5 /* MSInstallation.h in Headers */,
+				64298614E8017DA9DEC3118496248984 /* MSInstallationTemplate.h in Headers */,
+				25BE4156088282678C827E8C0433404A /* MSJSONSerializer.h in Headers */,
+				4EFF00DB3F3A8486A96C365DA8E55690 /* MSLogin.h in Headers */,
+				B5B2F71627986F6956F60F1983D1D824 /* MSLoginController.h in Headers */,
+				F7909B528A6278FC355D7477B3E0A7E6 /* MSLoginSafariViewController.h in Headers */,
+				6C27EAAC0C492A14EA4C519384650462 /* MSLoginSafariViewControllerUtilities.h in Headers */,
+				FF864B14C7CDEB89A4CAA4D8CC87FF9D /* MSLoginSerializer.h in Headers */,
+				63A23AA3BC4DA0452DCC8CA14D012E66 /* MSLoginView.h in Headers */,
+				864DE1104D65E2413C3B18FD0DB1794C /* MSManagedObjectObserver.h in Headers */,
+				B10E3F853C47F43FB9593CA123A4AE07 /* MSNaiveISODateFormatter.h in Headers */,
+				B4B6B9DA5943B409FBA2089BEEAAE95C /* MSOperationQueue.h in Headers */,
+				D1DA5B76FC0DF9D7EF206C2D91E9DE58 /* MSPredicateTranslator.h in Headers */,
+				2A6050D4186C7832FE172F55C8734F13 /* MSPullSettings.h in Headers */,
+				1176E40715D30D9E1BBAABC714DA049C /* MSPullSettingsInternal.h in Headers */,
+				D1BAD8DC442410A9F8306038B34607E5 /* MSPush.h in Headers */,
+				AEA95ABF48DC1544E43EBA2CF25C803D /* MSPushConnection.h in Headers */,
+				11CBCE9C5C394278B54641291C5C47C7 /* MSPushRequest.h in Headers */,
+				3012CC4A4181005C2C30F32CC6AB9AA9 /* MSQuery.h in Headers */,
+				7380B8E0662CD558049FFA52B82F32B4 /* MSQueryInternal.h in Headers */,
+				652E5092C9B9631C1E24868F39F8B7D8 /* MSQueryResult.h in Headers */,
+				15EBB8E322D48CB4255B6F1BBD96F02C /* MSQueuePullOperation.h in Headers */,
+				9BCC6B45DFDBBA29322B41F8FA5B9D1E /* MSQueuePullOperationInternal.h in Headers */,
+				A557671955E6812027E850628D78BCE1 /* MSQueuePurgeOperation.h in Headers */,
+				7B25A96E2F26DF766A2A7571A5C5BE14 /* MSQueuePushOperation.h in Headers */,
+				A52BF70429060B8980F45EB63799D0EA /* MSSDKFeatures.h in Headers */,
+				9D0A39F94F0F9D17AE9118B638767EC4 /* MSSerializer.h in Headers */,
+				D40B5A41C991E32667CFC35A586426D0 /* MSSyncContext.h in Headers */,
+				0D5277D2D053465F603DBACAAF5E231B /* MSSyncContextInternal.h in Headers */,
+				3324CE8E23675AFD402259AD91E89DD7 /* MSSyncContextReadResult.h in Headers */,
+				5C4D66B27EAE5F04EDECF1A6E1C85F03 /* MSSyncTable.h in Headers */,
+				30C391775A9EBDD0F358E41A9095B273 /* MSTable.h in Headers */,
+				6D32164632AACF96C8B11FA8507941C5 /* MSTableConfigValue.h in Headers */,
+				38A93243125CD53E1D77F207F29F2048 /* MSTableConnection.h in Headers */,
+				E657C4B29B4A6C780AC446A330657FB1 /* MSTableInternal.h in Headers */,
+				01E6328C20E10927A7B048FCC69A946A /* MSTableOperation.h in Headers */,
+				8F7A66B7ADCC362C507DFD638122BAEA /* MSTableOperationError.h in Headers */,
+				701D5EBF37FF897BB1EB5794A18DB51F /* MSTableOperationInternal.h in Headers */,
+				071895565EFA10C4B516DAD546D24D63 /* MSTableRequest.h in Headers */,
+				5BA27412EEAF0E4819E47BA2B5E068D0 /* MSURLBuilder.h in Headers */,
+				03376DBC60BBCF2F559054DA5A5C11EE /* MSUser.h in Headers */,
+				278E80BEE47282D987B3E428547CB987 /* MSUserAgentBuilder.h in Headers */,
+				6F7A3E475B8F792ECAF66F5FE21A375A /* NSURLSessionTask+Completion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4054F6277A886E033E295FF9AB165AEA /* Build configuration list for PBXNativeTarget "MicrosoftAzureMobile" */;
+			buildPhases = (
+				38A18596A274B8303F05B9AF82920BA3 /* Sources */,
+				3DB5BB4FC16545BA885B7DC24397C719 /* Frameworks */,
+				F6BF7DEF372EDF96090FFFD454C76458 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicrosoftAzureMobile;
+			productName = MicrosoftAzureMobile;
+			productReference = DAF2E30571301A379D5C41618C54764E /* MicrosoftAzureMobile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B19D554C99074B20F2B4732CE6BF9429 /* Pods-AvanadeAIProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DAF2BC201FE185F1AAD206047CB65C /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */;
+			buildPhases = (
+				17D4323A155D0230207F8AD793369DC9 /* Sources */,
+				0C8E60498FD6E66C41C3D0120088F150 /* Frameworks */,
+				798CAB2CC23D1C7C57EFB28D583D6E7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E1B3E37EDBB5390E20C79F82710593 /* PBXTargetDependency */,
+			);
+			name = "Pods-AvanadeAIProject";
+			productName = "Pods-AvanadeAIProject";
+			productReference = 9CF490EF8310863E206C8C5DD76EE990 /* Pods_AvanadeAIProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8612CFEE5330851D25B9A55CD0F93307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */,
+				B19D554C99074B20F2B4732CE6BF9429 /* Pods-AvanadeAIProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17D4323A155D0230207F8AD793369DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD7F6F3430B8F9E1405293B2E975BE /* Pods-AvanadeAIProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A18596A274B8303F05B9AF82920BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B146A1EE14063A8956DA04623198D4C /* MicrosoftAzureMobile-dummy.m in Sources */,
+				CD7D6925744A154E91D9634B0726C04F /* MSAPIConnection.m in Sources */,
+				7F7A5FEA5F1A0518FE81A99C53A4C58D /* MSAPIRequest.m in Sources */,
+				0AE08A86947878E23EC7BCA23FEF5B8B /* MSAuthState.m in Sources */,
+				F941E3456E81D696D5A5F298499E6CBB /* MSClient.m in Sources */,
+				AD228586780613942FE6BE7DE47456EE /* MSClientConnection.m in Sources */,
+				6E1708444F5348931FFD5B7644E5638D /* MSConnectionConfiguration.m in Sources */,
+				04BE3C44F0CD415B8D9BF7493C746A77 /* MSConnectionDelegate.m in Sources */,
+				54570F4891D4D7FB8543645812F0D081 /* MSCoreDataStore.m in Sources */,
+				4204EBD98024EBD7054916BAB3409C27 /* MSDateOffset.m in Sources */,
+				BDB1E377A2E354D7C9A81F588786FA59 /* MSError.m in Sources */,
+				07CFBD7AEF6427FF1EA332C95A198E39 /* MSInstallation.m in Sources */,
+				13274F665A41FDE3014780A0E3A4D75A /* MSInstallationTemplate.m in Sources */,
+				44DAEEDD8F51E9FDF2E1BE6717D2E61A /* MSJSONSerializer.m in Sources */,
+				130CBF234088DEE087822F4F098276ED /* MSLogin.m in Sources */,
+				DCD5261C20A9C97F1D2CBBE68E353346 /* MSLoginController.m in Sources */,
+				DF6AF2266A809E3F4090C1DD328BE50A /* MSLoginSafariViewController.m in Sources */,
+				85AA12033FCED498F18C8BDEE393749D /* MSLoginSafariViewControllerUtilities.m in Sources */,
+				FD47B7F807A5FFB8EEAA5E79A9FD2748 /* MSLoginSerializer.m in Sources */,
+				DD229060F2E0146C53940F3071F198FC /* MSLoginView.m in Sources */,
+				5598DDB43FDAFD45D67C13DE165AB5CE /* MSManagedObjectObserver.m in Sources */,
+				826441E576A40B00F0DCC6E55A956D6C /* MSNaiveISODateFormatter.m in Sources */,
+				98BEE1B79FBDEACB05A70C35AFF45072 /* MSOperationQueue.m in Sources */,
+				E0EA50C8177BCF46882D6391A18EC183 /* MSPredicateTranslator.m in Sources */,
+				9DE844255DBAB564609DB4E3778CF83B /* MSPullSettings.m in Sources */,
+				9209B3451742246599DACFE77A712494 /* MSPush.m in Sources */,
+				8BF745074E361D9729BBD2F91E0850AE /* MSPushConnection.m in Sources */,
+				84B94DD35A9D962C460D6FBF9290B560 /* MSPushRequest.m in Sources */,
+				28135650092420226A7CD86F29B6BE6D /* MSQuery.m in Sources */,
+				B44AB59B162AB1B995D0020177C051DB /* MSQueryResult.m in Sources */,
+				941CFA8EFFEE65C82C061CA4565678F6 /* MSQueuePullOperation.m in Sources */,
+				79617F4B0FEC733E517C7228D8153798 /* MSQueuePurgeOperation.m in Sources */,
+				A5CBD733CC425330F11A2D115D4D6E4B /* MSQueuePushOperation.m in Sources */,
+				67B5D6CF4B94182342B38F7D8EFB49B1 /* MSSDKFeatures.m in Sources */,
+				2A063C70698BEAD5610B69F6B44AF9E4 /* MSSyncContext.m in Sources */,
+				D05E4CCFC71FD58CF4BD1F316AE36B94 /* MSSyncContextReadResult.m in Sources */,
+				45380B8D025C58D4D80837E8A9B64ED5 /* MSSyncTable.m in Sources */,
+				775ADC3E7F305193653774760B116CE4 /* MSTable.m in Sources */,
+				107C2518189656F9575FEA7E993A3F30 /* MSTableConfigValue.m in Sources */,
+				E550BFC265C9FB5692EB5B78CCF854EF /* MSTableConnection.m in Sources */,
+				DA397E51528178CD82538CB1E69FE71A /* MSTableOperation.m in Sources */,
+				E7D77E2D7B56A4C79839094BE7094E93 /* MSTableOperationError.m in Sources */,
+				0CEA3BABBB0C79A681769FC4C25EDFAF /* MSTableRequest.m in Sources */,
+				94A15F2619BB7B278BB9971A2607B9C6 /* MSURLBuilder.m in Sources */,
+				9550508E734C267F9F16BF8185D32645 /* MSUser.m in Sources */,
+				E576F5CAD16B6A28377B640ECE511534 /* MSUserAgentBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77E1B3E37EDBB5390E20C79F82710593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MicrosoftAzureMobile;
+			target = 96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */;
+			targetProxy = CF63BE8BE2B733AA3011A44FFB068264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		48798AC0D4869C605BD5DEB3F9393A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CE5486EA5E28610B967F90E2A98EDE /* MicrosoftAzureMobile.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MicrosoftAzureMobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile.modulemap";
+				PRODUCT_NAME = MicrosoftAzureMobile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A7E45F7F8B3B76D91B7F32A9E99259F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A28A38E98BCCC98E5C679AEBD9C7477 /* Pods-AvanadeAIProject.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AvanadeAIProject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AvanadeAIProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CF8B80D6D17BE9664606ED078F08A6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CE5486EA5E28610B967F90E2A98EDE /* MicrosoftAzureMobile.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MicrosoftAzureMobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile.modulemap";
+				PRODUCT_NAME = MicrosoftAzureMobile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E61CD0B7E6C5A3019164778899B51597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AvanadeAIProject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AvanadeAIProject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DAF2BC201FE185F1AAD206047CB65C /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7E45F7F8B3B76D91B7F32A9E99259F /* Debug */,
+				E61CD0B7E6C5A3019164778899B51597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4054F6277A886E033E295FF9AB165AEA /* Build configuration list for PBXNativeTarget "MicrosoftAzureMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8B80D6D17BE9664606ED078F08A6C9 /* Debug */,
+				48798AC0D4869C605BD5DEB3F9393A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
