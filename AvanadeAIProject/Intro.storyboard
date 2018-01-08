@@ -204,7 +204,7 @@
                     </view>
                     <connections>
                         <segue destination="oou-72-Gef" kind="show" identifier="goToRegisterScene" animates="NO" id="Ydg-Uo-98s"/>
-                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMainScene" action="showViewController:sender:" id="9EL-Iv-hBT"/>
+                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMainScene" animates="NO" action="showViewController:sender:" id="9EL-Iv-hBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-2G-xMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,7 +217,7 @@
                 <viewControllerPlaceholder storyboardName="Main" id="m9q-HT-j3c" userLabel="Main Storyboard Reference" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMG-WZ-o03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="-272"/>
+            <point key="canvasLocation" x="849" y="615"/>
         </scene>
         <!--Register-->
         <scene sceneID="a3v-ra-GKb">
