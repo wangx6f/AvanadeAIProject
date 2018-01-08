@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0283500-3283-4208-bb85-f7f895c884a7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/CommentIconWhite.imageset/IC Comment 48px.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/CommentIconWhite.imageset/IC Comment 48px@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/EyeIcon.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/EyeIcon.imageset/IC Remove Red Eye 48px@2x.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/EyeIcon.imageset/IC Remove Red Eye 48px@3x.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/NextIcon.imageset/Contents.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/NextIcon.imageset/IC Navigate Next 48px.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/NextIcon.imageset/IC Navigate Next 48px@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/NextIcon.imageset/IC Navigate Next 48px@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/ImageCell.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AvanadeAIProject/ImageCell.xib" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AvanadeAIProject.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/IntroBackground.imageset/Contents.json" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/IntroBackground.imageset/Contents.json" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/ShareIcon.imageset/Contents.json" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/CommentIconWhite.imageset/Contents.json" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/ShareIcon.imageset/share ios.png" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/EyeIcon.imageset/IC Remove Red Eye 48px.1.png" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/ShareIcon.imageset/share ios@2x.png" afterPath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/CommentIconWhite.imageset/IC Comment 48px@2x.png" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Assets.xcassets/ShareIcon.imageset/share ios@3x.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/AvanadeAIProject/Base.lproj/Main.storyboard" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Detail.storyboard" afterPath="$PROJECT_DIR$/AvanadeAIProject/Detail.storyboard" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/DetailViewController.swift" afterPath="$PROJECT_DIR$/AvanadeAIProject/DetailViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/GalleryViewController.swift" afterPath="$PROJECT_DIR$/AvanadeAIProject/GalleryViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/Intro.storyboard" afterPath="$PROJECT_DIR$/AvanadeAIProject/Intro.storyboard" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/SavedViewController.swift" afterPath="$PROJECT_DIR$/AvanadeAIProject/SavedViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/AvanadeAIProject/SettingsViewController.swift" afterPath="$PROJECT_DIR$/AvanadeAIProject/SettingsViewController.swift" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/AvanadeAIProject-dbnasqsgkcslsffahmjyqotxpgkf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,12 +111,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515389331757</updated>
-      <workItem from="1515389335373" duration="632000" />
+      <workItem from="1515389335373" duration="997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="632000" />
+    <option name="totallyTimeSpent" value="997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="6" />
