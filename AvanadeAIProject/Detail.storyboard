@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +27,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Title" leftItemsSupplementBackButton="YES" id="o1R-rT-GTT">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="ShareIcon" id="s1I-vE-qFX">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="s1I-vE-qFX">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
                                     </navigationItem>
@@ -36,16 +37,57 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aev-xg-iqJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-Nf-fkW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTH-OF-sUC">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HTH-OF-sUC" secondAttribute="height" multiplier="5:2" id="h93-Rq-IJw"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HTH-OF-sUC" secondAttribute="trailing" id="mVt-Sg-Z40"/>
+                                            <constraint firstItem="HTH-OF-sUC" firstAttribute="leading" secondItem="qnE-Nf-fkW" secondAttribute="leading" id="so3-mB-PR2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qnE-Nf-fkW" firstAttribute="leading" secondItem="aev-xg-iqJ" secondAttribute="leading" id="Vfn-HD-pR2"/>
+                                    <constraint firstAttribute="bottom" secondItem="qnE-Nf-fkW" secondAttribute="bottom" id="gxC-3Y-S8E"/>
+                                    <constraint firstAttribute="trailing" secondItem="qnE-Nf-fkW" secondAttribute="trailing" id="kZj-6w-Rkm"/>
+                                    <constraint firstItem="qnE-Nf-fkW" firstAttribute="top" secondItem="aev-xg-iqJ" secondAttribute="top" id="myC-4z-f8e"/>
+                                </constraints>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqJ-jC-O5m">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="o7l-5d-7F6"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Pb0-Jq-3f2" firstAttribute="top" secondItem="xqx-Hm-58q" secondAttribute="top" id="1xk-P6-Ync"/>
+                            <constraint firstItem="IqJ-jC-O5m" firstAttribute="bottom" secondItem="z1Y-A1-YXG" secondAttribute="bottom" id="4E0-dh-cgO"/>
                             <constraint firstItem="Tir-IT-GfH" firstAttribute="top" secondItem="z1Y-A1-YXG" secondAttribute="top" id="8ux-yh-uuV"/>
+                            <constraint firstItem="aev-xg-iqJ" firstAttribute="leading" secondItem="xqx-Hm-58q" secondAttribute="leading" id="9V9-sU-NgV"/>
                             <constraint firstItem="Pb0-Jq-3f2" firstAttribute="leading" secondItem="z1Y-A1-YXG" secondAttribute="leading" id="Dxt-Ll-XL8"/>
+                            <constraint firstAttribute="trailing" secondItem="IqJ-jC-O5m" secondAttribute="trailing" id="Px1-Xz-PfR"/>
                             <constraint firstItem="Pb0-Jq-3f2" firstAttribute="top" secondItem="Tir-IT-GfH" secondAttribute="bottom" id="Wke-Kh-S85"/>
                             <constraint firstAttribute="trailing" secondItem="Tir-IT-GfH" secondAttribute="trailing" id="Z3d-RZ-wvV"/>
                             <constraint firstItem="Tir-IT-GfH" firstAttribute="leading" secondItem="z1Y-A1-YXG" secondAttribute="leading" id="dCc-Ro-3B1"/>
+                            <constraint firstItem="IqJ-jC-O5m" firstAttribute="top" secondItem="aev-xg-iqJ" secondAttribute="bottom" id="fTN-vX-Ybc"/>
                             <constraint firstItem="xqx-Hm-58q" firstAttribute="trailing" secondItem="Pb0-Jq-3f2" secondAttribute="trailing" id="jjf-eg-TeB"/>
+                            <constraint firstItem="qnE-Nf-fkW" firstAttribute="width" secondItem="aev-xg-iqJ" secondAttribute="width" id="q3d-82-iea"/>
+                            <constraint firstItem="IqJ-jC-O5m" firstAttribute="leading" secondItem="z1Y-A1-YXG" secondAttribute="leading" id="vRw-v2-mo0"/>
+                            <constraint firstAttribute="bottom" secondItem="IqJ-jC-O5m" secondAttribute="bottom" id="vqC-XZ-Jlq"/>
+                            <constraint firstItem="xqx-Hm-58q" firstAttribute="trailing" secondItem="aev-xg-iqJ" secondAttribute="trailing" id="wmL-is-ZEs"/>
+                            <constraint firstItem="aev-xg-iqJ" firstAttribute="top" secondItem="Pb0-Jq-3f2" secondAttribute="bottom" id="xLN-nr-pHL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xqx-Hm-58q"/>
                     </view>
@@ -57,7 +99,4 @@
             <point key="canvasLocation" x="-805.60000000000002" y="-317.09145427286359"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ShareIcon" width="22" height="22"/>
-    </resources>
 </document>

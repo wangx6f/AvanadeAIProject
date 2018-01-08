@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "the_starry_night-wallpaper-1440x900.jpg",
+      "filename" : "IC Navigate Next 48px.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "IC Navigate Next 48px@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "IC Navigate Next 48px@3x.png",
       "scale" : "3x"
     }
   ],
