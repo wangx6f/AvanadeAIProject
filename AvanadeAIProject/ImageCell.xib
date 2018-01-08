@@ -83,6 +83,20 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk9-M0-JC2" userLabel="VoteScoreContainer">
                                 <rect key="frame" x="247.5" y="0.0" width="247.5" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD4-fX-bwP">
+                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZD4-fX-bwP" firstAttribute="leading" secondItem="Kk9-M0-JC2" secondAttribute="leading" id="C50-bZ-Nlq"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZD4-fX-bwP" secondAttribute="bottom" id="MfI-wN-4ED"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZD4-fX-bwP" secondAttribute="trailing" constant="10" id="mPn-Lb-pON"/>
+                                    <constraint firstItem="ZD4-fX-bwP" firstAttribute="top" secondItem="Kk9-M0-JC2" secondAttribute="top" id="noh-9h-Zna"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
