@@ -22,14 +22,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onRegisterPressed(_ sender: TransitionButton) {
-        sender.startAnimation()
-        sender.stopAnimation(animationStyle: .expand, revertAfterDelay: 0) {
-            self.performSegue(withIdentifier: "goToRegisterScene", sender: self)
-        }
-    }
     
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
+    
         sender.startAnimation()
         sender.stopAnimation(animationStyle: .expand, revertAfterDelay: 0) {
             self.performSegue(withIdentifier: "goToMainScene", sender: self)

@@ -26,7 +26,11 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Saved" id="7S4-CB-DYo">
-                                        <barButtonItem key="rightBarButtonItem" title="Select" id="fz5-Ao-jqv"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Select" id="fz5-Ao-jqv">
+                                            <connections>
+                                                <segue destination="cUq-Y1-MMH" kind="show" id="w9e-g7-Geg"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -363,4 +367,7 @@
         <image name="ScanIcon" width="22" height="22"/>
         <image name="SettingIcon" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="w9e-g7-Geg"/>
+    </inferredMetricsTieBreakers>
 </document>
