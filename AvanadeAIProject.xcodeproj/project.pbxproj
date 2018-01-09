@@ -22,6 +22,7 @@
 		2551C0202001A1A400FE28C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C01E2001A1A400FE28C9 /* Main.storyboard */; };
 		2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0212001A1A400FE28C9 /* Assets.xcassets */; };
 		2551C0252001A1A400FE28C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */; };
+		256CACD720045BB000A29A79 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256CACD620045BB000A29A79 /* UIView+IBInspectable.swift */; };
 		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		2551C0212001A1A400FE28C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2551C0242001A1A400FE28C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2551C0262001A1A400FE28C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256CACD620045BB000A29A79 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF5994FD082CA22DC087ECB /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		2551C0172001A1A400FE28C9 /* AvanadeAIProject */ = {
 			isa = PBXGroup;
 			children = (
+				256CACD520045B6800A29A79 /* Extension */,
 				2546C5372001B1010099A165 /* Model */,
 				2546C5362001B0F00099A165 /* View */,
 				2546C5352001B0DE0099A165 /* Controller */,
@@ -139,6 +142,14 @@
 				2546C5382001B1070099A165 /* Supporting Files */,
 			);
 			path = AvanadeAIProject;
+			sourceTree = "<group>";
+		};
+		256CACD520045B6800A29A79 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				256CACD620045BB000A29A79 /* UIView+IBInspectable.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		363F075F0E7A2F2D58B606C0 /* Pods */ = {
@@ -297,6 +308,7 @@
 			files = (
 				2546C53F200207820099A165 /* LoginViewController.swift in Sources */,
 				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
+				256CACD720045BB000A29A79 /* UIView+IBInspectable.swift in Sources */,
 				2546C54E20030C0C0099A165 /* ImageCell.swift in Sources */,
 				2546C5472002EEEA0099A165 /* SavedViewController.swift in Sources */,
 				2551C01D2001A1A400FE28C9 /* SearchViewController.swift in Sources */,
