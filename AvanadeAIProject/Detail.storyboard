@@ -39,13 +39,13 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nxG-IN-MYM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="187.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="nxG-IN-MYM" secondAttribute="height" multiplier="5:2" id="sob-T2-p3J"/>
+                                    <constraint firstAttribute="width" secondItem="nxG-IN-MYM" secondAttribute="height" multiplier="2:1" id="sob-T2-p3J"/>
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHq-G2-3RK">
-                                <rect key="frame" x="0.0" y="214" width="375" height="409"/>
+                                <rect key="frame" x="0.0" y="251.5" width="375" height="371.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-Fm-HmA" userLabel="Info Section Container">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
@@ -53,16 +53,16 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sia-eq-v8H" userLabel="Top Container">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2C-b1-Qua" userLabel="Bookmark Button">
-                                                        <rect key="frame" x="314.5" y="0.0" width="42.5" height="43"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2C-b1-Qua" userLabel="Bookmark Button">
+                                                        <rect key="frame" x="323" y="5" width="34" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="l2C-b1-Qua" secondAttribute="height" multiplier="1:1" id="Kyx-kj-Df8"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                        <state key="normal" image="BookmarkIconRed"/>
+                                                        <color key="tintColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="BookmarkIcon"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTHOR NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waD-y8-bBw" userLabel="Author Label">
-                                                        <rect key="frame" x="24.5" y="0.0" width="290" height="21.5"/>
+                                                        <rect key="frame" x="24.5" y="0.0" width="298.5" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -81,9 +81,7 @@
                                                     </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="l2C-b1-Qua" firstAttribute="top" secondItem="Sia-eq-v8H" secondAttribute="top" id="16i-iw-SPZ"/>
                                                     <constraint firstItem="l2C-b1-Qua" firstAttribute="centerY" secondItem="Sia-eq-v8H" secondAttribute="centerY" id="5BH-DP-qZd"/>
-                                                    <constraint firstAttribute="bottom" secondItem="l2C-b1-Qua" secondAttribute="bottom" id="ClR-tW-TPj"/>
                                                     <constraint firstItem="waD-y8-bBw" firstAttribute="top" secondItem="Sia-eq-v8H" secondAttribute="top" id="LbR-b5-cHo"/>
                                                     <constraint firstItem="GMB-8o-cYZ" firstAttribute="top" secondItem="waD-y8-bBw" secondAttribute="bottom" id="Qqh-rg-9cD"/>
                                                     <constraint firstItem="kCy-ko-Bsx" firstAttribute="leading" secondItem="GMB-8o-cYZ" secondAttribute="trailing" constant="10" id="REb-wt-HyH"/>
@@ -91,6 +89,7 @@
                                                     <constraint firstItem="GMB-8o-cYZ" firstAttribute="height" secondItem="waD-y8-bBw" secondAttribute="height" id="ck5-xX-qSw"/>
                                                     <constraint firstAttribute="bottom" secondItem="GMB-8o-cYZ" secondAttribute="bottom" id="s8S-IM-hqa"/>
                                                     <constraint firstAttribute="bottom" secondItem="kCy-ko-Bsx" secondAttribute="bottom" id="ur4-qf-IsJ"/>
+                                                    <constraint firstItem="l2C-b1-Qua" firstAttribute="height" secondItem="Sia-eq-v8H" secondAttribute="height" multiplier="0.8" id="vLE-98-g3P"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwT-cY-h06" userLabel="Bottom Conatiner">
@@ -172,13 +171,22 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTM-op-o5q">
+                                        <rect key="frame" x="170.5" y="171" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="back:" destination="VMX-hg-cbH" eventType="touchUpInside" id="UgZ-Ma-reJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="JTM-op-o5q" firstAttribute="centerY" secondItem="cHq-G2-3RK" secondAttribute="centerY" id="8g6-30-e0j"/>
                                     <constraint firstItem="mwM-lE-wst" firstAttribute="leading" secondItem="nor-Dc-bG0" secondAttribute="leading" id="AWu-yT-2Bh"/>
                                     <constraint firstItem="mwM-lE-wst" firstAttribute="top" secondItem="kwt-LO-fB7" secondAttribute="bottom" id="Heh-Q5-B1n"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="leading" secondItem="nor-Dc-bG0" secondAttribute="leading" id="Ioh-jd-Mgp"/>
                                     <constraint firstAttribute="bottom" secondItem="oDM-Fm-HmA" secondAttribute="bottom" id="KOc-DJ-WpW"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="trailing" secondItem="nor-Dc-bG0" secondAttribute="trailing" id="QfZ-Ho-nBB"/>
+                                    <constraint firstItem="JTM-op-o5q" firstAttribute="centerX" secondItem="cHq-G2-3RK" secondAttribute="centerX" id="Zsr-3n-94k"/>
                                     <constraint firstItem="oDM-Fm-HmA" firstAttribute="leading" secondItem="cHq-G2-3RK" secondAttribute="leading" id="cxS-rc-YG4"/>
                                     <constraint firstItem="oDM-Fm-HmA" firstAttribute="width" secondItem="cHq-G2-3RK" secondAttribute="width" id="j9z-8y-fb9"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="top" secondItem="oDM-Fm-HmA" secondAttribute="bottom" id="krc-Ob-VM9"/>
@@ -215,11 +223,12 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
-                                                <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0I-VQ-LLc">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0I-VQ-LLc">
                                                     <rect key="frame" x="310" y="0.0" width="33" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="l0I-VQ-LLc" secondAttribute="height" multiplier="1:1" id="lLD-9Y-lLQ"/>
                                                     </constraints>
+                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" image="CommentIcon"/>
                                                 </button>
                                             </subviews>
@@ -278,7 +287,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BookmarkIconRed" width="40" height="40"/>
+        <image name="BookmarkIcon" width="25" height="25"/>
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
 </document>

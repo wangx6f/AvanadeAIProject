@@ -26,11 +26,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Saved" id="7S4-CB-DYo">
-                                        <barButtonItem key="rightBarButtonItem" title="Select" id="fz5-Ao-jqv">
-                                            <connections>
-                                                <segue destination="cUq-Y1-MMH" kind="show" id="w9e-g7-Geg"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Select" id="fz5-Ao-jqv"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -341,23 +337,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY4-pz-01P">
+                                <rect key="frame" x="167.5" y="318.5" width="40" height="30"/>
+                                <state key="normal" title="Detail"/>
+                                <connections>
+                                    <segue destination="cUq-Y1-MMH" kind="show" id="doo-eq-a0P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="4tZ-F1-5DT"/>
+                            <constraint firstItem="wY4-pz-01P" firstAttribute="centerY" secondItem="vmz-i7-67N" secondAttribute="centerY" id="DzF-5W-FtF"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" constant="-44" id="EhL-GU-R1Z"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="trailing" secondItem="UrB-Xr-GiR" secondAttribute="trailing" id="Wyq-ec-QbG"/>
                             <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="545-Hq-mmR" secondAttribute="trailing" id="Y3E-23-vIF"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="eAL-c3-TDs"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="UrB-Xr-GiR" secondAttribute="top" id="eu4-th-IGK"/>
+                            <constraint firstItem="wY4-pz-01P" firstAttribute="centerX" secondItem="vmz-i7-67N" secondAttribute="centerX" id="s1g-LK-ldT"/>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="top" secondItem="vmz-i7-67N" secondAttribute="top" id="u9d-T9-ZYH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UrB-Xr-GiR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gallery" image="GalleryIcon" selectedImage="GalleryIcon" id="K0Y-6W-FSy"/>
-                    <connections>
-                        <segue destination="cUq-Y1-MMH" kind="show" identifier="goToDetail" id="Blt-29-aN2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSZ-gK-JKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,7 +374,4 @@
         <image name="ScanIcon" width="22" height="22"/>
         <image name="SettingIcon" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="w9e-g7-Geg"/>
-    </inferredMetricsTieBreakers>
 </document>
