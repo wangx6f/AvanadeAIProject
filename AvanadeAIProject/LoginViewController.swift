@@ -31,10 +31,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        self.view.endEditing(true)  //handle the dismiss of keyboard when anywhere outside the textfileds is touched
-    }
     
     // TODO: actions for keyboard 'return' pressed
 
