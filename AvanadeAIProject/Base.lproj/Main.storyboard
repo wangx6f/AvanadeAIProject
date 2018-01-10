@@ -337,29 +337,42 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY4-pz-01P">
-                                <rect key="frame" x="167.5" y="318.5" width="40" height="30"/>
-                                <state key="normal" title="Detail"/>
-                                <connections>
-                                    <segue destination="cUq-Y1-MMH" kind="show" id="doo-eq-a0P"/>
-                                </connections>
-                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-es-6kf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="fIj-Ng-nL5" customClass="CHTCollectionViewWaterfallLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="defaultCell" id="jGV-z2-Qxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="4tZ-F1-5DT"/>
-                            <constraint firstItem="wY4-pz-01P" firstAttribute="centerY" secondItem="vmz-i7-67N" secondAttribute="centerY" id="DzF-5W-FtF"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" constant="-44" id="EhL-GU-R1Z"/>
+                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="bottom" secondItem="hcW-es-6kf" secondAttribute="bottom" id="Fdl-DD-NTB"/>
+                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="hcW-es-6kf" secondAttribute="trailing" id="J6X-XN-65J"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="trailing" secondItem="UrB-Xr-GiR" secondAttribute="trailing" id="Wyq-ec-QbG"/>
                             <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="545-Hq-mmR" secondAttribute="trailing" id="Y3E-23-vIF"/>
+                            <constraint firstItem="hcW-es-6kf" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="bbl-Mj-XW2"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="eAL-c3-TDs"/>
                             <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="UrB-Xr-GiR" secondAttribute="top" id="eu4-th-IGK"/>
-                            <constraint firstItem="wY4-pz-01P" firstAttribute="centerX" secondItem="vmz-i7-67N" secondAttribute="centerX" id="s1g-LK-ldT"/>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="top" secondItem="vmz-i7-67N" secondAttribute="top" id="u9d-T9-ZYH"/>
+                            <constraint firstItem="hcW-es-6kf" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" id="zzg-kV-flh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UrB-Xr-GiR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gallery" image="GalleryIcon" selectedImage="GalleryIcon" id="K0Y-6W-FSy"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hcW-es-6kf" id="oZN-Kj-08Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSZ-gK-JKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,5 +12,6 @@ target 'AvanadeAIProject' do
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'TransitionButton'
   pod 'UIImageViewAlignedSwift'
+  pod 'CHTCollectionViewWaterfallLayout'
 
 end

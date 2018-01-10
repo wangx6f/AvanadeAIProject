@@ -102,12 +102,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/UIImageViewAlignedSwift/UIImageViewAlignedSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework"
