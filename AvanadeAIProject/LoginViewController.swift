@@ -25,10 +25,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
     
-        sender.startAnimation()
-        sender.stopAnimation(animationStyle: .expand, revertAfterDelay: 0) {
-            self.performSegue(withIdentifier: "goToMainScene", sender: self)
-        }
+        performSegue(withIdentifier: "goToMainScene", sender: self)
     }
     
     

@@ -7,319 +7,332 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E6328C20E10927A7B048FCC69A946A /* MSTableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FE46F686FF27751203337803D1765618 /* MSTableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03376DBC60BBCF2F559054DA5A5C11EE /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1339D8CF18AF90C8807481F6C63A8866 /* MSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04371A1E29EC87D4CE7BDC48474A712E /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA49B30AACE9B12881F7443D5F9829 /* FadeTransition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		04BE3C44F0CD415B8D9BF7493C746A77 /* MSConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE3043C466CA07252BD78BE744515F9 /* MSConnectionDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		071895565EFA10C4B516DAD546D24D63 /* MSTableRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC589E564D46DED315BCF43C08D588F /* MSTableRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		07CFBD7AEF6427FF1EA332C95A198E39 /* MSInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C28255746C56A110806900DF89F1C8 /* MSInstallation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0AE08A86947878E23EC7BCA23FEF5B8B /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6683381157237B752E3A8AE7F1BA2419 /* MSAuthState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0CEA3BABBB0C79A681769FC4C25EDFAF /* MSTableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0AF250A9ED317871F9DC8566774983 /* MSTableRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0D5277D2D053465F603DBACAAF5E231B /* MSSyncContextInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 597400F1DEDF56697B74CE59D7E82AFA /* MSSyncContextInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0FEF3E0A617E52A48755244B69923F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
-		107C2518189656F9575FEA7E993A3F30 /* MSTableConfigValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D88A8841772E4D5FC4745A93AA2C998 /* MSTableConfigValue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1176E40715D30D9E1BBAABC714DA049C /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB71B35DC8FB70835DD223B77A767D8 /* MSPullSettingsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		11CBCE9C5C394278B54641291C5C47C7 /* MSPushRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 483659AC4B375EDB997FA9540D4EF620 /* MSPushRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		130CBF234088DEE087822F4F098276ED /* MSLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = D551D29659DC3B7B1C2FC2A385C7457D /* MSLogin.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		13274F665A41FDE3014780A0E3A4D75A /* MSInstallationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DB38E85E800A203B819352E3C240D /* MSInstallationTemplate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		15EBB8E322D48CB4255B6F1BBD96F02C /* MSQueuePullOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDB3F2A41FC80F3B713F2B2C83F997F /* MSQueuePullOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		198D2E30434B976369C01BFB188EB28F /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCBEAFDED60CBB740B996C0AC710C6 /* SkyFloatingLabelTextField-dummy.m */; };
-		20ADCD686837F46AA101C84AE3B09CBD /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA39A186C510D94B737011E6784545 /* CustomTransitionViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		25BE4156088282678C827E8C0433404A /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0331CC70D1D3795743077993F16DDC05 /* MSJSONSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		278E80BEE47282D987B3E428547CB987 /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FE86BA6254A68937A70D12288EF369 /* MSUserAgentBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28135650092420226A7CD86F29B6BE6D /* MSQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C21F008633A04D1F74D09880F8124 /* MSQuery.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2A063C70698BEAD5610B69F6B44AF9E4 /* MSSyncContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 778DE7CC88298544941281FA5F239F95 /* MSSyncContext.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2A6050D4186C7832FE172F55C8734F13 /* MSPullSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B81CF7A5BC36A1F7ABAFA66FF5693FB /* MSPullSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3012CC4A4181005C2C30F32CC6AB9AA9 /* MSQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B6368D9270FB7183E3185DFC4DADED /* MSQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30C391775A9EBDD0F358E41A9095B273 /* MSTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB228BE72C20C019F47B802719B6675 /* MSTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3324CE8E23675AFD402259AD91E89DD7 /* MSSyncContextReadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A15FA98DD55B563685991197E58E6D5 /* MSSyncContextReadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38A93243125CD53E1D77F207F29F2048 /* MSTableConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B37FB7A0EA9E6DFD5686D7CCC34D67 /* MSTableConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3B0E8411ADCCA6F267D71D192FD70972 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4F7A79FF8B7E7EF98833CF9F84037 /* UITextField+fixCaretPosition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3B146A1EE14063A8956DA04623198D4C /* MicrosoftAzureMobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 864BBC8D588927EBE8E09CB2C3C8C10E /* MicrosoftAzureMobile-dummy.m */; };
-		4204EBD98024EBD7054916BAB3409C27 /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ECB5345F15C2CE892DB95F8AD32F3E9 /* MSDateOffset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		440030D401BBBFD1E4BF99440113722D /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A283D30EF5D536829A75877CA23321F /* MSAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		44D0A5B46284089889D7356B68EBBE4D /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A380D9EAE1B715F9C6145E51BF158BD3 /* MSFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44DAEEDD8F51E9FDF2E1BE6717D2E61A /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F94E34708F1028310E3147D25800FCC2 /* MSJSONSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		45380B8D025C58D4D80837E8A9B64ED5 /* MSSyncTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B35FFB3C25142967E39C7051C5664 /* MSSyncTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4EFF00DB3F3A8486A96C365DA8E55690 /* MSLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F54A067B78548CCBBBCD3797F7E589F /* MSLogin.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		50B47CBE9B5B97B05F8F4F4A8551EC94 /* MSConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2FCB2D6AAE025373D9719C85ED15DA /* MSConnectionDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5448F18D9375E40E8775CFF6F08D026F /* MSClientInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C92FE44536576793B36EBDE34426A12 /* MSClientInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		54570F4891D4D7FB8543645812F0D081 /* MSCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9B9BACD71520C39B1B6AD6AA07A15 /* MSCoreDataStore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5598DDB43FDAFD45D67C13DE165AB5CE /* MSManagedObjectObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB231361CCA8D15CEE2FFDEA73CA12E /* MSManagedObjectObserver.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		57C8FC81B74886E163EE73AC14490906 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CCB28BF90631DAEA9D671F49CFDD4D /* SkyFloatingLabelTextFieldWithIcon.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5BA27412EEAF0E4819E47BA2B5E068D0 /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE9408DABBD9A4657505EA46B0D24239 /* MSURLBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5C4D66B27EAE5F04EDECF1A6E1C85F03 /* MSSyncTable.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E66C8C4D9002DE42F59CA02C5D26B7 /* MSSyncTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		603ED1E8A0266C3877308C4EB644C78D /* MicrosoftAzureMobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6495DF4B1AC6AED32F63E137DFA9F124 /* MicrosoftAzureMobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63A23AA3BC4DA0452DCC8CA14D012E66 /* MSLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4E941058F867D9F4AB0AA20A785159A /* MSLoginView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		64298614E8017DA9DEC3118496248984 /* MSInstallationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = AD41DE928F2E4B53EA162F419578A4B8 /* MSInstallationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		652E5092C9B9631C1E24868F39F8B7D8 /* MSQueryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = C984C03DC097301B7006ADB67A09F47F /* MSQueryResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67B5D6CF4B94182342B38F7D8EFB49B1 /* MSSDKFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = 91765BF2A6387C3983927147AEFD9F5A /* MSSDKFeatures.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6995492182A917E7ED4BFD0477E40F89 /* Pods-AvanadeAIProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */; };
-		6C27EAAC0C492A14EA4C519384650462 /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 37751FD544DE44648C050CCF2CD66CFF /* MSLoginSafariViewControllerUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6CE4F91C6170C8F4AB26A7B290925ED3 /* MSCoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 1963D95E9D5B500D6BEB7B81FEE7B4CC /* MSCoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D32164632AACF96C8B11FA8507941C5 /* MSTableConfigValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8A14BAA241A0F37891325C10162658 /* MSTableConfigValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00F2480CF7B20D965CE5D4F95AE1FB13 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAA07EB2F86BAB8CB336FF671EAA19 /* SkyFloatingLabelTextField.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		01E6328C20E10927A7B048FCC69A946A /* MSTableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F364DA81BFB73512C843C1488DCD7F /* MSTableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03376DBC60BBCF2F559054DA5A5C11EE /* MSUser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7EB747A13A8D6F1DAB10283D3B1B97 /* MSUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04BE3C44F0CD415B8D9BF7493C746A77 /* MSConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DA1322C1CE6BD06C4AE4A82FC493E7 /* MSConnectionDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		071895565EFA10C4B516DAD546D24D63 /* MSTableRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C95B1E645836AAC70B48919D0D20B35B /* MSTableRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07CFBD7AEF6427FF1EA332C95A198E39 /* MSInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = D665D10DA5F78313DE439B31B20D62BF /* MSInstallation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0AE08A86947878E23EC7BCA23FEF5B8B /* MSAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F577CF480867857C0043D13B3C67F1 /* MSAuthState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0CEA3BABBB0C79A681769FC4C25EDFAF /* MSTableRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD54642A862204857C39879808118064 /* MSTableRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D5277D2D053465F603DBACAAF5E231B /* MSSyncContextInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F77EAF80E7AC6A4F8F7FC6138DD6AE42 /* MSSyncContextInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		107C2518189656F9575FEA7E993A3F30 /* MSTableConfigValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CC386344D330926BFDC6B6E18943C /* MSTableConfigValue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1176E40715D30D9E1BBAABC714DA049C /* MSPullSettingsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AEB50B77E7EED7C7985C051C420AC9 /* MSPullSettingsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11CBCE9C5C394278B54641291C5C47C7 /* MSPushRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CE446736A0B7355FBE93F9A90D51364 /* MSPushRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		130CBF234088DEE087822F4F098276ED /* MSLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 866107977D7EE63BB01CCD6550D48407 /* MSLogin.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		13274F665A41FDE3014780A0E3A4D75A /* MSInstallationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D7DE8988B81E256DC85BF7C4EAA350 /* MSInstallationTemplate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15EBB8E322D48CB4255B6F1BBD96F02C /* MSQueuePullOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2131BDEDC5522ED1A75F4C9BD5AC6087 /* MSQueuePullOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		22D8548C21744F829020B385578225B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		25BE4156088282678C827E8C0433404A /* MSJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BD134853BB570E472475C1FF3495E5B2 /* MSJSONSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		278E80BEE47282D987B3E428547CB987 /* MSUserAgentBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E808681D07579A4BC0DB392DB7009EC /* MSUserAgentBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28135650092420226A7CD86F29B6BE6D /* MSQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C68FD916A8D6A17C9F5D79172F8E37D5 /* MSQuery.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A063C70698BEAD5610B69F6B44AF9E4 /* MSSyncContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C1BD73C3CB4CFE0BEE12578D061F91 /* MSSyncContext.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2A6050D4186C7832FE172F55C8734F13 /* MSPullSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA60E72B001473906F8CC21E84C92AC /* MSPullSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3012CC4A4181005C2C30F32CC6AB9AA9 /* MSQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA0B1BBD21EFA2D559C9703A231036B /* MSQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C391775A9EBDD0F358E41A9095B273 /* MSTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3B5D31C33D6458D630D8EB5E76F776 /* MSTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3324CE8E23675AFD402259AD91E89DD7 /* MSSyncContextReadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D7518591C0BFD99BE71DC715C29B7B /* MSSyncContextReadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38A93243125CD53E1D77F207F29F2048 /* MSTableConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 34282D5782613AA18A555CDAF568E202 /* MSTableConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B146A1EE14063A8956DA04623198D4C /* MicrosoftAzureMobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8515F626AF7D1849922D6C266D0B3FB /* MicrosoftAzureMobile-dummy.m */; };
+		4204EBD98024EBD7054916BAB3409C27 /* MSDateOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E895D9EEE97D95B44A372062D9CCEF /* MSDateOffset.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		440030D401BBBFD1E4BF99440113722D /* MSAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6430C7104B1DE48B8C4CC2DD370705B2 /* MSAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44D0A5B46284089889D7356B68EBBE4D /* MSFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5847B83AC7DE00E00FE5AFC153B9F772 /* MSFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44DAEEDD8F51E9FDF2E1BE6717D2E61A /* MSJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = EED914377B90CA9727F91B81FE7E9715 /* MSJSONSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45380B8D025C58D4D80837E8A9B64ED5 /* MSSyncTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CA8B16F206AF3ADFCE4E9CB229DFAF /* MSSyncTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4A9CB0C4EA5DE593C33C54698D76C965 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB13D545007D5DB473FD85C752FF7A /* SkyFloatingLabelTextField-dummy.m */; };
+		4EFF00DB3F3A8486A96C365DA8E55690 /* MSLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4DAA8C2E5BEF88488308F15F9BFEB2 /* MSLogin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50B47CBE9B5B97B05F8F4F4A8551EC94 /* MSConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 780444E0519151415AEC94FC5A545A49 /* MSConnectionDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5448F18D9375E40E8775CFF6F08D026F /* MSClientInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7EC0B190563C980470E0ED4AC62A6A /* MSClientInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54570F4891D4D7FB8543645812F0D081 /* MSCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB4AC752A116DC8E64271A36D821C42 /* MSCoreDataStore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5598DDB43FDAFD45D67C13DE165AB5CE /* MSManagedObjectObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A0C464D84B3B2D09CFAF8F1EE67F79 /* MSManagedObjectObserver.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		55D6843A9EF5EB3E0989DB19048BD72F /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 429EF4CE180FC875B85AEE3F8306B95D /* TransitionButton-dummy.m */; };
+		5BA27412EEAF0E4819E47BA2B5E068D0 /* MSURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F9268CDB6ACFD15EDB3E8EFE465B34A1 /* MSURLBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BCBBE40FE206AA61852300CEEB52981 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EE40136D61AC2A9BC258B22D394154 /* TransitionButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C4D66B27EAE5F04EDECF1A6E1C85F03 /* MSSyncTable.h in Headers */ = {isa = PBXBuildFile; fileRef = F8759704519383E6E1B35340504FE66E /* MSSyncTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ECB08FC66786A062F384C1019E86508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		603ED1E8A0266C3877308C4EB644C78D /* MicrosoftAzureMobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF23D158E1FE2EFF2712E9FCE5C67D3 /* MicrosoftAzureMobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A23AA3BC4DA0452DCC8CA14D012E66 /* MSLoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = F15CB98F1CDF3EBB456512C92475719D /* MSLoginView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64298614E8017DA9DEC3118496248984 /* MSInstallationTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0661999F9EA105A56B7ED344955A0FC4 /* MSInstallationTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		652E5092C9B9631C1E24868F39F8B7D8 /* MSQueryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC8E3B1CC0153C821508CC145749B4A /* MSQueryResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B5D6CF4B94182342B38F7D8EFB49B1 /* MSSDKFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD294BC02640A708706F22D0ABB9925 /* MSSDKFeatures.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6A64690AD770D84CA61918CDDAFD14BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		6C27EAAC0C492A14EA4C519384650462 /* MSLoginSafariViewControllerUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E8653104696C25ED5E9C9B4B7A731E96 /* MSLoginSafariViewControllerUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CE4F91C6170C8F4AB26A7B290925ED3 /* MSCoreDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFF96369B990857AA393AA33D30235D /* MSCoreDataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D32164632AACF96C8B11FA8507941C5 /* MSTableConfigValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F650A080747CB15FF6469437845BD9 /* MSTableConfigValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E083C5B8254BAA3C623A18C860A7B3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
-		6E1708444F5348931FFD5B7644E5638D /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E6120CDFE6C7546453D2B0DA261D6ECC /* MSConnectionConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6F7A3E475B8F792ECAF66F5FE21A375A /* NSURLSessionTask+Completion.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E3853C014DBE5BA8C7F97E550EBC22 /* NSURLSessionTask+Completion.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		701D5EBF37FF897BB1EB5794A18DB51F /* MSTableOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F06462BBECA7A57DA63A828A09A7B9 /* MSTableOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E1708444F5348931FFD5B7644E5638D /* MSConnectionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A245ABC80FEDFD29564F325DDAAAA017 /* MSConnectionConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6F7A3E475B8F792ECAF66F5FE21A375A /* NSURLSessionTask+Completion.h in Headers */ = {isa = PBXBuildFile; fileRef = 027344875B463D6AD9E909B808938FF4 /* NSURLSessionTask+Completion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		701D5EBF37FF897BB1EB5794A18DB51F /* MSTableOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A17F7425DCE716D083702D090CC75E /* MSTableOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71C0F98AB55858CE03BFD73AB1498025 /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E33E6648E750A3973110A3FA6A40332C /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71FFA1346094A7BE535B084606B53493 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB14A55D4DB30C8D98DB7528D9807F4 /* WebKit.framework */; };
-		7380B8E0662CD558049FFA52B82F32B4 /* MSQueryInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D732107F873EA82301FE88E618F4FC92 /* MSQueryInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		760AAF9015312161C4376DFB1FC31790 /* MicrosoftAzureMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 282026CA1EA28AD7CF9FFE48E6992337 /* MicrosoftAzureMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		775ADC3E7F305193653774760B116CE4 /* MSTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDC9692A56640CDA6D06CC8B8C86AFA /* MSTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		79617F4B0FEC733E517C7228D8153798 /* MSQueuePurgeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9CDC171E3CF5EA7FAB96D77DB31FD2 /* MSQueuePurgeOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		79CDAFEC73BD1BEF182EFE131FD7A17A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */; };
-		7B25A96E2F26DF766A2A7571A5C5BE14 /* MSQueuePushOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5764E07924C1D04726E98F4A7B040BC7 /* MSQueuePushOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7E630D69F31CBE4B6C63DEFA3A6EB3A5 /* MSInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A53C9FA2E6A956CD701D3761387E2E /* MSInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F7A5FEA5F1A0518FE81A99C53A4C58D /* MSAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4182CBD1DB2C8DF4D6093ADFBE72B05 /* MSAPIRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8143F9390D8C3873818F06A19197135D /* MSAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AE644C4229DDC18D3075BEF300753EC6 /* MSAPIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		826441E576A40B00F0DCC6E55A956D6C /* MSNaiveISODateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ECC1C940F7F8DAA5D34156DB3E71CF /* MSNaiveISODateFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		839802458F32EC7561BFCACF9ABEA981 /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FAA3520C7611B7FC734848B809D104 /* MSClientConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		84B94DD35A9D962C460D6FBF9290B560 /* MSPushRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D15BC540541811116C44622CCA0E7E /* MSPushRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		85AA12033FCED498F18C8BDEE393749D /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 81225CA738A44783C3B62D96F075E8E2 /* MSLoginSafariViewControllerUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		864DE1104D65E2413C3B18FD0DB1794C /* MSManagedObjectObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 683CC9406C075904B02A2F0A57489019 /* MSManagedObjectObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BF745074E361D9729BBD2F91E0850AE /* MSPushConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0718D00E6A1F77495BA98F5CEFB353 /* MSPushConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8F7A66B7ADCC362C507DFD638122BAEA /* MSTableOperationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DEF77B2E3C06BB3C0984F56DF77CCE /* MSTableOperationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9209B3451742246599DACFE77A712494 /* MSPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F16895058DFDC9BEC6A6F00B5538CBE /* MSPush.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		939B24A7AEF5F2529C20137758AD995E /* MSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC095018E53D7F56D9341B81BA4BC31 /* MSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		941CFA8EFFEE65C82C061CA4565678F6 /* MSQueuePullOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24577F830FD072873CA032846C176890 /* MSQueuePullOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		94A15F2619BB7B278BB9971A2607B9C6 /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D07D533E76526CC47F8ED3C7CC66960 /* MSURLBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9550508E734C267F9F16BF8185D32645 /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3169DB4E4F0C105E2ACFDEF9A9573D /* MSUser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9609951FC77077E0320B576FA12CCDBD /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A51B122CECCFD53287413BF2E28084 /* MSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98BEE1B79FBDEACB05A70C35AFF45072 /* MSOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D40D6FE30E9249E4EFBDC2E25E26B73 /* MSOperationQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9BCC6B45DFDBBA29322B41F8FA5B9D1E /* MSQueuePullOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 597326ECA18C66C945AD33D2B0986A28 /* MSQueuePullOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9D0A39F94F0F9D17AE9118B638767EC4 /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = B93EC0D5BC31A60FEB399E1624BA3913 /* MSSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9DE844255DBAB564609DB4E3778CF83B /* MSPullSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE030137665B3ACCD103530099E64AE /* MSPullSettings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9E32E3596102B938978C2DEC04F98F2A /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734AE6EAD5F032E912C1916BF8E13750 /* SpinerLayer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A222B11FB5329CD07ABA6596B0EEBEF2 /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 980EE024AA6FD47D744D36BB707A4FC0 /* MSDateOffset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A52BF70429060B8980F45EB63799D0EA /* MSSDKFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = A261FC034D6A57719D82280C2D7D1971 /* MSSDKFeatures.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A557671955E6812027E850628D78BCE1 /* MSQueuePurgeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 76290673AD1684AA20EAB6E31E3F361F /* MSQueuePurgeOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A5CBD733CC425330F11A2D115D4D6E4B /* MSQueuePushOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA61F79722D49F2290431399B047249 /* MSQueuePushOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A7A35A07D08A133A1DDEC163A1226C95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
-		A86A89E03A25EAB168C87D4E018EF4A2 /* TransitionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA09C9CBFEF71184261361FC02EA0855 /* TransitionButton-dummy.m */; };
-		AD228586780613942FE6BE7DE47456EE /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EE686006A76F462BA9DA38B0DB62A410 /* MSClientConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AEA95ABF48DC1544E43EBA2CF25C803D /* MSPushConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D9A2BAD5B520DA7EDC0BB8DB477F4E /* MSPushConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B10E3F853C47F43FB9593CA123A4AE07 /* MSNaiveISODateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C575CBBA9EE16CCDD100F7492BE4B49 /* MSNaiveISODateFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B44AB59B162AB1B995D0020177C051DB /* MSQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E061C4270087C4C6DDDA40EA52137 /* MSQueryResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B4B6B9DA5943B409FBA2089BEEAAE95C /* MSOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CEAD7C0B42D0155CE7413EA6E028BDC2 /* MSOperationQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B5B2F71627986F6956F60F1983D1D824 /* MSLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 877C9FFC82A3303165BDB82BB4EF0978 /* MSLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA6CB135D6F073E84F56DCCCE5979577 /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D8C0F1C489090BA07C777019B0E668 /* MSConnectionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBF0FDE2C9B615A11E9AE46B42213010 /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6D08EE9C5A222676195CE8A154EE0 /* TransitionButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BDB1E377A2E354D7C9A81F588786FA59 /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = A62D4849A1B4B0AEF4E0A4F0415652D7 /* MSError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C5B68ABBDA60CC43963F75B4DD202908 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022256CFAF27A93DADEEF69FAB157DB1 /* CGRectExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C9347002AEA0AF8DA172638076298E31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
-		CC985C49276538D627995988741A2ADC /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762CB95BB5987435BA4D9E914C772330 /* SkyFloatingLabelTextField.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CD7D6925744A154E91D9634B0726C04F /* MSAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D0833E2719B7FAABED819691A9C966 /* MSAPIConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CDC82A651AC986ACB40CBB16E4F6B536 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF86E062F1B9E552778D878AAF669FE /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D05E4CCFC71FD58CF4BD1F316AE36B94 /* MSSyncContextReadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F907B51E1EE8103A40EBCF3FE70877D6 /* MSSyncContextReadResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D1BAD8DC442410A9F8306038B34607E5 /* MSPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0F2F43B31A542068B07D0762113D2C /* MSPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1DA5B76FC0DF9D7EF206C2D91E9DE58 /* MSPredicateTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = A317B5D6DF564469F3E7FEE7EDC97EB1 /* MSPredicateTranslator.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D37EAFCBEB4608EAB9C3A94A66157617 /* Pods-AvanadeAIProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D40B5A41C991E32667CFC35A586426D0 /* MSSyncContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F579587385CEA3B53C88BE9F0FFA34E /* MSSyncContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA397E51528178CD82538CB1E69FE71A /* MSTableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F42A56F8B6CE0B17EE6509777E83297 /* MSTableOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DCD5261C20A9C97F1D2CBBE68E353346 /* MSLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9FABF7FF8B1CE096830DB3CF3723D2 /* MSLoginController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DD229060F2E0146C53940F3071F198FC /* MSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2A94C21C908A3BE57A692BBFBC7D8 /* MSLoginView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DF6AF2266A809E3F4090C1DD328BE50A /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013506D6978ACFD7965BD1D56FAD7BDE /* MSLoginSafariViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E0EA50C8177BCF46882D6391A18EC183 /* MSPredicateTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D10297B1101A936118D03D8D388DA50 /* MSPredicateTranslator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E550BFC265C9FB5692EB5B78CCF854EF /* MSTableConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B419894B3E9963D2EBA201A21229640E /* MSTableConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E576F5CAD16B6A28377B640ECE511534 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DA270E3E002D0C016AE2107491FD5 /* MSUserAgentBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E657C4B29B4A6C780AC446A330657FB1 /* MSTableInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4706E6153189B8D5820B2792563E433D /* MSTableInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E7D77E2D7B56A4C79839094BE7094E93 /* MSTableOperationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F30F7244AF6A46E7045D75561C8761 /* MSTableOperationError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EB172CBE167EA251DBA1A45DCC57BD55 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA6C63275EE99A5FA87E478948E6128A /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE9EFA8420BC6BBBE09CE6DAD8B3EAB1 /* MSAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 660A704C382F937FB0E02F5A8A2C3DDF /* MSAPIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F4B3604643121DF762D39070DAA668CF /* TransitionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE09609035E1967373B97E8B72591F4 /* TransitionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7909B528A6278FC355D7477B3E0A7E6 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA9A8499E0B15F31EF5D4BA3387B529 /* MSLoginSafariViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F941E3456E81D696D5A5F298499E6CBB /* MSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2191AD40E95E2F0E81A74E27F670A69F /* MSClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FD47B7F807A5FFB8EEAA5E79A9FD2748 /* MSLoginSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4378549334AA5640D7484F7FB154C8 /* MSLoginSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FF864B14C7CDEB89A4CAA4D8CC87FF9D /* MSLoginSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B55664EDA5512E19A82B1CD2672C809 /* MSLoginSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7380B8E0662CD558049FFA52B82F32B4 /* MSQueryInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B8738753EE8EDD6B8593DA39F7E4CCCC /* MSQueryInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		760AAF9015312161C4376DFB1FC31790 /* MicrosoftAzureMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E7445A7678A33C1A6584976C55461F /* MicrosoftAzureMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775ADC3E7F305193653774760B116CE4 /* MSTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C2A4CD935D80543BF0A34840A6D81 /* MSTable.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79617F4B0FEC733E517C7228D8153798 /* MSQueuePurgeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEC4D1D9FA1FFA7C54CAB652ABF62BD /* MSQueuePurgeOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B25A96E2F26DF766A2A7571A5C5BE14 /* MSQueuePushOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F56F8A7EC2EE30D0CAA70AC782A87B /* MSQueuePushOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF286843F5D10D6B8EEBAB1CE4253CF /* UIImageViewAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6869E5E2DCA145D7B9D507A6360C4A9C /* UIImageViewAligned.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7E630D69F31CBE4B6C63DEFA3A6EB3A5 /* MSInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB49B9C0CD89419AF0699A1894D1236 /* MSInstallation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F7A5FEA5F1A0518FE81A99C53A4C58D /* MSAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B79B4C4C694966B08B1615342211062C /* MSAPIRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8143F9390D8C3873818F06A19197135D /* MSAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D56BFCE837D26F62F0BD45726F69DC8D /* MSAPIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		826441E576A40B00F0DCC6E55A956D6C /* MSNaiveISODateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC24D2567F7C417864066C46DA5E2E /* MSNaiveISODateFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		839802458F32EC7561BFCACF9ABEA981 /* MSClientConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F465174BE0292BA111FAF74252247ACE /* MSClientConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84B94DD35A9D962C460D6FBF9290B560 /* MSPushRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DE35780E14251823CADBFF8464E526CF /* MSPushRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85AA12033FCED498F18C8BDEE393749D /* MSLoginSafariViewControllerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B4AE22A78D122E17A01970A2229C25 /* MSLoginSafariViewControllerUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		864DE1104D65E2413C3B18FD0DB1794C /* MSManagedObjectObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E326666065AF5E45D2D6B7AB621A83F7 /* MSManagedObjectObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF745074E361D9729BBD2F91E0850AE /* MSPushConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF2D7B7E9247FD247990C6A3BD6F72 /* MSPushConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8F7A66B7ADCC362C507DFD638122BAEA /* MSTableOperationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4258ADE5B8182DF9D378F96339ECA551 /* MSTableOperationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90B580AE2C05ACE3C6083DFA3F6C7D68 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD781670A2F1D0F3035827B6AFCB644 /* SpinerLayer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9209B3451742246599DACFE77A712494 /* MSPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EEBB57DB2BF9666031D0B4BF206437 /* MSPush.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		939B24A7AEF5F2529C20137758AD995E /* MSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4818668EBA48947CA73D421F6FC2C5AA /* MSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		941CFA8EFFEE65C82C061CA4565678F6 /* MSQueuePullOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C163023FBBF9D22B4C1F9B4ED5FD41 /* MSQueuePullOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94A15F2619BB7B278BB9971A2607B9C6 /* MSURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 400714BA0514D23BDB5EC5C8A33B2110 /* MSURLBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9550508E734C267F9F16BF8185D32645 /* MSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B79387608E45A2DAEE267E86D4BBB7B7 /* MSUser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9609951FC77077E0320B576FA12CCDBD /* MSError.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B6F2308A136D4DADAB95A0AF412CA6 /* MSError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98BEE1B79FBDEACB05A70C35AFF45072 /* MSOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D06A2F9998C2B763BB24FE205586F91 /* MSOperationQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9BCC6B45DFDBBA29322B41F8FA5B9D1E /* MSQueuePullOperationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA7E2A5375BACE76581978623EFA56F /* MSQueuePullOperationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CA9C9A02FFD9C5E13A83200080BB9A3 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A6B2CDA1DCA770DC79412170B0D342 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D0A39F94F0F9D17AE9118B638767EC4 /* MSSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCECEB0E1A8071981936BC8178E672 /* MSSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DE844255DBAB564609DB4E3778CF83B /* MSPullSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B73BF0EEA7ACEC8F05B8C87708716C98 /* MSPullSettings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E9E381DB81150231A725A6E27873337 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D0F479E5A30975B15C3DDACB2B436 /* CGRectExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A09D29E8D56909761417D402E79F2E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */; };
+		A222B11FB5329CD07ABA6596B0EEBEF2 /* MSDateOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A65E9565D9773F8F3CD1C5F6AB1405 /* MSDateOffset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52BF70429060B8980F45EB63799D0EA /* MSSDKFeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE844D3CA9F3D2F47F0F5768C8B88AB /* MSSDKFeatures.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A557671955E6812027E850628D78BCE1 /* MSQueuePurgeOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AE4274B6B45DD49363978095D07490 /* MSQueuePurgeOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5CBD733CC425330F11A2D115D4D6E4B /* MSQueuePushOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254DA790D5CA75B86155438E4992321 /* MSQueuePushOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AD228586780613942FE6BE7DE47456EE /* MSClientConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C940EFBA6C9B207F9078FC747B0F617 /* MSClientConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AEA95ABF48DC1544E43EBA2CF25C803D /* MSPushConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C43A54871C9ED88F809C7132BE212679 /* MSPushConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AF4727598D2048BD89CA045D51D48FFA /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311A31F79C1344C7951E32E9DCF401B /* UITextField+fixCaretPosition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B10E3F853C47F43FB9593CA123A4AE07 /* MSNaiveISODateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B75ED10D235DD12762059F9F077B9C /* MSNaiveISODateFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B44AB59B162AB1B995D0020177C051DB /* MSQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E7767A8172FB3714E9A808336ACA438F /* MSQueryResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B4B6B9DA5943B409FBA2089BEEAAE95C /* MSOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F2592CEE2DBDA5DE0E9669BA15B5ADCC /* MSOperationQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5B2F71627986F6956F60F1983D1D824 /* MSLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 39133B0F4293076B969A6F1A3FB6D38E /* MSLoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5D1C332E35E5E0A71D4A02F901F9721 /* Pods-AvanadeAIProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7860BE8C25FE67749F93D590B8C0369 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218867E44848D64EAA86BCC7A227A83 /* CustomTransitionViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BA6CB135D6F073E84F56DCCCE5979577 /* MSConnectionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B73B05B3C266DEA73ABA717C790B9D9 /* MSConnectionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC309F44074D51026B4B0C7D8370EC73 /* UIImageViewAlignedSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9802E8829D0BA9852ABD2AA1B308D7C /* UIImageViewAlignedSwift-dummy.m */; };
+		BDB1E377A2E354D7C9A81F588786FA59 /* MSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 233B4C83029379E3CBECEAF296B60F0E /* MSError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C0EEFC2D937F16D9FEC62F355824EC60 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F50C4B6950F414E8CBD23448DAF0B8F /* SkyFloatingLabelTextFieldWithIcon.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CD7D6925744A154E91D9634B0726C04F /* MSAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 555335DF99E10F198DA95B7BDFFD76E8 /* MSAPIConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CDC82A651AC986ACB40CBB16E4F6B536 /* MSBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5EEA21382CDE9C2BADD5205726FB70 /* MSBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05E4CCFC71FD58CF4BD1F316AE36B94 /* MSSyncContextReadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F02E6D4A38F71C7E91C44802DB325D3 /* MSSyncContextReadResult.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D1BAD8DC442410A9F8306038B34607E5 /* MSPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 8409F3D88CC151EC27CB7E882C697E16 /* MSPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1DA5B76FC0DF9D7EF206C2D91E9DE58 /* MSPredicateTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FD6730AEFA1027DEAF34D2038A9322 /* MSPredicateTranslator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D40B5A41C991E32667CFC35A586426D0 /* MSSyncContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C818AADCA3D5B95F5CCB4B0703448A2 /* MSSyncContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA397E51528178CD82538CB1E69FE71A /* MSTableOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E359AD91996AC0BE8BB0F4CCA734DF /* MSTableOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DCB547C033082B87441C3D432BB0B564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */; };
+		DCD5261C20A9C97F1D2CBBE68E353346 /* MSLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 920EE606EC72CAF6DB8E69E69CA0E4C2 /* MSLoginController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD229060F2E0146C53940F3071F198FC /* MSLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E01E191B708C2C88B20D7210D8FD16C /* MSLoginView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DF6AF2266A809E3F4090C1DD328BE50A /* MSLoginSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468C3EADAD9B23CDAC360EA6C0E249D1 /* MSLoginSafariViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E0EA50C8177BCF46882D6391A18EC183 /* MSPredicateTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32143EDEAF1857C26ADFB56EE87BC4CC /* MSPredicateTranslator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E550BFC265C9FB5692EB5B78CCF854EF /* MSTableConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 110877B7A2DBA0CB1BF6FD799DD87829 /* MSTableConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E576F5CAD16B6A28377B640ECE511534 /* MSUserAgentBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EE0FA466D0C820E44638EC03DAE626 /* MSUserAgentBuilder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E657C4B29B4A6C780AC446A330657FB1 /* MSTableInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5217A313AAC8AE9011AB6BE8D83417 /* MSTableInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6EA4EFEA1C650A7D679BA07679EEF00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */; };
+		E7D77E2D7B56A4C79839094BE7094E93 /* MSTableOperationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E99641ECC629E7E42CC80A0954F0AE /* MSTableOperationError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE9EFA8420BC6BBBE09CE6DAD8B3EAB1 /* MSAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C2A84584754AF1453E98FBA046C620 /* MSAPIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2CDB4DEB50C8AE2EBE381908EB51FBD /* Pods-AvanadeAIProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */; };
+		F45B0149C6CECEA9B699230A98B03E36 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E15370004D78FD93C7EBD6D34A9D620 /* FadeTransition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F7909B528A6278FC355D7477B3E0A7E6 /* MSLoginSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D33F71B279C1635AE82767D56886F4B8 /* MSLoginSafariViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F941E3456E81D696D5A5F298499E6CBB /* MSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAB7824B0D7E9626E6F5B3B7AF4C53C /* MSClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD47B7F807A5FFB8EEAA5E79A9FD2748 /* MSLoginSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 098880FCE86CA5EE7FC65F2A95A04F25 /* MSLoginSerializer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FEC7597D849277DB4E147E0DF937037B /* UIImageViewAlignedSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7911965228FCEB27B2CF4E93A23F93 /* UIImageViewAlignedSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF864B14C7CDEB89A4CAA4D8CC87FF9D /* MSLoginSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = C4FB1B02EF2ECBC5503C87024A467988 /* MSLoginSerializer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9D8B552E56C8F3CC2EA41C670ABAB7D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A13AC37055F8B4AB51AA81AA3C2F83D;
-			remoteInfo = SkyFloatingLabelTextField;
-		};
-		B83E378885D002B1BEC0CB2C29F669FA /* PBXContainerItemProxy */ = {
+		0E8798D8D5A51161EB259250F1DE5A5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96A446A93C6B0D5CCB82340728320636;
 			remoteInfo = MicrosoftAzureMobile;
 		};
-		FDF1D60BCA2142439800C9D9B69D0DE0 /* PBXContainerItemProxy */ = {
+		7CAA8F4A3623669666B5C7E2C0BF94E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 157C3497C4D54E6C624B96E4A661369C;
+			remoteGlobalIDString = EDA66204C262F3434A573CA0EF668BBB;
+			remoteInfo = UIImageViewAlignedSwift;
+		};
+		D3EDBD98637947B765477CAE98485C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DE03E07A7F306130EF8143A5D8B47C6;
 			remoteInfo = TransitionButton;
+		};
+		DB700B15F9BE5C1B6C135A56E8098AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93A3F32FC57C7DE95F8A3EF874BBCBAD;
+			remoteInfo = SkyFloatingLabelTextField;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		013506D6978ACFD7965BD1D56FAD7BDE /* MSLoginSafariViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewController.m; path = sdk/src/MSLoginSafariViewController.m; sourceTree = "<group>"; };
-		02011B766283EA2F8ADA6636B80D800D /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
-		022256CFAF27A93DADEEF69FAB157DB1 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
-		02CCBEAFDED60CBB740B996C0AC710C6 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		027344875B463D6AD9E909B808938FF4 /* NSURLSessionTask+Completion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionTask+Completion.h"; path = "sdk/src/NSURLSessionTask+Completion.h"; sourceTree = "<group>"; };
 		02FFB2689A2D7F9FA5988D7A203FD0CE /* Pods-AvanadeAIProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AvanadeAIProject-dummy.m"; sourceTree = "<group>"; };
-		030AA7C199435F47BE9A4FF9389208FD /* MicrosoftAzureMobile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-prefix.pch"; sourceTree = "<group>"; };
-		0331CC70D1D3795743077993F16DDC05 /* MSJSONSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSJSONSerializer.h; path = sdk/src/MSJSONSerializer.h; sourceTree = "<group>"; };
-		07C28255746C56A110806900DF89F1C8 /* MSInstallation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallation.m; path = sdk/src/MSInstallation.m; sourceTree = "<group>"; };
-		0F54A067B78548CCBBBCD3797F7E589F /* MSLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLogin.h; path = sdk/src/MSLogin.h; sourceTree = "<group>"; };
-		11D0833E2719B7FAABED819691A9C966 /* MSAPIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIConnection.m; path = sdk/src/MSAPIConnection.m; sourceTree = "<group>"; };
-		1339D8CF18AF90C8807481F6C63A8866 /* MSUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUser.h; path = sdk/src/MSUser.h; sourceTree = "<group>"; };
-		15F782019D581CD4D96BDC53E600B474 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		192EE97ABC59F70571451D2904AA9D1F /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		1963D95E9D5B500D6BEB7B81FEE7B4CC /* MSCoreDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSCoreDataStore.h; path = sdk/src/MSCoreDataStore.h; sourceTree = "<group>"; };
-		1BB9B9BACD71520C39B1B6AD6AA07A15 /* MSCoreDataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSCoreDataStore.m; path = sdk/src/MSCoreDataStore.m; sourceTree = "<group>"; };
-		1BDB45091B8500BB3E995B4442194C83 /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF86E062F1B9E552778D878AAF669FE /* MSBlockDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSBlockDefinitions.h; path = sdk/src/MSBlockDefinitions.h; sourceTree = "<group>"; };
-		1C92FE44536576793B36EBDE34426A12 /* MSClientInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientInternal.h; path = sdk/src/MSClientInternal.h; sourceTree = "<group>"; };
-		1D40D6FE30E9249E4EFBDC2E25E26B73 /* MSOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSOperationQueue.m; path = sdk/src/MSOperationQueue.m; sourceTree = "<group>"; };
-		1D88A8841772E4D5FC4745A93AA2C998 /* MSTableConfigValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConfigValue.m; path = sdk/src/MSTableConfigValue.m; sourceTree = "<group>"; };
-		1F0F2F43B31A542068B07D0762113D2C /* MSPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPush.h; path = sdk/src/MSPush.h; sourceTree = "<group>"; };
-		1F9FABF7FF8B1CE096830DB3CF3723D2 /* MSLoginController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginController.m; path = sdk/src/MSLoginController.m; sourceTree = "<group>"; };
-		2191AD40E95E2F0E81A74E27F670A69F /* MSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClient.m; path = sdk/src/MSClient.m; sourceTree = "<group>"; };
-		24577F830FD072873CA032846C176890 /* MSQueuePullOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePullOperation.m; path = sdk/src/MSQueuePullOperation.m; sourceTree = "<group>"; };
-		258DDF5F8AA14EB0DF68454A8B591B3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26B37FB7A0EA9E6DFD5686D7CCC34D67 /* MSTableConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConnection.h; path = sdk/src/MSTableConnection.h; sourceTree = "<group>"; };
-		27F06462BBECA7A57DA63A828A09A7B9 /* MSTableOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationInternal.h; path = sdk/src/MSTableOperationInternal.h; sourceTree = "<group>"; };
-		282026CA1EA28AD7CF9FFE48E6992337 /* MicrosoftAzureMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MicrosoftAzureMobile.h; path = sdk/src/MicrosoftAzureMobile.h; sourceTree = "<group>"; };
-		2D49139612BA45342B1A43C65C9C7C87 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EB71B35DC8FB70835DD223B77A767D8 /* MSPullSettingsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettingsInternal.h; path = sdk/src/MSPullSettingsInternal.h; sourceTree = "<group>"; };
-		2F579587385CEA3B53C88BE9F0FFA34E /* MSSyncContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContext.h; path = sdk/src/MSSyncContext.h; sourceTree = "<group>"; };
-		30C6D08EE9C5A222676195CE8A154EE0 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
-		3341FBF84D81E54CE96A9242267E4E2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3510F8A20C5F5B7657C32D647AA9E9C4 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37751FD544DE44648C050CCF2CD66CFF /* MSLoginSafariViewControllerUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewControllerUtilities.h; path = sdk/src/MSLoginSafariViewControllerUtilities.h; sourceTree = "<group>"; };
-		3A283D30EF5D536829A75877CA23321F /* MSAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAuthState.h; path = sdk/src/MSAuthState.h; sourceTree = "<group>"; };
+		0661999F9EA105A56B7ED344955A0FC4 /* MSInstallationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallationTemplate.h; path = sdk/src/MSInstallationTemplate.h; sourceTree = "<group>"; };
+		07A17F7425DCE716D083702D090CC75E /* MSTableOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationInternal.h; path = sdk/src/MSTableOperationInternal.h; sourceTree = "<group>"; };
+		098880FCE86CA5EE7FC65F2A95A04F25 /* MSLoginSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSerializer.m; path = sdk/src/MSLoginSerializer.m; sourceTree = "<group>"; };
+		0D06A2F9998C2B763BB24FE205586F91 /* MSOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSOperationQueue.m; path = sdk/src/MSOperationQueue.m; sourceTree = "<group>"; };
+		110877B7A2DBA0CB1BF6FD799DD87829 /* MSTableConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConnection.m; path = sdk/src/MSTableConnection.m; sourceTree = "<group>"; };
+		11DAA07EB2F86BAB8CB336FF671EAA19 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		1241EBA32C144B707DC41F24EEB32469 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1311A31F79C1344C7951E32E9DCF401B /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		13EEBB57DB2BF9666031D0B4BF206437 /* MSPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPush.m; path = sdk/src/MSPush.m; sourceTree = "<group>"; };
+		13F56F8A7EC2EE30D0CAA70AC782A87B /* MSQueuePushOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePushOperation.h; path = sdk/src/MSQueuePushOperation.h; sourceTree = "<group>"; };
+		194CC386344D330926BFDC6B6E18943C /* MSTableConfigValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConfigValue.m; path = sdk/src/MSTableConfigValue.m; sourceTree = "<group>"; };
+		2131BDEDC5522ED1A75F4C9BD5AC6087 /* MSQueuePullOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperation.h; path = sdk/src/MSQueuePullOperation.h; sourceTree = "<group>"; };
+		233B4C83029379E3CBECEAF296B60F0E /* MSError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSError.m; path = sdk/src/MSError.m; sourceTree = "<group>"; };
+		30AEB50B77E7EED7C7985C051C420AC9 /* MSPullSettingsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettingsInternal.h; path = sdk/src/MSPullSettingsInternal.h; sourceTree = "<group>"; };
+		32143EDEAF1857C26ADFB56EE87BC4CC /* MSPredicateTranslator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPredicateTranslator.m; path = sdk/src/MSPredicateTranslator.m; sourceTree = "<group>"; };
+		3363D407F819CF387212731D34FAD3FC /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		34282D5782613AA18A555CDAF568E202 /* MSTableConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConnection.h; path = sdk/src/MSTableConnection.h; sourceTree = "<group>"; };
+		353CFF612E91B789C515EC8C718C3259 /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TransitionButton.modulemap; sourceTree = "<group>"; };
+		36DA1322C1CE6BD06C4AE4A82FC493E7 /* MSConnectionDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionDelegate.m; path = sdk/src/MSConnectionDelegate.m; sourceTree = "<group>"; };
+		37A65E9565D9773F8F3CD1C5F6AB1405 /* MSDateOffset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDateOffset.h; path = sdk/src/MSDateOffset.h; sourceTree = "<group>"; };
+		39133B0F4293076B969A6F1A3FB6D38E /* MSLoginController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginController.h; path = sdk/src/MSLoginController.h; sourceTree = "<group>"; };
+		394C2A4CD935D80543BF0A34840A6D81 /* MSTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTable.m; path = sdk/src/MSTable.m; sourceTree = "<group>"; };
 		3A28A38E98BCCC98E5C679AEBD9C7477 /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
-		3BC095018E53D7F56D9341B81BA4BC31 /* MSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClient.h; path = sdk/src/MSClient.h; sourceTree = "<group>"; };
-		3D10297B1101A936118D03D8D388DA50 /* MSPredicateTranslator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPredicateTranslator.m; path = sdk/src/MSPredicateTranslator.m; sourceTree = "<group>"; };
-		3E0DA270E3E002D0C016AE2107491FD5 /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUserAgentBuilder.m; path = sdk/src/MSUserAgentBuilder.m; sourceTree = "<group>"; };
-		4706E6153189B8D5820B2792563E433D /* MSTableInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableInternal.h; path = sdk/src/MSTableInternal.h; sourceTree = "<group>"; };
-		483659AC4B375EDB997FA9540D4EF620 /* MSPushRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushRequest.h; path = sdk/src/MSPushRequest.h; sourceTree = "<group>"; };
-		4C575CBBA9EE16CCDD100F7492BE4B49 /* MSNaiveISODateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSNaiveISODateFormatter.h; path = sdk/src/MSNaiveISODateFormatter.h; sourceTree = "<group>"; };
-		4F7DB38E85E800A203B819352E3C240D /* MSInstallationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallationTemplate.m; path = sdk/src/MSInstallationTemplate.m; sourceTree = "<group>"; };
-		50CCB28BF90631DAEA9D671F49CFDD4D /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		52A53C9FA2E6A956CD701D3761387E2E /* MSInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallation.h; path = sdk/src/MSInstallation.h; sourceTree = "<group>"; };
-		5382CBB867CE0C182F2CAD6860B5BE46 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
-		556E9C7FDA71E6DF6B59FB1EC675EC0D /* TransitionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TransitionButton.modulemap; sourceTree = "<group>"; };
-		5764E07924C1D04726E98F4A7B040BC7 /* MSQueuePushOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePushOperation.h; path = sdk/src/MSQueuePushOperation.h; sourceTree = "<group>"; };
-		57DEF77B2E3C06BB3C0984F56DF77CCE /* MSTableOperationError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationError.h; path = sdk/src/MSTableOperationError.h; sourceTree = "<group>"; };
-		58B6368D9270FB7183E3185DFC4DADED /* MSQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQuery.h; path = sdk/src/MSQuery.h; sourceTree = "<group>"; };
-		597326ECA18C66C945AD33D2B0986A28 /* MSQueuePullOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperationInternal.h; path = sdk/src/MSQueuePullOperationInternal.h; sourceTree = "<group>"; };
-		597400F1DEDF56697B74CE59D7E82AFA /* MSSyncContextInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextInternal.h; path = sdk/src/MSSyncContextInternal.h; sourceTree = "<group>"; };
-		5D9CDC171E3CF5EA7FAB96D77DB31FD2 /* MSQueuePurgeOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePurgeOperation.m; path = sdk/src/MSQueuePurgeOperation.m; sourceTree = "<group>"; };
-		5E4378549334AA5640D7484F7FB154C8 /* MSLoginSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSerializer.m; path = sdk/src/MSLoginSerializer.m; sourceTree = "<group>"; };
+		400714BA0514D23BDB5EC5C8A33B2110 /* MSURLBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSURLBuilder.m; path = sdk/src/MSURLBuilder.m; sourceTree = "<group>"; };
+		4258ADE5B8182DF9D378F96339ECA551 /* MSTableOperationError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperationError.h; path = sdk/src/MSTableOperationError.h; sourceTree = "<group>"; };
+		429EF4CE180FC875B85AEE3F8306B95D /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
+		468C3EADAD9B23CDAC360EA6C0E249D1 /* MSLoginSafariViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewController.m; path = sdk/src/MSLoginSafariViewController.m; sourceTree = "<group>"; };
+		4818668EBA48947CA73D421F6FC2C5AA /* MSClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClient.h; path = sdk/src/MSClient.h; sourceTree = "<group>"; };
+		4ACE52FBB681BCF8120F904889BA06F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD781670A2F1D0F3035827B6AFCB644 /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
+		4BF735A2CFDF9A2D917291D952E3DE8B /* UIImageViewAlignedSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewAlignedSwift-prefix.pch"; sourceTree = "<group>"; };
+		555335DF99E10F198DA95B7BDFFD76E8 /* MSAPIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIConnection.m; path = sdk/src/MSAPIConnection.m; sourceTree = "<group>"; };
+		55F1AEC9896D269C2E3027EB3E799994 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		5621A670F7DAD1214F9F05A4FD087C6B /* UIImageViewAlignedSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIImageViewAlignedSwift.modulemap; sourceTree = "<group>"; };
+		57E99641ECC629E7E42CC80A0954F0AE /* MSTableOperationError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperationError.m; path = sdk/src/MSTableOperationError.m; sourceTree = "<group>"; };
+		5847B83AC7DE00E00FE5AFC153B9F772 /* MSFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSFilter.h; path = sdk/src/MSFilter.h; sourceTree = "<group>"; };
+		5BB49B9C0CD89419AF0699A1894D1236 /* MSInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallation.h; path = sdk/src/MSInstallation.h; sourceTree = "<group>"; };
+		5C940EFBA6C9B207F9078FC747B0F617 /* MSClientConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClientConnection.m; path = sdk/src/MSClientConnection.m; sourceTree = "<group>"; };
+		5CA7E2A5375BACE76581978623EFA56F /* MSQueuePullOperationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperationInternal.h; path = sdk/src/MSQueuePullOperationInternal.h; sourceTree = "<group>"; };
+		5E3B5D31C33D6458D630D8EB5E76F776 /* MSTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTable.h; path = sdk/src/MSTable.h; sourceTree = "<group>"; };
 		5E7F56454641708EF2FBD9C21A3750E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5ECB5345F15C2CE892DB95F8AD32F3E9 /* MSDateOffset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDateOffset.m; path = sdk/src/MSDateOffset.m; sourceTree = "<group>"; };
-		5F2007A70E4522897553C893C84E2E03 /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
-		5FC589E564D46DED315BCF43C08D588F /* MSTableRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableRequest.h; path = sdk/src/MSTableRequest.h; sourceTree = "<group>"; };
-		60E3853C014DBE5BA8C7F97E550EBC22 /* NSURLSessionTask+Completion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionTask+Completion.h"; path = "sdk/src/NSURLSessionTask+Completion.h"; sourceTree = "<group>"; };
-		61D8C0F1C489090BA07C777019B0E668 /* MSConnectionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionConfiguration.h; path = sdk/src/MSConnectionConfiguration.h; sourceTree = "<group>"; };
-		6495DF4B1AC6AED32F63E137DFA9F124 /* MicrosoftAzureMobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-umbrella.h"; sourceTree = "<group>"; };
+		5F02E6D4A38F71C7E91C44802DB325D3 /* MSSyncContextReadResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContextReadResult.m; path = sdk/src/MSSyncContextReadResult.m; sourceTree = "<group>"; };
+		5FB4AC752A116DC8E64271A36D821C42 /* MSCoreDataStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSCoreDataStore.m; path = sdk/src/MSCoreDataStore.m; sourceTree = "<group>"; };
+		6254DA790D5CA75B86155438E4992321 /* MSQueuePushOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePushOperation.m; path = sdk/src/MSQueuePushOperation.m; sourceTree = "<group>"; };
+		635072088E0205C5EE4B663DBA4C9E64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6430C7104B1DE48B8C4CC2DD370705B2 /* MSAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAuthState.h; path = sdk/src/MSAuthState.h; sourceTree = "<group>"; };
 		653C46AD293DF9478FB76891F7AFF642 /* Pods-AvanadeAIProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AvanadeAIProject.modulemap"; sourceTree = "<group>"; };
-		660A704C382F937FB0E02F5A8A2C3DDF /* MSAPIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIConnection.h; path = sdk/src/MSAPIConnection.h; sourceTree = "<group>"; };
-		6683381157237B752E3A8AE7F1BA2419 /* MSAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAuthState.m; path = sdk/src/MSAuthState.m; sourceTree = "<group>"; };
-		683CC9406C075904B02A2F0A57489019 /* MSManagedObjectObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSManagedObjectObserver.h; path = sdk/src/MSManagedObjectObserver.h; sourceTree = "<group>"; };
-		6A15FA98DD55B563685991197E58E6D5 /* MSSyncContextReadResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextReadResult.h; path = sdk/src/MSSyncContextReadResult.h; sourceTree = "<group>"; };
-		6E8A14BAA241A0F37891325C10162658 /* MSTableConfigValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConfigValue.h; path = sdk/src/MSTableConfigValue.h; sourceTree = "<group>"; };
-		6EB228BE72C20C019F47B802719B6675 /* MSTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTable.h; path = sdk/src/MSTable.h; sourceTree = "<group>"; };
-		734AE6EAD5F032E912C1916BF8E13750 /* SpinerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinerLayer.swift; path = Source/SpinerLayer.swift; sourceTree = "<group>"; };
-		74FE86BA6254A68937A70D12288EF369 /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUserAgentBuilder.h; path = sdk/src/MSUserAgentBuilder.h; sourceTree = "<group>"; };
-		76290673AD1684AA20EAB6E31E3F361F /* MSQueuePurgeOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePurgeOperation.h; path = sdk/src/MSQueuePurgeOperation.h; sourceTree = "<group>"; };
-		762CB95BB5987435BA4D9E914C772330 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		76F30F7244AF6A46E7045D75561C8761 /* MSTableOperationError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperationError.m; path = sdk/src/MSTableOperationError.m; sourceTree = "<group>"; };
-		778DE7CC88298544941281FA5F239F95 /* MSSyncContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContext.m; path = sdk/src/MSSyncContext.m; sourceTree = "<group>"; };
+		66C2A84584754AF1453E98FBA046C620 /* MSAPIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIConnection.h; path = sdk/src/MSAPIConnection.h; sourceTree = "<group>"; };
+		683BC5D4393FC3CF12CE6F2FE75E46BA /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		6869E5E2DCA145D7B9D507A6360C4A9C /* UIImageViewAligned.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageViewAligned.swift; sourceTree = "<group>"; };
+		6A18F61A0FA159D021A56B2139ABA939 /* TransitionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionButton.xcconfig; sourceTree = "<group>"; };
+		6B8D0F479E5A30975B15C3DDACB2B436 /* CGRectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtension.swift; path = Source/CGRectExtension.swift; sourceTree = "<group>"; };
+		6BAC8426E180208DFAE508E42D89260B /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MicrosoftAzureMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C818AADCA3D5B95F5CCB4B0703448A2 /* MSSyncContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContext.h; path = sdk/src/MSSyncContext.h; sourceTree = "<group>"; };
+		6E01E191B708C2C88B20D7210D8FD16C /* MSLoginView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginView.m; path = sdk/src/MSLoginView.m; sourceTree = "<group>"; };
+		74B6F2308A136D4DADAB95A0AF412CA6 /* MSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSError.h; path = sdk/src/MSError.h; sourceTree = "<group>"; };
+		74FD6730AEFA1027DEAF34D2038A9322 /* MSPredicateTranslator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPredicateTranslator.h; path = sdk/src/MSPredicateTranslator.h; sourceTree = "<group>"; };
+		77D7DE8988B81E256DC85BF7C4EAA350 /* MSInstallationTemplate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallationTemplate.m; path = sdk/src/MSInstallationTemplate.m; sourceTree = "<group>"; };
+		780444E0519151415AEC94FC5A545A49 /* MSConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionDelegate.h; path = sdk/src/MSConnectionDelegate.h; sourceTree = "<group>"; };
 		78303A97700CA406D0BCB9A42F086717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B6C21F008633A04D1F74D09880F8124 /* MSQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQuery.m; path = sdk/src/MSQuery.m; sourceTree = "<group>"; };
-		7F3169DB4E4F0C105E2ACFDEF9A9573D /* MSUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUser.m; path = sdk/src/MSUser.m; sourceTree = "<group>"; };
-		7F42A56F8B6CE0B17EE6509777E83297 /* MSTableOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperation.m; path = sdk/src/MSTableOperation.m; sourceTree = "<group>"; };
-		7FB231361CCA8D15CEE2FFDEA73CA12E /* MSManagedObjectObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSManagedObjectObserver.m; path = sdk/src/MSManagedObjectObserver.m; sourceTree = "<group>"; };
-		81225CA738A44783C3B62D96F075E8E2 /* MSLoginSafariViewControllerUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewControllerUtilities.m; path = sdk/src/MSLoginSafariViewControllerUtilities.m; sourceTree = "<group>"; };
-		81ECC1C940F7F8DAA5D34156DB3E71CF /* MSNaiveISODateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSNaiveISODateFormatter.m; path = sdk/src/MSNaiveISODateFormatter.m; sourceTree = "<group>"; };
+		783117BA350F562B1F1559D1D3702092 /* MicrosoftAzureMobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MicrosoftAzureMobile.modulemap; sourceTree = "<group>"; };
+		78E895D9EEE97D95B44A372062D9CCEF /* MSDateOffset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDateOffset.m; path = sdk/src/MSDateOffset.m; sourceTree = "<group>"; };
+		7EAB7824B0D7E9626E6F5B3B7AF4C53C /* MSClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClient.m; path = sdk/src/MSClient.m; sourceTree = "<group>"; };
+		808C2A2701CA5243374C354FD1FF88DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E359AD91996AC0BE8BB0F4CCA734DF /* MSTableOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableOperation.m; path = sdk/src/MSTableOperation.m; sourceTree = "<group>"; };
+		8409F3D88CC151EC27CB7E882C697E16 /* MSPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPush.h; path = sdk/src/MSPush.h; sourceTree = "<group>"; };
 		84DED4851B7040F1B9866E0D55D50B4A /* Pods-AvanadeAIProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvanadeAIProject-frameworks.sh"; sourceTree = "<group>"; };
-		864BBC8D588927EBE8E09CB2C3C8C10E /* MicrosoftAzureMobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MicrosoftAzureMobile-dummy.m"; sourceTree = "<group>"; };
-		877C9FFC82A3303165BDB82BB4EF0978 /* MSLoginController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginController.h; path = sdk/src/MSLoginController.h; sourceTree = "<group>"; };
-		8AE58BFC8393435DAC93C85F8E083032 /* MicrosoftAzureMobile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MicrosoftAzureMobile.xcconfig; sourceTree = "<group>"; };
-		8B81CF7A5BC36A1F7ABAFA66FF5693FB /* MSPullSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettings.h; path = sdk/src/MSPullSettings.h; sourceTree = "<group>"; };
-		8F0E061C4270087C4C6DDDA40EA52137 /* MSQueryResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueryResult.m; path = sdk/src/MSQueryResult.m; sourceTree = "<group>"; };
-		8F16895058DFDC9BEC6A6F00B5538CBE /* MSPush.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPush.m; path = sdk/src/MSPush.m; sourceTree = "<group>"; };
+		866107977D7EE63BB01CCD6550D48407 /* MSLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLogin.m; path = sdk/src/MSLogin.m; sourceTree = "<group>"; };
+		8CD294BC02640A708706F22D0ABB9925 /* MSSDKFeatures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSDKFeatures.m; path = sdk/src/MSSDKFeatures.m; sourceTree = "<group>"; };
+		8DFF96369B990857AA393AA33D30235D /* MSCoreDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSCoreDataStore.h; path = sdk/src/MSCoreDataStore.h; sourceTree = "<group>"; };
+		8E15370004D78FD93C7EBD6D34A9D620 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
+		8EE844D3CA9F3D2F47F0F5768C8B88AB /* MSSDKFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSDKFeatures.h; path = sdk/src/MSSDKFeatures.h; sourceTree = "<group>"; };
 		901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
-		91765BF2A6387C3983927147AEFD9F5A /* MSSDKFeatures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSDKFeatures.m; path = sdk/src/MSSDKFeatures.m; sourceTree = "<group>"; };
+		9036E08D7CAEA70AE92E67599EF1F6FB /* UIImageViewAlignedSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewAlignedSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920EE606EC72CAF6DB8E69E69CA0E4C2 /* MSLoginController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginController.m; path = sdk/src/MSLoginController.m; sourceTree = "<group>"; };
+		924CC2E850E0106DC4EB5367B2A37BD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B75ED10D235DD12762059F9F077B9C /* MSNaiveISODateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSNaiveISODateFormatter.h; path = sdk/src/MSNaiveISODateFormatter.h; sourceTree = "<group>"; };
+		95D7518591C0BFD99BE71DC715C29B7B /* MSSyncContextReadResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextReadResult.h; path = sdk/src/MSSyncContextReadResult.h; sourceTree = "<group>"; };
 		9601A0ADE90187B9415D5FA4B53B7B7B /* Pods-AvanadeAIProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AvanadeAIProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		980EE024AA6FD47D744D36BB707A4FC0 /* MSDateOffset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDateOffset.h; path = sdk/src/MSDateOffset.h; sourceTree = "<group>"; };
-		98464F8CF1AC60329C25BD1333E03CF4 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MicrosoftAzureMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A6B2CDA1DCA770DC79412170B0D342 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		99BEC9136A9C6ACFBBCDC47922F14A19 /* Pods-AvanadeAIProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AvanadeAIProject-resources.sh"; sourceTree = "<group>"; };
+		99F577CF480867857C0043D13B3C67F1 /* MSAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAuthState.m; path = sdk/src/MSAuthState.m; sourceTree = "<group>"; };
+		9AA0B1BBD21EFA2D559C9703A231036B /* MSQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQuery.h; path = sdk/src/MSQuery.h; sourceTree = "<group>"; };
 		9B29FA84895EDB0827C4877C598C52B0 /* Pods-AvanadeAIProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AvanadeAIProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9B55664EDA5512E19A82B1CD2672C809 /* MSLoginSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSerializer.h; path = sdk/src/MSLoginSerializer.h; sourceTree = "<group>"; };
-		9B9EFE8EE1AB832526050C4027C7C409 /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
-		9D07D533E76526CC47F8ED3C7CC66960 /* MSURLBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSURLBuilder.m; path = sdk/src/MSURLBuilder.m; sourceTree = "<group>"; };
-		9D4B35FFB3C25142967E39C7051C5664 /* MSSyncTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncTable.m; path = sdk/src/MSSyncTable.m; sourceTree = "<group>"; };
-		A261FC034D6A57719D82280C2D7D1971 /* MSSDKFeatures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSDKFeatures.h; path = sdk/src/MSSDKFeatures.h; sourceTree = "<group>"; };
-		A2D15BC540541811116C44622CCA0E7E /* MSPushRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushRequest.m; path = sdk/src/MSPushRequest.m; sourceTree = "<group>"; };
-		A317B5D6DF564469F3E7FEE7EDC97EB1 /* MSPredicateTranslator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPredicateTranslator.h; path = sdk/src/MSPredicateTranslator.h; sourceTree = "<group>"; };
-		A380D9EAE1B715F9C6145E51BF158BD3 /* MSFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSFilter.h; path = sdk/src/MSFilter.h; sourceTree = "<group>"; };
-		A4E941058F867D9F4AB0AA20A785159A /* MSLoginView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginView.h; path = sdk/src/MSLoginView.h; sourceTree = "<group>"; };
-		A62D4849A1B4B0AEF4E0A4F0415652D7 /* MSError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSError.m; path = sdk/src/MSError.m; sourceTree = "<group>"; };
-		AA09C9CBFEF71184261361FC02EA0855 /* TransitionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionButton-dummy.m"; sourceTree = "<group>"; };
-		AA94B1BACBAD926F037C01EB0D7809FA /* MicrosoftAzureMobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MicrosoftAzureMobile.modulemap; sourceTree = "<group>"; };
+		9B73B05B3C266DEA73ABA717C790B9D9 /* MSConnectionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionConfiguration.h; path = sdk/src/MSConnectionConfiguration.h; sourceTree = "<group>"; };
+		9CE446736A0B7355FBE93F9A90D51364 /* MSPushRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushRequest.h; path = sdk/src/MSPushRequest.h; sourceTree = "<group>"; };
+		9E808681D07579A4BC0DB392DB7009EC /* MSUserAgentBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUserAgentBuilder.h; path = sdk/src/MSUserAgentBuilder.h; sourceTree = "<group>"; };
+		9F50C4B6950F414E8CBD23448DAF0B8F /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		A0B4AE22A78D122E17A01970A2229C25 /* MSLoginSafariViewControllerUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginSafariViewControllerUtilities.m; path = sdk/src/MSLoginSafariViewControllerUtilities.m; sourceTree = "<group>"; };
+		A0F650A080747CB15FF6469437845BD9 /* MSTableConfigValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableConfigValue.h; path = sdk/src/MSTableConfigValue.h; sourceTree = "<group>"; };
+		A245ABC80FEDFD29564F325DDAAAA017 /* MSConnectionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionConfiguration.m; path = sdk/src/MSConnectionConfiguration.m; sourceTree = "<group>"; };
+		A4CA8B16F206AF3ADFCE4E9CB229DFAF /* MSSyncTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncTable.m; path = sdk/src/MSSyncTable.m; sourceTree = "<group>"; };
+		A6B3572EFE509A39AE1C13BF2A76A9CD /* MicrosoftAzureMobile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MicrosoftAzureMobile.xcconfig; sourceTree = "<group>"; };
 		ACCF78C37CDFCFDEB7867B41FA44FA26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		ACE030137665B3ACCD103530099E64AE /* MSPullSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPullSettings.m; path = sdk/src/MSPullSettings.m; sourceTree = "<group>"; };
-		ACEA39A186C510D94B737011E6784545 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
-		AD41DE928F2E4B53EA162F419578A4B8 /* MSInstallationTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSInstallationTemplate.h; path = sdk/src/MSInstallationTemplate.h; sourceTree = "<group>"; };
-		AE644C4229DDC18D3075BEF300753EC6 /* MSAPIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIRequest.h; path = sdk/src/MSAPIRequest.h; sourceTree = "<group>"; };
-		AFE09609035E1967373B97E8B72591F4 /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
-		B3FA49B30AACE9B12881F7443D5F9829 /* FadeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = Source/FadeTransition.swift; sourceTree = "<group>"; };
-		B419894B3E9963D2EBA201A21229640E /* MSTableConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableConnection.m; path = sdk/src/MSTableConnection.m; sourceTree = "<group>"; };
-		B93EC0D5BC31A60FEB399E1624BA3913 /* MSSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSerializer.h; path = sdk/src/MSSerializer.h; sourceTree = "<group>"; };
-		BA6C63275EE99A5FA87E478948E6128A /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		AF3F98D50DAF5F1608A8BC9E18C833A5 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00FF89299AD955DEF25E379C3E22F34 /* UIImageViewAlignedSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIImageViewAlignedSwift.xcconfig; sourceTree = "<group>"; };
+		B218867E44848D64EAA86BCC7A227A83 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTransitionViewController.swift; path = Source/CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		B2DC24D2567F7C417864066C46DA5E2E /* MSNaiveISODateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSNaiveISODateFormatter.m; path = sdk/src/MSNaiveISODateFormatter.m; sourceTree = "<group>"; };
+		B6F364DA81BFB73512C843C1488DCD7F /* MSTableOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperation.h; path = sdk/src/MSTableOperation.h; sourceTree = "<group>"; };
+		B73BF0EEA7ACEC8F05B8C87708716C98 /* MSPullSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPullSettings.m; path = sdk/src/MSPullSettings.m; sourceTree = "<group>"; };
+		B79387608E45A2DAEE267E86D4BBB7B7 /* MSUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUser.m; path = sdk/src/MSUser.m; sourceTree = "<group>"; };
+		B79B4C4C694966B08B1615342211062C /* MSAPIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIRequest.m; path = sdk/src/MSAPIRequest.m; sourceTree = "<group>"; };
+		B8738753EE8EDD6B8593DA39F7E4CCCC /* MSQueryInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryInternal.h; path = sdk/src/MSQueryInternal.h; sourceTree = "<group>"; };
+		B8C446B475CFCA1D1183090B79D283A0 /* MicrosoftAzureMobile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-prefix.pch"; sourceTree = "<group>"; };
 		BAB14A55D4DB30C8D98DB7528D9807F4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		BBA61F79722D49F2290431399B047249 /* MSQueuePushOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePushOperation.m; path = sdk/src/MSQueuePushOperation.m; sourceTree = "<group>"; };
-		BEE3043C466CA07252BD78BE744515F9 /* MSConnectionDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionDelegate.m; path = sdk/src/MSConnectionDelegate.m; sourceTree = "<group>"; };
-		BFC2A94C21C908A3BE57A692BBFBC7D8 /* MSLoginView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLoginView.m; path = sdk/src/MSLoginView.m; sourceTree = "<group>"; };
-		C2E66C8C4D9002DE42F59CA02C5D26B7 /* MSSyncTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncTable.h; path = sdk/src/MSSyncTable.h; sourceTree = "<group>"; };
-		C984C03DC097301B7006ADB67A09F47F /* MSQueryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryResult.h; path = sdk/src/MSQueryResult.h; sourceTree = "<group>"; };
-		CB0AF250A9ED317871F9DC8566774983 /* MSTableRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableRequest.m; path = sdk/src/MSTableRequest.m; sourceTree = "<group>"; };
-		CCDB3F2A41FC80F3B713F2B2C83F997F /* MSQueuePullOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePullOperation.h; path = sdk/src/MSQueuePullOperation.h; sourceTree = "<group>"; };
-		CEAD7C0B42D0155CE7413EA6E028BDC2 /* MSOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSOperationQueue.h; path = sdk/src/MSOperationQueue.h; sourceTree = "<group>"; };
-		CFDC9692A56640CDA6D06CC8B8C86AFA /* MSTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTable.m; path = sdk/src/MSTable.m; sourceTree = "<group>"; };
-		D4D9A2BAD5B520DA7EDC0BB8DB477F4E /* MSPushConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushConnection.h; path = sdk/src/MSPushConnection.h; sourceTree = "<group>"; };
-		D551D29659DC3B7B1C2FC2A385C7457D /* MSLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSLogin.m; path = sdk/src/MSLogin.m; sourceTree = "<group>"; };
-		D732107F873EA82301FE88E618F4FC92 /* MSQueryInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryInternal.h; path = sdk/src/MSQueryInternal.h; sourceTree = "<group>"; };
-		E4182CBD1DB2C8DF4D6093ADFBE72B05 /* MSAPIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSAPIRequest.m; path = sdk/src/MSAPIRequest.m; sourceTree = "<group>"; };
-		E6120CDFE6C7546453D2B0DA261D6ECC /* MSConnectionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSConnectionConfiguration.m; path = sdk/src/MSConnectionConfiguration.m; sourceTree = "<group>"; };
-		E8FAA3520C7611B7FC734848B809D104 /* MSClientConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientConnection.h; path = sdk/src/MSClientConnection.h; sourceTree = "<group>"; };
-		EC2FCB2D6AAE025373D9719C85ED15DA /* MSConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSConnectionDelegate.h; path = sdk/src/MSConnectionDelegate.h; sourceTree = "<group>"; };
-		ECA9A8499E0B15F31EF5D4BA3387B529 /* MSLoginSafariViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewController.h; path = sdk/src/MSLoginSafariViewController.h; sourceTree = "<group>"; };
-		ECF4F7A79FF8B7E7EF98833CF9F84037 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		EE686006A76F462BA9DA38B0DB62A410 /* MSClientConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSClientConnection.m; path = sdk/src/MSClientConnection.m; sourceTree = "<group>"; };
-		EE9408DABBD9A4657505EA46B0D24239 /* MSURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSURLBuilder.h; path = sdk/src/MSURLBuilder.h; sourceTree = "<group>"; };
+		BD134853BB570E472475C1FF3495E5B2 /* MSJSONSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSJSONSerializer.h; path = sdk/src/MSJSONSerializer.h; sourceTree = "<group>"; };
+		BD54642A862204857C39879808118064 /* MSTableRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSTableRequest.m; path = sdk/src/MSTableRequest.m; sourceTree = "<group>"; };
+		BD7911965228FCEB27B2CF4E93A23F93 /* UIImageViewAlignedSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewAlignedSwift-umbrella.h"; sourceTree = "<group>"; };
+		BEFCECEB0E1A8071981936BC8178E672 /* MSSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSerializer.h; path = sdk/src/MSSerializer.h; sourceTree = "<group>"; };
+		BF2803AD74654E4A59056D42120C0DE7 /* TransitionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-prefix.pch"; sourceTree = "<group>"; };
+		C1FF2D7B7E9247FD247990C6A3BD6F72 /* MSPushConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushConnection.m; path = sdk/src/MSPushConnection.m; sourceTree = "<group>"; };
+		C43A54871C9ED88F809C7132BE212679 /* MSPushConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPushConnection.h; path = sdk/src/MSPushConnection.h; sourceTree = "<group>"; };
+		C4FB1B02EF2ECBC5503C87024A467988 /* MSLoginSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSerializer.h; path = sdk/src/MSLoginSerializer.h; sourceTree = "<group>"; };
+		C5C1BD73C3CB4CFE0BEE12578D061F91 /* MSSyncContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContext.m; path = sdk/src/MSSyncContext.m; sourceTree = "<group>"; };
+		C68FD916A8D6A17C9F5D79172F8E37D5 /* MSQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQuery.m; path = sdk/src/MSQuery.m; sourceTree = "<group>"; };
+		C8C163023FBBF9D22B4C1F9B4ED5FD41 /* MSQueuePullOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePullOperation.m; path = sdk/src/MSQueuePullOperation.m; sourceTree = "<group>"; };
+		C95B1E645836AAC70B48919D0D20B35B /* MSTableRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableRequest.h; path = sdk/src/MSTableRequest.h; sourceTree = "<group>"; };
+		CAF23D158E1FE2EFF2712E9FCE5C67D3 /* MicrosoftAzureMobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicrosoftAzureMobile-umbrella.h"; sourceTree = "<group>"; };
+		D33F71B279C1635AE82767D56886F4B8 /* MSLoginSafariViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewController.h; path = sdk/src/MSLoginSafariViewController.h; sourceTree = "<group>"; };
+		D4E7445A7678A33C1A6584976C55461F /* MicrosoftAzureMobile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MicrosoftAzureMobile.h; path = sdk/src/MicrosoftAzureMobile.h; sourceTree = "<group>"; };
+		D56BFCE837D26F62F0BD45726F69DC8D /* MSAPIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSAPIRequest.h; path = sdk/src/MSAPIRequest.h; sourceTree = "<group>"; };
+		D665D10DA5F78313DE439B31B20D62BF /* MSInstallation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSInstallation.m; path = sdk/src/MSInstallation.m; sourceTree = "<group>"; };
+		D8515F626AF7D1849922D6C266D0B3FB /* MicrosoftAzureMobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MicrosoftAzureMobile-dummy.m"; sourceTree = "<group>"; };
+		DCA60E72B001473906F8CC21E84C92AC /* MSPullSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPullSettings.h; path = sdk/src/MSPullSettings.h; sourceTree = "<group>"; };
+		DE35780E14251823CADBFF8464E526CF /* MSPushRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushRequest.m; path = sdk/src/MSPushRequest.m; sourceTree = "<group>"; };
+		DF5217A313AAC8AE9011AB6BE8D83417 /* MSTableInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableInternal.h; path = sdk/src/MSTableInternal.h; sourceTree = "<group>"; };
+		E326666065AF5E45D2D6B7AB621A83F7 /* MSManagedObjectObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSManagedObjectObserver.h; path = sdk/src/MSManagedObjectObserver.h; sourceTree = "<group>"; };
+		E33E6648E750A3973110A3FA6A40332C /* TransitionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionButton-umbrella.h"; sourceTree = "<group>"; };
+		E4EE0FA466D0C820E44638EC03DAE626 /* MSUserAgentBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSUserAgentBuilder.m; path = sdk/src/MSUserAgentBuilder.m; sourceTree = "<group>"; };
+		E7767A8172FB3714E9A808336ACA438F /* MSQueryResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueryResult.m; path = sdk/src/MSQueryResult.m; sourceTree = "<group>"; };
+		E8653104696C25ED5E9C9B4B7A731E96 /* MSLoginSafariViewControllerUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginSafariViewControllerUtilities.h; path = sdk/src/MSLoginSafariViewControllerUtilities.h; sourceTree = "<group>"; };
+		E8AE4274B6B45DD49363978095D07490 /* MSQueuePurgeOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueuePurgeOperation.h; path = sdk/src/MSQueuePurgeOperation.h; sourceTree = "<group>"; };
+		E9802E8829D0BA9852ABD2AA1B308D7C /* UIImageViewAlignedSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageViewAlignedSwift-dummy.m"; sourceTree = "<group>"; };
+		EC7EC0B190563C980470E0ED4AC62A6A /* MSClientInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientInternal.h; path = sdk/src/MSClientInternal.h; sourceTree = "<group>"; };
+		ECC8E3B1CC0153C821508CC145749B4A /* MSQueryResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSQueryResult.h; path = sdk/src/MSQueryResult.h; sourceTree = "<group>"; };
+		EED914377B90CA9727F91B81FE7E9715 /* MSJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSJSONSerializer.m; path = sdk/src/MSJSONSerializer.m; sourceTree = "<group>"; };
+		EF7EB747A13A8D6F1DAB10283D3B1B97 /* MSUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSUser.h; path = sdk/src/MSUser.h; sourceTree = "<group>"; };
+		F15CB98F1CDF3EBB456512C92475719D /* MSLoginView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLoginView.h; path = sdk/src/MSLoginView.h; sourceTree = "<group>"; };
+		F1EE40136D61AC2A9BC258B22D394154 /* TransitionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionButton.swift; path = Source/TransitionButton.swift; sourceTree = "<group>"; };
+		F2592CEE2DBDA5DE0E9669BA15B5ADCC /* MSOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSOperationQueue.h; path = sdk/src/MSOperationQueue.h; sourceTree = "<group>"; };
+		F465174BE0292BA111FAF74252247ACE /* MSClientConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSClientConnection.h; path = sdk/src/MSClientConnection.h; sourceTree = "<group>"; };
+		F4A0C464D84B3B2D09CFAF8F1EE67F79 /* MSManagedObjectObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSManagedObjectObserver.m; path = sdk/src/MSManagedObjectObserver.m; sourceTree = "<group>"; };
 		F4CD593F79CCA94E39CA09AF28758E24 /* Pods-AvanadeAIProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AvanadeAIProject-umbrella.h"; sourceTree = "<group>"; };
-		F5A51B122CECCFD53287413BF2E28084 /* MSError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSError.h; path = sdk/src/MSError.h; sourceTree = "<group>"; };
-		F907B51E1EE8103A40EBCF3FE70877D6 /* MSSyncContextReadResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSSyncContextReadResult.m; path = sdk/src/MSSyncContextReadResult.m; sourceTree = "<group>"; };
-		F94E34708F1028310E3147D25800FCC2 /* MSJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSJSONSerializer.m; path = sdk/src/MSJSONSerializer.m; sourceTree = "<group>"; };
-		FC0718D00E6A1F77495BA98F5CEFB353 /* MSPushConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPushConnection.m; path = sdk/src/MSPushConnection.m; sourceTree = "<group>"; };
-		FE46F686FF27751203337803D1765618 /* MSTableOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSTableOperation.h; path = sdk/src/MSTableOperation.h; sourceTree = "<group>"; };
+		F77EAF80E7AC6A4F8F7FC6138DD6AE42 /* MSSyncContextInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncContextInternal.h; path = sdk/src/MSSyncContextInternal.h; sourceTree = "<group>"; };
+		F841FD129A25A6890BEE389C44AEBEFD /* TransitionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8759704519383E6E1B35340504FE66E /* MSSyncTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSSyncTable.h; path = sdk/src/MSSyncTable.h; sourceTree = "<group>"; };
+		F9268CDB6ACFD15EDB3E8EFE465B34A1 /* MSURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSURLBuilder.h; path = sdk/src/MSURLBuilder.h; sourceTree = "<group>"; };
+		FACB13D545007D5DB473FD85C752FF7A /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		FBEC4D1D9FA1FFA7C54CAB652ABF62BD /* MSQueuePurgeOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSQueuePurgeOperation.m; path = sdk/src/MSQueuePurgeOperation.m; sourceTree = "<group>"; };
+		FE5EEA21382CDE9C2BADD5205726FB70 /* MSBlockDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSBlockDefinitions.h; path = sdk/src/MSBlockDefinitions.h; sourceTree = "<group>"; };
+		FF4DAA8C2E5BEF88488308F15F9BFEB2 /* MSLogin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSLogin.h; path = sdk/src/MSLogin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2515461F28EAAA3BABD55A32F9788100 /* Frameworks */ = {
+		29087A956BDF7D560B57B5D1978F75D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9347002AEA0AF8DA172638076298E31 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C2A685F86ED018B3CC54DC5E45BB11A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7A35A07D08A133A1DDEC163A1226C95 /* Foundation.framework in Frameworks */,
+				DCB547C033082B87441C3D432BB0B564 /* Foundation.framework in Frameworks */,
+				E6EA4EFEA1C650A7D679BA07679EEF00 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,52 +345,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8761A78554A9A39CF4F95D8AFB5BC2D /* Frameworks */ = {
+		713B925EFE9416ECF77EC2D85A2FA9DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FEF3E0A617E52A48755244B69923F9F /* Foundation.framework in Frameworks */,
-				79CDAFEC73BD1BEF182EFE131FD7A17A /* UIKit.framework in Frameworks */,
+				6A64690AD770D84CA61918CDDAFD14BA /* Foundation.framework in Frameworks */,
+				A09D29E8D56909761417D402E79F2E17 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F73D56AB0F7AF8D4843B5C59826D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECB08FC66786A062F384C1019E86508 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96DBC7947D81C8316796550366C3B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D8548C21744F829020B385578225B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0138FD99CC4ADF1A06D01740FBDB0030 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				258DDF5F8AA14EB0DF68454A8B591B3F /* Info.plist */,
-				5382CBB867CE0C182F2CAD6860B5BE46 /* SkyFloatingLabelTextField.modulemap */,
-				02011B766283EA2F8ADA6636B80D800D /* SkyFloatingLabelTextField.xcconfig */,
-				02CCBEAFDED60CBB740B996C0AC710C6 /* SkyFloatingLabelTextField-dummy.m */,
-				192EE97ABC59F70571451D2904AA9D1F /* SkyFloatingLabelTextField-prefix.pch */,
-				BA6C63275EE99A5FA87E478948E6128A /* SkyFloatingLabelTextField-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField";
-			sourceTree = "<group>";
-		};
-		0F8F5F9CB4EAEBD698266BB41949B546 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3341FBF84D81E54CE96A9242267E4E2D /* Info.plist */,
-				556E9C7FDA71E6DF6B59FB1EC675EC0D /* TransitionButton.modulemap */,
-				5F2007A70E4522897553C893C84E2E03 /* TransitionButton.xcconfig */,
-				AA09C9CBFEF71184261361FC02EA0855 /* TransitionButton-dummy.m */,
-				9B9EFE8EE1AB832526050C4027C7C409 /* TransitionButton-prefix.pch */,
-				AFE09609035E1967373B97E8B72591F4 /* TransitionButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TransitionButton";
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				3D21A80A7717CA9FF6F518C4E1DFB9D0 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B13DA6A075BCDB03116ECADAE90768F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BAC8426E180208DFAE508E42D89260B /* MicrosoftAzureMobile.framework */,
+				1241EBA32C144B707DC41F24EEB32469 /* Pods_AvanadeAIProject.framework */,
+				AF3F98D50DAF5F1608A8BC9E18C833A5 /* SkyFloatingLabelTextField.framework */,
+				F841FD129A25A6890BEE389C44AEBEFD /* TransitionButton.framework */,
+				9036E08D7CAEA70AE92E67599EF1F6FB /* UIImageViewAlignedSwift.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3D21A80A7717CA9FF6F518C4E1DFB9D0 /* iOS */ = {
@@ -390,50 +403,49 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		447BBFFF5CE2671EB35706473508EB21 /* Products */ = {
+		4D9EB3939AF300952A4714D101BBEE62 /* UIImageViewAlignedSwift */ = {
 			isa = PBXGroup;
 			children = (
-				98464F8CF1AC60329C25BD1333E03CF4 /* MicrosoftAzureMobile.framework */,
-				2D49139612BA45342B1A43C65C9C7C87 /* Pods_AvanadeAIProject.framework */,
-				3510F8A20C5F5B7657C32D647AA9E9C4 /* SkyFloatingLabelTextField.framework */,
-				1BDB45091B8500BB3E995B4442194C83 /* TransitionButton.framework */,
+				6869E5E2DCA145D7B9D507A6360C4A9C /* UIImageViewAligned.swift */,
+				EFC41D0F651EF52A6DED312216B4F6E0 /* Support Files */,
 			);
-			name = Products;
+			path = UIImageViewAlignedSwift;
 			sourceTree = "<group>";
 		};
-		558F0D2684D59557B0518FF67F36F19F /* SkyFloatingLabelTextField */ = {
+		6BC66873FC8396F5351D1F6521C44FD5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				762CB95BB5987435BA4D9E914C772330 /* SkyFloatingLabelTextField.swift */,
-				50CCB28BF90631DAEA9D671F49CFDD4D /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				ECF4F7A79FF8B7E7EF98833CF9F84037 /* UITextField+fixCaretPosition.swift */,
-				0138FD99CC4ADF1A06D01740FBDB0030 /* Support Files */,
-			);
-			path = SkyFloatingLabelTextField;
-			sourceTree = "<group>";
-		};
-		6F368A86F8FFB328A24763852D317584 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D68659D927AFB18FE2C13D1D963B364B /* MicrosoftAzureMobile */,
-				558F0D2684D59557B0518FF67F36F19F /* SkyFloatingLabelTextField */,
-				A00DDC28A8F6851E074601B27FA6443B /* TransitionButton */,
+				A5ED7684D490D7094CC1FA8D8FC021C0 /* MicrosoftAzureMobile */,
+				710B2B36366F711F7472286B56EE59A2 /* SkyFloatingLabelTextField */,
+				9E37712FAE35D961F3639476D77172B9 /* TransitionButton */,
+				4D9EB3939AF300952A4714D101BBEE62 /* UIImageViewAlignedSwift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		722016C532B815D5CFB1FDC39D56BE82 /* Support Files */ = {
+		710B2B36366F711F7472286B56EE59A2 /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				15F782019D581CD4D96BDC53E600B474 /* Info.plist */,
-				AA94B1BACBAD926F037C01EB0D7809FA /* MicrosoftAzureMobile.modulemap */,
-				8AE58BFC8393435DAC93C85F8E083032 /* MicrosoftAzureMobile.xcconfig */,
-				864BBC8D588927EBE8E09CB2C3C8C10E /* MicrosoftAzureMobile-dummy.m */,
-				030AA7C199435F47BE9A4FF9389208FD /* MicrosoftAzureMobile-prefix.pch */,
-				6495DF4B1AC6AED32F63E137DFA9F124 /* MicrosoftAzureMobile-umbrella.h */,
+				11DAA07EB2F86BAB8CB336FF671EAA19 /* SkyFloatingLabelTextField.swift */,
+				9F50C4B6950F414E8CBD23448DAF0B8F /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				1311A31F79C1344C7951E32E9DCF401B /* UITextField+fixCaretPosition.swift */,
+				AB0F77FA3D703D8202EC33A20965CBDB /* Support Files */,
+			);
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		76EE0845BAE6C131731970D1B71B7D20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ACE52FBB681BCF8120F904889BA06F2 /* Info.plist */,
+				353CFF612E91B789C515EC8C718C3259 /* TransitionButton.modulemap */,
+				6A18F61A0FA159D021A56B2139ABA939 /* TransitionButton.xcconfig */,
+				429EF4CE180FC875B85AEE3F8306B95D /* TransitionButton-dummy.m */,
+				BF2803AD74654E4A59056D42120C0DE7 /* TransitionButton-prefix.pch */,
+				E33E6648E750A3973110A3FA6A40332C /* TransitionButton-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MicrosoftAzureMobile";
+			path = "../Target Support Files/TransitionButton";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -441,23 +453,147 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				6F368A86F8FFB328A24763852D317584 /* Pods */,
-				447BBFFF5CE2671EB35706473508EB21 /* Products */,
+				6BC66873FC8396F5351D1F6521C44FD5 /* Pods */,
+				1B13DA6A075BCDB03116ECADAE90768F /* Products */,
 				D02CA8E1E3F01EE752D5AAF76DD3AAC1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A00DDC28A8F6851E074601B27FA6443B /* TransitionButton */ = {
+		9E37712FAE35D961F3639476D77172B9 /* TransitionButton */ = {
 			isa = PBXGroup;
 			children = (
-				022256CFAF27A93DADEEF69FAB157DB1 /* CGRectExtension.swift */,
-				ACEA39A186C510D94B737011E6784545 /* CustomTransitionViewController.swift */,
-				B3FA49B30AACE9B12881F7443D5F9829 /* FadeTransition.swift */,
-				734AE6EAD5F032E912C1916BF8E13750 /* SpinerLayer.swift */,
-				30C6D08EE9C5A222676195CE8A154EE0 /* TransitionButton.swift */,
-				0F8F5F9CB4EAEBD698266BB41949B546 /* Support Files */,
+				6B8D0F479E5A30975B15C3DDACB2B436 /* CGRectExtension.swift */,
+				B218867E44848D64EAA86BCC7A227A83 /* CustomTransitionViewController.swift */,
+				8E15370004D78FD93C7EBD6D34A9D620 /* FadeTransition.swift */,
+				4BD781670A2F1D0F3035827B6AFCB644 /* SpinerLayer.swift */,
+				F1EE40136D61AC2A9BC258B22D394154 /* TransitionButton.swift */,
+				76EE0845BAE6C131731970D1B71B7D20 /* Support Files */,
 			);
 			path = TransitionButton;
+			sourceTree = "<group>";
+		};
+		A5ED7684D490D7094CC1FA8D8FC021C0 /* MicrosoftAzureMobile */ = {
+			isa = PBXGroup;
+			children = (
+				D4E7445A7678A33C1A6584976C55461F /* MicrosoftAzureMobile.h */,
+				66C2A84584754AF1453E98FBA046C620 /* MSAPIConnection.h */,
+				555335DF99E10F198DA95B7BDFFD76E8 /* MSAPIConnection.m */,
+				D56BFCE837D26F62F0BD45726F69DC8D /* MSAPIRequest.h */,
+				B79B4C4C694966B08B1615342211062C /* MSAPIRequest.m */,
+				6430C7104B1DE48B8C4CC2DD370705B2 /* MSAuthState.h */,
+				99F577CF480867857C0043D13B3C67F1 /* MSAuthState.m */,
+				FE5EEA21382CDE9C2BADD5205726FB70 /* MSBlockDefinitions.h */,
+				4818668EBA48947CA73D421F6FC2C5AA /* MSClient.h */,
+				7EAB7824B0D7E9626E6F5B3B7AF4C53C /* MSClient.m */,
+				F465174BE0292BA111FAF74252247ACE /* MSClientConnection.h */,
+				5C940EFBA6C9B207F9078FC747B0F617 /* MSClientConnection.m */,
+				EC7EC0B190563C980470E0ED4AC62A6A /* MSClientInternal.h */,
+				9B73B05B3C266DEA73ABA717C790B9D9 /* MSConnectionConfiguration.h */,
+				A245ABC80FEDFD29564F325DDAAAA017 /* MSConnectionConfiguration.m */,
+				780444E0519151415AEC94FC5A545A49 /* MSConnectionDelegate.h */,
+				36DA1322C1CE6BD06C4AE4A82FC493E7 /* MSConnectionDelegate.m */,
+				8DFF96369B990857AA393AA33D30235D /* MSCoreDataStore.h */,
+				5FB4AC752A116DC8E64271A36D821C42 /* MSCoreDataStore.m */,
+				37A65E9565D9773F8F3CD1C5F6AB1405 /* MSDateOffset.h */,
+				78E895D9EEE97D95B44A372062D9CCEF /* MSDateOffset.m */,
+				74B6F2308A136D4DADAB95A0AF412CA6 /* MSError.h */,
+				233B4C83029379E3CBECEAF296B60F0E /* MSError.m */,
+				5847B83AC7DE00E00FE5AFC153B9F772 /* MSFilter.h */,
+				5BB49B9C0CD89419AF0699A1894D1236 /* MSInstallation.h */,
+				D665D10DA5F78313DE439B31B20D62BF /* MSInstallation.m */,
+				0661999F9EA105A56B7ED344955A0FC4 /* MSInstallationTemplate.h */,
+				77D7DE8988B81E256DC85BF7C4EAA350 /* MSInstallationTemplate.m */,
+				BD134853BB570E472475C1FF3495E5B2 /* MSJSONSerializer.h */,
+				EED914377B90CA9727F91B81FE7E9715 /* MSJSONSerializer.m */,
+				FF4DAA8C2E5BEF88488308F15F9BFEB2 /* MSLogin.h */,
+				866107977D7EE63BB01CCD6550D48407 /* MSLogin.m */,
+				39133B0F4293076B969A6F1A3FB6D38E /* MSLoginController.h */,
+				920EE606EC72CAF6DB8E69E69CA0E4C2 /* MSLoginController.m */,
+				D33F71B279C1635AE82767D56886F4B8 /* MSLoginSafariViewController.h */,
+				468C3EADAD9B23CDAC360EA6C0E249D1 /* MSLoginSafariViewController.m */,
+				E8653104696C25ED5E9C9B4B7A731E96 /* MSLoginSafariViewControllerUtilities.h */,
+				A0B4AE22A78D122E17A01970A2229C25 /* MSLoginSafariViewControllerUtilities.m */,
+				C4FB1B02EF2ECBC5503C87024A467988 /* MSLoginSerializer.h */,
+				098880FCE86CA5EE7FC65F2A95A04F25 /* MSLoginSerializer.m */,
+				F15CB98F1CDF3EBB456512C92475719D /* MSLoginView.h */,
+				6E01E191B708C2C88B20D7210D8FD16C /* MSLoginView.m */,
+				E326666065AF5E45D2D6B7AB621A83F7 /* MSManagedObjectObserver.h */,
+				F4A0C464D84B3B2D09CFAF8F1EE67F79 /* MSManagedObjectObserver.m */,
+				93B75ED10D235DD12762059F9F077B9C /* MSNaiveISODateFormatter.h */,
+				B2DC24D2567F7C417864066C46DA5E2E /* MSNaiveISODateFormatter.m */,
+				F2592CEE2DBDA5DE0E9669BA15B5ADCC /* MSOperationQueue.h */,
+				0D06A2F9998C2B763BB24FE205586F91 /* MSOperationQueue.m */,
+				74FD6730AEFA1027DEAF34D2038A9322 /* MSPredicateTranslator.h */,
+				32143EDEAF1857C26ADFB56EE87BC4CC /* MSPredicateTranslator.m */,
+				DCA60E72B001473906F8CC21E84C92AC /* MSPullSettings.h */,
+				B73BF0EEA7ACEC8F05B8C87708716C98 /* MSPullSettings.m */,
+				30AEB50B77E7EED7C7985C051C420AC9 /* MSPullSettingsInternal.h */,
+				8409F3D88CC151EC27CB7E882C697E16 /* MSPush.h */,
+				13EEBB57DB2BF9666031D0B4BF206437 /* MSPush.m */,
+				C43A54871C9ED88F809C7132BE212679 /* MSPushConnection.h */,
+				C1FF2D7B7E9247FD247990C6A3BD6F72 /* MSPushConnection.m */,
+				9CE446736A0B7355FBE93F9A90D51364 /* MSPushRequest.h */,
+				DE35780E14251823CADBFF8464E526CF /* MSPushRequest.m */,
+				9AA0B1BBD21EFA2D559C9703A231036B /* MSQuery.h */,
+				C68FD916A8D6A17C9F5D79172F8E37D5 /* MSQuery.m */,
+				B8738753EE8EDD6B8593DA39F7E4CCCC /* MSQueryInternal.h */,
+				ECC8E3B1CC0153C821508CC145749B4A /* MSQueryResult.h */,
+				E7767A8172FB3714E9A808336ACA438F /* MSQueryResult.m */,
+				2131BDEDC5522ED1A75F4C9BD5AC6087 /* MSQueuePullOperation.h */,
+				C8C163023FBBF9D22B4C1F9B4ED5FD41 /* MSQueuePullOperation.m */,
+				5CA7E2A5375BACE76581978623EFA56F /* MSQueuePullOperationInternal.h */,
+				E8AE4274B6B45DD49363978095D07490 /* MSQueuePurgeOperation.h */,
+				FBEC4D1D9FA1FFA7C54CAB652ABF62BD /* MSQueuePurgeOperation.m */,
+				13F56F8A7EC2EE30D0CAA70AC782A87B /* MSQueuePushOperation.h */,
+				6254DA790D5CA75B86155438E4992321 /* MSQueuePushOperation.m */,
+				8EE844D3CA9F3D2F47F0F5768C8B88AB /* MSSDKFeatures.h */,
+				8CD294BC02640A708706F22D0ABB9925 /* MSSDKFeatures.m */,
+				BEFCECEB0E1A8071981936BC8178E672 /* MSSerializer.h */,
+				6C818AADCA3D5B95F5CCB4B0703448A2 /* MSSyncContext.h */,
+				C5C1BD73C3CB4CFE0BEE12578D061F91 /* MSSyncContext.m */,
+				F77EAF80E7AC6A4F8F7FC6138DD6AE42 /* MSSyncContextInternal.h */,
+				95D7518591C0BFD99BE71DC715C29B7B /* MSSyncContextReadResult.h */,
+				5F02E6D4A38F71C7E91C44802DB325D3 /* MSSyncContextReadResult.m */,
+				F8759704519383E6E1B35340504FE66E /* MSSyncTable.h */,
+				A4CA8B16F206AF3ADFCE4E9CB229DFAF /* MSSyncTable.m */,
+				5E3B5D31C33D6458D630D8EB5E76F776 /* MSTable.h */,
+				394C2A4CD935D80543BF0A34840A6D81 /* MSTable.m */,
+				A0F650A080747CB15FF6469437845BD9 /* MSTableConfigValue.h */,
+				194CC386344D330926BFDC6B6E18943C /* MSTableConfigValue.m */,
+				34282D5782613AA18A555CDAF568E202 /* MSTableConnection.h */,
+				110877B7A2DBA0CB1BF6FD799DD87829 /* MSTableConnection.m */,
+				DF5217A313AAC8AE9011AB6BE8D83417 /* MSTableInternal.h */,
+				B6F364DA81BFB73512C843C1488DCD7F /* MSTableOperation.h */,
+				83E359AD91996AC0BE8BB0F4CCA734DF /* MSTableOperation.m */,
+				4258ADE5B8182DF9D378F96339ECA551 /* MSTableOperationError.h */,
+				57E99641ECC629E7E42CC80A0954F0AE /* MSTableOperationError.m */,
+				07A17F7425DCE716D083702D090CC75E /* MSTableOperationInternal.h */,
+				C95B1E645836AAC70B48919D0D20B35B /* MSTableRequest.h */,
+				BD54642A862204857C39879808118064 /* MSTableRequest.m */,
+				F9268CDB6ACFD15EDB3E8EFE465B34A1 /* MSURLBuilder.h */,
+				400714BA0514D23BDB5EC5C8A33B2110 /* MSURLBuilder.m */,
+				EF7EB747A13A8D6F1DAB10283D3B1B97 /* MSUser.h */,
+				B79387608E45A2DAEE267E86D4BBB7B7 /* MSUser.m */,
+				9E808681D07579A4BC0DB392DB7009EC /* MSUserAgentBuilder.h */,
+				E4EE0FA466D0C820E44638EC03DAE626 /* MSUserAgentBuilder.m */,
+				027344875B463D6AD9E909B808938FF4 /* NSURLSessionTask+Completion.h */,
+				CD4FF944D3B180893204A56A89A420E4 /* Support Files */,
+			);
+			path = MicrosoftAzureMobile;
+			sourceTree = "<group>";
+		};
+		AB0F77FA3D703D8202EC33A20965CBDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				808C2A2701CA5243374C354FD1FF88DA /* Info.plist */,
+				683BC5D4393FC3CF12CE6F2FE75E46BA /* SkyFloatingLabelTextField.modulemap */,
+				3363D407F819CF387212731D34FAD3FC /* SkyFloatingLabelTextField.xcconfig */,
+				FACB13D545007D5DB473FD85C752FF7A /* SkyFloatingLabelTextField-dummy.m */,
+				55F1AEC9896D269C2E3027EB3E799994 /* SkyFloatingLabelTextField-prefix.pch */,
+				98A6B2CDA1DCA770DC79412170B0D342 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
 			sourceTree = "<group>";
 		};
 		C3C103437FEFE5CC0D384B4775342C1A /* Pods-AvanadeAIProject */ = {
@@ -478,6 +614,20 @@
 			path = "Target Support Files/Pods-AvanadeAIProject";
 			sourceTree = "<group>";
 		};
+		CD4FF944D3B180893204A56A89A420E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				635072088E0205C5EE4B663DBA4C9E64 /* Info.plist */,
+				783117BA350F562B1F1559D1D3702092 /* MicrosoftAzureMobile.modulemap */,
+				A6B3572EFE509A39AE1C13BF2A76A9CD /* MicrosoftAzureMobile.xcconfig */,
+				D8515F626AF7D1849922D6C266D0B3FB /* MicrosoftAzureMobile-dummy.m */,
+				B8C446B475CFCA1D1183090B79D283A0 /* MicrosoftAzureMobile-prefix.pch */,
+				CAF23D158E1FE2EFF2712E9FCE5C67D3 /* MicrosoftAzureMobile-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MicrosoftAzureMobile";
+			sourceTree = "<group>";
+		};
 		D02CA8E1E3F01EE752D5AAF76DD3AAC1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,140 +636,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D68659D927AFB18FE2C13D1D963B364B /* MicrosoftAzureMobile */ = {
+		EFC41D0F651EF52A6DED312216B4F6E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				282026CA1EA28AD7CF9FFE48E6992337 /* MicrosoftAzureMobile.h */,
-				660A704C382F937FB0E02F5A8A2C3DDF /* MSAPIConnection.h */,
-				11D0833E2719B7FAABED819691A9C966 /* MSAPIConnection.m */,
-				AE644C4229DDC18D3075BEF300753EC6 /* MSAPIRequest.h */,
-				E4182CBD1DB2C8DF4D6093ADFBE72B05 /* MSAPIRequest.m */,
-				3A283D30EF5D536829A75877CA23321F /* MSAuthState.h */,
-				6683381157237B752E3A8AE7F1BA2419 /* MSAuthState.m */,
-				1BF86E062F1B9E552778D878AAF669FE /* MSBlockDefinitions.h */,
-				3BC095018E53D7F56D9341B81BA4BC31 /* MSClient.h */,
-				2191AD40E95E2F0E81A74E27F670A69F /* MSClient.m */,
-				E8FAA3520C7611B7FC734848B809D104 /* MSClientConnection.h */,
-				EE686006A76F462BA9DA38B0DB62A410 /* MSClientConnection.m */,
-				1C92FE44536576793B36EBDE34426A12 /* MSClientInternal.h */,
-				61D8C0F1C489090BA07C777019B0E668 /* MSConnectionConfiguration.h */,
-				E6120CDFE6C7546453D2B0DA261D6ECC /* MSConnectionConfiguration.m */,
-				EC2FCB2D6AAE025373D9719C85ED15DA /* MSConnectionDelegate.h */,
-				BEE3043C466CA07252BD78BE744515F9 /* MSConnectionDelegate.m */,
-				1963D95E9D5B500D6BEB7B81FEE7B4CC /* MSCoreDataStore.h */,
-				1BB9B9BACD71520C39B1B6AD6AA07A15 /* MSCoreDataStore.m */,
-				980EE024AA6FD47D744D36BB707A4FC0 /* MSDateOffset.h */,
-				5ECB5345F15C2CE892DB95F8AD32F3E9 /* MSDateOffset.m */,
-				F5A51B122CECCFD53287413BF2E28084 /* MSError.h */,
-				A62D4849A1B4B0AEF4E0A4F0415652D7 /* MSError.m */,
-				A380D9EAE1B715F9C6145E51BF158BD3 /* MSFilter.h */,
-				52A53C9FA2E6A956CD701D3761387E2E /* MSInstallation.h */,
-				07C28255746C56A110806900DF89F1C8 /* MSInstallation.m */,
-				AD41DE928F2E4B53EA162F419578A4B8 /* MSInstallationTemplate.h */,
-				4F7DB38E85E800A203B819352E3C240D /* MSInstallationTemplate.m */,
-				0331CC70D1D3795743077993F16DDC05 /* MSJSONSerializer.h */,
-				F94E34708F1028310E3147D25800FCC2 /* MSJSONSerializer.m */,
-				0F54A067B78548CCBBBCD3797F7E589F /* MSLogin.h */,
-				D551D29659DC3B7B1C2FC2A385C7457D /* MSLogin.m */,
-				877C9FFC82A3303165BDB82BB4EF0978 /* MSLoginController.h */,
-				1F9FABF7FF8B1CE096830DB3CF3723D2 /* MSLoginController.m */,
-				ECA9A8499E0B15F31EF5D4BA3387B529 /* MSLoginSafariViewController.h */,
-				013506D6978ACFD7965BD1D56FAD7BDE /* MSLoginSafariViewController.m */,
-				37751FD544DE44648C050CCF2CD66CFF /* MSLoginSafariViewControllerUtilities.h */,
-				81225CA738A44783C3B62D96F075E8E2 /* MSLoginSafariViewControllerUtilities.m */,
-				9B55664EDA5512E19A82B1CD2672C809 /* MSLoginSerializer.h */,
-				5E4378549334AA5640D7484F7FB154C8 /* MSLoginSerializer.m */,
-				A4E941058F867D9F4AB0AA20A785159A /* MSLoginView.h */,
-				BFC2A94C21C908A3BE57A692BBFBC7D8 /* MSLoginView.m */,
-				683CC9406C075904B02A2F0A57489019 /* MSManagedObjectObserver.h */,
-				7FB231361CCA8D15CEE2FFDEA73CA12E /* MSManagedObjectObserver.m */,
-				4C575CBBA9EE16CCDD100F7492BE4B49 /* MSNaiveISODateFormatter.h */,
-				81ECC1C940F7F8DAA5D34156DB3E71CF /* MSNaiveISODateFormatter.m */,
-				CEAD7C0B42D0155CE7413EA6E028BDC2 /* MSOperationQueue.h */,
-				1D40D6FE30E9249E4EFBDC2E25E26B73 /* MSOperationQueue.m */,
-				A317B5D6DF564469F3E7FEE7EDC97EB1 /* MSPredicateTranslator.h */,
-				3D10297B1101A936118D03D8D388DA50 /* MSPredicateTranslator.m */,
-				8B81CF7A5BC36A1F7ABAFA66FF5693FB /* MSPullSettings.h */,
-				ACE030137665B3ACCD103530099E64AE /* MSPullSettings.m */,
-				2EB71B35DC8FB70835DD223B77A767D8 /* MSPullSettingsInternal.h */,
-				1F0F2F43B31A542068B07D0762113D2C /* MSPush.h */,
-				8F16895058DFDC9BEC6A6F00B5538CBE /* MSPush.m */,
-				D4D9A2BAD5B520DA7EDC0BB8DB477F4E /* MSPushConnection.h */,
-				FC0718D00E6A1F77495BA98F5CEFB353 /* MSPushConnection.m */,
-				483659AC4B375EDB997FA9540D4EF620 /* MSPushRequest.h */,
-				A2D15BC540541811116C44622CCA0E7E /* MSPushRequest.m */,
-				58B6368D9270FB7183E3185DFC4DADED /* MSQuery.h */,
-				7B6C21F008633A04D1F74D09880F8124 /* MSQuery.m */,
-				D732107F873EA82301FE88E618F4FC92 /* MSQueryInternal.h */,
-				C984C03DC097301B7006ADB67A09F47F /* MSQueryResult.h */,
-				8F0E061C4270087C4C6DDDA40EA52137 /* MSQueryResult.m */,
-				CCDB3F2A41FC80F3B713F2B2C83F997F /* MSQueuePullOperation.h */,
-				24577F830FD072873CA032846C176890 /* MSQueuePullOperation.m */,
-				597326ECA18C66C945AD33D2B0986A28 /* MSQueuePullOperationInternal.h */,
-				76290673AD1684AA20EAB6E31E3F361F /* MSQueuePurgeOperation.h */,
-				5D9CDC171E3CF5EA7FAB96D77DB31FD2 /* MSQueuePurgeOperation.m */,
-				5764E07924C1D04726E98F4A7B040BC7 /* MSQueuePushOperation.h */,
-				BBA61F79722D49F2290431399B047249 /* MSQueuePushOperation.m */,
-				A261FC034D6A57719D82280C2D7D1971 /* MSSDKFeatures.h */,
-				91765BF2A6387C3983927147AEFD9F5A /* MSSDKFeatures.m */,
-				B93EC0D5BC31A60FEB399E1624BA3913 /* MSSerializer.h */,
-				2F579587385CEA3B53C88BE9F0FFA34E /* MSSyncContext.h */,
-				778DE7CC88298544941281FA5F239F95 /* MSSyncContext.m */,
-				597400F1DEDF56697B74CE59D7E82AFA /* MSSyncContextInternal.h */,
-				6A15FA98DD55B563685991197E58E6D5 /* MSSyncContextReadResult.h */,
-				F907B51E1EE8103A40EBCF3FE70877D6 /* MSSyncContextReadResult.m */,
-				C2E66C8C4D9002DE42F59CA02C5D26B7 /* MSSyncTable.h */,
-				9D4B35FFB3C25142967E39C7051C5664 /* MSSyncTable.m */,
-				6EB228BE72C20C019F47B802719B6675 /* MSTable.h */,
-				CFDC9692A56640CDA6D06CC8B8C86AFA /* MSTable.m */,
-				6E8A14BAA241A0F37891325C10162658 /* MSTableConfigValue.h */,
-				1D88A8841772E4D5FC4745A93AA2C998 /* MSTableConfigValue.m */,
-				26B37FB7A0EA9E6DFD5686D7CCC34D67 /* MSTableConnection.h */,
-				B419894B3E9963D2EBA201A21229640E /* MSTableConnection.m */,
-				4706E6153189B8D5820B2792563E433D /* MSTableInternal.h */,
-				FE46F686FF27751203337803D1765618 /* MSTableOperation.h */,
-				7F42A56F8B6CE0B17EE6509777E83297 /* MSTableOperation.m */,
-				57DEF77B2E3C06BB3C0984F56DF77CCE /* MSTableOperationError.h */,
-				76F30F7244AF6A46E7045D75561C8761 /* MSTableOperationError.m */,
-				27F06462BBECA7A57DA63A828A09A7B9 /* MSTableOperationInternal.h */,
-				5FC589E564D46DED315BCF43C08D588F /* MSTableRequest.h */,
-				CB0AF250A9ED317871F9DC8566774983 /* MSTableRequest.m */,
-				EE9408DABBD9A4657505EA46B0D24239 /* MSURLBuilder.h */,
-				9D07D533E76526CC47F8ED3C7CC66960 /* MSURLBuilder.m */,
-				1339D8CF18AF90C8807481F6C63A8866 /* MSUser.h */,
-				7F3169DB4E4F0C105E2ACFDEF9A9573D /* MSUser.m */,
-				74FE86BA6254A68937A70D12288EF369 /* MSUserAgentBuilder.h */,
-				3E0DA270E3E002D0C016AE2107491FD5 /* MSUserAgentBuilder.m */,
-				60E3853C014DBE5BA8C7F97E550EBC22 /* NSURLSessionTask+Completion.h */,
-				722016C532B815D5CFB1FDC39D56BE82 /* Support Files */,
+				924CC2E850E0106DC4EB5367B2A37BD6 /* Info.plist */,
+				5621A670F7DAD1214F9F05A4FD087C6B /* UIImageViewAlignedSwift.modulemap */,
+				B00FF89299AD955DEF25E379C3E22F34 /* UIImageViewAlignedSwift.xcconfig */,
+				E9802E8829D0BA9852ABD2AA1B308D7C /* UIImageViewAlignedSwift-dummy.m */,
+				4BF735A2CFDF9A2D917291D952E3DE8B /* UIImageViewAlignedSwift-prefix.pch */,
+				BD7911965228FCEB27B2CF4E93A23F93 /* UIImageViewAlignedSwift-umbrella.h */,
 			);
-			path = MicrosoftAzureMobile;
+			name = "Support Files";
+			path = "../Target Support Files/UIImageViewAlignedSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01BFD2F881D076F580F0CB0CBB0CEB9E /* Headers */ = {
+		7E1DB1B11D5A90810A6F3C0297204DB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB172CBE167EA251DBA1A45DCC57BD55 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+				FEC7597D849277DB4E147E0DF937037B /* UIImageViewAlignedSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55CD137ACA57A24D561BB6D6767C194C /* Headers */ = {
+		825C4DB57AEEECA8C22C04F0AE94AD81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B3604643121DF762D39070DAA668CF /* TransitionButton-umbrella.h in Headers */,
+				9CA9C9A02FFD9C5E13A83200080BB9A3 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E401FFEBA8F1B0EF655FAE7B2CB3776 /* Headers */ = {
+		A7730CD78CEEA4337995B3242B2726FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37EAFCBEB4608EAB9C3A94A66157617 /* Pods-AvanadeAIProject-umbrella.h in Headers */,
+				B5D1C332E35E5E0A71D4A02F901F9721 /* Pods-AvanadeAIProject-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EAEF207DB927B9248A33682CF98F6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C0F98AB55858CE03BFD73AB1498025 /* TransitionButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,13 +753,34 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		157C3497C4D54E6C624B96E4A661369C /* TransitionButton */ = {
+		1D7A57A457B6CCDA4D149E8F558C0A49 /* Pods-AvanadeAIProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 586B34BF25AA0D0A02C4C5D2DC96672A /* Build configuration list for PBXNativeTarget "TransitionButton" */;
+			buildConfigurationList = 4364D983D7EFE2872253DC6C7B36A1DA /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */;
 			buildPhases = (
-				2EF91F6E05737258598013619208EA8D /* Sources */,
-				E8761A78554A9A39CF4F95D8AFB5BC2D /* Frameworks */,
-				55CD137ACA57A24D561BB6D6767C194C /* Headers */,
+				36543795ED41AE237BF8BEBAF0739A4B /* Sources */,
+				B3F73D56AB0F7AF8D4843B5C59826D62 /* Frameworks */,
+				A7730CD78CEEA4337995B3242B2726FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23CDB2F2CF2A38A746537371F9544DAA /* PBXTargetDependency */,
+				77582BD784DCA28580CFB0F4D8BC9CD9 /* PBXTargetDependency */,
+				C7AA90CEB78D45AD68BD5F972ED510B7 /* PBXTargetDependency */,
+				35B4FD5B60A08EC254D193711A94D23C /* PBXTargetDependency */,
+			);
+			name = "Pods-AvanadeAIProject";
+			productName = "Pods-AvanadeAIProject";
+			productReference = 1241EBA32C144B707DC41F24EEB32469 /* Pods_AvanadeAIProject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DE03E07A7F306130EF8143A5D8B47C6 /* TransitionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BEBA7FBB4D17AB0A4A87F8BBF789001 /* Build configuration list for PBXNativeTarget "TransitionButton" */;
+			buildPhases = (
+				B780925C884E00104581BACD1F5A89E0 /* Sources */,
+				713B925EFE9416ECF77EC2D85A2FA9DB /* Frameworks */,
+				A7EAEF207DB927B9248A33682CF98F6D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -705,27 +788,24 @@
 			);
 			name = TransitionButton;
 			productName = TransitionButton;
-			productReference = 1BDB45091B8500BB3E995B4442194C83 /* TransitionButton.framework */;
+			productReference = F841FD129A25A6890BEE389C44AEBEFD /* TransitionButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28620372E5861116F0E6745625D1815B /* Pods-AvanadeAIProject */ = {
+		93A3F32FC57C7DE95F8A3EF874BBCBAD /* SkyFloatingLabelTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CE51A198D86F763C12BC8433451B95C /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */;
+			buildConfigurationList = A7B67C35D7E0D08ADBF7589B936A7DB0 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
 			buildPhases = (
-				18BAB10604C208A8568AACFF6D62A7A6 /* Sources */,
-				2515461F28EAAA3BABD55A32F9788100 /* Frameworks */,
-				8E401FFEBA8F1B0EF655FAE7B2CB3776 /* Headers */,
+				8E02AC9E7D54A99400E0E27A3195F2E8 /* Sources */,
+				C96DBC7947D81C8316796550366C3B08 /* Frameworks */,
+				825C4DB57AEEECA8C22C04F0AE94AD81 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D830414AE6CF2DB9DB20812CA5A9D60B /* PBXTargetDependency */,
-				075FA2BAA1C140D6901C2F84E8A2BB7C /* PBXTargetDependency */,
-				B088A046320ED56A7B45F5C177DF5350 /* PBXTargetDependency */,
 			);
-			name = "Pods-AvanadeAIProject";
-			productName = "Pods-AvanadeAIProject";
-			productReference = 2D49139612BA45342B1A43C65C9C7C87 /* Pods_AvanadeAIProject.framework */;
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = AF3F98D50DAF5F1608A8BC9E18C833A5 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */ = {
@@ -742,24 +822,24 @@
 			);
 			name = MicrosoftAzureMobile;
 			productName = MicrosoftAzureMobile;
-			productReference = 98464F8CF1AC60329C25BD1333E03CF4 /* MicrosoftAzureMobile.framework */;
+			productReference = 6BAC8426E180208DFAE508E42D89260B /* MicrosoftAzureMobile.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9A13AC37055F8B4AB51AA81AA3C2F83D /* SkyFloatingLabelTextField */ = {
+		EDA66204C262F3434A573CA0EF668BBB /* UIImageViewAlignedSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40D1F3742795CC9918C17AF5176B0032 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = 5DB4A2188868F6BD3861A512B37C4487 /* Build configuration list for PBXNativeTarget "UIImageViewAlignedSwift" */;
 			buildPhases = (
-				FE412AB5AA2FCEB29C3CF8E08876B680 /* Sources */,
-				3C2A685F86ED018B3CC54DC5E45BB11A /* Frameworks */,
-				01BFD2F881D076F580F0CB0CBB0CEB9E /* Headers */,
+				156B0F22BD3988F300DA304A10CB94B0 /* Sources */,
+				29087A956BDF7D560B57B5D1978F75D1 /* Frameworks */,
+				7E1DB1B11D5A90810A6F3C0297204DB4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SkyFloatingLabelTextField;
-			productName = SkyFloatingLabelTextField;
-			productReference = 3510F8A20C5F5B7657C32D647AA9E9C4 /* SkyFloatingLabelTextField.framework */;
+			name = UIImageViewAlignedSwift;
+			productName = UIImageViewAlignedSwift;
+			productReference = 9036E08D7CAEA70AE92E67599EF1F6FB /* UIImageViewAlignedSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -779,37 +859,34 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 447BBFFF5CE2671EB35706473508EB21 /* Products */;
+			productRefGroup = 1B13DA6A075BCDB03116ECADAE90768F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */,
-				28620372E5861116F0E6745625D1815B /* Pods-AvanadeAIProject */,
-				9A13AC37055F8B4AB51AA81AA3C2F83D /* SkyFloatingLabelTextField */,
-				157C3497C4D54E6C624B96E4A661369C /* TransitionButton */,
+				1D7A57A457B6CCDA4D149E8F558C0A49 /* Pods-AvanadeAIProject */,
+				93A3F32FC57C7DE95F8A3EF874BBCBAD /* SkyFloatingLabelTextField */,
+				8DE03E07A7F306130EF8143A5D8B47C6 /* TransitionButton */,
+				EDA66204C262F3434A573CA0EF668BBB /* UIImageViewAlignedSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18BAB10604C208A8568AACFF6D62A7A6 /* Sources */ = {
+		156B0F22BD3988F300DA304A10CB94B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6995492182A917E7ED4BFD0477E40F89 /* Pods-AvanadeAIProject-dummy.m in Sources */,
+				7CF286843F5D10D6B8EEBAB1CE4253CF /* UIImageViewAligned.swift in Sources */,
+				BC309F44074D51026B4B0C7D8370EC73 /* UIImageViewAlignedSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EF91F6E05737258598013619208EA8D /* Sources */ = {
+		36543795ED41AE237BF8BEBAF0739A4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B68ABBDA60CC43963F75B4DD202908 /* CGRectExtension.swift in Sources */,
-				20ADCD686837F46AA101C84AE3B09CBD /* CustomTransitionViewController.swift in Sources */,
-				04371A1E29EC87D4CE7BDC48474A712E /* FadeTransition.swift in Sources */,
-				9E32E3596102B938978C2DEC04F98F2A /* SpinerLayer.swift in Sources */,
-				A86A89E03A25EAB168C87D4E018EF4A2 /* TransitionButton-dummy.m in Sources */,
-				BBF0FDE2C9B615A11E9AE46B42213010 /* TransitionButton.swift in Sources */,
+				F2CDB4DEB50C8AE2EBE381908EB51FBD /* Pods-AvanadeAIProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,44 +943,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE412AB5AA2FCEB29C3CF8E08876B680 /* Sources */ = {
+		8E02AC9E7D54A99400E0E27A3195F2E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198D2E30434B976369C01BFB188EB28F /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				CC985C49276538D627995988741A2ADC /* SkyFloatingLabelTextField.swift in Sources */,
-				57C8FC81B74886E163EE73AC14490906 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				3B0E8411ADCCA6F267D71D192FD70972 /* UITextField+fixCaretPosition.swift in Sources */,
+				4A9CB0C4EA5DE593C33C54698D76C965 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				00F2480CF7B20D965CE5D4F95AE1FB13 /* SkyFloatingLabelTextField.swift in Sources */,
+				C0EEFC2D937F16D9FEC62F355824EC60 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				AF4727598D2048BD89CA045D51D48FFA /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B780925C884E00104581BACD1F5A89E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9E381DB81150231A725A6E27873337 /* CGRectExtension.swift in Sources */,
+				B7860BE8C25FE67749F93D590B8C0369 /* CustomTransitionViewController.swift in Sources */,
+				F45B0149C6CECEA9B699230A98B03E36 /* FadeTransition.swift in Sources */,
+				90B580AE2C05ACE3C6083DFA3F6C7D68 /* SpinerLayer.swift in Sources */,
+				55D6843A9EF5EB3E0989DB19048BD72F /* TransitionButton-dummy.m in Sources */,
+				5BCBBE40FE206AA61852300CEEB52981 /* TransitionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075FA2BAA1C140D6901C2F84E8A2BB7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SkyFloatingLabelTextField;
-			target = 9A13AC37055F8B4AB51AA81AA3C2F83D /* SkyFloatingLabelTextField */;
-			targetProxy = 9D8B552E56C8F3CC2EA41C670ABAB7D4 /* PBXContainerItemProxy */;
-		};
-		B088A046320ED56A7B45F5C177DF5350 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TransitionButton;
-			target = 157C3497C4D54E6C624B96E4A661369C /* TransitionButton */;
-			targetProxy = FDF1D60BCA2142439800C9D9B69D0DE0 /* PBXContainerItemProxy */;
-		};
-		D830414AE6CF2DB9DB20812CA5A9D60B /* PBXTargetDependency */ = {
+		23CDB2F2CF2A38A746537371F9544DAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MicrosoftAzureMobile;
 			target = 96A446A93C6B0D5CCB82340728320636 /* MicrosoftAzureMobile */;
-			targetProxy = B83E378885D002B1BEC0CB2C29F669FA /* PBXContainerItemProxy */;
+			targetProxy = 0E8798D8D5A51161EB259250F1DE5A5F /* PBXContainerItemProxy */;
+		};
+		35B4FD5B60A08EC254D193711A94D23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewAlignedSwift;
+			target = EDA66204C262F3434A573CA0EF668BBB /* UIImageViewAlignedSwift */;
+			targetProxy = 7CAA8F4A3623669666B5C7E2C0BF94E5 /* PBXContainerItemProxy */;
+		};
+		77582BD784DCA28580CFB0F4D8BC9CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 93A3F32FC57C7DE95F8A3EF874BBCBAD /* SkyFloatingLabelTextField */;
+			targetProxy = DB700B15F9BE5C1B6C135A56E8098AED /* PBXContainerItemProxy */;
+		};
+		C7AA90CEB78D45AD68BD5F972ED510B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionButton;
+			target = 8DE03E07A7F306130EF8143A5D8B47C6 /* TransitionButton */;
+			targetProxy = D3EDBD98637947B765477CAE98485C00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2C648944E3863D1E1F5DF0ED5E7547ED /* Debug */ = {
+		15FE55DE94F247B785FEA806D45ACB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F2007A70E4522897553C893C84E2E03 /* TransitionButton.xcconfig */;
+			baseConfigurationReference = 6A18F61A0FA159D021A56B2139ABA939 /* TransitionButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -931,6 +1027,69 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		1E224C274E34238F76AE0583ADA9EB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3363D407F819CF387212731D34FAD3FC /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3215F719E633DB241ECD661394375C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00FF89299AD955DEF25E379C3E22F34 /* UIImageViewAlignedSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewAlignedSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap";
+				PRODUCT_NAME = UIImageViewAlignedSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -992,9 +1151,9 @@
 			};
 			name = Debug;
 		};
-		3F63F5C17A985CD5B2084A65511C3235 /* Release */ = {
+		48798AC0D4869C605BD5DEB3F9393A08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */;
+			baseConfigurationReference = A6B3572EFE509A39AE1C13BF2A76A9CD /* MicrosoftAzureMobile.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1005,20 +1164,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AvanadeAIProject/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MicrosoftAzureMobile/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AvanadeAIProject;
+				MODULEMAP_FILE = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile.modulemap";
+				PRODUCT_NAME = MicrosoftAzureMobile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1026,7 +1182,7 @@
 			};
 			name = Release;
 		};
-		42221E921F7B456F9846D023574A6EA1 /* Debug */ = {
+		4FDCE6D5B3A79EF3CB62C98F1BD2CA38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A28A38E98BCCC98E5C679AEBD9C7477 /* Pods-AvanadeAIProject.debug.xcconfig */;
 			buildSettings = {
@@ -1060,9 +1216,9 @@
 			};
 			name = Debug;
 		};
-		48798AC0D4869C605BD5DEB3F9393A08 /* Release */ = {
+		5352BECBAEAFB601B52456E9C8028857 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AE58BFC8393435DAC93C85F8E083032 /* MicrosoftAzureMobile.xcconfig */;
+			baseConfigurationReference = 901503B521CBEB869EABE8FA28A48188 /* Pods-AvanadeAIProject.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1073,17 +1229,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MicrosoftAzureMobile/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AvanadeAIProject/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MicrosoftAzureMobile/MicrosoftAzureMobile.modulemap";
-				PRODUCT_NAME = MicrosoftAzureMobile;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AvanadeAIProject;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1091,9 +1250,9 @@
 			};
 			name = Release;
 		};
-		499346DC80DCA1487E410F82A850BB90 /* Release */ = {
+		58780A9216CBAF2DD79799232EDFBF3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02011B766283EA2F8ADA6636B80D800D /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 3363D407F819CF387212731D34FAD3FC /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1111,6 +1270,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
 				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		720739CAABC613FA7E7C715AEEAFC5B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A18F61A0FA159D021A56B2139ABA939 /* TransitionButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
+				PRODUCT_NAME = TransitionButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1179,9 +1370,9 @@
 			};
 			name = Release;
 		};
-		A737FD10CB7F840571EEE6322686B491 /* Debug */ = {
+		943D4C14C3E17E7137B1A51B0E8BD037 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02011B766283EA2F8ADA6636B80D800D /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = B00FF89299AD955DEF25E379C3E22F34 /* UIImageViewAlignedSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1192,13 +1383,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewAlignedSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_NAME = SkyFloatingLabelTextField;
+				MODULEMAP_FILE = "Target Support Files/UIImageViewAlignedSwift/UIImageViewAlignedSwift.modulemap";
+				PRODUCT_NAME = UIImageViewAlignedSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1210,41 +1401,9 @@
 			};
 			name = Debug;
 		};
-		CA28F8DA425AC98A3C5AADBE602E0380 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F2007A70E4522897553C893C84E2E03 /* TransitionButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TransitionButton/TransitionButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TransitionButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TransitionButton/TransitionButton.modulemap";
-				PRODUCT_NAME = TransitionButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		CF8B80D6D17BE9664606ED078F08A6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AE58BFC8393435DAC93C85F8E083032 /* MicrosoftAzureMobile.xcconfig */;
+			baseConfigurationReference = A6B3572EFE509A39AE1C13BF2A76A9CD /* MicrosoftAzureMobile.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1275,15 +1434,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CE51A198D86F763C12BC8433451B95C /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42221E921F7B456F9846D023574A6EA1 /* Debug */,
-				3F63F5C17A985CD5B2084A65511C3235 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1302,20 +1452,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40D1F3742795CC9918C17AF5176B0032 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+		4364D983D7EFE2872253DC6C7B36A1DA /* Build configuration list for PBXNativeTarget "Pods-AvanadeAIProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A737FD10CB7F840571EEE6322686B491 /* Debug */,
-				499346DC80DCA1487E410F82A850BB90 /* Release */,
+				4FDCE6D5B3A79EF3CB62C98F1BD2CA38 /* Debug */,
+				5352BECBAEAFB601B52456E9C8028857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		586B34BF25AA0D0A02C4C5D2DC96672A /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
+		5BEBA7FBB4D17AB0A4A87F8BBF789001 /* Build configuration list for PBXNativeTarget "TransitionButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C648944E3863D1E1F5DF0ED5E7547ED /* Debug */,
-				CA28F8DA425AC98A3C5AADBE602E0380 /* Release */,
+				15FE55DE94F247B785FEA806D45ACB8A /* Debug */,
+				720739CAABC613FA7E7C715AEEAFC5B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DB4A2188868F6BD3861A512B37C4487 /* Build configuration list for PBXNativeTarget "UIImageViewAlignedSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943D4C14C3E17E7137B1A51B0E8BD037 /* Debug */,
+				3215F719E633DB241ECD661394375C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B67C35D7E0D08ADBF7589B936A7DB0 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E224C274E34238F76AE0583ADA9EB02 /* Debug */,
+				58780A9216CBAF2DD79799232EDFBF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
