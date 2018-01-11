@@ -280,6 +280,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tut-IE-2RR"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="nxG-IN-MYM" id="5w7-Ek-xFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9G-fT-q9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22905CE120058B9800867B03 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22905CE020058B9800867B03 /* Artwork.swift */; };
+		22E2E48A200725AB00CFD2E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E489200725AB00CFD2E9 /* User.swift */; };
+		22E2E48C20072C5600CFD2E9 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */; };
+		22E2E490200732A500CFD2E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E48F200732A500CFD2E9 /* DataManager.swift */; };
+		22E2E492200734C400CFD2E9 /* DummyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */; };
 		2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2546C5392001B7E80099A165 /* Intro.storyboard */; };
 		2546C53F200207820099A165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C53E200207820099A165 /* LoginViewController.swift */; };
 		2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C5402002150B0099A165 /* RegisterViewController.swift */; };
@@ -24,10 +29,15 @@
 		2551C0252001A1A400FE28C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */; };
 		256CACD720045BB000A29A79 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256CACD620045BB000A29A79 /* UIView+IBInspectable.swift */; };
 		2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */; };
-		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
+		65D1AB93D998FEFD89C7527C /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22905CE020058B9800867B03 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		22E2E489200725AB00CFD2E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		22E2E48F200732A500CFD2E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataProvider.swift; sourceTree = "<group>"; };
 		2546C5392001B7E80099A165 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		2546C53E200207820099A165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2546C5402002150B0099A165 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +58,8 @@
 		256CACD620045BB000A29A79 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
-		6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF5994FD082CA22DC087ECB /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
+		FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */,
+				65D1AB93D998FEFD89C7527C /* Pods_AvanadeAIProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2546C5352001B0DE0099A165 /* Controller */ = {
+		22E2E48D20072C7C00CFD2E9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		22E2E48E2007328200CFD2E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22E2E48F200732A500CFD2E9 /* DataManager.swift */,
+				22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2546C5352001B0DE0099A165 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
@@ -76,7 +103,7 @@
 				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
 				2546C5482002EF5F0099A165 /* DetailViewController.swift */,
 			);
-			name = Controller;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		2546C5362001B0F00099A165 /* View */ = {
@@ -94,6 +121,8 @@
 		2546C5372001B1010099A165 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				22905CE020058B9800867B03 /* Artwork.swift */,
+				22E2E489200725AB00CFD2E9 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -136,10 +165,12 @@
 		2551C0172001A1A400FE28C9 /* AvanadeAIProject */ = {
 			isa = PBXGroup;
 			children = (
+				22E2E48E2007328200CFD2E9 /* Controller */,
+				22E2E48D20072C7C00CFD2E9 /* Protocol */,
 				256CACD520045B6800A29A79 /* Extension */,
 				2546C5372001B1010099A165 /* Model */,
 				2546C5362001B0F00099A165 /* View */,
-				2546C5352001B0DE0099A165 /* Controller */,
+				2546C5352001B0DE0099A165 /* ViewController */,
 				2551C0212001A1A400FE28C9 /* Assets.xcassets */,
 				2546C5382001B1070099A165 /* Supporting Files */,
 			);
@@ -167,7 +198,7 @@
 		F78D80427E9AD21B61DAEDDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */,
+				FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -309,6 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E2E48A200725AB00CFD2E9 /* User.swift in Sources */,
+				22E2E490200732A500CFD2E9 /* DataManager.swift in Sources */,
+				22E2E492200734C400CFD2E9 /* DummyDataProvider.swift in Sources */,
 				2546C53F200207820099A165 /* LoginViewController.swift in Sources */,
 				2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */,
 				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
@@ -318,7 +352,9 @@
 				2551C01D2001A1A400FE28C9 /* SearchViewController.swift in Sources */,
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */,
+				22E2E48C20072C5600CFD2E9 /* DataProviderProtocol.swift in Sources */,
 				2546C5452002EED70099A165 /* SettingsViewController.swift in Sources */,
+				22905CE120058B9800867B03 /* Artwork.swift in Sources */,
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5RA9XFBY6;
+				DEVELOPMENT_TEAM = CY3XZ54RTM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -482,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5RA9XFBY6;
+				DEVELOPMENT_TEAM = CY3XZ54RTM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
