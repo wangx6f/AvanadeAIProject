@@ -37,6 +37,10 @@ class GalleryViewController: UIViewController {
         collectionView.dataSource = self
         // register the image collection cell
         collectionView.register(UINib(nibName: collectionCellNIBName, bundle: nil), forCellWithReuseIdentifier: collectionCellReuseIdentifier)
+        // config the layout
+        let layout : CHTCollectionViewWaterfallLayout =  collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
+        layout.sectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
+        
     
     }
 
@@ -46,8 +50,8 @@ class GalleryViewController: UIViewController {
 //MARK: - Extension for UICollectionViewDelegate
 extension GalleryViewController : CHTCollectionViewDelegateWaterfallLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // TODO: calculate the size of the cell base on ratio of the image and screen size
-        return CGSize(width: CGFloat(150), height: CGFloat(100*(indexPath.row+1)))
+        // TODO: calculate the size of the cell base on ratio of the image
+        return CGSize(width: CGFloat(500), height: CGFloat(100*(indexPath.row+1)))
     }
 }
 
@@ -57,13 +61,17 @@ extension GalleryViewController : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // TODO: get the total number of collection cells from database
-        return 3
+        return 10
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // TODO: load each individual image with its data to a cell
-        return collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellReuseIdentifier, for: indexPath)
+        let cell : ImageCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellReuseIdentifier, for: indexPath) as! ImageCollectionCell
+        cell.numOfCommentLabel.text = "\(indexPath.row*100)"
+        cell.numOfViewLabel.text = "\(indexPath.row*10)"
+        cell.ratingView.rating = Double(indexPath.row)/5.0
+        return cell
     }
 }
 

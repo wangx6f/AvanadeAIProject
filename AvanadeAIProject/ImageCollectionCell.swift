@@ -8,7 +8,13 @@
 
 import Foundation
 import UIKit
+import Cosmos
 
 class ImageCollectionCell : UICollectionViewCell {
+    
+    @IBOutlet weak var numOfViewLabel: UILabel!
+    @IBOutlet weak var numOfCommentLabel: UILabel!
+    @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var imageView: UIImageView!
     
 }

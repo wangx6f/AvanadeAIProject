@@ -13,5 +13,6 @@ target 'AvanadeAIProject' do
   pod 'TransitionButton'
   pod 'UIImageViewAlignedSwift'
   pod 'CHTCollectionViewWaterfallLayout'
+  pod 'Cosmos', '~> 13.0'
 
 end
