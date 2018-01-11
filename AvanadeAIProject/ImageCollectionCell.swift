@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class ImageCell : UICollectionViewCell {
+class ImageCollectionCell : UICollectionViewCell {
     
 }

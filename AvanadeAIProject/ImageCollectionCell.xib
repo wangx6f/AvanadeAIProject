@@ -14,24 +14,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="s9o-By-rzF" customClass="ImageCell" customModule="AvanadeAIProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="406" height="263"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCollectionCell" id="s9o-By-rzF" customClass="ImageCollectionCell" customModule="AvanadeAIProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="297"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="406" height="263"/>
+                <rect key="frame" x="0.0" y="0.0" width="401" height="297"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-gm-K4P" userLabel="Image">
-                        <rect key="frame" x="0.0" y="0.0" width="406" height="263"/>
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="297"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-tD-jsc" userLabel="InfoView">
-                        <rect key="frame" x="0.0" y="248" width="406" height="15"/>
+                        <rect key="frame" x="0.0" y="282" width="401" height="15"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDJ-Bl-jOG" userLabel="ViewCountContainer">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="15"/>
+                                <rect key="frame" x="0.0" y="0.0" width="89" height="15"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="view#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSK-Ak-sjB">
-                                        <rect key="frame" x="15" y="0.0" width="75" height="15"/>
+                                        <rect key="frame" x="15" y="0.0" width="74" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -56,10 +56,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzt-Be-Zi2" userLabel="CommentCountContainer">
-                                <rect key="frame" x="90" y="0.0" width="135.5" height="15"/>
+                                <rect key="frame" x="89" y="0.0" width="133.5" height="15"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3g-LY-1Gh">
-                                        <rect key="frame" x="15" y="0.0" width="120.5" height="15"/>
+                                        <rect key="frame" x="15" y="0.0" width="118.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -84,10 +84,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk9-M0-JC2" userLabel="VoteScoreContainer">
-                                <rect key="frame" x="225.5" y="0.0" width="180.5" height="15"/>
+                                <rect key="frame" x="222.5" y="0.0" width="178.5" height="15"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD4-fX-bwP">
-                                        <rect key="frame" x="0.0" y="0.0" width="180.5" height="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -130,8 +130,8 @@
                 <constraint firstAttribute="bottom" secondItem="ZKM-tD-jsc" secondAttribute="bottom" id="nu6-4v-Umz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="BaP-Rk-WNd"/>
-            <size key="customSize" width="406" height="263"/>
-            <point key="canvasLocation" x="85" y="35.5"/>
+            <size key="customSize" width="401" height="297"/>
+            <point key="canvasLocation" x="82.5" y="52.5"/>
         </collectionViewCell>
     </objects>
     <resources>

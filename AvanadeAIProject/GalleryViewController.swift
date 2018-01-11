@@ -11,38 +11,39 @@ import CHTCollectionViewWaterfallLayout
 
 class GalleryViewController: UIViewController {
 
+    // MARK: UI reference
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    // MARK: constant
+    private let collectionCellReuseIdentifier = "imageCollectionCell"
+    private let collectionCellNIBName = "ImageCollectionCell"
+    
+    // MARK: override method
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         collectionViewConfig()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
         
     }
     
-    // MARK: configuration
+    // MARK: private method
     private func collectionViewConfig() {
+        // set self as data source and delegate
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "ImageCell", bundle: nil), forCellWithReuseIdentifier: "imageCell")
+        // register the image collection cell
+        collectionView.register(UINib(nibName: collectionCellNIBName, bundle: nil), forCellWithReuseIdentifier: collectionCellReuseIdentifier)
     
     }
 
     
 }
 
-// Extension for managing actions on items in collection view
-extension GalleryViewController : UICollectionViewDelegate {
-    
-    
-}
-
-// Extension for managing the layout of collection view
+//MARK: - Extension for UICollectionViewDelegate
 extension GalleryViewController : CHTCollectionViewDelegateWaterfallLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // TODO: calculate the size of the cell base on ratio of the image and screen size
@@ -50,7 +51,7 @@ extension GalleryViewController : CHTCollectionViewDelegateWaterfallLayout {
     }
 }
 
-// Extension for managing the data source of collection view
+//MARK: - Extension for UICollectionViewDataSource
 extension GalleryViewController : UICollectionViewDataSource {
   
 
@@ -62,7 +63,7 @@ extension GalleryViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // TODO: load each individual image with its data to a cell
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath)
+        return collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellReuseIdentifier, for: indexPath)
     }
 }
 

@@ -103,11 +103,6 @@
                                                         <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     </barButtonItem>
                                                 </items>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="0.0"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </toolbar>
                                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWE-og-JYK" userLabel="Major Toolbar">
                                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
@@ -289,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -333,6 +328,9 @@
                                     <navigationItem title="Gallery" id="7iA-Hr-eEf">
                                         <barButtonItem key="rightBarButtonItem" image="FilterIcon" id="lsd-Ms-b62">
                                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="cUq-Y1-MMH" kind="show" id="eIT-ua-eDd"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
