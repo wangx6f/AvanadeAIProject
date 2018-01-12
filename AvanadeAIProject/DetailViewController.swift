@@ -23,10 +23,10 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
 
     }
-
-    @IBAction func back(_ sender: UIButton) {
+    
+    @IBAction func onBackPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    
 }
-
 

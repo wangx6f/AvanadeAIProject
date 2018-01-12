@@ -25,7 +25,6 @@ class RegisterViewController: UIViewController {
     
     @IBAction func onCancelPressed(_ sender: TransitionButton) {
         dismiss(animated: true, completion: nil)
-        print("yes")
         
     }
     

@@ -24,14 +24,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Is-Ae-UHe">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Is-Ae-UHe">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Title" leftItemsSupplementBackButton="YES" id="HcX-hw-ieV">
+                                    <navigationItem title="Title" id="HcX-hw-ieV">
+                                        <barButtonItem key="leftBarButtonItem" image="ChevronIcon" id="VS2-lp-2sx">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="onBackPressed:" destination="VMX-hg-cbH" id="MvT-yt-CMe"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="dpr-xF-PhZ">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </barButtonItem>
@@ -171,22 +176,13 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTM-op-o5q">
-                                        <rect key="frame" x="170.5" y="171" width="34" height="30"/>
-                                        <state key="normal" title="Back"/>
-                                        <connections>
-                                            <action selector="back:" destination="VMX-hg-cbH" eventType="touchUpInside" id="UgZ-Ma-reJ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="JTM-op-o5q" firstAttribute="centerY" secondItem="cHq-G2-3RK" secondAttribute="centerY" id="8g6-30-e0j"/>
                                     <constraint firstItem="mwM-lE-wst" firstAttribute="leading" secondItem="nor-Dc-bG0" secondAttribute="leading" id="AWu-yT-2Bh"/>
                                     <constraint firstItem="mwM-lE-wst" firstAttribute="top" secondItem="kwt-LO-fB7" secondAttribute="bottom" id="Heh-Q5-B1n"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="leading" secondItem="nor-Dc-bG0" secondAttribute="leading" id="Ioh-jd-Mgp"/>
                                     <constraint firstAttribute="bottom" secondItem="oDM-Fm-HmA" secondAttribute="bottom" id="KOc-DJ-WpW"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="trailing" secondItem="nor-Dc-bG0" secondAttribute="trailing" id="QfZ-Ho-nBB"/>
-                                    <constraint firstItem="JTM-op-o5q" firstAttribute="centerX" secondItem="cHq-G2-3RK" secondAttribute="centerX" id="Zsr-3n-94k"/>
                                     <constraint firstItem="oDM-Fm-HmA" firstAttribute="leading" secondItem="cHq-G2-3RK" secondAttribute="leading" id="cxS-rc-YG4"/>
                                     <constraint firstItem="oDM-Fm-HmA" firstAttribute="width" secondItem="cHq-G2-3RK" secondAttribute="width" id="j9z-8y-fb9"/>
                                     <constraint firstItem="kwt-LO-fB7" firstAttribute="top" secondItem="oDM-Fm-HmA" secondAttribute="bottom" id="krc-Ob-VM9"/>
@@ -285,6 +281,7 @@
     </scenes>
     <resources>
         <image name="BookmarkIcon" width="25" height="25"/>
+        <image name="ChevronIcon" width="22" height="22"/>
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
 </document>

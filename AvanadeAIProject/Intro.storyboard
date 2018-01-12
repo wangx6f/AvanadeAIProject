@@ -225,7 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="36a-Mx-PGq"/>
                     </view>
                     <connections>
-                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMainScene" animates="NO" action="showViewController:sender:" id="9EL-Iv-hBT"/>
+                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMainScene" action="showViewController:sender:" id="9EL-Iv-hBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-2G-xMb" userLabel="First Responder" sceneMemberID="firstResponder"/>

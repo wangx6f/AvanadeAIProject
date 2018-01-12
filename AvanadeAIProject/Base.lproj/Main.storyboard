@@ -51,187 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsD-5Y-epQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="359"/>
-        </scene>
-        <!--Detail Storyboard Reference-->
-        <scene sceneID="99q-2u-O63">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Detail" id="cUq-Y1-MMH" userLabel="Detail Storyboard Reference" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yRd-X0-D5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2145" y="71"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="fH9-5c-1Zw">
-            <objects>
-                <viewController id="R72-ea-MPM" customClass="SettingsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Irb-oZ-LeP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kus-J3-oZr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Settings" id="XUU-Y9-gNj"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nS-kz-cah" userLabel="Status Bar Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-Lm-3Wh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cir-97-Ijy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
-                                        <subviews>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGm-nt-Gqe" userLabel="Name Toolbar">
-                                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem title="Name" id="eVs-7h-Yly">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Sq7-Wv-Y0q"/>
-                                                    <barButtonItem title="John Smith" id="d9I-V2-z3U">
-                                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem image="NextIcon" style="plain" id="Ihf-NP-bvj">
-                                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    </barButtonItem>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWE-og-JYK" userLabel="Major Toolbar">
-                                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem title="Major" id="AmY-QJ-gl7">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eY6-QV-x0K"/>
-                                                    <barButtonItem title="Business" id="mxZ-Py-qTw">
-                                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem image="NextIcon" style="plain" id="5mT-yO-iVH">
-                                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    </barButtonItem>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaA-y6-0MN" userLabel="Gender Toolbar">
-                                                <rect key="frame" x="0.0" y="110" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem title="Gender" id="uQv-Bw-hbx">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hEs-8C-MCU"/>
-                                                    <barButtonItem title="Male" id="Zf8-go-0UE">
-                                                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem image="NextIcon" style="plain" id="0Hj-9A-5ZB">
-                                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    </barButtonItem>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNC-4p-7gt" userLabel="Help Toolbar">
-                                                <rect key="frame" x="0.0" y="174" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem title="Help &amp; Feedback" id="WDe-E8-tCP">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MsQ-4M-xIv"/>
-                                                    <barButtonItem image="NextIcon" style="plain" id="a5e-HI-LBv">
-                                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    </barButtonItem>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1G-hO-0mp" userLabel="About Toolbar">
-                                                <rect key="frame" x="0.0" y="219" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem title="About" id="cuK-AE-1WB">
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </barButtonItem>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5Rh-jt-bUG"/>
-                                                    <barButtonItem image="NextIcon" style="plain" id="5FY-RF-wQV">
-                                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                                    </barButtonItem>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dh-mC-sMa" userLabel="Clear Toolbar">
-                                                <rect key="frame" x="0.0" y="283" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1GI-E0-G7X"/>
-                                                    <barButtonItem title="Clear Search History" id="wto-pt-f7C"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cxl-fG-jL8"/>
-                                                </items>
-                                            </toolbar>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnS-bT-sai" userLabel="Log Out Toolbar">
-                                                <rect key="frame" x="0.0" y="347" width="375" height="44"/>
-                                                <items>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="17F-xt-u47"/>
-                                                    <barButtonItem title="Log Out" id="4hC-Ua-s6i"/>
-                                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ovr-x1-ovz"/>
-                                                </items>
-                                            </toolbar>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="M1G-hO-0mp" secondAttribute="trailing" id="1Zb-KP-R7p"/>
-                                            <constraint firstItem="4dh-mC-sMa" firstAttribute="top" secondItem="M1G-hO-0mp" secondAttribute="bottom" constant="20" id="5C5-zh-4hv"/>
-                                            <constraint firstItem="WGm-nt-Gqe" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="6DE-6b-aJN"/>
-                                            <constraint firstAttribute="trailing" secondItem="VaA-y6-0MN" secondAttribute="trailing" id="9xK-Us-vJZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="qNC-4p-7gt" secondAttribute="trailing" id="BHw-Q4-NRU"/>
-                                            <constraint firstItem="M1G-hO-0mp" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="F3j-Yj-zCq"/>
-                                            <constraint firstItem="GnS-bT-sai" firstAttribute="top" secondItem="4dh-mC-sMa" secondAttribute="bottom" constant="20" id="Hyl-NE-JTH"/>
-                                            <constraint firstItem="M1G-hO-0mp" firstAttribute="top" secondItem="qNC-4p-7gt" secondAttribute="bottom" constant="1" id="I3Q-RB-T6q"/>
-                                            <constraint firstItem="tWE-og-JYK" firstAttribute="top" secondItem="WGm-nt-Gqe" secondAttribute="bottom" constant="1" id="OEX-Sm-v9K"/>
-                                            <constraint firstItem="GnS-bT-sai" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="RjC-cz-SoP"/>
-                                            <constraint firstAttribute="trailing" secondItem="tWE-og-JYK" secondAttribute="trailing" id="X8l-sv-OpB"/>
-                                            <constraint firstItem="VaA-y6-0MN" firstAttribute="top" secondItem="tWE-og-JYK" secondAttribute="bottom" constant="1" id="Yyh-oG-GVX"/>
-                                            <constraint firstItem="4dh-mC-sMa" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="aSL-Cf-4cq"/>
-                                            <constraint firstItem="WGm-nt-Gqe" firstAttribute="top" secondItem="cir-97-Ijy" secondAttribute="top" constant="20" id="c9p-zJ-KRj"/>
-                                            <constraint firstItem="tWE-og-JYK" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="gCB-M5-2Fj"/>
-                                            <constraint firstAttribute="trailing" secondItem="GnS-bT-sai" secondAttribute="trailing" id="h5M-xd-B4F"/>
-                                            <constraint firstItem="qNC-4p-7gt" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="jj6-aa-o0Z"/>
-                                            <constraint firstItem="VaA-y6-0MN" firstAttribute="leading" secondItem="cir-97-Ijy" secondAttribute="leading" id="mFB-fx-4Xz"/>
-                                            <constraint firstAttribute="bottom" secondItem="GnS-bT-sai" secondAttribute="bottom" id="njS-9g-euh"/>
-                                            <constraint firstAttribute="trailing" secondItem="4dh-mC-sMa" secondAttribute="trailing" id="pck-fO-Kfi"/>
-                                            <constraint firstAttribute="trailing" secondItem="WGm-nt-Gqe" secondAttribute="trailing" id="xNx-bV-ai3"/>
-                                            <constraint firstItem="qNC-4p-7gt" firstAttribute="top" secondItem="VaA-y6-0MN" secondAttribute="bottom" constant="20" id="xRW-b4-B6G"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="cir-97-Ijy" secondAttribute="bottom" id="5U6-T5-NE1"/>
-                                    <constraint firstItem="cir-97-Ijy" firstAttribute="top" secondItem="l9d-Lm-3Wh" secondAttribute="top" id="9VO-00-chE"/>
-                                    <constraint firstAttribute="trailing" secondItem="cir-97-Ijy" secondAttribute="trailing" id="9d2-dv-7WK"/>
-                                    <constraint firstItem="cir-97-Ijy" firstAttribute="width" secondItem="l9d-Lm-3Wh" secondAttribute="width" id="R5c-KJ-Odk"/>
-                                    <constraint firstItem="cir-97-Ijy" firstAttribute="leading" secondItem="l9d-Lm-3Wh" secondAttribute="leading" id="bPe-tv-RuL"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Kus-J3-oZr" firstAttribute="top" secondItem="xrm-sa-onb" secondAttribute="top" id="0Ye-Zq-P7d"/>
-                            <constraint firstItem="9nS-kz-cah" firstAttribute="top" secondItem="Irb-oZ-LeP" secondAttribute="top" id="683-mP-hR9"/>
-                            <constraint firstAttribute="trailing" secondItem="9nS-kz-cah" secondAttribute="trailing" id="7bn-tp-w2e"/>
-                            <constraint firstItem="Kus-J3-oZr" firstAttribute="top" secondItem="9nS-kz-cah" secondAttribute="bottom" id="BQQ-wg-2dJ"/>
-                            <constraint firstItem="l9d-Lm-3Wh" firstAttribute="trailing" secondItem="xrm-sa-onb" secondAttribute="trailing" id="FZ5-NV-YdO"/>
-                            <constraint firstItem="l9d-Lm-3Wh" firstAttribute="leading" secondItem="xrm-sa-onb" secondAttribute="leading" id="Jye-LT-TCx"/>
-                            <constraint firstItem="Kus-J3-oZr" firstAttribute="leading" secondItem="xrm-sa-onb" secondAttribute="leading" id="Lwx-l4-NgX"/>
-                            <constraint firstItem="xrm-sa-onb" firstAttribute="bottom" secondItem="l9d-Lm-3Wh" secondAttribute="bottom" id="T2v-rE-PFU"/>
-                            <constraint firstItem="9nS-kz-cah" firstAttribute="leading" secondItem="Irb-oZ-LeP" secondAttribute="leading" id="UuF-AN-IRm"/>
-                            <constraint firstItem="Kus-J3-oZr" firstAttribute="trailing" secondItem="xrm-sa-onb" secondAttribute="trailing" id="cfB-F1-SOT"/>
-                            <constraint firstItem="l9d-Lm-3Wh" firstAttribute="top" secondItem="Kus-J3-oZr" secondAttribute="bottom" id="qDW-0T-72V"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="xrm-sa-onb"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="SettingIcon" selectedImage="SettingIcon" id="oOE-7p-f3y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zSr-Ex-vuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="-347"/>
+            <point key="canvasLocation" x="-905" y="758"/>
         </scene>
         <!--Search-->
         <scene sceneID="wg7-f3-ORb">
@@ -284,7 +104,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="766" y="362"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Egd-cY-DBg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="vci-UW-Hxh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sK5-kc-gLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="-357"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -299,89 +127,101 @@
                         <segue destination="58P-ci-qbB" kind="relationship" relationship="viewControllers" id="uGM-fY-lZT"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Kwk-nx-wDi" kind="relationship" relationship="viewControllers" id="Lxg-ct-Jd3"/>
-                        <segue destination="R72-ea-MPM" kind="relationship" relationship="viewControllers" id="mfC-NH-qja"/>
+                        <segue destination="YU3-EM-e53" kind="relationship" relationship="viewControllers" id="jh9-y1-fsh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-513" y="-80"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="YR5-kN-2Hn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gallery" id="vYw-cU-zju" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9U1-7g-1b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="925"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="BLU-aI-CMF">
             <objects>
-                <viewController id="58P-ci-qbB" customClass="GalleryViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="58P-ci-qbB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmz-i7-67N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="545-Hq-mmR" userLabel="Status Bar Background">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp8-an-dWx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Gallery" id="7iA-Hr-eEf">
-                                        <barButtonItem key="rightBarButtonItem" image="FilterIcon" id="lsd-Ms-b62">
-                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="cUq-Y1-MMH" kind="show" id="eIT-ua-eDd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-es-6kf">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="fIj-Ng-nL5" customClass="CHTCollectionViewWaterfallLayout"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="defaultCell" id="jGV-z2-Qxo">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4W-uP-Sxz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <segue destination="vYw-cU-zju" kind="embed" id="wUc-yN-eDx"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="H4W-uP-Sxz" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="2OX-NA-TK1"/>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="4tZ-F1-5DT"/>
-                            <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" constant="-44" id="EhL-GU-R1Z"/>
-                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="bottom" secondItem="hcW-es-6kf" secondAttribute="bottom" id="Fdl-DD-NTB"/>
-                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="hcW-es-6kf" secondAttribute="trailing" id="J6X-XN-65J"/>
-                            <constraint firstItem="kp8-an-dWx" firstAttribute="trailing" secondItem="UrB-Xr-GiR" secondAttribute="trailing" id="Wyq-ec-QbG"/>
+                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="H4W-uP-Sxz" secondAttribute="trailing" id="4vD-3j-6LV"/>
                             <constraint firstItem="UrB-Xr-GiR" firstAttribute="trailing" secondItem="545-Hq-mmR" secondAttribute="trailing" id="Y3E-23-vIF"/>
-                            <constraint firstItem="hcW-es-6kf" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="bbl-Mj-XW2"/>
-                            <constraint firstItem="kp8-an-dWx" firstAttribute="leading" secondItem="UrB-Xr-GiR" secondAttribute="leading" id="eAL-c3-TDs"/>
-                            <constraint firstItem="kp8-an-dWx" firstAttribute="top" secondItem="UrB-Xr-GiR" secondAttribute="top" id="eu4-th-IGK"/>
+                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" id="aFb-rr-kBF"/>
+                            <constraint firstItem="UrB-Xr-GiR" firstAttribute="bottom" secondItem="H4W-uP-Sxz" secondAttribute="bottom" id="iEW-ON-utV"/>
                             <constraint firstItem="545-Hq-mmR" firstAttribute="top" secondItem="vmz-i7-67N" secondAttribute="top" id="u9d-T9-ZYH"/>
-                            <constraint firstItem="hcW-es-6kf" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" id="zzg-kV-flh"/>
+                            <constraint firstItem="H4W-uP-Sxz" firstAttribute="top" secondItem="545-Hq-mmR" secondAttribute="bottom" id="zV3-IC-3jq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UrB-Xr-GiR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gallery" image="GalleryIcon" selectedImage="GalleryIcon" id="K0Y-6W-FSy"/>
-                    <connections>
-                        <outlet property="collectionView" destination="hcW-es-6kf" id="oZN-Kj-08Q"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSZ-gK-JKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="-348"/>
+            <point key="canvasLocation" x="-132" y="758"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="myw-Se-Z3s">
+            <objects>
+                <viewController id="YU3-EM-e53" customClass="SettingsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHM-BA-H3I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61U-5h-7ZP" userLabel="Status Bar Background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-3v-6Cg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <segue destination="vci-UW-Hxh" kind="embed" id="ele-eh-4FD"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="61U-5h-7ZP" firstAttribute="leading" secondItem="oHM-BA-H3I" secondAttribute="leading" id="25l-7I-TVN"/>
+                            <constraint firstItem="hw0-mU-Zaw" firstAttribute="bottom" secondItem="pB9-3v-6Cg" secondAttribute="bottom" id="8Kx-lf-sGu"/>
+                            <constraint firstItem="61U-5h-7ZP" firstAttribute="top" secondItem="oHM-BA-H3I" secondAttribute="top" id="931-wO-6y1"/>
+                            <constraint firstItem="pB9-3v-6Cg" firstAttribute="leading" secondItem="hw0-mU-Zaw" secondAttribute="leading" id="Dld-rb-3C6"/>
+                            <constraint firstItem="hw0-mU-Zaw" firstAttribute="trailing" secondItem="pB9-3v-6Cg" secondAttribute="trailing" id="Qb4-Zh-FIt"/>
+                            <constraint firstItem="pB9-3v-6Cg" firstAttribute="top" secondItem="hw0-mU-Zaw" secondAttribute="top" id="Qkh-gW-WfE"/>
+                            <constraint firstItem="pB9-3v-6Cg" firstAttribute="top" secondItem="61U-5h-7ZP" secondAttribute="bottom" id="oyJ-Nr-cV3"/>
+                            <constraint firstAttribute="trailing" secondItem="61U-5h-7ZP" secondAttribute="trailing" id="zL7-gF-fz4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hw0-mU-Zaw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingIcon" selectedImage="SettingIcon" id="0VO-Ep-Vo8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5b-rj-0ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="-356"/>
         </scene>
     </scenes>
     <resources>
         <image name="BookmarkIcon" width="25" height="25"/>
-        <image name="FilterIcon" width="22" height="22"/>
         <image name="GalleryIcon" width="25" height="25"/>
-        <image name="NextIcon" width="22" height="22"/>
         <image name="ScanIcon" width="22" height="22"/>
         <image name="SettingIcon" width="25" height="25"/>
     </resources>

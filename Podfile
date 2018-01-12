@@ -14,5 +14,6 @@ target 'AvanadeAIProject' do
   pod 'UIImageViewAlignedSwift'
   pod 'CHTCollectionViewWaterfallLayout'
   pod 'Cosmos', '~> 13.0'
+  pod 'Eureka'
 
 end
