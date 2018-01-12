@@ -17,4 +17,5 @@ class ImageCollectionCell : UICollectionViewCell {
     @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var imageView: UIImageView!
     
+    
 }

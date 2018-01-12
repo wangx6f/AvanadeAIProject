@@ -21,8 +21,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="140" height="105"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-gm-K4P" userLabel="ImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-gm-K4P" userLabel="ImageView">
                         <rect key="frame" x="0.0" y="0.0" width="140" height="105"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-tD-jsc" userLabel="InfoView">
                         <rect key="frame" x="0.0" y="90" width="140" height="15"/>
@@ -148,7 +149,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="BackgroundImage" width="375" height="812"/>
         <image name="CommentIcon" width="22" height="22"/>
         <image name="EyeIcon" width="22" height="22"/>
     </resources>

@@ -26,7 +26,7 @@ class SettingsForm: FormViewController {
     }
     
     
-    //MARK: private method
+    // MARK: private methods
     private func configForm() {
         
         navigationOptions = RowNavigationOptions.Disabled
@@ -56,7 +56,7 @@ class SettingsForm: FormViewController {
                     row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
                 row.onCellSelection({ (cell, row) in
                     cell.setSelected(false, animated: true)
-                    //TODO: push the help & feedback page
+                    // TODO: push the help & feedback page
                 })
         }
             <<< LabelRow() { row in
@@ -65,21 +65,21 @@ class SettingsForm: FormViewController {
                 row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
                 row.onCellSelection({ (cell, row) in
                     cell.setSelected(false, animated: true)
-                    //TODO: push the about page
+                    // TODO: push the about page
                 })
         }
         
         form +++ ButtonRow() { row in
                 row.title = "Clear Search History"
                 row.onCellSelection({ _,_ in
-                    //TODO: do necessary operation to clear the search history
+                    // TODO: do necessary operation to clear the search history
                 })
             }
         
          form +++ ButtonRow() { row in
                 row.title = "Log Out"
                 row.onCellSelection({ _,_ in
-                    //TODO: do necessary operation to log out
+                    // TODO: do necessary operation to log out
                 })
             }
     }

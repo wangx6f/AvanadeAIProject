@@ -13,12 +13,12 @@ class GalleryViewController: UICollectionViewController {
 
     
     
-    // MARK: constant
+    // MARK: constants
     private let collectionCellReuseIdentifier = "imageCollectionCell"
     private let collectionCellNIBName = "ImageCollectionCell"
     private let collectionViewSectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
     
-    // MARK: override method
+    // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewConfig()
@@ -48,7 +48,7 @@ class GalleryViewController: UICollectionViewController {
         return cell
     }
     
-    // MARK: private method
+    // MARK: private methods
     private func collectionViewConfig() {
         // register the image collection cell
         collectionView?.register(UINib(nibName: collectionCellNIBName, bundle: nil), forCellWithReuseIdentifier: collectionCellReuseIdentifier)
