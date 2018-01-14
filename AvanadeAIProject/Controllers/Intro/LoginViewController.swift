@@ -8,13 +8,15 @@
 
 import UIKit
 import TransitionButton
-
+import IHKeyboardAvoiding
 class LoginViewController: UIViewController {
 
     private let mainSegueIdentifier = "goToMain"
+    @IBOutlet weak var bottomContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        KeyboardAvoiding.avoidingView = bottomContainer
     }
 
     override func didReceiveMemoryWarning() {

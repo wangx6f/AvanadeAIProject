@@ -43,7 +43,7 @@
                                         <state key="normal" image="BookmarkIcon"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8av-GE-2NW">
-                                        <rect key="frame" x="18" y="7.5" width="284.5" height="39.5"/>
+                                        <rect key="frame" x="18" y="-7.5" width="284.5" height="69.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTHOR NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-Q7-ZRe" userLabel="Author Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="284.5" height="19.5"/>
@@ -52,10 +52,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-cK-07A">
-                                                <rect key="frame" x="0.0" y="19.5" width="284.5" height="20"/>
+                                                <rect key="frame" x="0.0" y="19.5" width="284.5" height="50"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-q3-ND3" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="50"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
                                                                 <integer key="value" value="2"/>
@@ -66,7 +66,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-6g-5zz">
-                                                        <rect key="frame" x="142" y="0.0" width="142.5" height="20"/>
+                                                        <rect key="frame" x="142" y="0.0" width="142.5" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>

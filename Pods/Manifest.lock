@@ -4,6 +4,7 @@ PODS:
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
   - Cosmos (13.0.0)
   - Eureka (4.0.1)
+  - IHKeyboardAvoiding (4.2)
   - MicrosoftAzureMobile (3.4.0)
   - SkyFloatingLabelTextField (3.4.0)
   - TransitionButton (0.3.0)
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout
   - Cosmos (~> 13.0)
   - Eureka
+  - IHKeyboardAvoiding
   - MicrosoftAzureMobile (~> 3.4.0)
   - SkyFloatingLabelTextField (~> 3.0)
   - TransitionButton
@@ -22,11 +24,12 @@ SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
   Cosmos: af3973becc045af335b64498c9812034876b7661
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  IHKeyboardAvoiding: 9fbf816b7c3c84911964802ff110d12caf40ebef
   MicrosoftAzureMobile: 82719f7f9e1e3389d5c2fe5f6be034c344004e12
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   UIImageViewAlignedSwift: 2e09096e6081ad26b848e19b4bc35a7d69165740
 
-PODFILE CHECKSUM: 6584a0d33fa087183433c6de8d785b911c3dcfca
+PODFILE CHECKSUM: e967ea76e0edb9f43345d235937a2c393712d8cd
 
 COCOAPODS: 1.3.1

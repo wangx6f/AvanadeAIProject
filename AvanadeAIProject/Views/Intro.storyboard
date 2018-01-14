@@ -56,14 +56,14 @@
                                         <rect key="frame" x="0.0" y="129.5" width="375" height="517.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-eF-8PS">
-                                                <rect key="frame" x="38" y="0.0" width="299.5" height="278"/>
+                                                <rect key="frame" x="38" y="0.0" width="299.5" height="250"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-5O-5go" userLabel="Email Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="299.5" height="30"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -94,14 +94,14 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-Fy-1N2">
-                                                        <rect key="frame" x="0.0" y="74" width="299.5" height="79"/>
+                                                        <rect key="frame" x="0.0" y="60" width="299.5" height="65"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMu-TP-fTE" userLabel="Password Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="0.0" width="299.5" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="299.5" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -132,7 +132,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWd-01-AL6">
-                                                                <rect key="frame" x="0.0" y="49" width="299.5" height="30"/>
+                                                                <rect key="frame" x="0.0" y="35" width="299.5" height="30"/>
                                                                 <state key="normal" title="Forget password?">
                                                                     <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
@@ -140,7 +140,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-i4-LdN">
-                                                        <rect key="frame" x="0.0" y="183" width="299.5" height="95"/>
+                                                        <rect key="frame" x="0.0" y="155" width="299.5" height="95"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-Jp-OdR" userLabel="Register Button" customClass="TransitionButton" customModule="TransitionButton">
                                                                 <rect key="frame" x="0.0" y="54" width="299" height="34"/>
@@ -225,6 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="36a-Mx-PGq"/>
                     </view>
                     <connections>
+                        <outlet property="bottomContainer" destination="AHe-tp-HgL" id="djJ-qy-Yd3"/>
                         <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMain" action="showViewController:sender:" id="9EL-Iv-hBT"/>
                     </connections>
                 </viewController>
@@ -266,13 +267,13 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-XK-88e">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="560"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEO-8a-c8j" userLabel="Top Container">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N9-EI-QvH">
-                                                        <rect key="frame" x="131" y="47.5" width="113" height="38.5"/>
+                                                        <rect key="frame" x="131" y="37" width="113" height="38.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -284,17 +285,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7Q-hY-A0v" userLabel="Bottom Container">
-                                                <rect key="frame" x="0.0" y="133" width="375" height="532"/>
+                                                <rect key="frame" x="0.0" y="112" width="375" height="448"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UQy-e5-hy0">
-                                                        <rect key="frame" x="59.5" y="0.0" width="256" height="538"/>
+                                                        <rect key="frame" x="59.5" y="0.0" width="256" height="454"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wra-Ru-SgM" userLabel="Email Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="0.0" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="EMAIL"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -325,11 +326,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMS-mJ-hVQ" userLabel="Password Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="74" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="60" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="PASSWORD"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -360,11 +361,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-7H-xJ9" userLabel="Name Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="148" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="120" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="NAME"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -395,11 +396,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-Qf-MpC" userLabel="Gender Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="222" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="180" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="GENDER"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -430,11 +431,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dK2-oD-DZ8" userLabel="Age Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="296" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="240" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="AGE"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -465,11 +466,11 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-l4-ab3" userLabel="Major Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                                <rect key="frame" x="0.0" y="370" width="256" height="44"/>
+                                                                <rect key="frame" x="0.0" y="300" width="256" height="30"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                                <textInputTraits key="textInputTraits"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="MAJOR"/>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
@@ -500,7 +501,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja1-ME-qNA">
-                                                                <rect key="frame" x="0.0" y="444" width="256" height="94"/>
+                                                                <rect key="frame" x="0.0" y="360" width="256" height="94"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGQ-bI-vqj" userLabel="Create Account Button" customClass="TransitionButton" customModule="TransitionButton">
                                                                         <rect key="frame" x="-0.5" y="0.0" width="256" height="34"/>
@@ -590,6 +591,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="boL-XQ-yxW"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="wra-Ru-SgM" id="IG9-YI-huG"/>
+                        <outlet property="nameTextField" destination="Nac-7H-xJ9" id="Luu-hU-vcQ"/>
+                        <outlet property="passwordTextField" destination="FMS-mJ-hVQ" id="dHo-Hw-Zvg"/>
+                        <outlet property="scrollView" destination="hOt-PL-c7d" id="kBo-a7-jXG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nec-0a-eb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

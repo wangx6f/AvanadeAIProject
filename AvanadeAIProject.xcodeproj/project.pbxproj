@@ -82,60 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2546C5352001B0DE0099A165 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				25BDD5C1200B503600FBE393 /* Settings */,
-				25BDD5BF200B500100FBE393 /* Intro */,
-				25BDD5BE200B4FCB00FBE393 /* Detail */,
-				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
-				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
-				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
-				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		2546C5362001B0F00099A165 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2595FE83200895C900ED2160 /* CommentTableCell */,
-				25AE573E200876870035F748 /* DetailTableCell */,
-				2546C54C20030BF20099A165 /* ImageCollectionCell */,
-				2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */,
-				2546C5392001B7E80099A165 /* Intro.storyboard */,
-				2551C01E2001A1A400FE28C9 /* Main.storyboard */,
-				2546C5422002EC660099A165 /* Detail.storyboard */,
-				25C42D6020083A5200F7D727 /* Settings.storyboard */,
-				25C42D6220084C7300F7D727 /* Gallery.storyboard */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		2546C5372001B1010099A165 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		2546C5382001B1070099A165 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2551C0262001A1A400FE28C9 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2546C54C20030BF20099A165 /* ImageCollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				2546C54A20030B600099A165 /* ImageCollectionCell.xib */,
-				2546C54D20030C0C0099A165 /* ImageCollectionCell.swift */,
-			);
-			name = ImageCollectionCell;
-			sourceTree = "<group>";
-		};
 		2551C00C2001A1A400FE28C9 = {
 			isa = PBXGroup;
 			children = (
@@ -157,69 +103,123 @@
 		2551C0172001A1A400FE28C9 /* AvanadeAIProject */ = {
 			isa = PBXGroup;
 			children = (
-				256CACD520045B6800A29A79 /* Extension */,
-				2546C5372001B1010099A165 /* Model */,
-				2546C5362001B0F00099A165 /* View */,
-				2546C5352001B0DE0099A165 /* Controller */,
+				25BDD5CC200BF2E200FBE393 /* Supporting Files */,
+				25BDD5C8200BF29F00FBE393 /* Controllers */,
+				25BDD5C4200BF20300FBE393 /* Views */,
+				25BDD5C3200BF1EF00FBE393 /* Models */,
+				25BDD5C2200BF1DA00FBE393 /* Extensions */,
 				2551C0212001A1A400FE28C9 /* Assets.xcassets */,
-				2546C5382001B1070099A165 /* Supporting Files */,
 			);
 			path = AvanadeAIProject;
 			sourceTree = "<group>";
 		};
-		256CACD520045B6800A29A79 /* Extension */ = {
+		25BDD5C2200BF1DA00FBE393 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */,
 				25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */,
 			);
-			name = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2595FE83200895C900ED2160 /* CommentTableCell */ = {
+		25BDD5C3200BF1EF00FBE393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25BDD5C4200BF20300FBE393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25BDD5C7200BF28300FBE393 /* ImageCollectionCell */,
+				25BDD5C6200BF27200FBE393 /* DetailTableCell */,
+				25BDD5C5200BF25C00FBE393 /* CommentTableCell */,
+				2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */,
+				2546C5392001B7E80099A165 /* Intro.storyboard */,
+				2551C01E2001A1A400FE28C9 /* Main.storyboard */,
+				2546C5422002EC660099A165 /* Detail.storyboard */,
+				25C42D6020083A5200F7D727 /* Settings.storyboard */,
+				25C42D6220084C7300F7D727 /* Gallery.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25BDD5C5200BF25C00FBE393 /* CommentTableCell */ = {
 			isa = PBXGroup;
 			children = (
 				2595FE7F200895BD00ED2160 /* CommentTableCell.swift */,
 				2595FE80200895BD00ED2160 /* CommentTableCell.xib */,
 			);
-			name = CommentTableCell;
+			path = CommentTableCell;
 			sourceTree = "<group>";
 		};
-		25AE573E200876870035F748 /* DetailTableCell */ = {
+		25BDD5C6200BF27200FBE393 /* DetailTableCell */ = {
 			isa = PBXGroup;
 			children = (
 				25AE573F2008769E0035F748 /* DetailTableCell.xib */,
 				25AE574120087BA80035F748 /* DetailTableCell.swift */,
 			);
-			name = DetailTableCell;
+			path = DetailTableCell;
 			sourceTree = "<group>";
 		};
-		25BDD5BE200B4FCB00FBE393 /* Detail */ = {
+		25BDD5C7200BF28300FBE393 /* ImageCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2546C54A20030B600099A165 /* ImageCollectionCell.xib */,
+				2546C54D20030C0C0099A165 /* ImageCollectionCell.swift */,
+			);
+			path = ImageCollectionCell;
+			sourceTree = "<group>";
+		};
+		25BDD5C8200BF29F00FBE393 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25BDD5CB200BF2C200FBE393 /* Detail */,
+				25BDD5CA200BF2BD00FBE393 /* Intro */,
+				25BDD5C9200BF2B700FBE393 /* Settings */,
+				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
+				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
+				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
+				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		25BDD5C9200BF2B700FBE393 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2546C5442002EED70099A165 /* SettingsViewController.swift */,
+				25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		25BDD5CA200BF2BD00FBE393 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				2546C53E200207820099A165 /* LoginViewController.swift */,
+				2546C5402002150B0099A165 /* RegisterViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		25BDD5CB200BF2C200FBE393 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				2546C5482002EF5F0099A165 /* DetailViewController.swift */,
 				25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */,
 				25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */,
 			);
-			name = Detail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
-		25BDD5BF200B500100FBE393 /* Intro */ = {
+		25BDD5CC200BF2E200FBE393 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2546C53E200207820099A165 /* LoginViewController.swift */,
-				2546C5402002150B0099A165 /* RegisterViewController.swift */,
+				2551C0262001A1A400FE28C9 /* Info.plist */,
 			);
-			name = Intro;
-			sourceTree = "<group>";
-		};
-		25BDD5C1200B503600FBE393 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				2546C5442002EED70099A165 /* SettingsViewController.swift */,
-				25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */,
-			);
-			name = Settings;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		363F075F0E7A2F2D58B606C0 /* Pods */ = {
@@ -328,6 +328,7 @@
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
 				"${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
@@ -338,6 +339,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftAzureMobile.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
