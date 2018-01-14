@@ -9,7 +9,7 @@
 import UIKit
 import Eureka
 
-class SettingsForm: FormViewController {
+class SettingsFormController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

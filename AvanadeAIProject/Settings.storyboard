@@ -30,7 +30,7 @@
         <!--Settings-->
         <scene sceneID="b34-1q-SYa">
             <objects>
-                <viewController id="Zfy-so-bS1" customClass="SettingsForm" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zfy-so-bS1" customClass="SettingsFormController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gmq-mh-ngN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

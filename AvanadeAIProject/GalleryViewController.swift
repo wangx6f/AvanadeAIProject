@@ -16,6 +16,7 @@ class GalleryViewController: UICollectionViewController {
     // MARK: constants
     private let collectionCellReuseIdentifier = "imageCollectionCell"
     private let collectionCellNIBName = "ImageCollectionCell"
+    private let detailSegueIdentifier = "goToDetail"
     private let collectionViewSectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
     
     // MARK: override methods
@@ -30,7 +31,7 @@ class GalleryViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToDetail", sender: self)
+        performSegue(withIdentifier: detailSegueIdentifier, sender: self)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

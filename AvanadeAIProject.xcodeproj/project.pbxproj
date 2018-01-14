@@ -27,9 +27,11 @@
 		2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595FE80200895BD00ED2160 /* CommentTableCell.xib */; };
 		25AE57402008769E0035F748 /* DetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25AE573F2008769E0035F748 /* DetailTableCell.xib */; };
 		25AE574220087BA80035F748 /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE574120087BA80035F748 /* DetailTableCell.swift */; };
+		25BDD5BB200B452B00FBE393 /* AllCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */; };
+		25BDD5BD200B4F3700FBE393 /* CommentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */; };
 		25C42D6120083A5200F7D727 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C42D6020083A5200F7D727 /* Settings.storyboard */; };
 		25C42D6320084C7300F7D727 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C42D6220084C7300F7D727 /* Gallery.storyboard */; };
-		25D8B2D020082887003A4AD1 /* SettingsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B2CF20082887003A4AD1 /* SettingsForm.swift */; };
+		25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */; };
 		25E73D9D20072DD700610A74 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */; };
 		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
 /* End PBXBuildFile section */
@@ -57,9 +59,11 @@
 		2595FE80200895BD00ED2160 /* CommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableCell.xib; sourceTree = "<group>"; };
 		25AE573F2008769E0035F748 /* DetailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableCell.xib; sourceTree = "<group>"; };
 		25AE574120087BA80035F748 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
+		25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCommentsViewController.swift; sourceTree = "<group>"; };
+		25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDetailViewController.swift; sourceTree = "<group>"; };
 		25C42D6020083A5200F7D727 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		25C42D6220084C7300F7D727 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
-		25D8B2CF20082887003A4AD1 /* SettingsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsForm.swift; sourceTree = "<group>"; };
+		25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFormController.swift; sourceTree = "<group>"; };
 		25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,15 +85,13 @@
 		2546C5352001B0DE0099A165 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				25BDD5C1200B503600FBE393 /* Settings */,
+				25BDD5BF200B500100FBE393 /* Intro */,
+				25BDD5BE200B4FCB00FBE393 /* Detail */,
 				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
 				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
 				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
-				2546C53E200207820099A165 /* LoginViewController.swift */,
-				2546C5402002150B0099A165 /* RegisterViewController.swift */,
-				2546C5442002EED70099A165 /* SettingsViewController.swift */,
 				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
-				2546C5482002EF5F0099A165 /* DetailViewController.swift */,
-				25D8B2CF20082887003A4AD1 /* SettingsForm.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -190,6 +192,34 @@
 				25AE574120087BA80035F748 /* DetailTableCell.swift */,
 			);
 			name = DetailTableCell;
+			sourceTree = "<group>";
+		};
+		25BDD5BE200B4FCB00FBE393 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2546C5482002EF5F0099A165 /* DetailViewController.swift */,
+				25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */,
+				25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		25BDD5BF200B500100FBE393 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				2546C53E200207820099A165 /* LoginViewController.swift */,
+				2546C5402002150B0099A165 /* RegisterViewController.swift */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		25BDD5C1200B503600FBE393 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2546C5442002EED70099A165 /* SettingsViewController.swift */,
+				25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		363F075F0E7A2F2D58B606C0 /* Pods */ = {
@@ -358,10 +388,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25BDD5BB200B452B00FBE393 /* AllCommentsViewController.swift in Sources */,
 				2546C53F200207820099A165 /* LoginViewController.swift in Sources */,
 				2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */,
+				25BDD5BD200B4F3700FBE393 /* CommentDetailViewController.swift in Sources */,
 				25AE574220087BA80035F748 /* DetailTableCell.swift in Sources */,
-				25D8B2D020082887003A4AD1 /* SettingsForm.swift in Sources */,
+				25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */,
 				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
 				2546C54E20030C0C0099A165 /* ImageCollectionCell.swift in Sources */,
 				2595FE81200895BD00ED2160 /* CommentTableCell.swift in Sources */,

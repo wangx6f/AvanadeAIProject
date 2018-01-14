@@ -155,7 +155,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <segue destination="oou-72-Gef" kind="presentation" identifier="goToRegisterScene" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sGR-Lg-lGH"/>
+                                                                    <segue destination="oou-72-Gef" kind="presentation" identifier="goToRegister" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sGR-Lg-lGH"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsv-VM-gR7" userLabel="Login Button" customClass="TransitionButton" customModule="TransitionButton">
@@ -225,7 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="36a-Mx-PGq"/>
                     </view>
                     <connections>
-                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMainScene" action="showViewController:sender:" id="9EL-Iv-hBT"/>
+                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMain" action="showViewController:sender:" id="9EL-Iv-hBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-2G-xMb" userLabel="First Responder" sceneMemberID="firstResponder"/>

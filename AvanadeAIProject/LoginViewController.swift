@@ -11,6 +11,8 @@ import TransitionButton
 
 class LoginViewController: UIViewController {
 
+    private let mainSegueIdentifier = "goToMain"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +23,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
-        performSegue(withIdentifier: "goToMainScene", sender: self)
+        performSegue(withIdentifier: mainSegueIdentifier, sender: self)
     }
     
     

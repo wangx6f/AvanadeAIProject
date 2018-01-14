@@ -106,7 +106,7 @@
         <scene sceneID="YAc-ib-M3q">
             <objects>
                 <tableViewController id="u56-Lp-teX" userLabel="Detail" customClass="DetailViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U9E-w7-gHu">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U9E-w7-gHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,8 +127,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="78F-BN-8VZ" kind="show" id="FAa-oi-mKg"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="1" indentationWidth="5" reuseIdentifier="noCommentTableCell" textLabel="ate-xQ-N8D" style="IBUITableViewCellStyleDefault" id="voF-n0-QLE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="1" indentationWidth="5" reuseIdentifier="noCommentTableCell" textLabel="ate-xQ-N8D" style="IBUITableViewCellStyleDefault" id="voF-n0-QLE">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="voF-n0-QLE" id="X4g-9G-bjj">
@@ -159,10 +162,79 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="fgC-UM-6AO"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="flipHorizontal" id="i7D-hh-WIm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iX-rL-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2469" y="-270"/>
+        </scene>
+        <!--Comment Detail View Controller-->
+        <scene sceneID="rtv-nD-hBN">
+            <objects>
+                <viewController id="8wr-5P-KSg" customClass="CommentDetailViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z7P-gU-5vK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM0-xJ-nJ8">
+                                <rect key="frame" x="21" y="84" width="338" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="nNp-DS-7Yo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="stP-yJ-T0Q">
+                                <rect key="frame" x="16" y="106" width="343" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTJ-tN-zXv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="rhh-yW-Mtq">
+                                        <barButtonItem key="leftBarButtonItem" image="ChevronIcon" id="DyG-7b-VkZ">
+                                            <connections>
+                                                <action selector="onBackPressed:" destination="8wr-5P-KSg" id="AaR-dV-SCu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlN-Y9-zXr" userLabel="Status Bar Background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xlN-Y9-zXr" firstAttribute="leading" secondItem="Z7P-gU-5vK" secondAttribute="leading" id="9jX-Bv-pPW"/>
+                            <constraint firstItem="stP-yJ-T0Q" firstAttribute="leading" secondItem="3w1-cf-9st" secondAttribute="leading" constant="16" id="EYD-0J-uGd"/>
+                            <constraint firstItem="BM0-xJ-nJ8" firstAttribute="leading" secondItem="3w1-cf-9st" secondAttribute="leading" constant="21" id="FVC-Jh-bRY"/>
+                            <constraint firstItem="OTJ-tN-zXv" firstAttribute="top" secondItem="3w1-cf-9st" secondAttribute="top" id="H1G-SY-apf"/>
+                            <constraint firstItem="3w1-cf-9st" firstAttribute="trailing" secondItem="stP-yJ-T0Q" secondAttribute="trailing" constant="16" id="JNd-7e-ndo"/>
+                            <constraint firstItem="OTJ-tN-zXv" firstAttribute="top" secondItem="xlN-Y9-zXr" secondAttribute="bottom" id="Jl9-e5-2WK"/>
+                            <constraint firstItem="3w1-cf-9st" firstAttribute="bottom" secondItem="stP-yJ-T0Q" secondAttribute="bottom" constant="20" id="LQd-Fa-hjf"/>
+                            <constraint firstItem="OTJ-tN-zXv" firstAttribute="trailing" secondItem="3w1-cf-9st" secondAttribute="trailing" id="SYc-Rn-JMN"/>
+                            <constraint firstItem="BM0-xJ-nJ8" firstAttribute="top" secondItem="OTJ-tN-zXv" secondAttribute="bottom" constant="20" id="WHI-oH-XwA"/>
+                            <constraint firstAttribute="trailing" secondItem="xlN-Y9-zXr" secondAttribute="trailing" id="ecR-eD-LZX"/>
+                            <constraint firstItem="stP-yJ-T0Q" firstAttribute="top" secondItem="BM0-xJ-nJ8" secondAttribute="bottom" id="elS-dt-aKE"/>
+                            <constraint firstItem="xlN-Y9-zXr" firstAttribute="top" secondItem="Z7P-gU-5vK" secondAttribute="top" id="uGO-ji-TAa"/>
+                            <constraint firstItem="OTJ-tN-zXv" firstAttribute="leading" secondItem="3w1-cf-9st" secondAttribute="leading" id="uHN-hP-dvZ"/>
+                            <constraint firstItem="3w1-cf-9st" firstAttribute="trailing" secondItem="BM0-xJ-nJ8" secondAttribute="trailing" constant="16" id="uoj-V8-X5v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3w1-cf-9st"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7w-gH-1tS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324" y="-153.37331334332833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fIh-EU-MFV">
@@ -181,9 +253,33 @@
             </objects>
             <point key="canvasLocation" x="1519" y="-270"/>
         </scene>
+        <!--All Comments-->
+        <scene sceneID="bhj-Fc-UdF">
+            <objects>
+                <tableViewController title="All Comments" id="78F-BN-8VZ" customClass="AllCommentsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V77-GJ-Np8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="78F-BN-8VZ" id="9t3-qh-j35"/>
+                            <outlet property="delegate" destination="78F-BN-8VZ" id="gkP-Pq-Xct"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="flipHorizontal" id="8UA-ZW-2Fz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbn-R0-6Kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="572"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ChevronIcon" width="22" height="22"/>
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i7D-hh-WIm"/>
+    </inferredMetricsTieBreakers>
 </document>
