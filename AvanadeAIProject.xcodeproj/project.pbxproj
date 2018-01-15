@@ -550,7 +550,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = AvanadeAIProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AvanadeAIProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.AvanadeAIProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,7 +573,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = AvanadeAIProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AvanadeAIProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.AvanadeAIProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
