@@ -8,18 +8,71 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var table: UITableView!
+    
+    var imagesArray = [Images]()
+    var currentImageArray = [Images]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setUpImages()
+        setUpSearchBar()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setUpImages() {
+        imagesArray.append(Images(name: "Starry Night"))
+        imagesArray.append(Images(name: "Hollywood"))
+        imagesArray.append(Images(name: "The Great Wave"))
+        
+        currentImageArray = imagesArray
     }
-
+    
+    private func setUpSearchBar() {
+        searchBar.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return currentImageArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell else {
+            return UITableViewCell()
+        }
+        
+        cell.nameLabel.text = currentImageArray[indexPath.row].name
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            currentImageArray = imagesArray
+            table.reloadData()
+            return
+            
+        }
+        
+        currentImageArray = imagesArray.filter({ images -> Bool in
+            images.name.lowercased().contains(searchText.lowercased())})
+        table.reloadData()
+    }
+    
+    class Images {
+        let name: String
+        //let image: String
+        init(name: String) {
+            self.name = name;
+        }
+    }
 
 }
 
