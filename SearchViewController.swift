@@ -9,7 +9,7 @@
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
-
+    
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var table: UITableView!
     
@@ -22,11 +22,11 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         setUpImages()
         setUpSearchBar()
     }
-
+    
     private func setUpImages() {
-        imagesArray.append(Images(name: "Starry Night"))
-        imagesArray.append(Images(name: "Hollywood"))
-        imagesArray.append(Images(name: "The Great Wave"))
+        imagesArray.append(Images(name: "The Great Wave", image:"1"))
+        imagesArray.append(Images(name: "Hollywood", image:"2"))
+        imagesArray.append(Images(name: "Starry Night", image:"3"))
         
         currentImageArray = imagesArray
     }
@@ -36,21 +36,22 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return currentImageArray.count
+        return currentImageArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell
+            else {
             return UITableViewCell()
         }
         
         cell.nameLabel.text = currentImageArray[indexPath.row].name
-        
+        cell.imagesView.image = UIImage(named: currentImageArray[indexPath.row].image)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 125
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -68,11 +69,12 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     class Images {
         let name: String
-        //let image: String
-        init(name: String) {
+        let image: String
+        init(name: String, image: String) {
             self.name = name;
+            self.image = image;
         }
     }
-
+    
 }
 

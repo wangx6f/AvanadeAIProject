@@ -33,6 +33,7 @@
 		25C42D6320084C7300F7D727 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C42D6220084C7300F7D727 /* Gallery.storyboard */; };
 		25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */; };
 		25E73D9D20072DD700610A74 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */; };
+		96C9F924200C9F2000337BFD /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9F923200C9F2000337BFD /* TableCell.swift */; };
 		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C9F923200C9F2000337BFD /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		DFF5994FD082CA22DC087ECB /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
 				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
 				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
+				96C9F923200C9F2000337BFD /* TableCell.swift */,
 				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
 			);
 			path = Controllers;
@@ -405,6 +408,7 @@
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */,
 				2546C5452002EED70099A165 /* SettingsViewController.swift in Sources */,
+				96C9F924200C9F2000337BFD /* TableCell.swift in Sources */,
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
