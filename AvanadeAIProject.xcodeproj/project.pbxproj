@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22905CE120058B9800867B03 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22905CE020058B9800867B03 /* Artwork.swift */; };
-		22E2E48A200725AB00CFD2E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E489200725AB00CFD2E9 /* User.swift */; };
-		22E2E48C20072C5600CFD2E9 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */; };
-		22E2E490200732A500CFD2E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E48F200732A500CFD2E9 /* DataManager.swift */; };
-		22E2E492200734C400CFD2E9 /* DummyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */; };
 		2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2546C5392001B7E80099A165 /* Intro.storyboard */; };
 		2546C53F200207820099A165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C53E200207820099A165 /* LoginViewController.swift */; };
 		2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C5402002150B0099A165 /* RegisterViewController.swift */; };
@@ -28,7 +23,6 @@
 		2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0212001A1A400FE28C9 /* Assets.xcassets */; };
 		2551C0252001A1A400FE28C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */; };
 		2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */; };
-<<<<<<< HEAD
 		2595FE81200895BD00ED2160 /* CommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595FE7F200895BD00ED2160 /* CommentTableCell.swift */; };
 		2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595FE80200895BD00ED2160 /* CommentTableCell.xib */; };
 		25AE57402008769E0035F748 /* DetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25AE573F2008769E0035F748 /* DetailTableCell.xib */; };
@@ -41,17 +35,9 @@
 		25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */; };
 		25E73D9D20072DD700610A74 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */; };
 		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
-=======
-		65D1AB93D998FEFD89C7527C /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */; };
->>>>>>> model
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22905CE020058B9800867B03 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		22E2E489200725AB00CFD2E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
-		22E2E48F200732A500CFD2E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataProvider.swift; sourceTree = "<group>"; };
 		2546C5392001B7E80099A165 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		2546C53E200207820099A165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2546C5402002150B0099A165 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +68,8 @@
 		25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFormController.swift; sourceTree = "<group>"; };
 		25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF5994FD082CA22DC087ECB /* Pods-AvanadeAIProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.release.xcconfig"; sourceTree = "<group>"; };
-		FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvanadeAIProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +77,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D1AB93D998FEFD89C7527C /* Pods_AvanadeAIProject.framework in Frameworks */,
+				BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		2551C00C2001A1A400FE28C9 = {
 			isa = PBXGroup;
 			children = (
@@ -140,34 +125,10 @@
 			sourceTree = "<group>";
 		};
 		25BDD5C3200BF1EF00FBE393 /* Models */ = {
-=======
-		22E2E48D20072C7C00CFD2E9 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				22E2E48B20072C5600CFD2E9 /* DataProviderProtocol.swift */,
-			);
-			name = Protocol;
-			sourceTree = "<group>";
-		};
-		22E2E48E2007328200CFD2E9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				22E2E48F200732A500CFD2E9 /* DataManager.swift */,
-				22E2E491200734C400CFD2E9 /* DummyDataProvider.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		2546C5352001B0DE0099A165 /* ViewController */ = {
->>>>>>> model
 			isa = PBXGroup;
 			children = (
 			);
-<<<<<<< HEAD
 			path = Models;
-=======
-			name = ViewController;
->>>>>>> model
 			sourceTree = "<group>";
 		};
 		25BDD5C4200BF20300FBE393 /* Views */ = {
@@ -190,13 +151,8 @@
 		25BDD5C5200BF25C00FBE393 /* CommentTableCell */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				2595FE7F200895BD00ED2160 /* CommentTableCell.swift */,
 				2595FE80200895BD00ED2160 /* CommentTableCell.xib */,
-=======
-				22905CE020058B9800867B03 /* Artwork.swift */,
-				22E2E489200725AB00CFD2E9 /* User.swift */,
->>>>>>> model
 			);
 			path = CommentTableCell;
 			sourceTree = "<group>";
@@ -245,19 +201,8 @@
 		25BDD5CA200BF2BD00FBE393 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				2546C53E200207820099A165 /* LoginViewController.swift */,
 				2546C5402002150B0099A165 /* RegisterViewController.swift */,
-=======
-				22E2E48E2007328200CFD2E9 /* Controller */,
-				22E2E48D20072C7C00CFD2E9 /* Protocol */,
-				256CACD520045B6800A29A79 /* Extension */,
-				2546C5372001B1010099A165 /* Model */,
-				2546C5362001B0F00099A165 /* View */,
-				2546C5352001B0DE0099A165 /* ViewController */,
-				2551C0212001A1A400FE28C9 /* Assets.xcassets */,
-				2546C5382001B1070099A165 /* Supporting Files */,
->>>>>>> model
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -300,7 +245,7 @@
 		F78D80427E9AD21B61DAEDDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD33F4361F9548779ACB2DB1 /* Pods_AvanadeAIProject.framework */,
+				6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,13 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				25BDD5BB200B452B00FBE393 /* AllCommentsViewController.swift in Sources */,
-=======
-				22E2E48A200725AB00CFD2E9 /* User.swift in Sources */,
-				22E2E490200732A500CFD2E9 /* DataManager.swift in Sources */,
-				22E2E492200734C400CFD2E9 /* DummyDataProvider.swift in Sources */,
->>>>>>> model
 				2546C53F200207820099A165 /* LoginViewController.swift in Sources */,
 				2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */,
 				25BDD5BD200B4F3700FBE393 /* CommentDetailViewController.swift in Sources */,
@@ -476,13 +415,8 @@
 				2551C01D2001A1A400FE28C9 /* SearchViewController.swift in Sources */,
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */,
-				22E2E48C20072C5600CFD2E9 /* DataProviderProtocol.swift in Sources */,
 				2546C5452002EED70099A165 /* SettingsViewController.swift in Sources */,
-<<<<<<< HEAD
 				25BDD5D0200C9B8600FBE393 /* TableCell.swift in Sources */,
-=======
-				22905CE120058B9800867B03 /* Artwork.swift in Sources */,
->>>>>>> model
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				DEVELOPMENT_TEAM = X5RA9XFBY6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -646,7 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				DEVELOPMENT_TEAM = X5RA9XFBY6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
