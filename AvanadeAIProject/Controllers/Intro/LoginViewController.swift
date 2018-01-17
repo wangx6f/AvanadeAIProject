@@ -8,15 +8,17 @@
 
 import UIKit
 import TransitionButton
-import IHKeyboardAvoiding
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: TransitionButton!
     private let mainSegueIdentifier = "goToMain"
     @IBOutlet weak var bottomContainer: UIView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        KeyboardAvoiding.avoidingView = bottomContainer
+        configForm()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +30,20 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: mainSegueIdentifier, sender: self)
     }
     
-    
-    // TODO: actions for keyboard 'return' pressed
+    private func configForm() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
 
+}
+
+extension LoginViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            onLoginPressed(loginButton)
+        }
+        return false
+    }
 }

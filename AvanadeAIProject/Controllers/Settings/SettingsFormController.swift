@@ -38,15 +38,31 @@ class SettingsFormController: FormViewController {
             }
             <<< PushRow<String>() { row in
                 row.title = "Gender"
-                row.value = "Male"
-                row.options = ["Male","Female","Other"]
+                row.value = Constants.genderOptions[0]
+                row.options = Constants.genderOptions
                 row.selectorTitle = "Gender"
+                _ = row.onPresent({ (from, to) in
+                    to.enableDeselection = false
+                })
                 }
             <<< PushRow<String>() { row in
+                row.title = "Age"
+                row.value = Constants.ageOptions[0]
+                row.options = Constants.ageOptions
+                row.selectorTitle = "Age"
+                _ = row.onPresent({ (from, to) in
+                    to.enableDeselection = false
+                })
+            }
+
+            <<< PushRow<String>() { row in
                 row.title = "Major"
-                row.value = "Business"
-                row.options = ["Business","Computer Science","Civil Engineering"]
+                row.value = Constants.majorOptions[0]
+                row.options = Constants.majorOptions
                 row.selectorTitle = "Major"
+                _ = row.onPresent({ (from, to) in
+                    to.enableDeselection = false
+                })
         }
             
         +++ Section("Support")

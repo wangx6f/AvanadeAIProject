@@ -14,15 +14,14 @@ class GalleryViewController: UICollectionViewController {
     
     
     // MARK: constants
-    private let collectionCellReuseIdentifier = "imageCollectionCell"
-    private let collectionCellNIBName = "ImageCollectionCell"
+
     private let detailSegueIdentifier = "goToDetail"
     private let collectionViewSectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
     
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionViewConfig()
+        configCollectionView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +41,7 @@ class GalleryViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // TODO: load each individual image with its data to a cell
-        let cell : ImageCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellReuseIdentifier, for: indexPath) as! ImageCollectionCell
+        let cell : ImageCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionCellReuseIdentifier, for: indexPath) as! ImageCollectionCell
         cell.numOfCommentLabel.text = "\(indexPath.row*100)"
         cell.numOfViewLabel.text = "\(indexPath.row*10)"
         cell.ratingView.rating = Double(indexPath.row)/5.0
@@ -50,9 +49,9 @@ class GalleryViewController: UICollectionViewController {
     }
     
     // MARK: private methods
-    private func collectionViewConfig() {
+    private func configCollectionView() {
         // register the image collection cell
-        collectionView?.register(UINib(nibName: collectionCellNIBName, bundle: nil), forCellWithReuseIdentifier: collectionCellReuseIdentifier)
+        collectionView?.register(UINib(nibName: Constants.collectionCellNIBName, bundle: nil), forCellWithReuseIdentifier: Constants.collectionCellReuseIdentifier)
         // config the layout
         let layout : CHTCollectionViewWaterfallLayout =  collectionView!.collectionViewLayout as! CHTCollectionViewWaterfallLayout
         layout.sectionInset = collectionViewSectionInset

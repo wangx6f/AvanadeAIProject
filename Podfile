@@ -15,6 +15,6 @@ target 'AvanadeAIProject' do
   pod 'CHTCollectionViewWaterfallLayout'
   pod 'Cosmos', '~> 13.0'
   pod 'Eureka'
-  pod 'IHKeyboardAvoiding'
+  pod 'IQKeyboardManagerSwift'
 
 end

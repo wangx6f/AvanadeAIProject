@@ -9,18 +9,20 @@
 import UIKit
 import TransitionButton
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController{
 
-    @IBOutlet weak var scrollView: UIView!
+
+    @IBOutlet weak var formContainer: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var genderTextField: SimplePickerTextField!
+    @IBOutlet weak var ageTextField: SimplePickerTextField!
+    @IBOutlet weak var majorTextField: SimplePickerTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        nameTextField.delegate = self
+        configForm()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,13 +34,26 @@ class RegisterViewController: UIViewController {
     
     @IBAction func onCancelPressed(_ sender: TransitionButton) {
         dismiss(animated: true, completion: nil)
-        
     }
+    
+    private func configForm() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        nameTextField.delegate = self
+        genderTextField.setOptions(Constants.genderOptions)
+        ageTextField.setOptions(Constants.ageOptions)
+        majorTextField.setOptions(Constants.majorOptions)
+    }
+    
 }
 
 extension RegisterViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        formContainer.viewWithTag(textField.tag+1)?.becomeFirstResponder()
         return false
     }
 }
+
+
+
+

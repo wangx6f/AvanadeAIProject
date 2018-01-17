@@ -11,17 +11,13 @@ import UIKit
 class DetailViewController: UITableViewController {
 
     // MARK: constants
-    private let detailTableCellReuseIdentifier = "detailTableCell"
-    private let detailTableCellNIBName = "DetailTableCell"
-    private let commentTableCellReuseIdentifier = "commentTableCell"
-    private let commentTableCellNIBName = "CommentTableCell"
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
     private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
     
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewConfig()
+        configTableView()
 
     }
 
@@ -57,10 +53,10 @@ class DetailViewController: UITableViewController {
     }
     
     // MARK: private methods
-    private func tableViewConfig() {
+    private func configTableView() {
         // register cells
-        tableView.register(UINib(nibName: detailTableCellNIBName, bundle: nil), forCellReuseIdentifier: detailTableCellReuseIdentifier)
-        tableView.register(UINib(nibName: commentTableCellNIBName, bundle: nil), forCellReuseIdentifier: commentTableCellReuseIdentifier)
+        tableView.register(UINib(nibName: Constants.detailTableCellNIBName, bundle: nil), forCellReuseIdentifier: Constants.detailTableCellReuseIdentifier)
+        tableView.register(UINib(nibName: Constants.commentTableCellNIBName, bundle: nil), forCellReuseIdentifier: Constants.commentTableCellReuseIdentifier)
         // make the height of cell fit its content
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -69,12 +65,12 @@ class DetailViewController: UITableViewController {
     }
     
     private func constructDetailCell() -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: detailTableCellReuseIdentifier) as! DetailTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
         return cell
     }
     
     private func constructCommentCell() -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: commentTableCellReuseIdentifier) as! CommentTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.commentTableCellReuseIdentifier) as! CommentTableCell
         return cell
     }
     

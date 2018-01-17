@@ -11,8 +11,6 @@ import UIKit
 class AllCommentsViewController: UITableViewController {
 
     
-    private let commentTableCellReuseIdentifier = "commentTableCell"
-    private let commentTableCellNIBName = "CommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
     
     override func viewDidLoad() {
@@ -35,7 +33,7 @@ class AllCommentsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: commentTableCellReuseIdentifier) as! CommentTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:Constants.commentTableCellReuseIdentifier) as! CommentTableCell
         return cell
     }
     
@@ -43,7 +41,7 @@ class AllCommentsViewController: UITableViewController {
     // MARK: - private methods
     private func tableViewConfig() {
         // register cells
-        tableView.register(UINib(nibName: commentTableCellNIBName, bundle: nil), forCellReuseIdentifier: commentTableCellReuseIdentifier)
+        tableView.register(UINib(nibName: Constants.commentTableCellNIBName, bundle: nil), forCellReuseIdentifier: Constants.commentTableCellReuseIdentifier)
         // make the height of cell fit its content
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension

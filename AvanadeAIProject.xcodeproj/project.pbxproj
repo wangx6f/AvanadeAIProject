@@ -27,6 +27,8 @@
 		2551C0202001A1A400FE28C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C01E2001A1A400FE28C9 /* Main.storyboard */; };
 		2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0212001A1A400FE28C9 /* Assets.xcassets */; };
 		2551C0252001A1A400FE28C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0232001A1A400FE28C9 /* LaunchScreen.storyboard */; };
+		2577589C200EF6CE004430D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577589B200EF6CE004430D1 /* Constants.swift */; };
+		257758A2200F0E2B004430D1 /* SimplePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */; };
 		2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */; };
 		2595FE81200895BD00ED2160 /* CommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595FE7F200895BD00ED2160 /* CommentTableCell.swift */; };
 		2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595FE80200895BD00ED2160 /* CommentTableCell.xib */; };
@@ -65,6 +67,8 @@
 		2551C0212001A1A400FE28C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2551C0242001A1A400FE28C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2551C0262001A1A400FE28C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2577589B200EF6CE004430D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerTextField.swift; sourceTree = "<group>"; };
 		2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
 		2595FE7F200895BD00ED2160 /* CommentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableCell.swift; sourceTree = "<group>"; };
 		2595FE80200895BD00ED2160 /* CommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableCell.xib; sourceTree = "<group>"; };
@@ -125,6 +129,31 @@
 			path = AvanadeAIProject;
 			sourceTree = "<group>";
 		};
+		2577589E200F0DEB004430D1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
+				25BDD5CF200C9B8500FBE393 /* TableCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2577589F200F0DF5004430D1 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		257758A0200F0DFC004430D1 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		25BDD5C2200BF1DA00FBE393 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +178,6 @@
 		25BDD5C4200BF20300FBE393 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25BDD5D1200C9C3700FBE393 /* TableCell */,
 				25BDD5C7200BF28300FBE393 /* ImageCollectionCell */,
 				25BDD5C6200BF27200FBE393 /* DetailTableCell */,
 				25BDD5C5200BF25C00FBE393 /* CommentTableCell */,
@@ -193,13 +221,13 @@
 		25BDD5C8200BF29F00FBE393 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				257758A0200F0DFC004430D1 /* Gallery */,
+				2577589F200F0DF5004430D1 /* Saved */,
+				2577589E200F0DEB004430D1 /* Search */,
 				25BDD5CB200BF2C200FBE393 /* Detail */,
 				25BDD5CA200BF2BD00FBE393 /* Intro */,
 				25BDD5C9200BF2B700FBE393 /* Settings */,
 				2551C0182001A1A400FE28C9 /* AppDelegate.swift */,
-				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
-				2551C01C2001A1A400FE28C9 /* SearchViewController.swift */,
-				2546C5462002EEEA0099A165 /* SavedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +246,7 @@
 			children = (
 				2546C53E200207820099A165 /* LoginViewController.swift */,
 				2546C5402002150B0099A165 /* RegisterViewController.swift */,
+				257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -236,16 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				2551C0262001A1A400FE28C9 /* Info.plist */,
+				2577589B200EF6CE004430D1 /* Constants.swift */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		25BDD5D1200C9C3700FBE393 /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				25BDD5CF200C9B8500FBE393 /* TableCell.swift */,
-			);
-			path = TableCell;
 			sourceTree = "<group>";
 		};
 		363F075F0E7A2F2D58B606C0 /* Pods */ = {
@@ -354,7 +376,7 @@
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
@@ -365,7 +387,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftAzureMobile.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
@@ -422,6 +444,8 @@
 				25BDD5BD200B4F3700FBE393 /* CommentDetailViewController.swift in Sources */,
 				25AE574220087BA80035F748 /* DetailTableCell.swift in Sources */,
 				25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */,
+				2577589C200EF6CE004430D1 /* Constants.swift in Sources */,
+				257758A2200F0E2B004430D1 /* SimplePickerTextField.swift in Sources */,
 				22F25395200DEAEA00A0064C /* DataProviderProtocol.swift in Sources */,
 				22F25396200DEAEA00A0064C /* DummyDataProvider.swift in Sources */,
 				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
