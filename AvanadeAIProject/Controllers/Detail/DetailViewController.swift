@@ -13,6 +13,7 @@ class DetailViewController: UITableViewController {
     // MARK: constants
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
     private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
+    private let commentDetailSegueIdentifier = "goToCommentDetail"
     
     // MARK: override methods
     override func viewDidLoad() {
@@ -26,6 +27,7 @@ class DetailViewController: UITableViewController {
 
     }
     
+    // construct cell for each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             return constructDetailCell()
@@ -44,6 +46,13 @@ class DetailViewController: UITableViewController {
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y <= 0 {
             scrollView.contentOffset = CGPoint.zero
+        }
+    }
+    
+    // handle the transition to comment detail view
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.cellForRow(at: indexPath)?.reuseIdentifier == Constants.commentTableCellReuseIdentifier {
+            performSegue(withIdentifier: commentDetailSegueIdentifier, sender: self)
         }
     }
     

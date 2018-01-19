@@ -16,5 +16,6 @@ target 'AvanadeAIProject' do
   pod 'Cosmos', '~> 13.0'
   pod 'Eureka'
   pod 'IQKeyboardManagerSwift'
+  pod 'LGButton'
 
 end

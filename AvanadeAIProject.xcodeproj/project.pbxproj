@@ -12,6 +12,8 @@
 		22F25396200DEAEA00A0064C /* DummyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25392200DEAEA00A0064C /* DummyDataProvider.swift */; };
 		22F25397200DEAEA00A0064C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25393200DEAEA00A0064C /* User.swift */; };
 		22F25398200DEAEA00A0064C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25394200DEAEA00A0064C /* DataManager.swift */; };
+		25169B652011472C0007E848 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25169B642011472C0007E848 /* FilterViewController.swift */; };
+		25169B672011CB300007E848 /* GalleryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25169B662011CB300007E848 /* GalleryFilter.swift */; };
 		2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2546C5392001B7E80099A165 /* Intro.storyboard */; };
 		2546C53F200207820099A165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C53E200207820099A165 /* LoginViewController.swift */; };
 		2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C5402002150B0099A165 /* RegisterViewController.swift */; };
@@ -50,6 +52,8 @@
 		22F25392200DEAEA00A0064C /* DummyDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDataProvider.swift; sourceTree = "<group>"; };
 		22F25393200DEAEA00A0064C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		22F25394200DEAEA00A0064C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		25169B642011472C0007E848 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		25169B662011CB300007E848 /* GalleryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFilter.swift; sourceTree = "<group>"; };
 		2546C5392001B7E80099A165 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		2546C53E200207820099A165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2546C5402002150B0099A165 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */,
+				25169B642011472C0007E848 /* FilterViewController.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				22F25392200DEAEA00A0064C /* DummyDataProvider.swift */,
 				22F25393200DEAEA00A0064C /* User.swift */,
 				22F2538F200DEA4300A0064C /* Artwork.swift */,
+				25169B662011CB300007E848 /* GalleryFilter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 				"${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/TransitionButton/TransitionButton.framework",
@@ -388,6 +395,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftAzureMobile.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionButton.framework",
@@ -457,9 +465,11 @@
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */,
 				2546C5452002EED70099A165 /* SettingsViewController.swift in Sources */,
+				25169B652011472C0007E848 /* FilterViewController.swift in Sources */,
 				25BDD5D0200C9B8600FBE393 /* TableCell.swift in Sources */,
 				22F25390200DEA4300A0064C /* Artwork.swift in Sources */,
 				22F25398200DEAEA00A0064C /* DataManager.swift in Sources */,
+				25169B672011CB300007E848 /* GalleryFilter.swift in Sources */,
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
 				22F25397200DEAEA00A0064C /* User.swift in Sources */,
 			);

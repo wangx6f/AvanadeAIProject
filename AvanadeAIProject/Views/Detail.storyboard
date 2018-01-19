@@ -163,7 +163,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="fgC-UM-6AO"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="flipHorizontal" id="i7D-hh-WIm"/>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="coverVertical" id="i7D-hh-WIm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iX-rL-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +267,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="flipHorizontal" id="8UA-ZW-2Fz"/>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="coverVertical" id="8UA-ZW-2Fz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbn-R0-6Kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,6 +280,6 @@
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8UA-ZW-2Fz"/>
+        <segue reference="i7D-hh-WIm"/>
     </inferredMetricsTieBreakers>
 </document>

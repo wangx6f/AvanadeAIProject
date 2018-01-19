@@ -11,12 +11,11 @@ import CHTCollectionViewWaterfallLayout
 
 class GalleryViewController: UICollectionViewController {
 
-    
-    
     // MARK: constants
-
     private let detailSegueIdentifier = "goToDetail"
+    private let filterSegueIdentifier = "goToFilter"
     private let collectionViewSectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
+    private var filter = GalleryFilter()
     
     // MARK: override methods
     override func viewDidLoad() {
@@ -27,6 +26,14 @@ class GalleryViewController: UICollectionViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == filterSegueIdentifier {
+            let filterViewController : FilterViewController = (segue.destination as! UINavigationController).topViewController as! FilterViewController
+            filterViewController.filterDelegate = self
+            filterViewController.filter = filter
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -57,9 +64,6 @@ class GalleryViewController: UICollectionViewController {
         layout.sectionInset = collectionViewSectionInset
     }
     
-    
-
-    
 }
 
 //MARK: - Extension for UICollectionViewDelegate
@@ -70,4 +74,12 @@ extension GalleryViewController : CHTCollectionViewDelegateWaterfallLayout {
     }
 }
 
+//MARK: - Extenstion for FilterDelegate in the purpose of being notified changes on filter
+extension GalleryViewController : FilterDelegate {
+    
+    func filterUpdated(newFilter: GalleryFilter) {
+        filter = newFilter
+        print(filter)
+    }
+}
 
