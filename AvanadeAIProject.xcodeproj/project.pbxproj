@@ -39,6 +39,8 @@
 		25BDD5D0200C9B8600FBE393 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD5CF200C9B8500FBE393 /* TableCell.swift */; };
 		25C42D6120083A5200F7D727 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C42D6020083A5200F7D727 /* Settings.storyboard */; };
 		25C42D6320084C7300F7D727 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C42D6220084C7300F7D727 /* Gallery.storyboard */; };
+		25C4B008201588F0008D85DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C4B006201588F0008D85DE /* LaunchScreen.storyboard */; };
+		25C4B009201588F0008D85DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C4B007201588F0008D85DE /* Main.storyboard */; };
 		25D8B2D020082887003A4AD1 /* SettingsFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */; };
 		25E73D9D20072DD700610A74 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */; };
 		BDC8EA3748D881E0D9B7C2DF /* Pods_AvanadeAIProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F465E77A21858290EE161A5 /* Pods_AvanadeAIProject.framework */; };
@@ -79,6 +81,8 @@
 		25BDD5CF200C9B8500FBE393 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		25C42D6020083A5200F7D727 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		25C42D6220084C7300F7D727 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		25C4B006201588F0008D85DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25C4B007201588F0008D85DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		25D8B2CF20082887003A4AD1 /* SettingsFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFormController.swift; sourceTree = "<group>"; };
 		25E73D9C20072DD700610A74 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		35FD9EA9989757DD2C77E5FD /* Pods-AvanadeAIProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvanadeAIProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		25BDD5C4200BF20300FBE393 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				25C4B006201588F0008D85DE /* LaunchScreen.storyboard */,
+				25C4B007201588F0008D85DE /* Main.storyboard */,
 				25BDD5C7200BF28300FBE393 /* ImageCollectionCell */,
 				25BDD5C6200BF27200FBE393 /* DetailTableCell */,
 				25BDD5C5200BF25C00FBE393 /* CommentTableCell */,
@@ -349,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C4B008201588F0008D85DE /* LaunchScreen.storyboard in Resources */,
+				25C4B009201588F0008D85DE /* Main.storyboard in Resources */,
 				25AE57402008769E0035F748 /* DetailTableCell.xib in Resources */,
 				25C42D6320084C7300F7D727 /* Gallery.storyboard in Resources */,
 				2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */,
@@ -374,6 +382,7 @@
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 				"${BUILT_PRODUCTS_DIR}/MicrosoftAzureMobile/MicrosoftAzureMobile.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
@@ -386,6 +395,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MicrosoftAzureMobile.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",

@@ -8,6 +8,7 @@
 
 import UIKit
 import CHTCollectionViewWaterfallLayout
+import Kingfisher
 
 class GalleryViewController: UICollectionViewController {
 
@@ -52,6 +53,7 @@ class GalleryViewController: UICollectionViewController {
         cell.numOfCommentLabel.text = "\(indexPath.row*100)"
         cell.numOfViewLabel.text = "\(indexPath.row*10)"
         cell.ratingView.rating = Double(indexPath.row)/5.0
+        cell.imageView.kf.setImage(with:URL(string:"https://image.ibb.co/bWMupG/Launch_Image.jpg"))
         return cell
     }
     
@@ -63,6 +65,7 @@ class GalleryViewController: UICollectionViewController {
         let layout : CHTCollectionViewWaterfallLayout =  collectionView!.collectionViewLayout as! CHTCollectionViewWaterfallLayout
         layout.sectionInset = collectionViewSectionInset
     }
+
     
 }
 

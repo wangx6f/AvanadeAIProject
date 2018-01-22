@@ -17,5 +17,6 @@ target 'AvanadeAIProject' do
   pod 'Eureka'
   pod 'IQKeyboardManagerSwift'
   pod 'LGButton'
+  pod 'Kingfisher', '~> 4.0'
 
 end
