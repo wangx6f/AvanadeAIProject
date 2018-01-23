@@ -8,8 +8,9 @@
 
 import UIKit
 
-class DetailViewController: UITableViewController {
-
+class DetailViewController: UITableViewController , DetailTableCellDelegate {
+    
+    
     // MARK: constants
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
     private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
@@ -26,6 +27,8 @@ class DetailViewController: UITableViewController {
         super.didReceiveMemoryWarning()
 
     }
+    
+    
     
     // construct cell for each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,6 +59,11 @@ class DetailViewController: UITableViewController {
         }
     }
     
+    // handle the action when the image is pressed
+    func didPressImage(viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
+    }
+    
     // MARK: UI methods
     @IBAction func onBackPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
@@ -75,6 +83,7 @@ class DetailViewController: UITableViewController {
     
     private func constructDetailCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
+        cell.delegate = self
         return cell
     }
     

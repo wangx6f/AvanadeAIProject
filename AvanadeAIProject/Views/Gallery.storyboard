@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -79,19 +78,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="048-iy-kfx">
-                                        <rect key="frame" x="28" y="13.333333333333329" width="319" height="99.666666666666671"/>
+                                        <rect key="frame" x="28" y="13.666666666666671" width="319" height="99.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SORTED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G89-98-hiJ" userLabel="SORT BY">
-                                                <rect key="frame" x="0.0" y="0.6666666666666714" width="92" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.66666666666665719" width="92" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-IE-xra" userLabel="A1">
-                                                <rect key="frame" x="0.6666666666666714" y="21.666666666666675" width="159.33333333333331" height="40.333333333333343"/>
+                                                <rect key="frame" x="0.3333333333333286" y="21.666666666666654" width="160" height="40.666666666666657"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DW-kR-uVP" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.3333333333333357" y="2.3333333333333286" width="122.66666666666666" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.6666666666666643" y="2.6666666666666714" width="122.66666666666669" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -127,10 +126,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eK-qM-oXe" userLabel="A2">
-                                                <rect key="frame" x="160" y="21.666666666666675" width="159.33333333333337" height="40.333333333333343"/>
+                                                <rect key="frame" x="160.33333333333331" y="21.666666666666654" width="159.33333333333331" height="40.666666666666657"/>
                                                 <subviews>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-90-TZv" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="2.3333333333333286" width="160.66666666666666" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2.6666666666666714" width="160.66666666666666" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -163,10 +162,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H80-0U-f2X" userLabel="B1">
-                                                <rect key="frame" x="0.6666666666666714" y="62.000000000000014" width="159.33333333333331" height="39.666666666666671"/>
+                                                <rect key="frame" x="0.3333333333333286" y="62.333333333333329" width="160" height="40.333333333333329"/>
                                                 <subviews>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYR-g6-XRZ" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="1.3333333333333144" width="152" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2" width="152" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -199,10 +198,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrn-xZ-pin" userLabel="B2">
-                                                <rect key="frame" x="160" y="62.000000000000014" width="159.33333333333337" height="39.666666666666671"/>
+                                                <rect key="frame" x="160.33333333333331" y="62.333333333333329" width="159.33333333333331" height="40.333333333333329"/>
                                                 <subviews>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-t1-o2Y" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="2" width="148" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2.3333333333333428" width="148" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -263,25 +262,26 @@
                                     <constraint firstItem="048-iy-kfx" firstAttribute="height" secondItem="yiN-8C-7Q0" secondAttribute="height" multiplier="0.8" id="Ybt-TF-Jae"/>
                                     <constraint firstItem="048-iy-kfx" firstAttribute="centerY" secondItem="yiN-8C-7Q0" secondAttribute="centerY" id="izL-rJ-1Og"/>
                                     <constraint firstItem="048-iy-kfx" firstAttribute="centerX" secondItem="yiN-8C-7Q0" secondAttribute="centerX" id="lB8-PK-MD2"/>
+                                    <constraint firstAttribute="height" constant="125" id="wVx-CF-NJx"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQ9-k3-DV4" userLabel="GenreContainer">
-                                <rect key="frame" x="0.0" y="125.00000000000001" width="375" height="187.33333333333337"/>
+                                <rect key="frame" x="0.0" y="125" width="375" height="185"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wZ-5t-EWs">
-                                        <rect key="frame" x="28" y="19.666666666666657" width="319" height="149.33333333333334"/>
+                                        <rect key="frame" x="28.333333333333343" y="18.666666666666657" width="318.33333333333326" height="148"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-Qi-kNj">
-                                                <rect key="frame" x="0.0" y="0.0" width="55" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.33333333333334281" width="55" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkz-wb-1eq" userLabel="A1">
-                                                <rect key="frame" x="0.6666666666666714" y="20.000000000000004" width="159.33333333333331" height="37.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="20.333333333333346" width="159" height="37.333333333333343"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-Yf-lQt" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.3333333333333357" y="0.33333333333334281" width="84.666666666666657" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="84.666666666666671" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -317,10 +317,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEo-hL-Pkw" userLabel="A2">
-                                                <rect key="frame" x="160" y="20.000000000000004" width="159.33333333333337" height="37.333333333333343"/>
+                                                <rect key="frame" x="159" y="20.333333333333346" width="159.33333333333337" height="37.333333333333343"/>
                                                 <subviews>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0v-9c-gAy" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.33333333333334281" width="148.33333333333334" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="148.33333333333334" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -353,10 +353,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90D-BY-M3y" userLabel="B1">
-                                                <rect key="frame" x="0.6666666666666714" y="57.333333333333343" width="159.33333333333331" height="37"/>
+                                                <rect key="frame" x="0.0" y="57.666666666666657" width="159" height="37.666666666666657"/>
                                                 <subviews>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41q-Vn-y3f" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.66666666666668561" width="130" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -389,10 +389,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo3-6Z-bux" userLabel="B2">
-                                                <rect key="frame" x="160" y="57.333333333333343" width="159.33333333333337" height="37"/>
+                                                <rect key="frame" x="159" y="57.666666666666657" width="159.33333333333337" height="37.666666666666657"/>
                                                 <subviews>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYj-vz-v4d" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.33333333333331439" width="121.33333333333333" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.66666666666668561" width="121.33333333333333" height="36.333333333333336"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -425,7 +425,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-ur-6n5" userLabel="C1">
-                                                <rect key="frame" x="0.0" y="94.333333333333343" width="159.66666666666666" height="37.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="95.333333333333343" width="159" height="37"/>
                                                 <subviews>
                                                     <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-7P-Xrb" customClass="LGButton" customModule="LGButton">
                                                         <rect key="frame" x="0.0" y="1" width="124.33333333333333" height="36.333333333333336"/>
@@ -489,9 +489,9 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="VQ9-k3-DV4" secondAttribute="height" multiplier="2:1" id="7vK-KC-TRj"/>
                                     <constraint firstItem="3wZ-5t-EWs" firstAttribute="centerY" secondItem="VQ9-k3-DV4" secondAttribute="centerY" id="HpF-4J-5is"/>
                                     <constraint firstItem="3wZ-5t-EWs" firstAttribute="height" secondItem="VQ9-k3-DV4" secondAttribute="height" multiplier="0.8" id="fN1-Xn-JVQ"/>
+                                    <constraint firstAttribute="height" constant="185" id="sgv-Fv-ZXQ"/>
                                     <constraint firstItem="3wZ-5t-EWs" firstAttribute="width" secondItem="VQ9-k3-DV4" secondAttribute="width" multiplier="0.85" id="tlb-IR-lM1"/>
                                     <constraint firstItem="3wZ-5t-EWs" firstAttribute="centerX" secondItem="VQ9-k3-DV4" secondAttribute="centerX" id="xg4-gR-DAp"/>
                                 </constraints>
@@ -501,7 +501,6 @@
                         <constraints>
                             <constraint firstItem="VQ9-k3-DV4" firstAttribute="leading" secondItem="eB4-J4-KdI" secondAttribute="leading" id="Ejp-Hl-d9m"/>
                             <constraint firstItem="VQ9-k3-DV4" firstAttribute="top" secondItem="yiN-8C-7Q0" secondAttribute="bottom" id="HfF-8K-hVa"/>
-                            <constraint firstItem="yiN-8C-7Q0" firstAttribute="width" secondItem="yiN-8C-7Q0" secondAttribute="height" multiplier="3:1" id="XQk-Af-ofu"/>
                             <constraint firstItem="yiN-8C-7Q0" firstAttribute="leading" secondItem="eB4-J4-KdI" secondAttribute="leading" id="c4u-aC-37E"/>
                             <constraint firstItem="yiN-8C-7Q0" firstAttribute="trailing" secondItem="eB4-J4-KdI" secondAttribute="trailing" id="etf-fL-kKB"/>
                             <constraint firstAttribute="trailing" secondItem="VQ9-k3-DV4" secondAttribute="trailing" id="g71-WH-stR"/>

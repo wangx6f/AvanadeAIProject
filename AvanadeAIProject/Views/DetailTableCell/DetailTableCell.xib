@@ -21,9 +21,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="364" height="587.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS">
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="placeholder300px" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS">
                         <rect key="frame" x="0.0" y="0.0" width="364" height="364"/>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="X3q-79-0aS" secondAttribute="height" multiplier="1:1" placeholder="YES" id="fXH-wU-GP4"/>
                         </constraints>
@@ -106,6 +107,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="T5O-Vy-kJo" firstAttribute="leading" secondItem="R7W-3g-rVe" secondAttribute="leading" id="Js6-bW-S37"/>
                             <constraint firstAttribute="trailing" secondItem="JC7-Hw-NNm" secondAttribute="trailing" id="L7w-eC-AKO"/>
@@ -178,6 +180,7 @@
                     <constraint firstAttribute="trailing" secondItem="X3q-79-0aS" secondAttribute="trailing" id="uot-wN-3wZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <gestureRecognizers/>
             <connections>
                 <outlet property="artworkImageView" destination="X3q-79-0aS" id="D79-Qd-ozX"/>
             </connections>
@@ -186,5 +189,6 @@
     </objects>
     <resources>
         <image name="BookmarkIcon" width="25" height="25"/>
+        <image name="placeholder300px" width="300" height="300"/>
     </resources>
 </document>
