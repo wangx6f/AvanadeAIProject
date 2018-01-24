@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add Comment View Controller-->
         <scene sceneID="45o-d0-nnL">
             <objects>
-                <viewController id="8KJ-aq-EtP" sceneMemberID="viewController">
+                <viewController id="8KJ-aq-EtP" customClass="AddCommentViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k08-6K-2uv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,10 +160,14 @@
                                 <action selector="onBackPressed:" destination="u56-Lp-teX" id="Axr-xb-bwX"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fgC-UM-6AO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fgC-UM-6AO">
+                            <connections>
+                                <action selector="onSharePressed:" destination="u56-Lp-teX" id="v5q-it-yBN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="coverVertical" id="i7D-hh-WIm"/>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="crossDissolve" id="i7D-hh-WIm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iX-rL-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +271,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="coverVertical" id="8UA-ZW-2Fz"/>
+                        <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="crossDissolve" id="8UA-ZW-2Fz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lbn-R0-6Kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,6 +284,6 @@
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i7D-hh-WIm"/>
+        <segue reference="8UA-ZW-2Fz"/>
     </inferredMetricsTieBreakers>
 </document>

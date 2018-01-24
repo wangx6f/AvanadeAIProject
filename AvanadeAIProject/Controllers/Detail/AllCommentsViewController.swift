@@ -18,6 +18,7 @@ class AllCommentsViewController: UITableViewController {
         tableViewConfig()
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

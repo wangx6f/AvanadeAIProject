@@ -247,7 +247,7 @@
                         <outlet property="emailTextField" destination="QeO-5O-5go" id="pkI-yh-4CR"/>
                         <outlet property="loginButton" destination="qsv-VM-gR7" id="SsD-90-fBb"/>
                         <outlet property="passwordTextField" destination="gMu-TP-fTE" id="84T-PL-Tq9"/>
-                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMain" action="showViewController:sender:" id="9EL-Iv-hBT"/>
+                        <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMain" id="9EL-Iv-hBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-2G-xMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,7 +257,9 @@
         <!--Main Storyboard Reference-->
         <scene sceneID="5AJ-Kc-AZn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="m9q-HT-j3c" userLabel="Main Storyboard Reference" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="m9q-HT-j3c" userLabel="Main Storyboard Reference" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hUa-cz-soX"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMG-WZ-o03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="849" y="615"/>
@@ -565,7 +567,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N9-EI-QvH">
-                                                        <rect key="frame" x="103.5" y="35" width="113" height="38.5"/>
+                                                        <rect key="frame" x="103.5" y="34.5" width="113" height="38.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -628,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nec-0a-eb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="156"/>
+            <point key="canvasLocation" x="848" y="156"/>
         </scene>
     </scenes>
     <resources>

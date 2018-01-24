@@ -23,7 +23,7 @@ class GalleryViewController: UICollectionViewController {
         super.viewDidLoad()
         configCollectionView()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

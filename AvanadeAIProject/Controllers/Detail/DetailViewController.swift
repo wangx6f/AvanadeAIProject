@@ -45,6 +45,9 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
         return 4
     }
     
+    
+    
+    
     // disable bounce on top edge
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y <= 0 {
@@ -58,6 +61,7 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
             performSegue(withIdentifier: commentDetailSegueIdentifier, sender: self)
         }
     }
+
     
     // handle the action when the image is pressed
     func didPressImage(viewController: UIViewController) {
@@ -67,6 +71,10 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
     // MARK: UI methods
     @IBAction func onBackPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onSharePressed(_ sender: UIBarButtonItem) {
+        showActivityVC()
     }
     
     // MARK: private methods
@@ -96,6 +104,16 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: viewCommentTableCellReuseIdentifier)
         return cell!
     }
+    
+    private func showActivityVC(){
+    let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: "https://image.ibb.co/bWMupG/Launch_Image.jpg")], applicationActivities: nil)
+        present(shareViewController, animated: true, completion:nil)
+
+        
+    }
+    
+    
+    
     
 }
 

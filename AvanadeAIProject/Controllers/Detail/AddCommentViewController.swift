@@ -1,17 +1,18 @@
 //
-//  SettingsViewController.swift
+//  AddCommentViewController.swift
 //  AvanadeAIProject
 //
-//  Created by Xinyuan Wang on 1/7/18.
+//  Created by Xinyuan Wang on 1/23/18.
 //  Copyright © 2018 Avanade. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class AddCommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 

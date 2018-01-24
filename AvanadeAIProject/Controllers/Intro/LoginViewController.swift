@@ -19,7 +19,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configForm()
+        configStatusBarBackground(false)
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,12 +30,23 @@ class LoginViewController: UIViewController {
     
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
         performSegue(withIdentifier: mainSegueIdentifier, sender: self)
+        configStatusBarBackground(true)
+        
+    }
+    
+    
+    private func configStatusBarBackground(_ backgroundOn:Bool) {
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = backgroundOn ? UIColor.black : UIColor(white:CGFloat(0),alpha:CGFloat(0))
+        }
     }
     
     private func configForm() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
+
 
 }
 
