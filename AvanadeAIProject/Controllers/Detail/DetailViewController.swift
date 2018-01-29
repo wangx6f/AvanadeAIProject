@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UITableViewController , DetailTableCellDelegate {
+class DetailViewController: UITableViewController {
     
     
     // MARK: constants
@@ -20,15 +20,11 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
     }
-    
-    
     
     // construct cell for each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,12 +56,6 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
         if tableView.cellForRow(at: indexPath)?.reuseIdentifier == Constants.commentTableCellReuseIdentifier {
             performSegue(withIdentifier: commentDetailSegueIdentifier, sender: self)
         }
-    }
-
-    
-    // handle the action when the image is pressed
-    func didPressImage(viewController: UIViewController) {
-        present(viewController, animated: true, completion: nil)
     }
     
     // MARK: UI methods
@@ -106,13 +96,53 @@ class DetailViewController: UITableViewController , DetailTableCellDelegate {
     }
     
     private func showActivityVC(){
+        //TODO: change the url of the images
     let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: "https://image.ibb.co/bWMupG/Launch_Image.jpg")], applicationActivities: nil)
         present(shareViewController, animated: true, completion:nil)
+    }
+}
 
+extension DetailViewController : DetailTableCellDelegate {
+    
+    func didPressRatingStarButton(score: Int, updateButtonsState: @escaping (Int) -> Void) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let attributedString = NSAttributedString(string: getRateAlertMessage(score), attributes: [
+            NSAttributedStringKey.font : UIFont(name: "Helvetica Neue", size: CGFloat(18))!
+            ])
+    
+        alert.setValue(attributedString, forKey: "attributedTitle")
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
+            updateButtonsState(score)
+            //TODO: update database
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
         
     }
     
+    func didPressImage(viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
+    }
     
+    func didPressBookmark(updateButtonState: (Bool) -> Void) {
+        //TODO: update database for bookmark
+        updateButtonState(true)
+    }
+    
+    private func getRateAlertMessage(_ score:Int) -> String {
+        var stars = ""
+        for index in 1...5 {
+            if index <= score {
+                stars.append("★")
+            } else {
+                stars.append("☆")
+            }
+            
+        }
+        //TODO : change the title
+        let title = "\"Title\""
+        return "Rate " + title + " with " + stars
+    }
     
     
 }

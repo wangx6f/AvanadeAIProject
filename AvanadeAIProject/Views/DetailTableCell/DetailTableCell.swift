@@ -10,7 +10,9 @@ import UIKit
 import SimpleImageViewer
 
 protocol DetailTableCellDelegate {
-    func didPressImage(viewController:UIViewController);
+    func didPressImage(viewController:UIViewController)
+    func didPressBookmark(updateButtonState:(Bool)->Void)
+    func didPressRatingStarButton(score:Int,updateButtonsState: @escaping (Int)->Void)
 }
 
 class DetailTableCell: UITableViewCell {
@@ -19,21 +21,46 @@ class DetailTableCell: UITableViewCell {
     
     @IBOutlet var artworkImageView: UIImageView!
     
+    @IBOutlet weak var bookmarkButton: UIButton!
+    
+    @IBOutlet var ratingStarButtons: [UIButton]!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configImageTapGestureRecognizer()
         setImageRatio(CGFloat(1))
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        changeBookmarkState(false)
     }
     
     public func setImageRatio(_ ratio:CGFloat) {
         let ratioConstraint = NSLayoutConstraint(item: artworkImageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: artworkImageView, attribute: NSLayoutAttribute.width, multiplier: ratio, constant: CGFloat(0))
         artworkImageView.addConstraint(ratioConstraint)
+    }
+    
+    @IBAction func bookmarkOnPressed(_ sender: UIButton) {
+        delegate.didPressBookmark(updateButtonState: changeBookmarkState)
+    }
+    
+    @IBAction func rateOnPressed(_ sender: UIButton) {
+        delegate.didPressRatingStarButton(score: sender.tag, updateButtonsState: changeRatingStarButtonsState)
+    }
+    
+    private func changeBookmarkState(_ isMarked:Bool){
+        if !isMarked {
+            bookmarkButton.setImage(#imageLiteral(resourceName: "BookmarkOutlineIcon"), for: UIControlState.normal)
+        } else {
+            bookmarkButton.setImage(#imageLiteral(resourceName: "BookmarkIcon"), for: UIControlState.normal)
+        }
+    }
+    
+    private func changeRatingStarButtonsState(_ score:Int){
+        for ratingStarButton in ratingStarButtons {
+            if ratingStarButton.tag <= score {
+                ratingStarButton.setTitle("★", for: UIControlState.normal)
+            } else {
+                ratingStarButton.setTitle("☆", for: UIControlState.normal)
+            }
+        }
     }
     
     @objc private func imageOnPressed() {
@@ -47,6 +74,8 @@ class DetailTableCell: UITableViewCell {
         let imageTapGestureRecognizer = UITapGestureRecognizer(target: self,action:#selector(imageOnPressed))
         artworkImageView.addGestureRecognizer(imageTapGestureRecognizer)
     }
+    
+    
 }
 
 
