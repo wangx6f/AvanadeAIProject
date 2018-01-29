@@ -45,25 +45,25 @@ class FilterViewController: UIViewController {
     
     // assuming the tag of the button map to the index + 1 of the options array
     @IBAction func onSortPressed(_ sender: LGButton) {
-        filter.curSortOptionIndex = sender.tag - 1
+        filter.selectedSortTag = sender.tag
         updateUI()
     }
     
     @IBAction func onGenrePressed(_ sender: LGButton) {
-        filter.genreChange(sender.tag - 1)
+        filter.selectedGenreTag = sender.tag
         updateUI()
     }
     
     private func updateUI() {
-        updateButtonGroup(groupContainer: sortOptionContainer, curIndexs: [filter.curSortOptionIndex], optionCount: GalleryFilter.sortOptions.count)
-        updateButtonGroup(groupContainer: genreOptionContainer, curIndexs:filter.curGenreOptionIndexs, optionCount: GalleryFilter.genreOptions.count)
+        updateButtonGroup(groupContainer: sortOptionContainer, curTag: filter.selectedSortTag, optionCount: SortOptions.count)
+        updateButtonGroup(groupContainer: genreOptionContainer, curTag: filter.selectedGenreTag, optionCount: GenreOptions.count)
     }
     
     // assuming the tag of the button map to the index + 1 of the options array
-    private func updateButtonGroup(groupContainer:UIView, curIndexs:[Int], optionCount:Int) {
+    private func updateButtonGroup(groupContainer:UIView, curTag:Int, optionCount:Int) {
         for index in 1...optionCount {
             let curButton : LGButton = groupContainer.viewWithTag(index) as! LGButton
-            if curIndexs.contains(index-1) {
+            if index == curTag {
                 curButton.leftIconColor = Constants.lightBlue
                 curButton.leftIconString = "checkmark-circled"
                 curButton.leftIconFontSize = CGFloat(18.5)

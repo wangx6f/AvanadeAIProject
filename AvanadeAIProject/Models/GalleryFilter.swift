@@ -8,46 +8,59 @@
 
 import Foundation
 
+enum SortOptions : String {
+    case hottest,most_recent,most_rated,best_rated
+    init?(tag: Int) {
+        switch tag {
+        case 1: self = .hottest
+        case 2: self = .most_recent
+        case 3: self = .most_rated
+        case 4: self = .best_rated
+        default: return nil
+        }
+    }
+    
+    static let count = 4
+}
+
+enum GenreOptions : String {
+    case all,landscape,abstract,portrait,still_life
+    init?(tag: Int) {
+        switch tag {
+        case 1: self = .all
+        case 2: self = .landscape
+        case 3: self = .abstract
+        case 4: self = .portrait
+        case 5: self = .still_life
+        default: return nil
+        }
+    }
+    
+    static let count = 5
+}
+
+
 struct GalleryFilter {
     
-    static public let sortOptions = ["hottest","most-recent","most-rated","best-rated"]
-    // make sure the "all" tag is in the index 0
-    static public let genreOptions = ["all","landscape","abstract","portrait","still-life"]
-    public var curSortOptionIndex : Int = 0
-    public private(set) var curGenreOptionIndexs : [Int] = [0]
+    public var selectedSortTag : Int = 1
+    public var selectedGenreTag : Int = 1
     
-    public mutating func genreChange(_ index:Int) {
-        
-        // if "all" is being (un)selected => select "all" as default
-        if index == 0 {
-            curGenreOptionIndexs = [0]
-            return
-        }
-        
-        if curGenreOptionIndexs.contains(index) {
-            curGenreOptionIndexs.remove(at: curGenreOptionIndexs.index(of: index)!)
-        } else {
-            curGenreOptionIndexs.append(index)
-        }
-        
-        
-        // further process the result
-        if curGenreOptionIndexs.count==0 || curGenreOptionIndexs.count==GalleryFilter.genreOptions.count-1 {
-            curGenreOptionIndexs = [0]  // no genre is selected or all genere are selected => select "all" as default
-        } else if curGenreOptionIndexs.contains(0) {
-            curGenreOptionIndexs.remove(at: curGenreOptionIndexs.index(of:0)!)  // "all" and other option(s) are selected at the same time => unselect "all"
-        }
+    public func getSelectedSortOption()->SortOptions {
+        return SortOptions(tag: selectedSortTag)!
+    }
+    
+    public func getSelectedGenreOption() -> GenreOptions {
+        return GenreOptions(tag: selectedGenreTag)!
     }
 }
 
-
-extension GalleryFilter : CustomStringConvertible {
-    
-    var description: String {
-        var description = "Sorted by: " + GalleryFilter.sortOptions[curSortOptionIndex] + "\nSelected genre: "
-        for index in curGenreOptionIndexs {
-            description += GalleryFilter.genreOptions[index] + " "
-        }
-        return description
+extension GalleryFilter : CustomDebugStringConvertible {
+    var debugDescription: String {
+        let sort = getSelectedSortOption().rawValue
+        let genre = getSelectedGenreOption().rawValue
+        return "GalleryFilter(selectedSort: "+sort+", selectedGenre: "+genre+")"
     }
+    
+    
 }
+
