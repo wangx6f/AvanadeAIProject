@@ -26,7 +26,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="364" height="587.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="placeholder300px" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS">
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS" customClass="DetailImageView" customModule="AvanadeAIProject" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="364" height="364"/>
                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8av-GE-2NW">
-                                        <rect key="frame" x="18" y="-7.5" width="295.5" height="69.5"/>
+                                        <rect key="frame" x="18" y="7.5" width="295.5" height="39.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTHOR NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-Q7-ZRe" userLabel="Author Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="295.5" height="19.5"/>
@@ -61,10 +61,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-cK-07A">
-                                                <rect key="frame" x="0.0" y="19.5" width="295.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="19.5" width="295.5" height="20"/>
                                                 <subviews>
                                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-q3-ND3" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="20"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
                                                                 <integer key="value" value="2"/>
@@ -75,7 +75,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-6g-5zz">
-                                                        <rect key="frame" x="147.5" y="0.0" width="148" height="50"/>
+                                                        <rect key="frame" x="147.5" y="0.0" width="148" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-Vy-kJo" userLabel="Bottom Conatiner">
                                 <rect key="frame" x="0.0" y="54.5" width="364" height="36.5"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H3C-Dm-EWN" customClass="cos">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="H3C-Dm-EWN">
                                         <rect key="frame" x="18" y="7" width="328" height="23"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <segments>
@@ -103,6 +103,9 @@
                                             <segment title="after-process"/>
                                             <segment title="compare"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="switchImage:" destination="Taf-aA-oX5" eventType="valueChanged" id="Kry-cY-9FS"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
@@ -223,6 +226,5 @@
     </objects>
     <resources>
         <image name="BookmarkIcon" width="25" height="25"/>
-        <image name="placeholder300px" width="300" height="300"/>
     </resources>
 </document>

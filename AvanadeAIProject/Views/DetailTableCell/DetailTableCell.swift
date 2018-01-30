@@ -19,7 +19,7 @@ class DetailTableCell: UITableViewCell {
 
     public var delegate : DetailTableCellDelegate!
     
-    @IBOutlet var artworkImageView: UIImageView!
+    @IBOutlet var artworkImageView: DetailImageView!
     
     @IBOutlet weak var bookmarkButton: UIButton!
     
@@ -28,8 +28,11 @@ class DetailTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configImageTapGestureRecognizer()
+        
+        //TODO: for testing purpose
         setImageRatio(CGFloat(1))
         changeBookmarkState(false)
+        artworkImageView.loadImage(before: #imageLiteral(resourceName: "before").cgImage,after:#imageLiteral(resourceName: "after").cgImage)
     }
     
     public func setImageRatio(_ ratio:CGFloat) {
@@ -73,6 +76,24 @@ class DetailTableCell: UITableViewCell {
     private func configImageTapGestureRecognizer() {
         let imageTapGestureRecognizer = UITapGestureRecognizer(target: self,action:#selector(imageOnPressed))
         artworkImageView.addGestureRecognizer(imageTapGestureRecognizer)
+    }
+    
+    private func switchImageViewMode(mode:DisplayMode){
+
+        artworkImageView.switchDisplay(mode: mode)
+    }
+    
+
+    @IBAction func switchImage(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            switchImageViewMode(mode: DisplayMode.before)
+        case 2:
+            switchImageViewMode(mode: DisplayMode.compare)
+        default:
+            switchImageViewMode(mode: DisplayMode.after)
+        }
+        
     }
     
     
