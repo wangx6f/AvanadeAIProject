@@ -19,5 +19,6 @@ target 'AvanadeAIProject' do
   pod 'LGButton'
   pod 'Kingfisher', '~> 4.0'
   pod 'SimpleImageViewer', '~> 1.1.1'
+  pod 'AcknowList'
 
 end

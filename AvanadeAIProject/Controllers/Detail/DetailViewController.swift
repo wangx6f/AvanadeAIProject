@@ -137,7 +137,6 @@ extension DetailViewController : DetailTableCellDelegate {
             } else {
                 stars.append("☆")
             }
-            
         }
         //TODO : change the title
         let title = "\"Title\""

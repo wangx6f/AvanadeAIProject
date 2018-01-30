@@ -8,9 +8,12 @@
 
 import UIKit
 import Eureka
+import AcknowList
 
 class SettingsFormController: FormViewController {
 
+    private let aboutSegueIdentifier = "goToAbout"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configForm()
@@ -67,21 +70,22 @@ class SettingsFormController: FormViewController {
             
         +++ Section("Support")
             <<< LabelRow() { row in
-                    row.title = "Help & Feedback"
-                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
-                row.onCellSelection({ (cell, row) in
-                    cell.setSelected(false, animated: true)
-                    // TODO: push the help & feedback page
-                })
-        }
-            <<< LabelRow() { row in
                 row.title = "About"
                 row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
                 row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
                 row.onCellSelection({ (cell, row) in
                     cell.setSelected(false, animated: true)
-                    // TODO: push the about page
+                    self.performSegue(withIdentifier: self.aboutSegueIdentifier, sender: self)
+                })
+                
+        }
+            <<< LabelRow() { row in
+                row.title = "Acknowledgements"
+                row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                row.onCellSelection({ (cell, row) in
+                    cell.setSelected(false, animated: true)
+                    self.showAcknowledgements()
                 })
         }
         
@@ -90,15 +94,18 @@ class SettingsFormController: FormViewController {
                 row.onCellSelection({ _,_ in
                     // TODO: do necessary operation to clear the search history
                 })
-            }
+        }
         
          form +++ ButtonRow() { row in
                 row.title = "Log Out"
                 row.onCellSelection({ _,_ in
                     // TODO: do necessary operation to log out
                 })
-            }
+        }
     }
-
-
+    
+    private func showAcknowledgements(){
+        let viewController = AcknowListViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

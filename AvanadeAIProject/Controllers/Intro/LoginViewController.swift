@@ -10,8 +10,8 @@ import UIKit
 import TransitionButton
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: TransitionButton!
     private let mainSegueIdentifier = "goToMain"
+    @IBOutlet weak var loginButton: TransitionButton!
     @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

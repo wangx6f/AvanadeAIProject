@@ -41,7 +41,7 @@ class DetailTableCell: UITableViewCell {
         delegate.didPressBookmark(updateButtonState: changeBookmarkState)
     }
     
-    @IBAction func rateOnPressed(_ sender: UIButton) {
+    @IBAction func ratingStarButtonOnPressed(_ sender: UIButton) {
         delegate.didPressRatingStarButton(score: sender.tag, updateButtonsState: changeRatingStarButtonsState)
     }
     

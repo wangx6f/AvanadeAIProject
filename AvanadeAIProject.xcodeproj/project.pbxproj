@@ -31,6 +31,7 @@
 		2577589C200EF6CE004430D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577589B200EF6CE004430D1 /* Constants.swift */; };
 		257758A2200F0E2B004430D1 /* SimplePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */; };
 		2590B7CF20052E12004698CA /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */; };
+		259406F6201FEED20015256F /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */; };
 		2595FE81200895BD00ED2160 /* CommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595FE7F200895BD00ED2160 /* CommentTableCell.swift */; };
 		2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595FE80200895BD00ED2160 /* CommentTableCell.xib */; };
 		25AE57402008769E0035F748 /* DetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25AE573F2008769E0035F748 /* DetailTableCell.xib */; };
@@ -74,6 +75,7 @@
 		2577589B200EF6CE004430D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerTextField.swift; sourceTree = "<group>"; };
 		2590B7CE20052E12004698CA /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
+		259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-AvanadeAIProject-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		2595FE7F200895BD00ED2160 /* CommentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableCell.swift; sourceTree = "<group>"; };
 		2595FE80200895BD00ED2160 /* CommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableCell.xib; sourceTree = "<group>"; };
 		25AE573F2008769E0035F748 /* DetailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableCell.xib; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		25BDD5CC200BF2E200FBE393 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */,
 				2551C0262001A1A400FE28C9 /* Info.plist */,
 				2577589B200EF6CE004430D1 /* Constants.swift */,
 			);
@@ -366,6 +369,7 @@
 				2546C5432002EC660099A165 /* Detail.storyboard in Resources */,
 				2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */,
 				2546C54B20030B600099A165 /* ImageCollectionCell.xib in Resources */,
+				259406F6201FEED20015256F /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */,
 				2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */,
 				25C42D6120083A5200F7D727 /* Settings.storyboard in Resources */,
 			);
@@ -381,6 +385,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AcknowList/AcknowList.framework",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
@@ -395,6 +400,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AcknowList.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",

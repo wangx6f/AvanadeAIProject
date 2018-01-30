@@ -1,4 +1,5 @@
 PODS:
+  - AcknowList (1.5)
   - CHTCollectionViewWaterfallLayout (0.9.7):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.7)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
@@ -14,6 +15,7 @@ PODS:
   - UIImageViewAlignedSwift (0.5.0)
 
 DEPENDENCIES:
+  - AcknowList
   - CHTCollectionViewWaterfallLayout
   - Cosmos (~> 13.0)
   - Eureka
@@ -27,6 +29,7 @@ DEPENDENCIES:
   - UIImageViewAlignedSwift
 
 SPEC CHECKSUMS:
+  AcknowList: 93c5dbde36f37ba7f74c8a92c8d9cfb52ed73e47
   CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
   Cosmos: af3973becc045af335b64498c9812034876b7661
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
@@ -39,6 +42,6 @@ SPEC CHECKSUMS:
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   UIImageViewAlignedSwift: 2e09096e6081ad26b848e19b4bc35a7d69165740
 
-PODFILE CHECKSUM: 8742e70d03e454c4016bd4f2140dd7ed089e7601
+PODFILE CHECKSUM: 8584dd9be7df6a4fac59e6f990cf5be6e84b9511
 
 COCOAPODS: 1.3.1
