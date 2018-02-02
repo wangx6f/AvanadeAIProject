@@ -15,7 +15,9 @@ class RegisterViewController: UIViewController{
     @IBOutlet weak var formContainer: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var genderTextField: SimplePickerTextField!
     @IBOutlet weak var ageTextField: SimplePickerTextField!
     @IBOutlet weak var majorTextField: SimplePickerTextField!
@@ -40,7 +42,8 @@ class RegisterViewController: UIViewController{
     private func configForm() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
-        nameTextField.delegate = self
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
         genderTextField.setOptions(Constants.genderOptions)
         ageTextField.setOptions(Constants.ageOptions)
         majorTextField.setOptions(Constants.majorOptions)

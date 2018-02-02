@@ -24,6 +24,7 @@ class SimplePickerTextField : SkyFloatingLabelTextField , UIPickerViewDataSource
     
     func setOptions (_ options:[String]){
         self.options = options
+        self.text = options[0]
         let pickerView = UIPickerView()
         pickerView.dataSource = self
         pickerView.delegate = self
