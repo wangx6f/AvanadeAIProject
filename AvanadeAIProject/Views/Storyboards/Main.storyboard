@@ -6,50 +6,51 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Saved-->
+        <!--Bookmark-->
+        <scene sceneID="dsU-bR-0N5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bookmark" id="T6w-0i-hGf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edP-ZI-kcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2018" y="810"/>
+        </scene>
+        <!--Bookmark-->
         <scene sceneID="GI0-NE-BHg">
             <objects>
-                <viewController id="Kwk-nx-wDi" customClass="SavedViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kwk-nx-wDi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9j-Aj-bhF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1It-1x-8Ik">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Saved" id="7S4-CB-DYo">
-                                        <barButtonItem key="rightBarButtonItem" title="Select" id="fz5-Ao-jqv"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcJ-pk-gIw" userLabel="Status Bar Background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txr-db-hA4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <segue destination="T6w-0i-hGf" kind="embed" id="3UM-5T-khf"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="FcJ-pk-gIw" secondAttribute="trailing" id="2OM-Wk-wKD"/>
-                            <constraint firstItem="1It-1x-8Ik" firstAttribute="trailing" secondItem="K9S-In-nGg" secondAttribute="trailing" id="BFG-mK-Rrj"/>
-                            <constraint firstItem="1It-1x-8Ik" firstAttribute="leading" secondItem="K9S-In-nGg" secondAttribute="leading" id="DNX-r6-7mj"/>
-                            <constraint firstItem="1It-1x-8Ik" firstAttribute="top" secondItem="FcJ-pk-gIw" secondAttribute="bottom" id="K30-cl-dEG"/>
+                            <constraint firstItem="K9S-In-nGg" firstAttribute="bottom" secondItem="txr-db-hA4" secondAttribute="bottom" id="8je-r2-ezR"/>
                             <constraint firstItem="FcJ-pk-gIw" firstAttribute="top" secondItem="Y9j-Aj-bhF" secondAttribute="top" id="TCK-rk-dIn"/>
+                            <constraint firstItem="K9S-In-nGg" firstAttribute="top" secondItem="FcJ-pk-gIw" secondAttribute="bottom" id="Ult-Dn-lG0"/>
                             <constraint firstItem="FcJ-pk-gIw" firstAttribute="leading" secondItem="Y9j-Aj-bhF" secondAttribute="leading" id="VLt-1r-VDJ"/>
-                            <constraint firstItem="1It-1x-8Ik" firstAttribute="top" secondItem="K9S-In-nGg" secondAttribute="top" id="tv0-wU-AFF"/>
+                            <constraint firstItem="txr-db-hA4" firstAttribute="top" secondItem="FcJ-pk-gIw" secondAttribute="bottom" id="XJN-dP-VCy"/>
+                            <constraint firstItem="txr-db-hA4" firstAttribute="leading" secondItem="K9S-In-nGg" secondAttribute="leading" id="qvy-Gm-apv"/>
+                            <constraint firstItem="K9S-In-nGg" firstAttribute="trailing" secondItem="txr-db-hA4" secondAttribute="trailing" id="wCf-ql-BMz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K9S-In-nGg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Saved" image="BookmarkIcon" selectedImage="BookmarkIcon" id="Tkd-bK-QFD"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="BookmarkIcon" selectedImage="BookmarkIcon" id="Tkd-bK-QFD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsD-5Y-epQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +59,7 @@
         <!--Search-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Search" customClass="SearchViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Search" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,98 +68,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD8-iW-qgi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Search" id="jRY-6w-vSe">
-                                        <barButtonItem key="rightBarButtonItem" image="ScanIcon" id="Kzt-xx-aq9">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Oh-yW-aIV">
-                                <rect key="frame" x="0.0" y="56" width="375" height="562"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="6Dx-9d-ctN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                                    <scopeButtonTitles>
-                                        <string>Title</string>
-                                        <string>Title</string>
-                                    </scopeButtonTitles>
-                                </searchBar>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="113" id="M8f-ly-xF6" userLabel="Cell" customClass="TableCell" customModule="AvanadeAIProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="113"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M8f-ly-xF6" id="8gF-wr-v1u">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQ4-8p-UJp">
-                                                    <rect key="frame" x="10" y="10" width="127" height="93"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="tQ4-8p-UJp" secondAttribute="height" multiplier="1:1" id="qHO-8p-qJr"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va3-Cg-gji">
-                                                    <rect key="frame" x="145" y="20" width="215" height="73"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="va3-Cg-gji" firstAttribute="leading" secondItem="tQ4-8p-UJp" secondAttribute="trailing" constant="8" id="3mG-Ct-cfj"/>
-                                                <constraint firstAttribute="trailing" secondItem="tQ4-8p-UJp" secondAttribute="trailing" constant="157" id="I0K-NA-TAm"/>
-                                                <constraint firstItem="va3-Cg-gji" firstAttribute="trailing" secondItem="8gF-wr-v1u" secondAttribute="trailingMargin" id="JQV-cV-eWP"/>
-                                                <constraint firstItem="tQ4-8p-UJp" firstAttribute="top" secondItem="8gF-wr-v1u" secondAttribute="top" constant="10" id="LDG-Ug-Ld5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="va3-Cg-gji" secondAttribute="bottom" constant="9" id="S4l-E9-VzY"/>
-                                                <constraint firstItem="tQ4-8p-UJp" firstAttribute="leading" secondItem="8gF-wr-v1u" secondAttribute="leading" constant="10" id="UhZ-Ya-h1W"/>
-                                                <constraint firstAttribute="bottom" secondItem="tQ4-8p-UJp" secondAttribute="bottom" constant="10" id="g5v-pw-NMS"/>
-                                                <constraint firstItem="tQ4-8p-UJp" firstAttribute="leading" secondItem="8gF-wr-v1u" secondAttribute="leading" constant="10" id="gkN-qd-Ex9"/>
-                                                <constraint firstItem="tQ4-8p-UJp" firstAttribute="top" secondItem="8gF-wr-v1u" secondAttribute="top" constant="10" id="opa-ea-vDl"/>
-                                                <constraint firstItem="va3-Cg-gji" firstAttribute="top" secondItem="8gF-wr-v1u" secondAttribute="topMargin" constant="9" id="xVT-4Z-PHX"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imagesView" destination="tQ4-8p-UJp" id="19q-7U-heo"/>
-                                            <outlet property="nameLabel" destination="va3-Cg-gji" id="KTP-60-YbF"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qS-qd-z6U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="mdp-BF-CPF"/>
-                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="a9v-di-il8"/>
+                                    <segue destination="TT0-kQ-EoE" kind="embed" id="dXb-ca-DFC"/>
                                 </connections>
-                            </tableView>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PHP-td-fiQ" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="10H-TU-brl"/>
-                            <constraint firstItem="sD8-iW-qgi" firstAttribute="top" secondItem="PHP-td-fiQ" secondAttribute="bottom" id="6EY-SV-xdX"/>
-                            <constraint firstItem="sD8-iW-qgi" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="8xQ-of-v76"/>
-                            <constraint firstItem="sD8-iW-qgi" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="A5y-ev-3Ea"/>
+                            <constraint firstItem="3qS-qd-z6U" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="7my-1q-Uqd"/>
+                            <constraint firstItem="3qS-qd-z6U" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="F3D-aB-C8r"/>
                             <constraint firstItem="PHP-td-fiQ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Gfg-wK-tSi"/>
-                            <constraint firstItem="sD8-iW-qgi" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="L5c-2V-4hL"/>
+                            <constraint firstItem="3qS-qd-z6U" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="Vpp-aX-8bV"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="top" secondItem="PHP-td-fiQ" secondAttribute="bottom" id="c2K-Q5-ewm"/>
+                            <constraint firstItem="3qS-qd-z6U" firstAttribute="top" secondItem="PHP-td-fiQ" secondAttribute="bottom" id="ekh-Na-nQn"/>
                             <constraint firstAttribute="trailing" secondItem="PHP-td-fiQ" secondAttribute="trailing" id="vIo-GS-Abf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="searchBar" destination="6Dx-9d-ctN" id="V10-NA-TQG"/>
-                        <outlet property="table" destination="3Oh-yW-aIV" id="kZh-WK-gUK"/>
-                        <segue destination="TT0-kQ-EoE" kind="show" identifier="goToDetail" action="showDetailViewController:sender:" id="buN-Hm-85W"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,7 +171,7 @@
         <!--Settings-->
         <scene sceneID="myw-Se-Z3s">
             <objects>
-                <viewController id="YU3-EM-e53" customClass="SettingsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YU3-EM-e53" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHM-BA-H3I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="399" y="-356"/>
         </scene>
-        <!--Detail-->
+        <!--Search-->
         <scene sceneID="Zjn-13-r7w">
             <objects>
-                <viewControllerPlaceholder storyboardName="Detail" id="TT0-kQ-EoE" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Search" id="TT0-kQ-EoE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKR-zk-Y7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1373" y="316"/>
@@ -288,7 +218,6 @@
     <resources>
         <image name="BookmarkIcon" width="25" height="25"/>
         <image name="GalleryIcon" width="25" height="25"/>
-        <image name="ScanIcon" width="22" height="22"/>
         <image name="SettingIcon" width="25" height="25"/>
     </resources>
 </document>

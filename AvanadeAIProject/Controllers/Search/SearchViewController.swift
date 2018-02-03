@@ -10,9 +10,11 @@ import UIKit
 
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
-    @IBOutlet var searchBar: UISearchBar!
-    @IBOutlet var table: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var table: UITableView!
+    
+    private let detailSegueIdentifier = "goToDetail"
     var imagesArray = [Images]()
     var currentImageArray = [Images]()
     
@@ -39,8 +41,12 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         return currentImageArray.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: detailSegueIdentifier, sender: self)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? TableCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? SearchViewTableCell
             else {
             return UITableViewCell()
         }

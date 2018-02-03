@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YO1-bK-QKT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bookmark View Controller-->
+        <scene sceneID="haG-kR-GFs">
+            <objects>
+                <viewController id="YO1-bK-QKT" customClass="BookmarkViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GI5-Oz-piI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW4-QA-re5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Saved" id="2Gy-Al-Usj">
+                                        <barButtonItem key="rightBarButtonItem" title="Select" id="Xpb-Ya-rwP"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Orq-WA-n0c" firstAttribute="trailing" secondItem="iW4-QA-re5" secondAttribute="trailing" id="E7Z-5P-6UF"/>
+                            <constraint firstItem="iW4-QA-re5" firstAttribute="top" secondItem="Orq-WA-n0c" secondAttribute="top" id="X0m-J1-v8b"/>
+                            <constraint firstItem="iW4-QA-re5" firstAttribute="leading" secondItem="GI5-Oz-piI" secondAttribute="leading" id="hqM-1V-zkG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Orq-WA-n0c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hom-US-K3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="104"/>
+        </scene>
+    </scenes>
+</document>

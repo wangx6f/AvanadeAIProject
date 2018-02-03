@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X1X-ss-ibk">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
             <objects>
                 <navigationController id="X1X-ss-ibk" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="qih-K4-QJ4">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -33,7 +33,7 @@
             <objects>
                 <collectionViewController id="A8y-J2-MZF" customClass="GalleryViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EDG-bX-BqT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewLayout key="collectionViewLayout" id="ae4-eh-xKJ" customClass="CHTCollectionViewWaterfallLayout"/>
@@ -71,26 +71,26 @@
             <objects>
                 <viewController id="hBI-T1-9CE" customClass="FilterViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ifq-Ra-fFW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yiN-8C-7Q0" userLabel="SortContainer">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="048-iy-kfx">
-                                        <rect key="frame" x="28" y="13.666666666666671" width="319" height="99.333333333333329"/>
+                                        <rect key="frame" x="28" y="13.5" width="319" height="99.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SORTED BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G89-98-hiJ" userLabel="SORT BY">
-                                                <rect key="frame" x="0.0" y="0.66666666666665719" width="92" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1R-IE-xra" userLabel="A1">
-                                                <rect key="frame" x="0.3333333333333286" y="21.666666666666654" width="160" height="40.666666666666657"/>
+                                                <rect key="frame" x="0.5" y="21" width="160" height="40.5"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DW-kR-uVP" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.6666666666666643" y="2.6666666666666714" width="122.66666666666669" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.5" y="2.5" width="122.5" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -126,10 +126,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eK-qM-oXe" userLabel="A2">
-                                                <rect key="frame" x="160.33333333333331" y="21.666666666666654" width="159.33333333333331" height="40.666666666666657"/>
+                                                <rect key="frame" x="160.5" y="21" width="159" height="40.5"/>
                                                 <subviews>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-90-TZv" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="2.6666666666666714" width="160.66666666666666" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2.5" width="161" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -162,10 +162,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H80-0U-f2X" userLabel="B1">
-                                                <rect key="frame" x="0.3333333333333286" y="62.333333333333329" width="160" height="40.333333333333329"/>
+                                                <rect key="frame" x="0.5" y="61.5" width="160" height="40.5"/>
                                                 <subviews>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYR-g6-XRZ" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="2" width="152" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2" width="152" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -198,10 +198,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrn-xZ-pin" userLabel="B2">
-                                                <rect key="frame" x="160.33333333333331" y="62.333333333333329" width="159.33333333333331" height="40.333333333333329"/>
+                                                <rect key="frame" x="160.5" y="61.5" width="159" height="40.5"/>
                                                 <subviews>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-t1-o2Y" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="2.3333333333333428" width="148" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="2.5" width="148" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -269,19 +269,19 @@
                                 <rect key="frame" x="0.0" y="125" width="375" height="185"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wZ-5t-EWs">
-                                        <rect key="frame" x="28.333333333333343" y="18.666666666666657" width="318.33333333333326" height="148"/>
+                                        <rect key="frame" x="28.5" y="18.5" width="318" height="148"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GENRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-Qi-kNj">
-                                                <rect key="frame" x="0.0" y="0.33333333333334281" width="55" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="55" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkz-wb-1eq" userLabel="A1">
-                                                <rect key="frame" x="0.0" y="20.333333333333346" width="159" height="37.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="159" height="37.5"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-Yf-lQt" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="84.666666666666671" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="84.5" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -317,10 +317,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEo-hL-Pkw" userLabel="A2">
-                                                <rect key="frame" x="159" y="20.333333333333346" width="159.33333333333337" height="37.333333333333343"/>
+                                                <rect key="frame" x="159" y="20.5" width="159" height="37.5"/>
                                                 <subviews>
                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0v-9c-gAy" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.66666666666665719" width="148.33333333333334" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="148.5" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -353,10 +353,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90D-BY-M3y" userLabel="B1">
-                                                <rect key="frame" x="0.0" y="57.666666666666657" width="159" height="37.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="58" width="159" height="37.5"/>
                                                 <subviews>
                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41q-Vn-y3f" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.66666666666668561" width="130" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="130" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -389,10 +389,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo3-6Z-bux" userLabel="B2">
-                                                <rect key="frame" x="159" y="57.666666666666657" width="159.33333333333337" height="37.666666666666657"/>
+                                                <rect key="frame" x="159" y="58" width="159" height="37.5"/>
                                                 <subviews>
                                                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYj-vz-v4d" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="0.66666666666668561" width="121.33333333333333" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="121.5" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -425,10 +425,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-ur-6n5" userLabel="C1">
-                                                <rect key="frame" x="0.0" y="95.333333333333343" width="159" height="37"/>
+                                                <rect key="frame" x="0.0" y="95.5" width="159" height="37"/>
                                                 <subviews>
                                                     <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-7P-Xrb" customClass="LGButton" customModule="LGButton">
-                                                        <rect key="frame" x="0.0" y="1" width="124.33333333333333" height="36.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="1" width="124.5" height="36.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -537,7 +537,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hEl-J2-tYn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="XAL-vq-fDr">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

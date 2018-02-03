@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableCell: UITableViewCell {
+class SearchViewTableCell: UITableViewCell {
 
     @IBOutlet var imagesView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
