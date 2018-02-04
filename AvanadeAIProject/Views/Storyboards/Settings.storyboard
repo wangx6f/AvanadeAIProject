@@ -39,7 +39,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jxC-wZ-Y24"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="QLC-Y6-gl0"/>
+                    <navigationItem key="navigationItem" title="Settings" id="QLC-Y6-gl0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ah7-Ok-E0k">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="uuA-l6-lhk" kind="show" identifier="goToAbout" id="OSb-qH-Iva"/>
                     </connections>

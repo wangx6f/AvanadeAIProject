@@ -36,8 +36,12 @@ class SettingsFormController: FormViewController {
         
         form +++ Section("Profile")
             <<< NameRow() { row in
-                    row.title = "Name"
-                    row.value = "John Smith"
+                    row.title = "First Name"
+                    row.value = "John"
+            }
+            <<< NameRow() { row in
+                row.title = "Last Name"
+                row.value = "Smith"
             }
             <<< PushRow<String>() { row in
                 row.title = "Gender"
