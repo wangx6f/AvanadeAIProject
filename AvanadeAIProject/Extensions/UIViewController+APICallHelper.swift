@@ -40,7 +40,7 @@ extension UIViewController {
     }
     
     func logOut() {
-        // TODO: call data manager to log out
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        DataManager.sharedInstance.logOut()
     }
 }

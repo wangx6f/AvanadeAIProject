@@ -60,6 +60,12 @@ final class DataManager {
         }
     }
     
+    // TODO: clear all cache
+    public func logOut() {
+        token = nil
+        user = nil
+    }
+    
     private func authCompletionHandler(success:Bool?,message:String?,error:Error?,completion:@escaping DataProviderProtocol.authCompletion) {
         
         if success != nil && success! {
