@@ -8,10 +8,12 @@
 
 import UIKit
 import TransitionButton
+import Toast_Swift
 
 class RegisterViewController: UIViewController{
-
-
+    
+    private let mainSegueIdentifier = "goToMain"
+    
     @IBOutlet weak var formContainer: UIStackView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -49,6 +51,47 @@ class RegisterViewController: UIViewController{
         majorTextField.setOptions(Constants.majorOptions)
     }
     
+    @IBAction func onRegisterPressed(_ sender: TransitionButton) {
+        view.endEditing(true)
+        let email = emailTextField.text!, password = passwordTextField.text!,
+        firstName = firstNameTextField.text!, lastName = lastNameTextField.text!
+        
+        if email.count == 0 {
+            self.view.makeToast("Email can't be empty.")
+            return
+        }
+        if password.count == 0 {
+            self.view.makeToast("Password can't be empty.")
+            return
+        }
+        if firstName.count == 0 {
+            self.view.makeToast("First name can't be empty.")
+            return
+        }
+        if lastName.count == 0 {
+            self.view.makeToast("Last name can't be empty.")
+            return
+        }
+        
+        view.makeToastActivity(ToastPosition.center)
+        view.isUserInteractionEnabled = false
+        let user = User(email: emailTextField.text!, fName: firstNameTextField.text!, lName: lastNameTextField.text!, major: majorTextField.text!, gender: genderTextField.text!, age: ageTextField.text!)
+        DataManager.sharedInstance.register(newUser: user, password: passwordTextField.text!) { (success, message,error) in
+            
+            self.endWaitactivity()
+            if self.handleError(error,handleUnauthorized: false) {
+                return
+            }
+            if success != nil && success! {
+                self.view.makeToast("Registered successfully.", duration: TimeInterval(exactly: 2)!, position: ToastPosition.center,completion: { _ in
+                    self.performSegue(withIdentifier: self.mainSegueIdentifier, sender: self)
+                })
+                return
+            }
+            self.view.makeToast(message)
+            
+        }
+    }
 }
 
 extension RegisterViewController : UITextFieldDelegate {

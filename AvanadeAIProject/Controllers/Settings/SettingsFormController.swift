@@ -9,6 +9,7 @@
 import UIKit
 import Eureka
 import AcknowList
+import Toast_Swift
 
 class SettingsFormController: FormViewController {
 
@@ -17,6 +18,7 @@ class SettingsFormController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configForm()
+        reloadProfile()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +30,9 @@ class SettingsFormController: FormViewController {
         return CGFloat(0)
     }
     
+    @IBAction func onRefreshPressed(_ sender: UIBarButtonItem) {
+        reloadProfile()
+    }
     
     // MARK: private methods
     private func configForm() {
@@ -36,16 +41,16 @@ class SettingsFormController: FormViewController {
         
         form +++ Section("Profile")
             <<< NameRow() { row in
+                    row.tag = User.JSON_FIRST_NAME
                     row.title = "First Name"
-                    row.value = "John"
             }
             <<< NameRow() { row in
+                row.tag = User.JSON_LAST_NAME
                 row.title = "Last Name"
-                row.value = "Smith"
             }
             <<< PushRow<String>() { row in
+                row.tag = User.JSON_GENDER
                 row.title = "Gender"
-                row.value = Constants.genderOptions[0]
                 row.options = Constants.genderOptions
                 row.selectorTitle = "Gender"
                 _ = row.onPresent({ (from, to) in
@@ -53,8 +58,8 @@ class SettingsFormController: FormViewController {
                 })
                 }
             <<< PushRow<String>() { row in
+                row.tag = User.JSON_AGE
                 row.title = "Age"
-                row.value = Constants.ageOptions[0]
                 row.options = Constants.ageOptions
                 row.selectorTitle = "Age"
                 _ = row.onPresent({ (from, to) in
@@ -63,8 +68,8 @@ class SettingsFormController: FormViewController {
             }
 
             <<< PushRow<String>() { row in
+                row.tag = User.JSON_MAJOR
                 row.title = "Major"
-                row.value = Constants.majorOptions[0]
                 row.options = Constants.majorOptions
                 row.selectorTitle = "Major"
                 _ = row.onPresent({ (from, to) in
@@ -103,8 +108,23 @@ class SettingsFormController: FormViewController {
          form +++ ButtonRow() { row in
                 row.title = "Log Out"
                 row.onCellSelection({ _,_ in
-                    // TODO: do necessary operation to log out
+                    self.logOut()
                 })
+        }
+    }
+    
+    private func reloadProfile(){
+        startWaitActivity()
+        DataManager.sharedInstance.getProfile { (user, error) in
+            self.endWaitactivity()
+            if self.handleError(error) {
+                return
+            }
+            self.form.setValues((user?.toJSON())!)
+            self.tableView.reloadData()
+    
+            
+            
         }
     }
     

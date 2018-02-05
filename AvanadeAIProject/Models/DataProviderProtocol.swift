@@ -10,7 +10,17 @@ import Foundation
 import UIKit
 
 protocol DataProviderProtocol {
-    func imageFrom(url: String) -> UIImage
-    func userWith(id: Int) -> User
-    func artworkWith(id: Int) -> Artwork
+//    func imageFrom(url: String) -> UIImage
+//    func getUser(id: Int) -> User
+//    func artworkWith(id: Int) -> Artwork
+   
+    func login(email:String,password:String,completion: @escaping authCompletion)
+    
+    func register(newUser:User,password:String,completion:@escaping authCompletion)
+    
+    func getProfile(token:String,completion:@escaping profileCompletion)
+    
+    typealias authCompletion =  (Bool?,String?,Error?)->Void
+    typealias profileCompletion = (User?,Error?)->Void
+
 }

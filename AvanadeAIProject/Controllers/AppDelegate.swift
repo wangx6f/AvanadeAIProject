@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MicrosoftAzureMobile
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
@@ -15,15 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var client: MSClient?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enabledDistanceHandlingClasses = [LoginViewController.self,RegisterViewController.self,AddCommentViewController.self]
-        // Setup the client connection with Microsoft Azure
-        self.client = MSClient(
-            applicationURLString:"https://avanademobileapp.azurewebsites.net"
-        )
+        UIApplication.shared.isStatusBarHidden = false
         return true
     }
 

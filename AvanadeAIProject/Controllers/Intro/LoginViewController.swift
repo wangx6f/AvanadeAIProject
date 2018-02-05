@@ -8,6 +8,8 @@
 
 import UIKit
 import TransitionButton
+import Toast_Swift
+
 class LoginViewController: UIViewController {
 
     private let mainSegueIdentifier = "goToMain"
@@ -19,7 +21,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configForm()
-        configStatusBarBackground(false)
     }
 
 
@@ -27,11 +28,36 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        configStatusBarBackground(false)
+    }
+    
     
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
-        performSegue(withIdentifier: mainSegueIdentifier, sender: self)
-        configStatusBarBackground(true)
-        
+        view.endEditing(true)
+        let email = emailTextField.text!, password = passwordTextField.text!
+        if email.count == 0 {
+            self.view.makeToast("Email can't be empty.")
+            return
+        }
+        if password.count == 0 {
+            self.view.makeToast("Password can't be empty.")
+            return
+        }
+        startWaitActivity()
+        DataManager.sharedInstance.login(email: email, password:password ) { (success, message,error) in
+            self.endWaitactivity()
+            if self.handleError(error,handleUnauthorized: false) {
+                return
+            }
+            
+            if success != nil && success! {
+                self.performSegue(withIdentifier: self.mainSegueIdentifier, sender: self)
+                self.configStatusBarBackground(true)
+                return
+            }
+            self.view.makeToast(message)
+        }
     }
     
     

@@ -7,25 +7,29 @@
 //
 
 import Foundation
+import Gloss
 
-class User {
-    enum Gender {
-        case Male
-        case Female
-        case Other
-    }
+class User : JSONDecodable,Glossy{
     
-    private var _id: Int!
-    private var _email: String!
+    private var _email: String?
+    static public let JSON_EMAIL = "email"
+    
     private var _fName: String?
-    private var _lName: String?
-    private var _major: String?
-    private var _gender: Gender?
+    static public let JSON_FIRST_NAME = "firstName"
     
-    var id: Int {
-        get { return _id }
-    }
-    var email: String {
+    private var _lName: String?
+    static public let JSON_LAST_NAME = "lastName"
+    
+    private var _major: String?
+    static public let JSON_MAJOR = "major"
+    
+    private var _gender: String?
+    static public let JSON_GENDER = "gender"
+    
+    private var _age:String?
+    static public let JSON_AGE = "age"
+    
+    var email: String? {
         get { return _email }
     }
     var fName: String? {
@@ -37,16 +41,43 @@ class User {
     var major: String? {
         get { return _major }
     }
-    var gender: Gender? {
+    var gender: String? {
         get { return _gender }
     }
+    var age:String? {
+        get {return _age}
+    }
     
-    public init(id: Int, email: String, fName: String?, lName: String?, major: String?, gender: Gender?) {
-        _id = id
+    required init?(json: JSON) {
+        _email = User.JSON_EMAIL <~~ json
+        _fName = User.JSON_FIRST_NAME <~~ json
+        _lName = User.JSON_LAST_NAME <~~ json
+        _age = User.JSON_AGE <~~ json
+        _gender = User.JSON_GENDER <~~ json
+        _major = User.JSON_MAJOR <~~ json
+    }
+    
+    public init(email: String, fName: String, lName: String, major: String, gender: String, age:String) {
         _email = email
         _fName = fName
         _lName = lName
         _major = major
         _gender = gender
+        _age = age
     }
+    
+    
+    func toJSON() -> JSON? {
+        return jsonify([User.JSON_EMAIL~~>_email,
+                        User.JSON_LAST_NAME~~>lName,
+                        User.JSON_FIRST_NAME~~>fName,
+                        User.JSON_AGE~~>_age,
+                        User.JSON_GENDER~~>_gender,
+                        User.JSON_MAJOR~~>_major
+                        ])
+    }
+    
+    
+    
+
 }
