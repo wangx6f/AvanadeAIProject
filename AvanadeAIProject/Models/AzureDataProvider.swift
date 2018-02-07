@@ -11,6 +11,10 @@ import MicrosoftAzureMobile
 import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
+    
+    
+
+    
 
     private var client: MSClient?
     
@@ -38,36 +42,62 @@ class AzureDataProvider : DataProviderProtocol {
     
     func getProfile(token: String, completion: @escaping profileCompletion) {
         client?.invokeAPI("profile", body: nil, httpMethod: "GET", parameters: nil, headers:generateHeader(token) , completion: { (result, response, error) in
-            if let _ = error {
+            
+            if response == nil {
                 completion(nil,error)
                 return
             }
+            
             if response?.statusCode != 200 {
-                completion(nil,HTTPResponseError((response?.statusCode)!))
+                
+                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
                 return
             }
-            completion(User(json:result as! JSON),nil)
+            completion(User(json: result as! JSON),nil)
         })
+    }
+    
+    func updateProfile(token: String, profile: User, completion: @escaping DataProviderProtocol.errorHandler) {
+        client?.invokeAPI("profile", body: profile.toJSON(), httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            if response == nil {
+                completion(error)
+                return
+            }
+            if response?.statusCode != 200 {
+                completion(HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            completion(nil)
+        })
+    }
+    func updateProfile(token:String,profile: User, completion: @escaping DataProviderProtocol.profileCompletion) {
+        
     }
     
     private func generateHeader(_ token:String) -> [AnyHashable:Any] {
         return ["Authorization":"Bearer "+token]
     }
     
+    
     private func authResponseHandler(result:Any?, response:HTTPURLResponse?, error:Error?, completion:authCompletion) {
         
-        if let _ = error {
+        if response == nil {
             completion(nil,nil,error)
             return
         }
+        
         if response?.statusCode != 200 {
-            completion(nil,nil,HTTPResponseError((response?.statusCode)!))
+            completion(nil,nil,HTTPResponseError((response?.statusCode)!,description: (error?.localizedDescription)!))
             return
         }
+
         let _result = result as! NSDictionary
         completion(_result.value(forKey: "success") as? Bool,_result.value(forKey: "payload") as? String, nil)
         return
     }
+    
+    
+    
     
     
     

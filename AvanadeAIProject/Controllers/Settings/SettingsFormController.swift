@@ -30,6 +30,10 @@ class SettingsFormController: FormViewController {
         return CGFloat(0)
     }
     
+    @IBAction func onSavePressed(_ sender: UIBarButtonItem) {
+        saveProfile()   
+    }
+    
     @IBAction func onRefreshPressed(_ sender: UIBarButtonItem) {
         reloadProfile()
     }
@@ -113,6 +117,7 @@ class SettingsFormController: FormViewController {
         }
     }
     
+    
     private func reloadProfile(){
         startWaitActivity()
         DataManager.sharedInstance.getProfile { (user, error) in
@@ -122,9 +127,17 @@ class SettingsFormController: FormViewController {
             }
             self.form.setValues((user?.toJSON())!)
             self.tableView.reloadData()
+        }
+    }
     
-            
-            
+    private func saveProfile(){
+        startWaitActivity()
+        DataManager.sharedInstance.updateProfile(profile: User(json: form.values())!) { (error) in
+            self.endWaitactivity()
+            if self.handleError(error) {
+                return
+            }
+            self.view.makeToast("Saved successfully.")
         }
     }
     

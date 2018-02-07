@@ -15,10 +15,7 @@ final class DataManager {
     private let dataProvider: DataProviderProtocol
     
     private var token : String?
-    
-    private var user : User?
-    
-    
+  
     private init() {
         dataProvider = AzureDataProvider();
     }
@@ -49,21 +46,17 @@ final class DataManager {
     
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {
         
-        // check whether the user has been cached
-        if let _ = user {
-            completion(user,nil)
-            return
-        }
-        dataProvider.getProfile(token: self.token!) { (user, error) in
-            self.user = user
-            completion(user,error)
-        }
+        dataProvider.getProfile(token: token!, completion: completion)
+        
+    }
+    
+    public func updateProfile(profile:User,completion: @escaping DataProviderProtocol.errorHandler) {
+        dataProvider.updateProfile(token: token!, profile: profile, completion: completion)
     }
     
     // TODO: clear all cache
     public func logOut() {
         token = nil
-        user = nil
     }
     
     private func authCompletionHandler(success:Bool?,message:String?,error:Error?,completion:@escaping DataProviderProtocol.authCompletion) {

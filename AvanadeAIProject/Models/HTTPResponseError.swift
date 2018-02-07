@@ -12,8 +12,11 @@ class HTTPResponseError : Error {
     
     public let statusCode : Int
     
-    init(_ statusCode : Int){
+    public let description : String
+    
+    init(_ statusCode : Int, description : String){
         self.statusCode = statusCode
+        self.description = description
     }
 
 }
