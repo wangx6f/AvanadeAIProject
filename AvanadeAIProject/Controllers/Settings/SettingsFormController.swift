@@ -52,6 +52,10 @@ class SettingsFormController: FormViewController {
                 row.tag = User.JSON_LAST_NAME
                 row.title = "Last Name"
             }
+            <<< IntRow() { row in
+                row.tag = User.JSON_AGE
+                row.title = "Age"
+            }
             <<< PushRow<String>() { row in
                 row.tag = User.JSON_GENDER
                 row.title = "Gender"
@@ -61,16 +65,6 @@ class SettingsFormController: FormViewController {
                     to.enableDeselection = false
                 })
                 }
-            <<< PushRow<String>() { row in
-                row.tag = User.JSON_AGE
-                row.title = "Age"
-                row.options = Constants.ageOptions
-                row.selectorTitle = "Age"
-                _ = row.onPresent({ (from, to) in
-                    to.enableDeselection = false
-                })
-            }
-
             <<< PushRow<String>() { row in
                 row.tag = User.JSON_MAJOR
                 row.title = "Major"
