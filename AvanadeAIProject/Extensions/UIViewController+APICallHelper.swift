@@ -25,8 +25,7 @@ extension UIViewController {
     func handleError(_ error:Error?,handleUnauthorized:Bool = true) -> Bool {
         if let _error = error {
             if let responseError = _error as? HTTPResponseError {
-                // TODO: compile the http status code
-                self.view.makeToast(String(responseError.statusCode), completion: { _ in
+                self.view.makeToast("\(responseError.statusCode): \(responseError.description)", completion: { _ in
                     if responseError.statusCode == 401 && handleUnauthorized {
                         self.logOut()
                     }

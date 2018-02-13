@@ -16,9 +16,12 @@ class DetailViewController: UITableViewController {
     private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
     
+    var artwork : Artwork?
+    
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = artwork?.title
         configTableView()
     }
 
@@ -79,9 +82,11 @@ class DetailViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: CGFloat(0), left: CGFloat(0), bottom: CGFloat(60), right: CGFloat(0))
     }
     
+    
     private func constructDetailCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
         cell.delegate = self
+        cell.loadArtwork(artwork)
         return cell
     }
     
@@ -96,9 +101,11 @@ class DetailViewController: UITableViewController {
     }
     
     private func showActivityVC(){
-        //TODO: change the url of the images
-    let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: "https://image.ibb.co/bWMupG/Launch_Image.jpg")], applicationActivities: nil)
-        present(shareViewController, animated: true, completion:nil)
+        if let artwork = artwork {
+            let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: (artwork.afterImageURL)!)], applicationActivities: nil)
+            present(shareViewController, animated: true, completion:nil)
+        }
+
     }
 }
 

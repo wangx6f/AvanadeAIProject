@@ -37,8 +37,12 @@ class DetailImageView: UIImageView,CAAnimationDelegate{
     }
 
     public func loadImage(before:CGImage? = nil,after:CGImage? = nil){
-        beforeImage = before
-        afterImage = after
+        if let before = before {
+            beforeImage = before
+        }
+        if let after = after {
+            afterImage = after
+        }
         switchDisplay(mode: currentMode)
     }
     

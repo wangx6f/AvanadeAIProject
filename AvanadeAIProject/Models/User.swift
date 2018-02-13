@@ -26,7 +26,7 @@ class User : JSONDecodable,Glossy{
     private var _gender: String?
     static public let JSON_GENDER = "gender"
     
-    private var _age:String?
+    private var _age:Int?
     static public let JSON_AGE = "age"
     
     var email: String? {
@@ -44,7 +44,7 @@ class User : JSONDecodable,Glossy{
     var gender: String? {
         get { return _gender }
     }
-    var age:String? {
+    var age:Int? {
         get {return _age}
     }
     
@@ -57,7 +57,7 @@ class User : JSONDecodable,Glossy{
         _major = User.JSON_MAJOR <~~ json
     }
     
-    public init(email: String, fName: String, lName: String, major: String, gender: String, age:String) {
+    public init(email: String, fName: String, lName: String, major: String, gender: String, age:Int) {
         _email = email
         _fName = fName
         _lName = lName

@@ -212,7 +212,9 @@
             <gestureRecognizers/>
             <connections>
                 <outlet property="artworkImageView" destination="X3q-79-0aS" id="D79-Qd-ozX"/>
+                <outlet property="authorLabel" destination="gCN-Q7-ZRe" id="Qeu-jn-Z43"/>
                 <outlet property="bookmarkButton" destination="Nre-8z-IWt" id="MsU-Hh-Ry7"/>
+                <outlet property="descriptionTextView" destination="zCL-81-PE0" id="3Ws-2M-ONz"/>
                 <outletCollection property="ratingStarButtons" destination="K1J-5g-iFd" collectionClass="NSMutableArray" id="XZm-up-5j2"/>
                 <outletCollection property="ratingStarButtons" destination="0tf-wG-nHa" collectionClass="NSMutableArray" id="hz9-FO-1KC"/>
                 <outletCollection property="ratingStarButtons" destination="zbn-WF-Pxe" collectionClass="NSMutableArray" id="uPL-ln-0hG"/>

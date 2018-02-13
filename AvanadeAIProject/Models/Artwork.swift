@@ -1,45 +1,76 @@
-////
-////  Artwork.swift
-////  AvanadeAIProject
-////
-////  Created by Timothy DenOuden on 1/9/18.
-////  Copyright © 2018 Avanade. All rights reserved.
-////
 //
-//import Foundation
-//import UIKit
+//  Artwork.swift
+//  AvanadeAIProject
 //
-//class Artwork {
-//    private var _id: Int
-//    private var _title: String
-//    private var _beforeImageURL: String
-//    private var _afterImageURL: String
-//    private var _beforeImage: UIImage?
-//    private var _afterImage: UIImage?
-//    private var _author: String
-//    private var _description: String
+//  Created by Timothy DenOuden on 1/9/18.
+//  Copyright © 2018 Avanade. All rights reserved.
+//
+
+import Foundation
+import Gloss
+
+class Artwork : JSONDecodable {
+
+    
+    private var _id: String?
+    static public let JSON_ID = "id"
+    
+    private var _title: String?
+    static public let JSON_TITLE = "title"
+    
+    private var _description: String?
+    static public let JSON_DESCRIPTION = "description"
+    
+    private var _height : Float?
+    static public let JSON_HEIGTH = "height"
+    
+    private var _width : Float?
+    static public let JSON_WIDTH = "width"
+    
+    private var _sourceImageURL: String?
+    static public let JSON_SOURCE_URL = "sourceImageUrl"
+    
+    private var _afterImageURL: String?
+    static public let JSON_AFTER_URL = "afterImageUrl"
+
+    private var _author: String?
+    static public let JSON_AUTHOR = "author"
 //    private var _voteCount: Int
 //    private var _isSaved: Bool
 //    private var _rating: Double
-//    
-//    var id: Int {
-//        get { return _id }
-//    }
-//    var title: String {
-//        get { return _title }
-//    }
-//    var beforeImage: UIImage {
-//        get { return DataManager.sharedInstance.imageFrom(url: _beforeImageURL) }
-//    }
-//    var afterImage: UIImage {
-//        get { return DataManager.sharedInstance.imageFrom(url: _afterImageURL) }
-//    }
-//    var author: String {
-//        get { return _author }
-//    }
-//    var description: String {
-//        get { return _description }
-//    }
+//
+    var id: String? {
+        get { return _id }
+    }
+    
+    var title: String? {
+        get { return _title }
+    }
+    
+    var description: String? {
+        get { return _description }
+    }
+    
+    var height : Float? {
+        get {return _height}
+    }
+    
+    var width : Float? {
+        get {return _width}
+    }
+    
+    var sourceImageURL : String? {
+        get {return _sourceImageURL}
+    }
+    
+    var afterImageURL : String? {
+        get {return _afterImageURL}
+    }
+    
+    var author: String? {
+        get { return _author }
+    }
+    
 //    var voteCount: Int {
 //        get { return _voteCount }
 //    }
@@ -49,22 +80,19 @@
 //    var rating: Double {
 //        get { return _rating }
 //    }
-//    
-//    public init(id: Int, title: String, beforeImageURL: String, afterImageURL: String, author: String, description: String, voteCount: Int, isSaved: Bool, rating: Double) {
-//        _id = id
-//        _title = title
-//        _beforeImageURL = beforeImageURL
-//        _afterImageURL = afterImageURL
-//        _author = author
-//        _description = description
-//        _voteCount = voteCount
-//        _isSaved = isSaved
-//        _rating = rating
-//    }
-//    
-//    public func dispose() {
-//        _beforeImage = nil
-//        _afterImage = nil
-//    }
-//}
+    
+    required init?(json: JSON) {
+        _id = Artwork.JSON_ID <~~ json
+        _title = Artwork.JSON_TITLE <~~ json
+        _description = Artwork.JSON_DESCRIPTION <~~ json
+        _height = Artwork.JSON_HEIGTH <~~ json
+        _width = Artwork.JSON_WIDTH <~~ json
+        _sourceImageURL = Artwork.JSON_SOURCE_URL <~~ json
+        _afterImageURL = Artwork.JSON_AFTER_URL <~~ json
+        _author = Artwork.JSON_AUTHOR <~~ json
+        
+        
+    }
+    
+}
 
