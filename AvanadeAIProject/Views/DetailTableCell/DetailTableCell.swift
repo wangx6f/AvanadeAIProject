@@ -42,7 +42,11 @@ class DetailTableCell: UITableViewCell {
     
     @IBAction func bookmarkOnPressed(_ sender: UIButton) {
         delegate.didPressBookmark(updateButtonState: changeBookmarkState)
+        
+        
     }
+    
+    //override func prepareForSegue
     
     @IBAction func ratingStarButtonOnPressed(_ sender: UIButton) {
         delegate.didPressRatingStarButton(score: sender.tag, updateButtonsState: changeRatingStarButtonsState)
