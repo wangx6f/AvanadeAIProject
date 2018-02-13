@@ -22,8 +22,11 @@ protocol DataProviderProtocol {
     
     func updateProfile(token:String,profile:User,completion:@escaping errorHandler)
     
+    func getArtworkList(token:String,completion:@escaping artworkListCompletion)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
+    typealias artworkListCompletion = ([Artwork]?,Error?)->Void
     typealias errorHandler = (Error?)->Void
 
 }

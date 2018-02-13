@@ -11,10 +11,6 @@ import MicrosoftAzureMobile
 import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
-    
-    
-
-    
 
     private var client: MSClient?
     
@@ -70,8 +66,24 @@ class AzureDataProvider : DataProviderProtocol {
             completion(nil)
         })
     }
-    func updateProfile(token:String,profile: User, completion: @escaping DataProviderProtocol.profileCompletion) {
-        
+    
+    
+    func getArtworkList(token: String, completion: @escaping DataProviderProtocol.artworkListCompletion) {
+        client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            if response == nil {
+                completion(nil,error)
+                return
+            }
+            if response?.statusCode != 200 {
+                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            var artworkList = [Artwork]()
+            for artwork in result as! NSArray {
+                artworkList.append(Artwork(json: artwork as! JSON)!)
+            }
+            completion(artworkList,nil)
+        })
     }
     
     private func generateHeader(_ token:String) -> [AnyHashable:Any] {

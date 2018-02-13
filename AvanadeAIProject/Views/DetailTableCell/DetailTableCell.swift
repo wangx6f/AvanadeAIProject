@@ -8,6 +8,7 @@
 
 import UIKit
 import SimpleImageViewer
+import Kingfisher
 
 protocol DetailTableCellDelegate {
     func didPressImage(viewController:UIViewController)
@@ -25,17 +26,51 @@ class DetailTableCell: UITableViewCell {
     
     @IBOutlet var ratingStarButtons: [UIButton]!
     
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configImageTapGestureRecognizer()
         
         //TODO: for testing purpose
-        setImageRatio(CGFloat(1))
         changeBookmarkState(false)
-        artworkImageView.loadImage(before: #imageLiteral(resourceName: "before").cgImage,after:#imageLiteral(resourceName: "after").cgImage)
     }
     
-    public func setImageRatio(_ ratio:CGFloat) {
+    public func loadArtwork(_ artwork:Artwork?) {
+        if let artwork = artwork {
+            authorLabel.text = artwork.author
+            setImageRatio(CGFloat(artwork.height!/artwork.width!))
+            loadImageAsync(url: artwork.sourceImageURL!) { (image) in
+                self.artworkImageView.loadImage(before: image)
+            }
+            loadImageAsync(url: artwork.afterImageURL!) { (image) in
+                self.artworkImageView.loadImage(after: image)
+            }
+            descriptionTextView.text = artwork.description
+        }
+    }
+    
+    private func loadImageAsync(url:String,completion:@escaping (CGImage)->Void){
+        ImageCache.default.retrieveImage(forKey: url, options: []) { (image, _) in
+            if let image = image {
+                completion(image.cgImage!)
+            } else {
+                ImageDownloader.default.downloadImage(with: URL(string: url)!, completionHandler: { (image, error, _, _) in
+                    if error != nil {
+                        // TODO: handle error
+                        return
+                    }
+                    completion((image?.cgImage)!)
+                    ImageCache.default.store(image!, forKey: url)
+                })
+            }
+        }
+    }
+    
+    private func setImageRatio(_ ratio:CGFloat) {
         let ratioConstraint = NSLayoutConstraint(item: artworkImageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: artworkImageView, attribute: NSLayoutAttribute.width, multiplier: ratio, constant: CGFloat(0))
         artworkImageView.addConstraint(ratioConstraint)
     }
