@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import KeychainSwift
 
 protocol GalleryDelegate {
     func artworkListDidReady(artworkList:[Artwork])
@@ -20,14 +21,22 @@ final class DataManager {
     
     private let dataProvider: DataProviderProtocol
     
-    private var token : String?
+    private let TOKEN_KEYCHAIN_KEY = "token"
+    private let keychain : KeychainSwift
     
     private var artworkListCache : [Artwork]?
+    
+    public var selectedArtwork : Artwork?
     
     public var galleryDelegate : GalleryDelegate?
   
     private init() {
         dataProvider = AzureDataProvider();
+        keychain = KeychainSwift();
+    }
+    
+    public func loginStatus() -> Bool {
+        return getToken() != nil
     }
     
     public func login(email:String,password:String,completion:@escaping DataProviderProtocol.authCompletion){
@@ -46,7 +55,7 @@ final class DataManager {
         if let delegate = galleryDelegate {
             delegate.artworkListWillReady()
             if artworkListCache == nil || fromNetwork {
-                dataProvider.getArtworkList(token: token!, completion: { (artworkList, error) in
+                dataProvider.getArtworkList(token: getToken(), completion: { (artworkList, error) in
                     if error != nil {
                         delegate.errorDidOccur(error!)
                     } else {
@@ -67,23 +76,27 @@ final class DataManager {
     
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {
         
-        dataProvider.getProfile(token: token!, completion: completion)
+        dataProvider.getProfile(token: getToken(), completion: completion)
         
     }
     
     public func updateProfile(profile:User,completion: @escaping DataProviderProtocol.errorHandler) {
-        dataProvider.updateProfile(token: token!, profile: profile, completion: completion)
+        dataProvider.updateProfile(token: getToken(), profile: profile, completion: completion)
     }
     
     // TODO: clear all cache
     public func logOut() {
-        token = nil
+        keychain.delete(TOKEN_KEYCHAIN_KEY)
+    }
+    
+    private func getToken() -> String? {
+        return keychain.get(TOKEN_KEYCHAIN_KEY)
     }
     
     private func authCompletionHandler(success:Bool?,message:String?,error:Error?,completion:@escaping DataProviderProtocol.authCompletion) {
         
         if success != nil && success! {
-            self.token = message
+            keychain.set(message!, forKey: TOKEN_KEYCHAIN_KEY)
         }
         completion(success,message,error)
         

@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         configForm()
     }
+    
 
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +31,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         configStatusBarBackground(false)
+        autoLogin()
     }
     
     
@@ -52,8 +54,7 @@ class LoginViewController: UIViewController {
             }
             
             if success != nil && success! {
-                self.performSegue(withIdentifier: self.mainSegueIdentifier, sender: self)
-                self.configStatusBarBackground(true)
+                self.login()
                 return
             }
             self.view.makeToast(message)
@@ -71,6 +72,18 @@ class LoginViewController: UIViewController {
     private func configForm() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    
+    private func autoLogin() {
+        if DataManager.sharedInstance.loginStatus() {
+            login()
+        }
+    }
+    
+    private func login() {
+        self.performSegue(withIdentifier: self.mainSegueIdentifier, sender: self)
+        self.configStatusBarBackground(true)
+        
     }
 
 

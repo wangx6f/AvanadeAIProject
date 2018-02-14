@@ -18,11 +18,11 @@ protocol DataProviderProtocol {
     
     func register(newUser:User,password:String,completion:@escaping authCompletion)
     
-    func getProfile(token:String,completion:@escaping profileCompletion)
+    func getProfile(token:String?,completion:@escaping profileCompletion)
     
-    func updateProfile(token:String,profile:User,completion:@escaping errorHandler)
+    func updateProfile(token:String?,profile:User,completion:@escaping errorHandler)
     
-    func getArtworkList(token:String,completion:@escaping artworkListCompletion)
+    func getArtworkList(token:String?,completion:@escaping artworkListCompletion)
     
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void

@@ -21,7 +21,8 @@ class DetailViewController: UITableViewController {
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = artwork?.title
+        artwork = DataManager.sharedInstance.selectedArtwork
+        configArtwork()
         configTableView()
     }
 
@@ -80,6 +81,10 @@ class DetailViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         // add an inset in the bottom
         tableView.contentInset = UIEdgeInsets(top: CGFloat(0), left: CGFloat(0), bottom: CGFloat(60), right: CGFloat(0))
+    }
+    
+    private func configArtwork() {
+        navigationItem.title = artwork?.title
     }
     
     

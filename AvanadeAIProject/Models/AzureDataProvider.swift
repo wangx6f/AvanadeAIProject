@@ -36,7 +36,7 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
-    func getProfile(token: String, completion: @escaping profileCompletion) {
+    func getProfile(token: String?, completion: @escaping profileCompletion) {
         client?.invokeAPI("profile", body: nil, httpMethod: "GET", parameters: nil, headers:generateHeader(token) , completion: { (result, response, error) in
             
             if response == nil {
@@ -53,7 +53,7 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
-    func updateProfile(token: String, profile: User, completion: @escaping DataProviderProtocol.errorHandler) {
+    func updateProfile(token: String?, profile: User, completion: @escaping DataProviderProtocol.errorHandler) {
         client?.invokeAPI("profile", body: profile.toJSON(), httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             if response == nil {
                 completion(error)
@@ -68,7 +68,7 @@ class AzureDataProvider : DataProviderProtocol {
     }
     
     
-    func getArtworkList(token: String, completion: @escaping DataProviderProtocol.artworkListCompletion) {
+    func getArtworkList(token: String?, completion: @escaping DataProviderProtocol.artworkListCompletion) {
         client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             if response == nil {
                 completion(nil,error)
@@ -86,8 +86,8 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
-    private func generateHeader(_ token:String) -> [AnyHashable:Any] {
-        return ["Authorization":"Bearer "+token]
+    private func generateHeader(_ token:String?) -> [AnyHashable:Any]? {
+        return token == nil ? nil : ["Authorization":"Bearer "+token!]
     }
     
     

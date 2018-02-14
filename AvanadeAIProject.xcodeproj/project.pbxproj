@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		22F25390200DEA4300A0064C /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2538F200DEA4300A0064C /* Artwork.swift */; };
 		22F25395200DEAEA00A0064C /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25391200DEAE900A0064C /* DataProviderProtocol.swift */; };
-		22F25396200DEAEA00A0064C /* DummyDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25392200DEAEA00A0064C /* DummyDataProvider.swift */; };
 		22F25397200DEAEA00A0064C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25393200DEAEA00A0064C /* User.swift */; };
 		22F25398200DEAEA00A0064C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F25394200DEAEA00A0064C /* DataManager.swift */; };
 		25169B652011472C0007E848 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25169B642011472C0007E848 /* FilterViewController.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		22F2538F200DEA4300A0064C /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		22F25391200DEAE900A0064C /* DataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
-		22F25392200DEAEA00A0064C /* DummyDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDataProvider.swift; sourceTree = "<group>"; };
 		22F25393200DEAEA00A0064C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		22F25394200DEAEA00A0064C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		25169B642011472C0007E848 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 			children = (
 				22F25394200DEAEA00A0064C /* DataManager.swift */,
 				22F25391200DEAE900A0064C /* DataProviderProtocol.swift */,
-				22F25392200DEAEA00A0064C /* DummyDataProvider.swift */,
 				22F25393200DEAEA00A0064C /* User.swift */,
 				22F2538F200DEA4300A0064C /* Artwork.swift */,
 				25169B662011CB300007E848 /* GalleryFilter.swift */,
@@ -501,7 +498,6 @@
 				2577589C200EF6CE004430D1 /* Constants.swift in Sources */,
 				257758A2200F0E2B004430D1 /* SimplePickerTextField.swift in Sources */,
 				22F25395200DEAEA00A0064C /* DataProviderProtocol.swift in Sources */,
-				22F25396200DEAEA00A0064C /* DummyDataProvider.swift in Sources */,
 				2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */,
 				2546C54E20030C0C0099A165 /* ImageCollectionCell.swift in Sources */,
 				25C1D6BF2027FC9C006BCF1A /* HTTPResponseError.swift in Sources */,

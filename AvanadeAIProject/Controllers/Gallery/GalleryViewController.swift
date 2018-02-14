@@ -41,15 +41,12 @@ class GalleryViewController: UICollectionViewController {
             let filterViewController : FilterViewController = (segue.destination as! UINavigationController).topViewController as! FilterViewController
             filterViewController.filterDelegate = self
             filterViewController.filter = filter
-        } else if segue.identifier == detailSegueIdentifier {
-            let detailViewController : AddCommentViewController = segue.destination as! AddCommentViewController
-            let sender = sender as! UICollectionViewCell
-            detailViewController.artwork = artworkList[(collectionView?.indexPath(for: sender)?.row)!]
         }
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: detailSegueIdentifier, sender: collectionView.cellForItem(at: indexPath))
+        DataManager.sharedInstance.selectedArtwork = artworkList[indexPath.row]
+        performSegue(withIdentifier: detailSegueIdentifier, sender: self)
     }
     
     
