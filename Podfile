@@ -22,5 +22,6 @@ target 'AvanadeAIProject' do
   pod 'AcknowList'
   pod 'Toast-Swift', '~> 3.0.1'
   pod 'Gloss', '~> 2.0'
+  pod 'KeychainSwift', '~> 10.0'
 
 end
