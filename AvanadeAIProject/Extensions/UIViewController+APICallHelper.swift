@@ -14,12 +14,10 @@ extension UIViewController {
     func startWaitActivity(){
         view.endEditing(true)
         view.makeToastActivity(ToastPosition.center)
-        view.isUserInteractionEnabled = false
     }
     
     func endWaitactivity() {
         view.hideToastActivity()
-        view.isUserInteractionEnabled = true
     }
     
     func handleError(_ error:Error?,handleUnauthorized:Bool = true) -> Bool {

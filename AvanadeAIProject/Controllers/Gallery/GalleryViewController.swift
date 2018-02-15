@@ -45,7 +45,7 @@ class GalleryViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        DataManager.sharedInstance.selectedArtwork = artworkList[indexPath.row]
+        DataManager.sharedInstance.selectedArtwork = artworkList[indexPath.row] 
         performSegue(withIdentifier: detailSegueIdentifier, sender: self)
     }
     

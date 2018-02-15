@@ -16,14 +16,16 @@ class DetailViewController: UITableViewController {
     private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
     
-    var artwork : Artwork?
-    
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        artwork = DataManager.sharedInstance.selectedArtwork
-        configArtwork()
+        loadArtwork()
         configTableView()
+    }
+    
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        super.dismiss(animated: flag, completion: completion)
+        DataManager.sharedInstance.selectedArtwork = nil
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,7 +85,8 @@ class DetailViewController: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: CGFloat(0), left: CGFloat(0), bottom: CGFloat(60), right: CGFloat(0))
     }
     
-    private func configArtwork() {
+    private func loadArtwork() {
+        let artwork = DataManager.sharedInstance.selectedArtwork
         navigationItem.title = artwork?.title
     }
     
@@ -91,7 +94,7 @@ class DetailViewController: UITableViewController {
     private func constructDetailCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
         cell.delegate = self
-        cell.loadArtwork(artwork)
+        cell.loadArtwork(DataManager.sharedInstance.selectedArtwork)
         return cell
     }
     
@@ -106,7 +109,7 @@ class DetailViewController: UITableViewController {
     }
     
     private func showActivityVC(){
-        if let artwork = artwork {
+        if let artwork = DataManager.sharedInstance.selectedArtwork {
             let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: (artwork.afterImageURL)!)], applicationActivities: nil)
             present(shareViewController, animated: true, completion:nil)
         }

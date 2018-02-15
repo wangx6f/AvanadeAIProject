@@ -10,26 +10,45 @@ import Foundation
 import UIKit
 import KeychainSwift
 
+// Ought to be implemented by gallery controller to handle any new changes on artwork list
 protocol GalleryDelegate {
     func artworkListDidReady(artworkList:[Artwork])
     func artworkListWillReady()
     func errorDidOccur(_ error:Error)
 }
 
+// Ought to be implemented by detail controller to handle any new changes on detail of an artwork
+protocol DetailDelegate {
+    func artworkDidReady(detailedArtwork:Artwork)
+    func artworkWillReady()
+    func commentListDidReady(commentList:[Comment])
+    func commentListWillReady()
+    func errorDidOccur(_ error:Error)
+}
+
+// Ought to be implemented by bookmark controller to handle any new changes on bookmark list
+protocol BookmarkDelegate {
+    func bookmarkListDidReady(bookmarkList:[Artwork])
+    func bookmarkListWillReady()
+    func errorDidOccur(_ error:Error)
+}
+
 final class DataManager {
-    static let sharedInstance = DataManager()
+    public static let sharedInstance = DataManager()
     
-    private let dataProvider: DataProviderProtocol
+    public var galleryDelegate : GalleryDelegate?
     
-    private let TOKEN_KEYCHAIN_KEY = "token"
-    private let keychain : KeychainSwift
+    public var detailDelegate : DetailDelegate?
     
-    private var artworkListCache : [Artwork]?
+    public var bookmarkDelegate : BookmarkDelegate?
     
     public var selectedArtwork : Artwork?
     
-    public var galleryDelegate : GalleryDelegate?
-  
+    private let dataProvider: DataProviderProtocol
+    private let TOKEN_KEYCHAIN_KEY = "token"
+    private let keychain : KeychainSwift
+    
+    
     private init() {
         dataProvider = AzureDataProvider();
         keychain = KeychainSwift();
@@ -51,42 +70,39 @@ final class DataManager {
         }
     }
     
-    public func updateArtworkList(filter:GalleryFilter,fromNetwork:Bool = false) {
+    public func updateArtworkList(filter:GalleryFilter) {
         if let delegate = galleryDelegate {
             delegate.artworkListWillReady()
-            if artworkListCache == nil || fromNetwork {
-                dataProvider.getArtworkList(token: getToken(), completion: { (artworkList, error) in
-                    if error != nil {
-                        delegate.errorDidOccur(error!)
-                    } else {
-                        self.artworkListCache = artworkList
-                        delegate.artworkListDidReady(artworkList: self.filterArtworkList(filter))
-                    }
-                })
-            } else {
-                delegate.artworkListDidReady(artworkList: filterArtworkList(filter))
-            }
+            dataProvider.getArtworkList(token: getToken(), completion: { (artworkList, error) in
+                if error != nil {
+                    delegate.errorDidOccur(error!)
+                } else {
+                    delegate.artworkListDidReady(artworkList: self.filterArtworkList(artworkList: artworkList, filter: filter))
+                }
+            })
         }
     }
     
-    private func filterArtworkList(_ filter:GalleryFilter) -> [Artwork] {
-        // TODO : do filtering here
-        return self.artworkListCache!
-    }
+
     
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {
-        
         dataProvider.getProfile(token: getToken(), completion: completion)
-        
     }
     
     public func updateProfile(profile:User,completion: @escaping DataProviderProtocol.errorHandler) {
         dataProvider.updateProfile(token: getToken(), profile: profile, completion: completion)
     }
     
-    // TODO: clear all cache
+    
+    // MARK: clear all cache
     public func logOut() {
+        selectedArtwork = nil
         keychain.delete(TOKEN_KEYCHAIN_KEY)
+    }
+    
+    private func filterArtworkList(artworkList:[Artwork]?,filter:GalleryFilter) -> [Artwork] {
+        // TODO : do filtering here
+        return artworkList!
     }
     
     private func getToken() -> String? {
@@ -94,7 +110,6 @@ final class DataManager {
     }
     
     private func authCompletionHandler(success:Bool?,message:String?,error:Error?,completion:@escaping DataProviderProtocol.authCompletion) {
-        
         if success != nil && success! {
             keychain.set(message!, forKey: TOKEN_KEYCHAIN_KEY)
         }

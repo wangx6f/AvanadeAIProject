@@ -17,6 +17,7 @@
 		2527D8D42025866300F5DC12 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2527D8D32025866300F5DC12 /* Search.storyboard */; };
 		2527D8D62025961A00F5DC12 /* Bookmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2527D8D52025961A00F5DC12 /* Bookmark.storyboard */; };
 		2527D8D9202596F900F5DC12 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527D8D8202596F900F5DC12 /* BookmarkViewController.swift */; };
+		2542C83B203516DA00591EEF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542C83A203516DA00591EEF /* Comment.swift */; };
 		2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2546C5392001B7E80099A165 /* Intro.storyboard */; };
 		2546C53F200207820099A165 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C53E200207820099A165 /* LoginViewController.swift */; };
 		2546C5412002150B0099A165 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546C5402002150B0099A165 /* RegisterViewController.swift */; };
@@ -64,6 +65,7 @@
 		2527D8D32025866300F5DC12 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		2527D8D52025961A00F5DC12 /* Bookmark.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookmark.storyboard; sourceTree = "<group>"; };
 		2527D8D8202596F900F5DC12 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		2542C83A203516DA00591EEF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2546C5392001B7E80099A165 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		2546C53E200207820099A165 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2546C5402002150B0099A165 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				25169B662011CB300007E848 /* GalleryFilter.swift */,
 				25C1D6B820279907006BCF1A /* AzureDataProvider.swift */,
 				25C1D6BE2027FC9C006BCF1A /* HTTPResponseError.swift */,
+				2542C83A203516DA00591EEF /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				25C1D6C3202831DB006BCF1A /* UIViewController+KeyboardDismiss.swift in Sources */,
 				2527D8D2202585E500F5DC12 /* SearchViewTableCell.swift in Sources */,
 				256566FD20180CFE00CB203F /* ShareActivityItemProvider.swift in Sources */,
+				2542C83B203516DA00591EEF /* Comment.swift in Sources */,
 				2527D8D9202596F900F5DC12 /* BookmarkViewController.swift in Sources */,
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
 				22F25397200DEAEA00A0064C /* User.swift in Sources */,
