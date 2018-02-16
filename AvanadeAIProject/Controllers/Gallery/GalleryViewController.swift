@@ -44,6 +44,10 @@ class GalleryViewController: UICollectionViewController {
         }
     }
     
+    @IBAction func onRefreshPressed(_ sender: UIBarButtonItem) {
+        DataManager.sharedInstance.updateArtworkList(filter: filter)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         DataManager.sharedInstance.selectedArtwork = artworkList[indexPath.row] 
         performSegue(withIdentifier: detailSegueIdentifier, sender: self)
@@ -63,6 +67,7 @@ class GalleryViewController: UICollectionViewController {
         cell.numOfCommentLabel.text = "\(indexPath.row*100)"
         cell.numOfViewLabel.text = "\(indexPath.row*10)"
         cell.ratingView.rating = Double(indexPath.row)/5.0
+        cell.imageView.kf.indicatorType = .activity
         cell.imageView.kf.setImage(with:URL(string:artwork.afterImageURL!))
         return cell
     }

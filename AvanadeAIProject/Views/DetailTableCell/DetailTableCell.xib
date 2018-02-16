@@ -27,14 +27,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS" customClass="DetailImageView" customModule="AvanadeAIProject" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="364" height="364"/>
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="401.5"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="X3q-79-0aS" secondAttribute="height" multiplier="1:1" placeholder="YES" id="fXH-wU-GP4"/>
-                        </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7W-3g-rVe" userLabel="Info Section Container">
-                        <rect key="frame" x="0.0" y="364" width="364" height="97.5"/>
+                        <rect key="frame" x="0.0" y="401.5" width="364" height="97.5"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5O-Vy-kJo" userLabel="Top Conatiner">
                                 <rect key="frame" x="0.0" y="0.0" width="364" height="40.5"/>
@@ -130,16 +127,16 @@
                         </constraints>
                     </view>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-81-PE0" userLabel="Description View">
-                        <rect key="frame" x="18" y="461.5" width="328" height="34"/>
+                        <rect key="frame" x="18" y="499" width="328" height="34"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="YXz-ql-IxP">
-                        <rect key="frame" x="18" y="495.5" width="328" height="81.5"/>
+                        <rect key="frame" x="18" y="533" width="328" height="44"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1J-5g-iFd">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="81.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="32"/>
                                 <state key="normal" title="☆">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tf-wG-nHa">
-                                <rect key="frame" x="74" y="0.0" width="32" height="81.5"/>
+                                <rect key="frame" x="74" y="0.0" width="32" height="44"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="32"/>
                                 <state key="normal" title="☆">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,7 +156,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbn-WF-Pxe">
-                                <rect key="frame" x="148" y="0.0" width="32" height="81.5"/>
+                                <rect key="frame" x="148" y="0.0" width="32" height="44"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="32"/>
                                 <state key="normal" title="☆">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,7 +166,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RO-MD-V0i">
-                                <rect key="frame" x="222" y="0.0" width="32" height="81.5"/>
+                                <rect key="frame" x="222" y="0.0" width="32" height="44"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="32"/>
                                 <state key="normal" title="☆">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,7 +176,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-qC-J6m">
-                                <rect key="frame" x="296" y="0.0" width="32" height="81.5"/>
+                                <rect key="frame" x="296" y="0.0" width="32" height="44"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="32"/>
                                 <state key="normal" title="☆">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

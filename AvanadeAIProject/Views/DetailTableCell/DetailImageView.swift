@@ -69,8 +69,10 @@ class DetailImageView: UIImageView,CAAnimationDelegate{
     
     private func setup(){
         switchDisplay(mode: currentMode)
-        indicator.center = center
-        addSubview(indicator)
+        self.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        self.addConstraint(NSLayoutConstraint(item: indicator, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0))
+        self.addConstraint(NSLayoutConstraint(item: indicator, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: 0))
     }
     
     private func imageLoading() {

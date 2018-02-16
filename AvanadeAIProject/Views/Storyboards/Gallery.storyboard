@@ -44,6 +44,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Gallery" id="CVv-6t-3NS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Crg-DN-Qee">
+                            <connections>
+                                <action selector="onRefreshPressed:" destination="A8y-J2-MZF" id="hgC-oF-VtP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="FilterIcon" id="xwE-wh-dzo">
                             <connections>
                                 <segue destination="hEl-J2-tYn" kind="show" identifier="goToFilter" id="ZCq-ID-mEq"/>
