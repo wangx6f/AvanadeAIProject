@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 import KeychainSwift
 
-// Ought to be implemented by gallery controller to handle any new changes on artwork list
+// Ought to be implemented by controller that needs to handle any new changes on artwork list
 protocol GalleryDelegate {
     func artworkListDidReady(artworkList:[Artwork])
     func artworkListWillReady()
     func errorDidOccur(_ error:Error)
 }
 
-// Ought to be implemented by detail controller to handle any new changes on detail of an artwork
+
+
+// Ought to be implemented by bookmark controller that needs to handle any new changes on detail of a specific artwork
 protocol DetailDelegate {
-    func artworkDidReady(detailedArtwork:Artwork)
+    func artworkDidReady(commentList:[Comment])
     func artworkWillReady()
-    func commentListDidReady(commentList:[Comment])
-    func commentListWillReady()
     func errorDidOccur(_ error:Error)
 }
 
-// Ought to be implemented by bookmark controller to handle any new changes on bookmark list
+// Ought to be implemented by bookmark controller that needs to handle any new changes on bookmark list
 protocol BookmarkDelegate {
     func bookmarkListDidReady(bookmarkList:[Artwork])
     func bookmarkListWillReady()

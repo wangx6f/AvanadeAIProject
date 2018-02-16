@@ -10,17 +10,26 @@ import UIKit
 
 class DetailViewController: UITableViewController {
     
+    @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var noCommentLabel: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     // MARK: constants
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
-    private let noCommentTableCellReuseIdentifier = "noCommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
+    private let maxCommentNum = 2
+    
+    
+    private var commentList : [Comment]?
     
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         loadArtwork()
         configTableView()
+        
+        // Debug purpose
+        artworkDidReady(commentList: [Comment(json: [:])!,Comment(json: [:])!,Comment(json: [:])!])
     }
     
     override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
@@ -36,20 +45,29 @@ class DetailViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             return constructDetailCell()
-        } else if indexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
-            return constructViewCommentCell()
-        } else {
-            return constructCommentCell()
         }
+        
+        // render the additional cell for routing to all comments view
+        if commentList!.count > maxCommentNum && indexPath.row == maxCommentNum + 1 {
+            return constructViewCommentCell(commentList!.count)
+        }
+        // regular comment cell
+        return constructCommentCell(commentList![indexPath.row - 1])
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        
+        if let commentList = commentList {
+            // # of comment exceed maximum, which required an additional cell for routing to all comments view
+            if commentList.count > maxCommentNum {
+                return maxCommentNum + 2
+            }
+            return commentList.count + 1
+        }
+        // comment list has not been loaded yet or comment list is empty
+        return 1
     }
-    
-    
-    
-    
+ 
     // disable bounce on top edge
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y <= 0 {
@@ -81,13 +99,12 @@ class DetailViewController: UITableViewController {
         // make the height of cell fit its content
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        // add an inset in the bottom
-        tableView.contentInset = UIEdgeInsets(top: CGFloat(0), left: CGFloat(0), bottom: CGFloat(60), right: CGFloat(0))
     }
     
     private func loadArtwork() {
         let artwork = DataManager.sharedInstance.selectedArtwork
         navigationItem.title = artwork?.title
+        
     }
     
     
@@ -98,12 +115,13 @@ class DetailViewController: UITableViewController {
         return cell
     }
     
-    private func constructCommentCell() -> UITableViewCell {
+    private func constructCommentCell(_ comment:Comment) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.commentTableCellReuseIdentifier) as! CommentTableCell
         return cell
     }
     
-    private func constructViewCommentCell() -> UITableViewCell {
+    
+    private func constructViewCommentCell(_ number:Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: viewCommentTableCellReuseIdentifier)
         return cell!
     }
@@ -153,10 +171,45 @@ extension DetailViewController : DetailTableCellDelegate {
                 stars.append("☆")
             }
         }
-        //TODO : change the title
-        let title = "\"Title\""
-        return "Rate " + title + " with " + stars
+
+        return "Rate \"" + navigationItem.title! + "\" with " + stars
     }
+}
+
+
+extension DetailViewController : DetailDelegate {
+    
+    func artworkDidReady(commentList: [Comment]) {
+        loadArtwork()
+        self.commentList = commentList
+        if commentList.count == 0 {
+            footerViewUpdate(loading: false, noComment: true)
+        } else {
+            footerViewUpdate(loading: false, noComment: false)
+        }
+        tableView.reloadData()
+    }
+    
+    func artworkWillReady() {
+        commentList = nil
+        footerViewUpdate(loading: true, noComment: false)
+        tableView.reloadData()
+    }
+
+    func errorDidOccur(_ error: Error) {
+        _ = self.handleError(error)
+    }
+
+    
+    private func footerViewUpdate(loading:Bool,noComment:Bool) {
+        if loading {
+            loadingIndicator.startAnimating()
+        } else {
+            loadingIndicator.stopAnimating()
+        }
+        noCommentLabel.isHidden = !noComment
+    }
+
     
     
 }
