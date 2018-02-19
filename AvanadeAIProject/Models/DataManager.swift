@@ -11,7 +11,7 @@ import UIKit
 import KeychainSwift
 
 // Ought to be implemented by controller that needs to handle any new changes on artwork list
-protocol GalleryDelegate {
+protocol GalleryDelegate : NSObjectProtocol {
     func artworkListDidReady(artworkList:[Artwork])
     func artworkListWillReady()
     func errorDidOccur(_ error:Error)
@@ -20,14 +20,15 @@ protocol GalleryDelegate {
 
 
 // Ought to be implemented by bookmark controller that needs to handle any new changes on detail of a specific artwork
-protocol DetailDelegate {
-    func artworkDidReady(commentList:[Comment])
-    func artworkWillReady()
+protocol DetailDelegate : NSObjectProtocol {
+    func commentListDidReady(commentList:[Comment])
+    func commentListWillReady()
+    func refreshArtwork()
     func errorDidOccur(_ error:Error)
 }
 
 // Ought to be implemented by bookmark controller that needs to handle any new changes on bookmark list
-protocol BookmarkDelegate {
+protocol BookmarkDelegate : NSObjectProtocol {
     func bookmarkListDidReady(bookmarkList:[Artwork])
     func bookmarkListWillReady()
     func errorDidOccur(_ error:Error)
@@ -36,11 +37,11 @@ protocol BookmarkDelegate {
 final class DataManager {
     public static let sharedInstance = DataManager()
     
-    public var galleryDelegate : GalleryDelegate?
+    weak public var galleryDelegate : GalleryDelegate?
     
-    public var detailDelegate : DetailDelegate?
+    weak public var detailDelegate : DetailDelegate?
     
-    public var bookmarkDelegate : BookmarkDelegate?
+    weak public var bookmarkDelegate : BookmarkDelegate?
     
     public var selectedArtwork : Artwork?
     

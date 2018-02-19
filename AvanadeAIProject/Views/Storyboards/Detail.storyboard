@@ -160,7 +160,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="78F-BN-8VZ" kind="show" id="FAa-oi-mKg"/>
+                                    <segue destination="78F-BN-8VZ" kind="show" identifier="goToAllComments" id="FAa-oi-mKg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -169,7 +169,7 @@
                             <outlet property="delegate" destination="u56-Lp-teX" id="56a-Za-2ol"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="OXO-sQ-ywL">
+                    <navigationItem key="navigationItem" id="OXO-sQ-ywL">
                         <barButtonItem key="leftBarButtonItem" image="ChevronIcon" id="RFT-NO-mWn">
                             <connections>
                                 <action selector="onBackPressed:" destination="u56-Lp-teX" id="Axr-xb-bwX"/>
@@ -253,6 +253,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3w1-cf-9st"/>
                     </view>
+                    <connections>
+                        <outlet property="content" destination="stP-yJ-T0Q" id="9tX-23-SNS"/>
+                        <outlet property="name" destination="BM0-xJ-nJ8" id="ZCz-Ap-pc9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7w-gH-1tS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,16 +282,41 @@
         <!--All Comments-->
         <scene sceneID="bhj-Fc-UdF">
             <objects>
-                <tableViewController title="All Comments" id="78F-BN-8VZ" customClass="AllCommentsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="78F-BN-8VZ" customClass="AllCommentsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V77-GJ-Np8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="36e-wt-ReW" userLabel="Divider">
+                            <rect key="frame" x="0.0" y="72" width="375" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xzd-60-XCS"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="unusedTableCell" id="MK7-t3-Sep">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MK7-t3-Sep" id="d8P-dd-SkA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="78F-BN-8VZ" id="9t3-qh-j35"/>
                             <outlet property="delegate" destination="78F-BN-8VZ" id="gkP-Pq-Xct"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="All Comments" id="s33-8g-V50">
+                        <barButtonItem key="leftBarButtonItem" image="ChevronIcon" id="x0W-yN-ZdZ" userLabel="Back">
+                            <connections>
+                                <action selector="onBackPressed:" destination="78F-BN-8VZ" id="lYe-1X-cIc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="8wr-5P-KSg" kind="presentation" identifier="goToCommentDetail" modalTransitionStyle="crossDissolve" id="8UA-ZW-2Fz"/>
                     </connections>

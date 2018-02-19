@@ -56,7 +56,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="nzq-cU-4Jr" kind="presentation" identifier="goToDetail" modalTransitionStyle="crossDissolve" id="jzj-db-jfW"/>
+                        <segue destination="nzq-cU-4Jr" kind="presentation" identifier="goToDetail" id="jzj-db-jfW"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5It-Il-wXF" userLabel="First Responder" sceneMemberID="firstResponder"/>

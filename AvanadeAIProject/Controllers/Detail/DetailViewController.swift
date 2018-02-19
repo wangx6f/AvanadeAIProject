@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol CommentListDelegate : NSObjectProtocol {
+    func refreshCommentList(commentList:[Comment]?)
+    func errorDidOccur(_ error:Error)
+}
+
 class DetailViewController: UITableViewController {
     
     @IBOutlet weak var footerView: UIView!
@@ -17,19 +22,40 @@ class DetailViewController: UITableViewController {
     // MARK: constants
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
+    private let allCommentsSegueIdentifier = "goToAllComments"
     private let maxCommentNum = 2
     
-    
+    weak private var commentListDelegate : CommentListDelegate?
     private var commentList : [Comment]?
     
     // MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadArtwork()
         configTableView()
+        loadArtwork()
         
         // Debug purpose
-        artworkDidReady(commentList: [Comment(json: [:])!,Comment(json: [:])!,Comment(json: [:])!])
+        commentListDidReady(commentList: [Comment(json: ["reviewer":"John Smith","content":"debug comment1"])!,Comment(json: ["reviewer":"Xinyuan Wang","content":"debug comment2"])!,Comment(json: ["reviewer":"Amy House","content":"debug comment3"])!])
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.commentListDelegate = nil
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case allCommentsSegueIdentifier?:
+            let commentListView : CommentListDelegate = segue.destination as! CommentListDelegate
+            self.commentListDelegate = commentListView
+            commentListView.refreshCommentList(commentList: commentList)
+            break
+        case commentDetailSegueIdentifier?:
+            let commentDetailView : CommentDetailViewController = segue.destination as! CommentDetailViewController
+            commentDetailView.comment = sender as? Comment
+            break
+        default:
+            break
+        }
     }
     
     override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
@@ -37,6 +63,7 @@ class DetailViewController: UITableViewController {
         DataManager.sharedInstance.selectedArtwork = nil
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -78,8 +105,9 @@ class DetailViewController: UITableViewController {
     // handle the transition to comment detail view
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView.cellForRow(at: indexPath)?.reuseIdentifier == Constants.commentTableCellReuseIdentifier {
-            performSegue(withIdentifier: commentDetailSegueIdentifier, sender: self)
+            performSegue(withIdentifier: commentDetailSegueIdentifier, sender: commentList?[indexPath.row - 1])
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // MARK: UI methods
@@ -117,12 +145,15 @@ class DetailViewController: UITableViewController {
     
     private func constructCommentCell(_ comment:Comment) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.commentTableCellReuseIdentifier) as! CommentTableCell
+        cell.content.text = comment.content
+        cell.name.text = comment.reviewer
         return cell
     }
     
     
     private func constructViewCommentCell(_ number:Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: viewCommentTableCellReuseIdentifier)
+        cell?.textLabel?.text = "View all \(number) of comments"
         return cell!
     }
     
@@ -178,9 +209,11 @@ extension DetailViewController : DetailTableCellDelegate {
 
 
 extension DetailViewController : DetailDelegate {
-    
-    func artworkDidReady(commentList: [Comment]) {
+    func refreshArtwork() {
         loadArtwork()
+    }
+    
+    func commentListDidReady(commentList: [Comment]) {
         self.commentList = commentList
         if commentList.count == 0 {
             footerViewUpdate(loading: false, noComment: true)
@@ -188,9 +221,14 @@ extension DetailViewController : DetailDelegate {
             footerViewUpdate(loading: false, noComment: false)
         }
         tableView.reloadData()
+        
+        // propagate data if necessary
+        if let delegate = commentListDelegate {
+            delegate.refreshCommentList(commentList: commentList)
+        }
     }
     
-    func artworkWillReady() {
+    func commentListWillReady() {
         commentList = nil
         footerViewUpdate(loading: true, noComment: false)
         tableView.reloadData()

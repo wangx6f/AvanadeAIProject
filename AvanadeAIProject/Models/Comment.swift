@@ -20,6 +20,9 @@ class Comment : JSONDecodable {
     private var _editable : Bool?
     static public let JSON_EDITABLE = "editable"
     
+    private var _content : String?
+    static public let JSON_CONTENT = "content"
+    
     var id : String? {
         get {return _id}
     }
@@ -32,10 +35,15 @@ class Comment : JSONDecodable {
         get {return _editable}
     }
     
+    var content : String? {
+        get {return _content}
+    }
+    
     required init?(json: JSON) {
         _id = Comment.JSON_ID <~~ json
         _reviewer = Comment.JSON_REVIEWER <~~ json
         _editable = Comment.JSON_EDITABLE <~~ json
+        _content = Comment.JSON_CONTENT <~~ json
     }
     
     
