@@ -26,9 +26,11 @@ class GalleryViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configCollectionView()
-        prepareData()
-        
-
+        DataManager.sharedInstance.galleryDelegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DataManager.sharedInstance.updateArtworkList(filter: filter)
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,12 +82,6 @@ class GalleryViewController: UICollectionViewController {
         let layout : CHTCollectionViewWaterfallLayout =  collectionView!.collectionViewLayout as! CHTCollectionViewWaterfallLayout
         layout.sectionInset = collectionViewSectionInset
     }
-    
-    private func prepareData() {
-        DataManager.sharedInstance.galleryDelegate = self
-        DataManager.sharedInstance.updateArtworkList(filter: filter)
-    }
-
     
 }
 

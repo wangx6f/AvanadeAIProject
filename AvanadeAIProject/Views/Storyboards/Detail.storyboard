@@ -37,7 +37,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Leave your comment" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qQ6-4z-lZv" userLabel="Comment Field">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="33"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="33"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -53,13 +53,18 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWE-g1-pde">
-                                                    <rect key="frame" x="310" y="0.0" width="33" height="33"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWE-g1-pde">
+                                                    <rect key="frame" x="321" y="0.0" width="22" height="33"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="KWE-g1-pde" secondAttribute="height" multiplier="1:1" id="RNX-ik-4kS"/>
+                                                        <constraint firstAttribute="width" secondItem="KWE-g1-pde" secondAttribute="height" multiplier="2:3" id="RNX-ik-4kS"/>
                                                     </constraints>
-                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="CommentIcon"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="onSubmitPressed:" destination="8KJ-aq-EtP" eventType="touchUpInside" id="Yfz-Mv-MK7"/>
                                                     </connections>
@@ -235,6 +240,11 @@
                                                 <action selector="onBackPressed:" destination="8wr-5P-KSg" id="AaR-dV-SCu"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Delete" id="HO4-Cg-4vT">
+                                            <connections>
+                                                <action selector="onDeletePressed:" destination="8wr-5P-KSg" id="Xrr-TV-j9R"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -264,6 +274,7 @@
                     </view>
                     <connections>
                         <outlet property="content" destination="stP-yJ-T0Q" id="9tX-23-SNS"/>
+                        <outlet property="deleteButton" destination="HO4-Cg-4vT" id="qCF-uk-cKF"/>
                         <outlet property="name" destination="BM0-xJ-nJ8" id="ZCz-Ap-pc9"/>
                     </connections>
                 </viewController>
@@ -337,6 +348,6 @@
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8UA-ZW-2Fz"/>
+        <segue reference="i7D-hh-WIm"/>
     </inferredMetricsTieBreakers>
 </document>

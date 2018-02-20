@@ -23,7 +23,7 @@ class DetailViewController: UITableViewController {
     private let viewCommentTableCellReuseIdentifier = "viewCommentTableCell"
     private let commentDetailSegueIdentifier = "goToCommentDetail"
     private let allCommentsSegueIdentifier = "goToAllComments"
-    private let maxCommentNum = 2
+    private let maxCommentNum = 6
     
     weak private var commentListDelegate : CommentListDelegate?
     private var commentList : [Comment]?

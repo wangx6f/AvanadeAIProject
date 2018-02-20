@@ -11,6 +11,8 @@ import MicrosoftAzureMobile
 import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
+
+    
     
     
 
@@ -55,22 +57,14 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
-    func updateProfile(token: String?, profile: User, completion: @escaping DataProviderProtocol.errorHandler) {
+    func updateProfile(token: String?, profile: User, completion: @escaping errorHandler) {
         client?.invokeAPI("profile", body: profile.toJSON(), httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
-            if response == nil {
-                completion(error)
-                return
-            }
-            if response?.statusCode != 200 {
-                completion(HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
-                return
-            }
-            completion(nil)
+                self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
     
     
-    func getArtworkList(token: String?, completion: @escaping DataProviderProtocol.artworkListCompletion) {
+    func getArtworkList(token: String?, completion: @escaping artworkListCompletion) {
         client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             if response == nil {
                 completion(nil,error)
@@ -108,15 +102,13 @@ class AzureDataProvider : DataProviderProtocol {
     
     func postComment(token: String?, content: String?, artworkId: String?, completion: @escaping errorHandler) {
         client?.invokeAPI("comments", body: ["artworkId":artworkId,"content":content], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
-            if response == nil {
-                completion(error)
-                return
-            }
-            if response?.statusCode != 200 {
-                completion(HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
-                return
-            }
-            completion(nil)
+                self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
+    
+    func deleteComment(token: String?, commentId: String?, completion: @escaping errorHandler) {
+        client?.invokeAPI("comments", body:nil, httpMethod: "DELETE", parameters: ["commentId":commentId!], headers: generateHeader(token), completion: { (result, response, error) in
+                self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
     
@@ -140,6 +132,18 @@ class AzureDataProvider : DataProviderProtocol {
         let _result = result as! NSDictionary
         completion(_result.value(forKey: "success") as? Bool,_result.value(forKey: "payload") as? String, nil)
         return
+    }
+    
+    private func errorOnlyResponseHandler(result:Any?, response:HTTPURLResponse?, error:Error?, completion:errorHandler) {
+        if response == nil {
+            completion(error)
+            return
+        }
+        if response?.statusCode != 200 {
+            completion(HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+            return
+        }
+        completion(nil)
     }
     
     

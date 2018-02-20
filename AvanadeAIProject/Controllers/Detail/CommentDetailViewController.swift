@@ -12,6 +12,7 @@ class CommentDetailViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var content: UITextView!
+    @IBOutlet weak var deleteButton: UIBarButtonItem!
     
     public var comment : Comment?
     
@@ -19,8 +20,11 @@ class CommentDetailViewController: UIViewController {
         super.viewDidLoad()
         name.text = comment?.reviewer
         content.text = comment?.content
-
-        // Do any additional setup after loading the view.
+        if (comment?.editable)! {
+            deleteButton.isEnabled = true
+        } else {
+            deleteButton.isEnabled = false
+        }
     }
     
 
@@ -28,7 +32,25 @@ class CommentDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func onDeletePressed(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        let attributedString = NSAttributedString(string: "Are you sure to delete this comment?", attributes: [
+            NSAttributedStringKey.font : UIFont(name: "Helvetica Neue", size: CGFloat(18))!
+            ])
+        
+        alert.setValue(attributedString, forKey: "attributedTitle")
 
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.default, handler: { (action) in
+            DataManager.sharedInstance.deleteComment(comment: self.comment, completion: { (error) in
+                if !self.handleError(error) {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            })
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func onBackPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }

@@ -108,8 +108,17 @@ final class DataManager {
                 }
             })
         }
-        
-        
+    }
+    
+    public func deleteComment(comment:Comment?,completion: @escaping DataProviderProtocol.errorHandler) {
+        if let comment = comment {
+            dataProvider.deleteComment(token: getToken(), commentId: comment.id, completion: { (error) in
+                if error == nil {
+                    self.updateCommentList()
+                }
+                completion(error)
+            })
+        }
     }
     
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {

@@ -25,6 +25,8 @@ protocol DataProviderProtocol {
     
     func postComment(token:String?,content:String?,artworkId:String?,completion:@escaping errorHandler)
     
+    func deleteComment(token:String?,commentId:String?,completion:@escaping errorHandler)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
     typealias artworkListCompletion = ([Artwork]?,Error?)->Void
