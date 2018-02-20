@@ -10,9 +10,6 @@ import Foundation
 import UIKit
 
 protocol DataProviderProtocol {
-//    func imageFrom(url: String) -> UIImage
-//    func getUser(id: Int) -> User
-//    func artworkWith(id: Int) -> Artwork
    
     func login(email:String,password:String,completion: @escaping authCompletion)
     
@@ -24,9 +21,16 @@ protocol DataProviderProtocol {
     
     func getArtworkList(token:String?,completion:@escaping artworkListCompletion)
     
+    func getCommentList(token:String?,artworkId:String?,completion:@escaping commentListCompletion)
+    
+    func postComment(token:String?,content:String?,artworkId:String?,completion:@escaping errorHandler)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
     typealias artworkListCompletion = ([Artwork]?,Error?)->Void
     typealias errorHandler = (Error?)->Void
+    typealias commentListCompletion = ([Comment]?,Error?)->Void
 
 }
+
+

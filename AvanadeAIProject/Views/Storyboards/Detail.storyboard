@@ -38,7 +38,7 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Leave your comment" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qQ6-4z-lZv" userLabel="Comment Field">
                                                     <rect key="frame" x="0.0" y="0.0" width="300" height="33"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <userDefinedRuntimeAttributes>
@@ -60,6 +60,9 @@
                                                     </constraints>
                                                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" image="CommentIcon"/>
+                                                    <connections>
+                                                        <action selector="onSubmitPressed:" destination="8KJ-aq-EtP" eventType="touchUpInside" id="Yfz-Mv-MK7"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -86,6 +89,7 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="IWf-mz-GHm" firstAttribute="leading" secondItem="NL5-no-JNI" secondAttribute="leading" id="4Gx-iU-oWH"/>
                             <constraint firstItem="uU1-5E-3Dt" firstAttribute="trailing" secondItem="NL5-no-JNI" secondAttribute="trailing" id="KXd-Li-nwn"/>
@@ -97,6 +101,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NL5-no-JNI"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="ZGv-2h-8RB" id="vSH-MH-bEh"/>
+                        <outlet property="commentInputField" destination="qQ6-4z-lZv" id="lda-pR-yEt"/>
+                        <outlet property="containerView" destination="IWf-mz-GHm" id="9lA-KI-3pY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbl-gJ-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,15 +214,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="nNp-DS-7Yo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="stP-yJ-T0Q">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="stP-yJ-T0Q">
                                 <rect key="frame" x="16" y="106" width="343" height="497"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTJ-tN-zXv">
@@ -291,9 +300,6 @@
                             <rect key="frame" x="0.0" y="72" width="375" height="1"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="1" id="xzd-60-XCS"/>
-                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="unusedTableCell" id="MK7-t3-Sep">
@@ -331,6 +337,6 @@
         <image name="CommentIcon" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i7D-hh-WIm"/>
+        <segue reference="8UA-ZW-2Fz"/>
     </inferredMetricsTieBreakers>
 </document>

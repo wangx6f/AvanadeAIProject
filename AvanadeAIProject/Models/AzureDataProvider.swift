@@ -11,6 +11,8 @@ import MicrosoftAzureMobile
 import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
+    
+    
 
     private var client: MSClient?
     
@@ -83,6 +85,38 @@ class AzureDataProvider : DataProviderProtocol {
                 artworkList.append(Artwork(json: artwork as! JSON)!)
             }
             completion(artworkList,nil)
+        })
+    }
+    
+    func getCommentList(token:String?,artworkId: String?, completion: @escaping commentListCompletion) {
+        client?.invokeAPI("comments", body: nil, httpMethod: "GET", parameters: ["artworkId":artworkId!], headers: generateHeader(token), completion: { (result, response, error) in
+            if response == nil {
+                completion(nil,error)
+                return
+            }
+            if response?.statusCode != 200 {
+                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            var commentList = [Comment]()
+            for comment in result as! NSArray {
+                commentList.append(Comment(json: comment as! JSON)!)
+            }
+            completion(commentList,nil)
+        })
+    }
+    
+    func postComment(token: String?, content: String?, artworkId: String?, completion: @escaping errorHandler) {
+        client?.invokeAPI("comments", body: ["artworkId":artworkId,"content":content], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            if response == nil {
+                completion(error)
+                return
+            }
+            if response?.statusCode != 200 {
+                completion(HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            completion(nil)
         })
     }
     

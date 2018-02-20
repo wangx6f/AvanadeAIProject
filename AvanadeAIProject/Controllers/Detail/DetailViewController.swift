@@ -33,13 +33,7 @@ class DetailViewController: UITableViewController {
         super.viewDidLoad()
         configTableView()
         loadArtwork()
-        
-        // Debug purpose
-        commentListDidReady(commentList: [Comment(json: ["reviewer":"John Smith","content":"debug comment1"])!,Comment(json: ["reviewer":"Xinyuan Wang","content":"debug comment2"])!,Comment(json: ["reviewer":"Amy House","content":"debug comment3"])!])
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.commentListDelegate = nil
+        prepareCommentList()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,29 +64,35 @@ class DetailViewController: UITableViewController {
     
     // construct cell for each row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        if indexPath.section == 0 {
             return constructDetailCell()
         }
         
         // render the additional cell for routing to all comments view
-        if commentList!.count > maxCommentNum && indexPath.row == maxCommentNum + 1 {
+        if commentList!.count > maxCommentNum && indexPath.row == maxCommentNum {
             return constructViewCommentCell(commentList!.count)
         }
         // regular comment cell
-        return constructCommentCell(commentList![indexPath.row - 1])
+        return constructCommentCell(commentList![indexPath.row])
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        if section == 0 {
+            return 1
+        }
         if let commentList = commentList {
             // # of comment exceed maximum, which required an additional cell for routing to all comments view
             if commentList.count > maxCommentNum {
-                return maxCommentNum + 2
+                return maxCommentNum + 1
             }
-            return commentList.count + 1
+            return commentList.count
         }
         // comment list has not been loaded yet or comment list is empty
-        return 1
+        return 0
     }
  
     // disable bounce on top edge
@@ -105,7 +105,7 @@ class DetailViewController: UITableViewController {
     // handle the transition to comment detail view
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView.cellForRow(at: indexPath)?.reuseIdentifier == Constants.commentTableCellReuseIdentifier {
-            performSegue(withIdentifier: commentDetailSegueIdentifier, sender: commentList?[indexPath.row - 1])
+            performSegue(withIdentifier: commentDetailSegueIdentifier, sender: commentList?[indexPath.row])
         }
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -132,7 +132,13 @@ class DetailViewController: UITableViewController {
     private func loadArtwork() {
         let artwork = DataManager.sharedInstance.selectedArtwork
         navigationItem.title = artwork?.title
+        tableView.reloadSections([0], with: .automatic)
         
+    }
+    
+    private func prepareCommentList() {
+        DataManager.sharedInstance.detailDelegate = self
+        DataManager.sharedInstance.updateCommentList()
     }
     
     
@@ -220,7 +226,7 @@ extension DetailViewController : DetailDelegate {
         } else {
             footerViewUpdate(loading: false, noComment: false)
         }
-        tableView.reloadData()
+        tableView.reloadSections([1], with: UITableViewRowAnimation.automatic)
         
         // propagate data if necessary
         if let delegate = commentListDelegate {
@@ -231,7 +237,7 @@ extension DetailViewController : DetailDelegate {
     func commentListWillReady() {
         commentList = nil
         footerViewUpdate(loading: true, noComment: false)
-        tableView.reloadData()
+        tableView.reloadSections([1], with: UITableViewRowAnimation.automatic)
     }
 
     func errorDidOccur(_ error: Error) {

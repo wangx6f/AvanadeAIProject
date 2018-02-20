@@ -74,6 +74,7 @@ final class DataManager {
     public func updateArtworkList(filter:GalleryFilter) {
         if let delegate = galleryDelegate {
             delegate.artworkListWillReady()
+            
             dataProvider.getArtworkList(token: getToken(), completion: { (artworkList, error) in
                 if error != nil {
                     delegate.errorDidOccur(error!)
@@ -84,7 +85,32 @@ final class DataManager {
         }
     }
     
-
+    public func updateCommentList() {
+        if let delegate = detailDelegate, let id = selectedArtwork?.id {
+            delegate.commentListWillReady()
+            dataProvider.getCommentList(token: getToken(), artworkId: id, completion: { (commentList, error) in
+                if error != nil {
+                    delegate.errorDidOccur(error!)
+                } else {
+                    delegate.commentListDidReady(commentList: commentList!.reversed())
+                }
+            })
+        }
+    }
+    
+    public func postComment(content:String?) {
+        if let delegate = detailDelegate, let id = selectedArtwork?.id {
+            dataProvider.postComment(token: getToken(), content: content, artworkId: id, completion: { (error) in
+                if error != nil {
+                    delegate.errorDidOccur(error!)
+                } else {
+                    self.updateCommentList()
+                }
+            })
+        }
+        
+        
+    }
     
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {
         dataProvider.getProfile(token: getToken(), completion: completion)
