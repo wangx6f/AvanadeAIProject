@@ -34,7 +34,10 @@ protocol BookmarkDelegate : NSObjectProtocol {
     func errorDidOccur(_ error:Error)
 }
 
+
 final class DataManager {
+    
+    // MARK: public property
     public static let sharedInstance = DataManager()
     
     weak public var galleryDelegate : GalleryDelegate?
@@ -45,9 +48,14 @@ final class DataManager {
     
     public var selectedArtwork : Artwork?
     
+    // MARK: private field
     private let dataProvider: DataProviderProtocol
+    
     private let TOKEN_KEYCHAIN_KEY = "token"
+    
     private let keychain : KeychainSwift
+    
+    private var searchEngine : SearchEngine?
     
     
     private init() {
@@ -80,6 +88,12 @@ final class DataManager {
                     delegate.errorDidOccur(error!)
                 } else {
                     delegate.artworkListDidReady(artworkList: self.filterArtworkList(artworkList: artworkList, filter: filter))
+                    // Also update the cached list in the search engine
+                    if self.searchEngine == nil {
+                        self.searchEngine = SearchEngine(token: self.getToken(), artworkList: artworkList)
+                    } else {
+                        self.searchEngine?.updateArtworkTable(artworkList: artworkList!)
+                    }
                 }
             })
         }
@@ -121,6 +135,28 @@ final class DataManager {
         }
     }
     
+    public func search(keyword:String,completion:@escaping DataProviderProtocol.artworkListCompletion) {
+        if searchEngine != nil {
+            completion(searchEngine?.search(keyword: keyword),nil)
+        }
+    }
+    
+    public func getSearchHistory(completion:@escaping DataProviderProtocol.artworkListCompletion) {
+        if searchEngine != nil {
+            completion(searchEngine?.getHistory(),nil)
+        }
+    }
+
+    public func addSearchHistory(artwork:Artwork) {
+        if searchEngine != nil {
+            searchEngine?.addHistory(artwork: artwork)
+        }
+    }
+    
+    public func clearSearchHistory() {
+        searchEngine?.clearHistory()
+    }
+    
     public func getProfile(completion: @escaping DataProviderProtocol.profileCompletion) {
         dataProvider.getProfile(token: getToken(), completion: completion)
     }
@@ -130,10 +166,11 @@ final class DataManager {
     }
     
     
-    // MARK: clear all cache
+    // todo: clear all cache
     public func logOut() {
         selectedArtwork = nil
         keychain.delete(TOKEN_KEYCHAIN_KEY)
+        searchEngine = nil
     }
     
     private func filterArtworkList(artworkList:[Artwork]?,filter:GalleryFilter) -> [Artwork] {

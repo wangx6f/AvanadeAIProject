@@ -7,8 +7,9 @@ PODS:
   - Eureka (4.0.1)
   - Gloss (2.0.0)
   - IQKeyboardManagerSwift (5.0.7)
+  - JWTDecode (2.1.1)
   - KeychainSwift (10.0.0)
-  - Kingfisher (4.6.1)
+  - Kingfisher (4.6.2)
   - LGButton (1.0.5)
   - MicrosoftAzureMobile (3.4.0)
   - SimpleImageViewer (1.1.1)
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - Eureka
   - Gloss (~> 2.0)
   - IQKeyboardManagerSwift
+  - JWTDecode (~> 2.1)
   - KeychainSwift (~> 10.0)
   - Kingfisher (~> 4.0)
   - LGButton
@@ -41,8 +43,9 @@ SPEC CHECKSUMS:
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   Gloss: b67617f327406adfd47adf20172d00680a3a31bd
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  JWTDecode: 83e8b381aafe27158d9f692cbdca2b12d61d460c
   KeychainSwift: f9f7910449a0c0fd2cabc889121530dd2c477c33
-  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
   MicrosoftAzureMobile: 82719f7f9e1e3389d5c2fe5f6be034c344004e12
   SimpleImageViewer: 34c3a2cde2d9ac022146772cefc27fca14b0c8b1
@@ -51,6 +54,6 @@ SPEC CHECKSUMS:
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   UIImageViewAlignedSwift: 2e09096e6081ad26b848e19b4bc35a7d69165740
 
-PODFILE CHECKSUM: adb175f524e4642c44c71c0af1056243b39701b1
+PODFILE CHECKSUM: 1669ee87cbd72d29534adcf11c286c50a3b82184
 
 COCOAPODS: 1.3.1

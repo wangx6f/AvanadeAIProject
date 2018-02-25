@@ -35,10 +35,14 @@ class Artwork : JSONDecodable {
 
     private var _author: String?
     static public let JSON_AUTHOR = "author"
-//    private var _voteCount: Int
+
 //    private var _isSaved: Bool
+//    private var _myRating: Int
+    
+//    private var _commentCount: Int
+//    private var _voteCount: Int
 //    private var _rating: Double
-//
+//    private var _ratingCount : Int
     var id: String? {
         get { return _id }
     }
