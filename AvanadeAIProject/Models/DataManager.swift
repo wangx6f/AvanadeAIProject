@@ -45,8 +45,7 @@ final class DataManager {
     weak public var detailDelegate : DetailDelegate?
     
     weak public var bookmarkDelegate : BookmarkDelegate?
-    
-    public var selectedArtwork : Artwork?
+
     
     // MARK: private field
     private let dataProvider: DataProviderProtocol
@@ -57,11 +56,26 @@ final class DataManager {
     
     private var searchEngine : SearchEngine?
     
+    private var _selectedArtwork : Artwork?
     
     private init() {
         dataProvider = AzureDataProvider();
         keychain = KeychainSwift();
     }
+    
+    public var selectedArtwork : Artwork? {
+        set {
+            _selectedArtwork = newValue
+            if _selectedArtwork == nil {
+                return
+            }
+            updateSelectedArtwork()
+
+        }
+        get {return _selectedArtwork}
+    }
+    
+    
     
     public func loginStatus() -> Bool {
         return getToken() != nil
@@ -95,6 +109,30 @@ final class DataManager {
                         self.searchEngine?.updateArtworkTable(artworkList: artworkList!)
                     }
                 }
+            })
+        }
+    }
+    
+    public func toggleBookmark() {
+        if let artwork = _selectedArtwork {
+            dataProvider.updateBookmark(token: getToken(), artworkId: artwork.id, newBookmarkState: artwork.bookmarked == nil ? nil : !artwork.bookmarked!, completion: { (error) in
+                if let error = error, let detailDelegate = self.detailDelegate {
+                    detailDelegate.errorDidOccur(error)
+                    return
+                }
+                self.updateSelectedArtwork()
+            })
+        }
+    }
+    
+    public func updateRating(newRating:Int) {
+        if let artwork = _selectedArtwork {
+            dataProvider.updateRating(token: getToken(), artworkId: artwork.id, newRating: newRating, completion: { (error) in
+                if let error = error, let detailDelegate = self.detailDelegate {
+                    detailDelegate.errorDidOccur(error)
+                    return
+                }
+                self.updateSelectedArtwork()
             })
         }
     }
@@ -169,13 +207,27 @@ final class DataManager {
     // todo: clear all cache
     public func logOut() {
         selectedArtwork = nil
-        keychain.delete(TOKEN_KEYCHAIN_KEY)
         searchEngine = nil
+        keychain.delete(TOKEN_KEYCHAIN_KEY)
+
     }
     
     private func filterArtworkList(artworkList:[Artwork]?,filter:GalleryFilter) -> [Artwork] {
         // TODO : do filtering here
         return artworkList!
+    }
+    
+    private func updateSelectedArtwork() {
+        dataProvider.getArtwork(token: getToken(), artworkId: selectedArtwork?.id) { (artwork, error) in
+            if let error = error, let detailDelegate = self.detailDelegate {
+                detailDelegate.errorDidOccur(error)
+                return
+            }
+            self._selectedArtwork = artwork
+            if let detailDelegate = self.detailDelegate {
+                detailDelegate.refreshArtwork()
+            }
+        }
     }
     
     private func getToken() -> String? {

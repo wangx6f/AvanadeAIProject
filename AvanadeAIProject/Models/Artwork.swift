@@ -35,14 +35,25 @@ class Artwork : JSONDecodable {
 
     private var _author: String?
     static public let JSON_AUTHOR = "author"
-
-//    private var _isSaved: Bool
-//    private var _myRating: Int
     
-//    private var _commentCount: Int
-//    private var _voteCount: Int
-//    private var _rating: Double
-//    private var _ratingCount : Int
+    private var _rating : Float?
+    static public let JSON_RATING = "rating"
+    
+    private var _ratingCount : Int?
+    static public let JSON_RATING_COUNT = "ratingCount"
+    
+    private var _commentCount : Int?
+    static public let JSON_COMMENT_COUNT = "commentCount"
+    
+    private var _viewCount : Int?
+    static public let JSON_VIEW_COUNT = "viewCount"
+    
+    private var _bookmarked : Bool?
+    static public let JSON_BOOKMARKED = "isBookmarked"
+    
+    private var _curRating : Int?
+    static public let JSON_CUR_RATING = "myRating"
+
     var id: String? {
         get { return _id }
     }
@@ -75,15 +86,29 @@ class Artwork : JSONDecodable {
         get { return _author }
     }
     
-//    var voteCount: Int {
-//        get { return _voteCount }
-//    }
-//    var isSaved: Bool {
-//        get { return _isSaved }
-//    }
-//    var rating: Double {
-//        get { return _rating }
-//    }
+    var rateCount: Int? {
+        get { return _ratingCount }
+    }
+    
+    var rating: Float? {
+        get { return _rating }
+    }
+    
+    var commentCount: Int? {
+        get { return _commentCount }
+    }
+    
+    var viewCount : Int? {
+        get {return _viewCount}
+    }
+    
+    var bookmarked : Bool? {
+        get {return _bookmarked}
+    }
+    
+    var curRating : Int? {
+        get {return _curRating}
+    }
     
     required init?(json: JSON) {
         _id = Artwork.JSON_ID <~~ json
@@ -94,8 +119,13 @@ class Artwork : JSONDecodable {
         _sourceImageURL = Artwork.JSON_SOURCE_URL <~~ json
         _afterImageURL = Artwork.JSON_AFTER_URL <~~ json
         _author = Artwork.JSON_AUTHOR <~~ json
-        
-        
+        _ratingCount = Artwork.JSON_RATING_COUNT <~~ json
+        _rating = Artwork.JSON_RATING <~~ json
+        _commentCount = Artwork.JSON_COMMENT_COUNT <~~ json
+        _viewCount = Artwork.JSON_VIEW_COUNT <~~ json
+        _bookmarked = Artwork.JSON_BOOKMARKED <~~ json
+        _curRating = Artwork.JSON_CUR_RATING <~~ json
+    
     }
     
 }

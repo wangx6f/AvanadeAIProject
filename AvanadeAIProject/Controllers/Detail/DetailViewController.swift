@@ -32,8 +32,9 @@ class DetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
+        DataManager.sharedInstance.detailDelegate = self
         loadArtwork()
-        prepareCommentList()
+        DataManager.sharedInstance.updateCommentList()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -130,17 +131,9 @@ class DetailViewController: UITableViewController {
     }
     
     private func loadArtwork() {
-        let artwork = DataManager.sharedInstance.selectedArtwork
-        navigationItem.title = artwork?.title
-        tableView.reloadSections([0], with: .automatic)
-        
+        navigationItem.title = DataManager.sharedInstance.selectedArtwork?.title
+        tableView.reloadSections([0], with: .none)
     }
-    
-    private func prepareCommentList() {
-        DataManager.sharedInstance.detailDelegate = self
-        DataManager.sharedInstance.updateCommentList()
-    }
-    
     
     private func constructDetailCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
@@ -182,8 +175,7 @@ extension DetailViewController : DetailTableCellDelegate {
     
         alert.setValue(attributedString, forKey: "attributedTitle")
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
-            updateButtonsState(score)
-            //TODO: update database
+            DataManager.sharedInstance.updateRating(newRating: score)
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
         present(alert, animated: true, completion: nil)
@@ -195,8 +187,7 @@ extension DetailViewController : DetailTableCellDelegate {
     }
     
     func didPressBookmark(updateButtonState: (Bool) -> Void) {
-        //TODO: update database for bookmark
-        updateButtonState(true)
+        DataManager.sharedInstance.toggleBookmark()
     }
     
     private func getRateAlertMessage(_ score:Int) -> String {
@@ -208,7 +199,6 @@ extension DetailViewController : DetailTableCellDelegate {
                 stars.append("☆")
             }
         }
-
         return "Rate \"" + navigationItem.title! + "\" with " + stars
     }
 }

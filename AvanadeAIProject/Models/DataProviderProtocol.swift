@@ -27,11 +27,18 @@ protocol DataProviderProtocol {
     
     func deleteComment(token:String?,commentId:String?,completion:@escaping errorHandler)
     
+    func getArtwork(token:String?,artworkId:String?,completion:@escaping artworkCompletion)
+    
+    func updateBookmark(token:String?,artworkId:String?,newBookmarkState:Bool?,completion:@escaping errorHandler)
+    
+    func updateRating(token:String?,artworkId:String?,newRating:Int?,completion:@escaping errorHandler)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
     typealias artworkListCompletion = ([Artwork]?,Error?)->Void
     typealias errorHandler = (Error?)->Void
     typealias commentListCompletion = ([Comment]?,Error?)->Void
+    typealias artworkCompletion = (Artwork?,Error?)->Void
 
 }
 

@@ -12,10 +12,6 @@ import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
 
-    
-    
-    
-
     private var client: MSClient?
     
     init(){
@@ -49,7 +45,6 @@ class AzureDataProvider : DataProviderProtocol {
             }
             
             if response?.statusCode != 200 {
-                
                 completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
                 return
             }
@@ -82,6 +77,32 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
+    func getArtwork(token: String?, artworkId: String?, completion: @escaping DataProviderProtocol.artworkCompletion) {
+        client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: ["artworkId":artworkId!], headers: generateHeader(token), completion: { (result, response, error) in
+            if response == nil {
+                completion(nil,error)
+                return
+            }
+            if response?.statusCode != 200 {
+                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            completion(Artwork(json: result as! JSON),nil)
+        })
+    }
+    
+    func updateBookmark(token: String?, artworkId: String?, newBookmarkState: Bool?, completion: @escaping DataProviderProtocol.errorHandler) {
+        client?.invokeAPI("bookmark", body: ["artworkId":artworkId!,"isBookmarked":newBookmarkState!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
+    
+    func updateRating(token: String?, artworkId: String?, newRating: Int?, completion: @escaping DataProviderProtocol.errorHandler) {
+        client?.invokeAPI("rating", body: ["artworkId":artworkId!,"rating":newRating!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
+    
     func getCommentList(token:String?,artworkId: String?, completion: @escaping commentListCompletion) {
         client?.invokeAPI("comments", body: nil, httpMethod: "GET", parameters: ["artworkId":artworkId!], headers: generateHeader(token), completion: { (result, response, error) in
             if response == nil {
@@ -111,6 +132,8 @@ class AzureDataProvider : DataProviderProtocol {
                 self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
+
+    
     
     private func generateHeader(_ token:String?) -> [AnyHashable:Any]? {
         return token == nil ? nil : ["Authorization":"Bearer "+token!]

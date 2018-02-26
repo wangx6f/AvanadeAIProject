@@ -9,6 +9,7 @@
 import UIKit
 import SimpleImageViewer
 import Kingfisher
+import Cosmos
 
 protocol DetailTableCellDelegate {
     func didPressImage(viewController:UIViewController)
@@ -30,13 +31,13 @@ class DetailTableCell: UITableViewCell {
     
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var rateCountLabel: UILabel!
     
+    @IBOutlet weak var ratingStarView: CosmosView!
     override func awakeFromNib() {
         super.awakeFromNib()
         configImageTapGestureRecognizer()
-        
-        //TODO: for testing purpose
-        changeBookmarkState(false)
+        setImageRatio(CGFloat(0.5))
     }
     
     public func loadArtwork(_ artwork:Artwork?) {
@@ -50,6 +51,15 @@ class DetailTableCell: UITableViewCell {
                 self.artworkImageView.loadImage(after: image)
             }
             descriptionTextView.text = artwork.description
+            let rateLiteral = artwork.rateCount == nil || artwork.rateCount == 0 || artwork.rateCount == 1 ? "rate" : "rates"
+            rateCountLabel.text = artwork.rateCount == nil ? "" : "\(artwork.rateCount!) \(rateLiteral)"
+            ratingStarView.rating = Double(artwork.rating ?? 0)
+            if let bookmarked = artwork.bookmarked {
+                changeBookmarkState(bookmarked)
+            }
+            if let curRating = artwork.curRating {
+                changeRatingStarButtonsState(curRating)
+            }
         }
     }
     

@@ -28,6 +28,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-79-0aS" customClass="DetailImageView" customModule="AvanadeAIProject" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="364" height="401.5"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7W-3g-rVe" userLabel="Info Section Container">
@@ -66,25 +67,24 @@
                                             <constraint firstAttribute="width" secondItem="Nre-8z-IWt" secondAttribute="height" multiplier="1:1" id="H4s-ap-Vui"/>
                                         </constraints>
                                         <color key="tintColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="BookmarkIcon"/>
                                         <connections>
                                             <action selector="bookmarkOnPressed:" destination="Taf-aA-oX5" eventType="touchUpInside" id="0L4-Yc-STj"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8av-GE-2NW">
-                                        <rect key="frame" x="18" y="9" width="294" height="39.5"/>
+                                        <rect key="frame" x="18" y="-6" width="294" height="69.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUTHOR NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-Q7-ZRe" userLabel="Author Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCN-Q7-ZRe" userLabel="Author Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="294" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-cK-07A">
-                                                <rect key="frame" x="0.0" y="19.5" width="294" height="20"/>
+                                                <rect key="frame" x="0.0" y="19.5" width="294" height="50"/>
                                                 <subviews>
                                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-q3-ND3" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
                                                                 <integer key="value" value="2"/>
@@ -92,10 +92,13 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
                                                                 <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-6g-5zz">
-                                                        <rect key="frame" x="147" y="0.0" width="147" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9S-6g-5zz">
+                                                        <rect key="frame" x="147" y="0.0" width="147" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -126,7 +129,7 @@
                             <constraint firstItem="8av-GE-2NW" firstAttribute="leading" secondItem="H3C-Dm-EWN" secondAttribute="leading" id="qeK-Cd-zoL"/>
                         </constraints>
                     </view>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Description" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-81-PE0" userLabel="Description View">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-81-PE0" userLabel="Description View">
                         <rect key="frame" x="18" y="499" width="328" height="34"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -212,6 +215,8 @@
                 <outlet property="authorLabel" destination="gCN-Q7-ZRe" id="Qeu-jn-Z43"/>
                 <outlet property="bookmarkButton" destination="Nre-8z-IWt" id="MsU-Hh-Ry7"/>
                 <outlet property="descriptionTextView" destination="zCL-81-PE0" id="3Ws-2M-ONz"/>
+                <outlet property="rateCountLabel" destination="e9S-6g-5zz" id="pXe-Ec-faH"/>
+                <outlet property="ratingStarView" destination="Js1-q3-ND3" id="cxF-Yh-4FV"/>
                 <outletCollection property="ratingStarButtons" destination="K1J-5g-iFd" collectionClass="NSMutableArray" id="XZm-up-5j2"/>
                 <outletCollection property="ratingStarButtons" destination="0tf-wG-nHa" collectionClass="NSMutableArray" id="hz9-FO-1KC"/>
                 <outletCollection property="ratingStarButtons" destination="zbn-WF-Pxe" collectionClass="NSMutableArray" id="uPL-ln-0hG"/>
@@ -221,7 +226,4 @@
             <point key="canvasLocation" x="250" y="-33"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="BookmarkIcon" width="25" height="25"/>
-    </resources>
 </document>

@@ -66,9 +66,14 @@ class GalleryViewController: UICollectionViewController {
         // TODO: load each individual image with its data to a cell
         let artwork = artworkList[indexPath.row]
         let cell : ImageCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionCellReuseIdentifier, for: indexPath) as! ImageCollectionCell
-        cell.numOfCommentLabel.text = "\(indexPath.row*100)"
-        cell.numOfViewLabel.text = "\(indexPath.row*10)"
-        cell.ratingView.rating = Double(indexPath.row)/5.0
+        cell.numOfCommentLabel.text = artwork.commentCount == nil ? "" : String(describing: artwork.commentCount!)
+        if artwork.rating != nil && artwork.rating != 0 {
+            cell.ratingView.isHidden = false
+            cell.ratingView.rating = Double(artwork.rating!)
+        } else {
+            cell.ratingView.isHidden = true
+        }
+        cell.numOfViewLabel.text = artwork.viewCount == nil ? "" : String(describing:artwork.viewCount!)
         cell.imageView.kf.indicatorType = .activity
         cell.imageView.kf.setImage(with:URL(string:artwork.afterImageURL!))
         return cell
