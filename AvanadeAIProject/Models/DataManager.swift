@@ -213,8 +213,37 @@ final class DataManager {
     }
     
     private func filterArtworkList(artworkList:[Artwork]?,filter:GalleryFilter) -> [Artwork] {
-        // TODO : do filtering here
-        return artworkList!
+        if artworkList == nil {
+            return []
+        }
+        switch filter.getSelectedSortOption() {
+        case .hottest:
+            return artworkList!.sorted(by: { (a1, a2) -> Bool in
+                if let c1 = a1.viewCount, let c2 = a2.viewCount {
+                    return c1 > c2
+                } else {
+                    return false
+                }
+            })
+        case .best_rated:
+            return artworkList!.sorted(by: { (a1, a2) -> Bool in
+                if let c1 = a1.rating, let c2 = a2.rating {
+                    return c1 > c2
+                } else {
+                    return false
+                }
+            })
+        case .most_rated:
+            return artworkList!.sorted(by: { (a1, a2) -> Bool in
+                if let c1 = a1.rateCount, let c2 = a2.rateCount {
+                    return c1 > c2
+                } else {
+                    return false
+                }
+            })
+        case .most_recent:
+            return artworkList!.reversed()
+        }
     }
     
     private func updateSelectedArtwork() {

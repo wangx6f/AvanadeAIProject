@@ -37,7 +37,6 @@ class DetailTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configImageTapGestureRecognizer()
-        setImageRatio(CGFloat(0.5))
     }
     
     public func loadArtwork(_ artwork:Artwork?) {

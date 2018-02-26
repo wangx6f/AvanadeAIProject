@@ -23,44 +23,36 @@ enum SortOptions : String {
     static let count = 4
 }
 
-enum GenreOptions : String {
-    case all,landscape,abstract,portrait,still_life
-    init?(tag: Int) {
-        switch tag {
-        case 1: self = .all
-        case 2: self = .landscape
-        case 3: self = .abstract
-        case 4: self = .portrait
-        case 5: self = .still_life
-        default: return nil
-        }
-    }
-    
-    static let count = 5
-}
+//enum GenreOptions : String {
+//    case all,landscape,abstract,portrait,still_life
+//    init?(tag: Int) {
+//        switch tag {
+//        case 1: self = .all
+//        case 2: self = .landscape
+//        case 3: self = .abstract
+//        case 4: self = .portrait
+//        case 5: self = .still_life
+//        default: return nil
+//        }
+//    }
+//
+//    static let count = 5
+//}
 
 
 struct GalleryFilter {
     
     public var selectedSortTag : Int = 1
-    public var selectedGenreTag : Int = 1
+
     
     public func getSelectedSortOption()->SortOptions {
         return SortOptions(tag: selectedSortTag)!
     }
     
-    public func getSelectedGenreOption() -> GenreOptions {
-        return GenreOptions(tag: selectedGenreTag)!
-    }
+//    public var selectedGenreTag : Int = 1
+//    public func getSelectedGenreOption() -> GenreOptions {
+//        return GenreOptions(tag: selectedGenreTag)!
+//    }
 }
 
-extension GalleryFilter : CustomDebugStringConvertible {
-    var debugDescription: String {
-        let sort = getSelectedSortOption().rawValue
-        let genre = getSelectedGenreOption().rawValue
-        return "GalleryFilter(selectedSort: "+sort+", selectedGenre: "+genre+")"
-    }
-    
-    
-}
 

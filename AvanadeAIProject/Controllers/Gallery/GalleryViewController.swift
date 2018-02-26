@@ -104,7 +104,6 @@ extension GalleryViewController : FilterDelegate {
     
     func filterUpdated(newFilter: GalleryFilter) {
         filter = newFilter
-        print(filter)
     }
 }
 

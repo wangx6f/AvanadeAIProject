@@ -20,7 +20,6 @@ class FilterViewController: UIViewController {
     var filterDelegate : FilterDelegate?
     
     @IBOutlet weak var sortOptionContainer: UIView!
-    @IBOutlet weak var genreOptionContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,14 +48,9 @@ class FilterViewController: UIViewController {
         updateUI()
     }
     
-    @IBAction func onGenrePressed(_ sender: LGButton) {
-        filter.selectedGenreTag = sender.tag
-        updateUI()
-    }
     
     private func updateUI() {
         updateButtonGroup(groupContainer: sortOptionContainer, curTag: filter.selectedSortTag, optionCount: SortOptions.count)
-        updateButtonGroup(groupContainer: genreOptionContainer, curTag: filter.selectedGenreTag, optionCount: GenreOptions.count)
     }
     
     // assuming the tag of the button map to the index + 1 of the options array
