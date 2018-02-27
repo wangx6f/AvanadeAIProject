@@ -113,6 +113,19 @@ final class DataManager {
         }
     }
     
+    public func updateBookmarkList() {
+        if let delegate = bookmarkDelegate {
+            delegate.bookmarkListWillReady()
+            dataProvider.getBookmarkList(token: getToken(), completion: { (artworkList, error) in
+                if error != nil {
+                    delegate.errorDidOccur(error!)
+                } else {
+                    delegate.bookmarkListDidReady(bookmarkList: artworkList!)
+                }
+            })
+        }
+    }
+    
     public func toggleBookmark() {
         if let artwork = _selectedArtwork {
             dataProvider.updateBookmark(token: getToken(), artworkId: artwork.id, newBookmarkState: artwork.bookmarked == nil ? nil : !artwork.bookmarked!, completion: { (error) in

@@ -23,8 +23,7 @@ class AzureDataProvider : DataProviderProtocol {
     
     func login(email: String, password: String, completion: @escaping authCompletion) {
         client?.invokeAPI("auth", body: ["email":email,"password":password], httpMethod: "POST", parameters: nil, headers: nil, completion: { (result, response, error) in
-            self.authResponseHandler(result: result, response: response, error: error, completion: completion)
-            
+            self.authResponseHandler(result: result, response: response, error: error, completion: completion)   
         })
     }
     
@@ -61,19 +60,7 @@ class AzureDataProvider : DataProviderProtocol {
     
     func getArtworkList(token: String?, completion: @escaping artworkListCompletion) {
         client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
-            if response == nil {
-                completion(nil,error)
-                return
-            }
-            if response?.statusCode != 200 {
-                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
-                return
-            }
-            var artworkList = [Artwork]()
-            for artwork in result as! NSArray {
-                artworkList.append(Artwork(json: artwork as! JSON)!)
-            }
-            completion(artworkList,nil)
+            self.artworkListResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
     
@@ -132,6 +119,12 @@ class AzureDataProvider : DataProviderProtocol {
                 self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
+    
+    func getBookmarkList(token: String?, completion: @escaping DataProviderProtocol.artworkListCompletion) {
+        client?.invokeAPI("bookmark", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+            self.artworkListResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
 
     
     
@@ -139,6 +132,21 @@ class AzureDataProvider : DataProviderProtocol {
         return token == nil ? nil : ["Authorization":"Bearer "+token!]
     }
     
+    private func artworkListResponseHandler(result:Any?, response:HTTPURLResponse?, error:Error?, completion:artworkListCompletion) {
+        if response == nil {
+            completion(nil,error)
+            return
+        }
+        if response?.statusCode != 200 {
+            completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+            return
+        }
+        var artworkList = [Artwork]()
+        for artwork in result as! NSArray {
+            artworkList.append(Artwork(json: artwork as! JSON)!)
+        }
+        completion(artworkList,nil)
+    }
     
     private func authResponseHandler(result:Any?, response:HTTPURLResponse?, error:Error?, completion:authCompletion) {
         

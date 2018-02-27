@@ -33,6 +33,8 @@ protocol DataProviderProtocol {
     
     func updateRating(token:String?,artworkId:String?,newRating:Int?,completion:@escaping errorHandler)
     
+    func getBookmarkList(token:String?,completion:@escaping artworkListCompletion)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
     typealias artworkListCompletion = ([Artwork]?,Error?)->Void

@@ -19,7 +19,6 @@ class GalleryViewController: UICollectionViewController {
     private let filterSegueIdentifier = "goToFilter"
     private let collectionViewSectionInset = UIEdgeInsets(top: CGFloat(10), left: CGFloat(10), bottom: CGFloat(10), right: CGFloat(10))
     private var filter = GalleryFilter()
-    
     private var artworkList = [Artwork]()
     
     // MARK: override methods
@@ -57,13 +56,11 @@ class GalleryViewController: UICollectionViewController {
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // TODO: get the total number of collection cells from database
         return artworkList.count
         
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // TODO: load each individual image with its data to a cell
         let artwork = artworkList[indexPath.row]
         let cell : ImageCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionCellReuseIdentifier, for: indexPath) as! ImageCollectionCell
         cell.numOfCommentLabel.text = artwork.commentCount == nil ? "" : String(describing: artwork.commentCount!)
@@ -93,7 +90,6 @@ class GalleryViewController: UICollectionViewController {
 //MARK: - Extension for UICollectionViewDelegate
 extension GalleryViewController : CHTCollectionViewDelegateWaterfallLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        // TODO: calculate the size of the cell base on ratio of the image
         let artwork = artworkList[indexPath.row]
         return CGSize(width: CGFloat(artwork.width!), height: CGFloat(artwork.height!))
     }

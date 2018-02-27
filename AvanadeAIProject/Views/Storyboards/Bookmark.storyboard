@@ -48,9 +48,7 @@
                             <outlet property="delegate" destination="tq1-4b-ufp" id="pmt-Td-Yuh"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Saved" id="2Gy-Al-Usj">
-                        <barButtonItem key="rightBarButtonItem" title="Select" id="Xpb-Ya-rwP"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Saved" id="2Gy-Al-Usj"/>
                     <connections>
                         <segue destination="Fxx-hj-8fP" kind="presentation" identifier="goToDetail" id="QH5-SR-mSF"/>
                     </connections>
