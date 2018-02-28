@@ -15,7 +15,7 @@ class SearchEngine {
     
     private var artworkTable : [String:Artwork]?
     
-    private var searchHistory : [String]?
+    private var searchHistory : Set<String>?
     
 
     
@@ -23,7 +23,9 @@ class SearchEngine {
         do {
             userId = try decode(jwt: token!).claim(name: "id").string!
             updateArtworkTable(artworkList: artworkList!)
-            searchHistory = UserDefaults.standard.array(forKey: userId) as? [String]
+            if let historyList = UserDefaults.standard.array(forKey: userId) as! [String]? {
+                searchHistory = Set(historyList)
+            }
         } catch {
             return nil
         }
@@ -38,10 +40,10 @@ class SearchEngine {
     
     public func addHistory(artwork:Artwork) {
         if searchHistory == nil {
-            searchHistory = [String]()
+            searchHistory = Set()
         }
-        searchHistory?.append(artwork.id!)
-        UserDefaults.standard.set(searchHistory,forKey:userId)
+        searchHistory?.insert(artwork.id!)
+        UserDefaults.standard.set(Array(searchHistory!),forKey:userId)
     }
     
     public func getHistory() -> [Artwork] {
@@ -57,7 +59,7 @@ class SearchEngine {
     public func clearHistory() {
         if searchHistory != nil {
             searchHistory?.removeAll()
-            UserDefaults.standard.set(searchHistory,forKey:userId)
+            UserDefaults.standard.set(Array(searchHistory!),forKey:userId)
         }
     }
     

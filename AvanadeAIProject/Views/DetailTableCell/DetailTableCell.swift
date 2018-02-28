@@ -41,7 +41,7 @@ class DetailTableCell: UITableViewCell {
     
     public func loadArtwork(_ artwork:Artwork?) {
         if let artwork = artwork {
-            authorLabel.text = artwork.author
+            
             setImageRatio(CGFloat(artwork.height!/artwork.width!))
             loadImageAsync(url: artwork.sourceImageURL!) { (image) in
                 self.artworkImageView.loadImage(before: image)
@@ -49,6 +49,18 @@ class DetailTableCell: UITableViewCell {
             loadImageAsync(url: artwork.afterImageURL!) { (image) in
                 self.artworkImageView.loadImage(after: image)
             }
+            refreshArtwork(artwork)
+            
+        }
+    }
+    
+    public func resume() {
+        artworkImageView.refresh()
+    }
+   
+    public func refreshArtwork(_ artwork:Artwork?) {
+        if let artwork = artwork {
+            authorLabel.text = artwork.author
             descriptionTextView.text = artwork.description
             let rateLiteral = artwork.rateCount == nil || artwork.rateCount == 0 || artwork.rateCount == 1 ? "rate" : "rates"
             rateCountLabel.text = artwork.rateCount == nil ? "" : "\(artwork.rateCount!) \(rateLiteral)"

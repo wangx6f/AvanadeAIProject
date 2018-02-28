@@ -16,32 +16,24 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var table: UITableView!
     
     private let detailSegueIdentifier = "goToDetail"
-    //var imagesArray = [Images]()
-    //var currentImageArray = [Images]()
     
     var artworkList = [Artwork]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //setUpImages()
         setUpSearchBar()
     }
     
-    private func setUpImages(name: String, image: String) {
-        //imagesArray.append(Images(name: "The Great Wave", image:"1"))
-        //imagesArray.append(Images(name: "Hollywood", image:"2"))
-        //imagesArray.append(Images(name: "Starry Night", image:"3"))
-        
-        //currentImageArray = imagesArray
-        
-        //artworkList.append(Images(name: artworkList[0].title! , image: artworkList[0].afterImageURL! ))
-        
-        
+    override func viewDidAppear(_ animated: Bool) {
+        updateList(searchText: searchBar.text!)
     }
     
     private func setUpSearchBar() {
         searchBar.delegate = self
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,26 +42,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataManager.sharedInstance.selectedArtwork = artworkList[indexPath.row]
-        
         DataManager.sharedInstance.addSearchHistory(artwork: artworkList[indexPath.row])
-
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: detailSegueIdentifier, sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let artwork = artworkList[indexPath.row]
-
         guard let cell: SearchViewTableCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? SearchViewTableCell
             else {
-                //artworkList.append(Images(name: artwork.title , image: artwork.afterImageURL))
             return UITableViewCell()
             }
-        
-        
         cell.nameLabel.text = artwork.title == nil ? "" : String(describing:artwork.title!)
         cell.imagesView?.kf.indicatorType = .activity
         cell.imagesView?.kf.setImage(with:URL(string:artwork.afterImageURL!))
-        //cell.imagesView.image = [UIImage, artwork.afterImageURL,:theURL];
         return cell
     }
     
@@ -78,41 +64,29 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard !searchText.isEmpty else {
-            //artworkList = artworkList
+        updateList(searchText: searchText)
+    }
+    
+    private func updateList(searchText: String) {
+        if !searchText.isEmpty {
             DataManager.sharedInstance.search(keyword: searchText, completion: { (artworkList, error) in
                 if (!self.handleError(error)) {
-                self.artworkList = artworkList!
-                
-                self.table.reloadData()
+                    self.artworkList = artworkList!
+                    self.table.reloadData()
                 }
             })
-            
-            return
-            
+        } else {
+            displaySearchHistory()
         }
-        
-        artworkList = artworkList.filter({ images -> Bool in
-            (images.title?.lowercased().contains(searchText.lowercased()))!})
-        table.reloadData()
     }
     
-    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
+    
+    private func displaySearchHistory() {
         DataManager.sharedInstance.getSearchHistory { (artworkList, error) in
-        self.handleError(error)
-        }
-
-    }
-    
-    
-    
-    
-    class Images {
-        let name: String
-        let image: String
-        init(name: String, image: String) {
-            self.name = name;
-            self.image = image;
+            if !self.handleError(error) {
+                self.artworkList = artworkList!
+                self.table.reloadData()
+            }
         }
     }
     

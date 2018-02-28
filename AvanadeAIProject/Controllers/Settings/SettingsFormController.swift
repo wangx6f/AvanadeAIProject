@@ -100,7 +100,9 @@ class SettingsFormController: FormViewController {
         form +++ ButtonRow() { row in
                 row.title = "Clear Search History"
                 row.onCellSelection({ _,_ in
-                    // TODO: do necessary operation to clear the search history
+                    DataManager.sharedInstance.clearSearchHistory()
+                    self.view.makeToast("Done!")
+                    
                 })
         }
         

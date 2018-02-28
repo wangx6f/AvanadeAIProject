@@ -14,7 +14,7 @@ enum DisplayMode {
 
 class DetailImageView: UIImageView,CAAnimationDelegate{
     
-    private let duration = CFTimeInterval(exactly: 5.0)
+    private let duration = CFTimeInterval(exactly: 4.0)
     
     private var beforeImage: CGImage?
     
@@ -66,6 +66,9 @@ class DetailImageView: UIImageView,CAAnimationDelegate{
         }
     }
     
+    public func refresh() {
+        switchDisplay(mode: currentMode)
+    }
     
     private func setup(){
         switchDisplay(mode: currentMode)

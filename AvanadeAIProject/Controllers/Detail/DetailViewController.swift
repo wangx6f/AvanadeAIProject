@@ -33,9 +33,16 @@ class DetailViewController: UITableViewController {
         super.viewDidLoad()
         configTableView()
         DataManager.sharedInstance.detailDelegate = self
-        loadArtwork()
+        navigationItem.title = DataManager.sharedInstance.selectedArtwork?.title
         DataManager.sharedInstance.updateCommentList()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let detailCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? DetailTableCell {
+            detailCell.resume()
+        }
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
@@ -130,10 +137,6 @@ class DetailViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
-    private func loadArtwork() {
-        navigationItem.title = DataManager.sharedInstance.selectedArtwork?.title
-        tableView.reloadSections([0], with: .none)
-    }
     
     private func constructDetailCell() -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.detailTableCellReuseIdentifier) as! DetailTableCell
@@ -206,7 +209,9 @@ extension DetailViewController : DetailTableCellDelegate {
 
 extension DetailViewController : DetailDelegate {
     func refreshArtwork() {
-        loadArtwork()
+        if let detailCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? DetailTableCell {
+            detailCell.refreshArtwork(DataManager.sharedInstance.selectedArtwork)
+        }
     }
     
     func commentListDidReady(commentList: [Comment]) {
