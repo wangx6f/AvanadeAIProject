@@ -65,46 +65,117 @@
             <objects>
                 <viewController title="About" id="uuA-l6-lhk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y9t-to-As4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1236"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yiq-8z-6pw">
-                                <rect key="frame" x="157" y="20" width="60" height="60"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-5H-fte">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1236"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSl-5K-qHy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yiq-8z-6pw">
+                                                <rect key="frame" x="157" y="16" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yiq-8z-6pw" secondAttribute="height" multiplier="1:1" id="TZA-3B-9UB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="guB-d8-mTQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art Machina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-y3-BaG">
+                                                <rect key="frame" x="141" y="100" width="93" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-Xa-Fd3">
+                                                <rect key="frame" x="37" y="145" width="300" height="1202.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">Participants:
+
+Davis DeFontes - Lead AI Developer
+Davis led the development and modification of the neural network that was responsible for the creation of the Art Machina images.
+
+Kati Savolainen - Art Expert and Guide
+Kati provided oversight and expert direction in the adjustments required to create the resulting high quality images. 
+
+Jukka Paajanen - Innovation and Event Lead
+Jukka was responsible for the actual creation and ideation of this event and directed the entire team.
+
+Sania Bishnoi - Operations Lead
+Sania was responsible for the timely completion of the project deliverables, organization of the event, and led the mobile development team.
+
+Junda Lou - AI Art Developer
+Junda worked with Davis and the team of AI developers to understand and modify the neural network to produce the final images.
+
+Thong H. Pham - AI Art Developer
+Thong worked with Davis and the team of AI developers to understand and modify the neural network to produce the final images.
+
+Yekun Yang - AI Art Developer
+Yekun worked with Davis and the team of AI developers to understand and modify the neural network to produce the final images.
+
+Tim DenOuden - Mobile App Engineer
+Tim worked with his team of App Engineers to develop the official Art Machina App through which users can interact with the exhibits.
+
+Jason Kim - Mobile App Engineer
+Jason worked with his team of App Engineers to develop the official Art Machina App through which users can interact with the exhibits.
+
+Xinyuan Wang - Mobile App Engineer
+Xinyuan worked with his team of App Engineers to develop the official Art Machina App through which users can interact with the exhibits.
+
+Sonya Zhang - Cal Poly Pomona Liason
+Sonya acted as the main point of contact between Avanade and CPP, ensuring the successful collaboration between the two groups.
+
+Ron Pike - Cal Poly Pomona Liason
+Ron was critical in the acquisition of the space at CPP through which the entire event was dependent upon.
+
+Jenny Sax - Marketing Lead
+Jenny led the projects marketing efforts and directed the distribution of promotional materials.</mutableString>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="e3V-y3-BaG" firstAttribute="centerX" secondItem="BSl-5K-qHy" secondAttribute="centerX" id="0qi-HF-3p9"/>
+                                            <constraint firstItem="yiq-8z-6pw" firstAttribute="centerX" secondItem="BSl-5K-qHy" secondAttribute="centerX" id="I1O-BM-mi9"/>
+                                            <constraint firstItem="e3V-y3-BaG" firstAttribute="top" secondItem="yiq-8z-6pw" secondAttribute="bottom" constant="24" id="LIP-7L-Htm"/>
+                                            <constraint firstItem="yiq-8z-6pw" firstAttribute="top" secondItem="BSl-5K-qHy" secondAttribute="top" constant="16" id="NBG-CH-UaM"/>
+                                            <constraint firstAttribute="height" constant="1300" id="eIn-fv-uXt"/>
+                                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="centerX" secondItem="BSl-5K-qHy" secondAttribute="centerX" id="oIn-Fu-gMm"/>
+                                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="top" secondItem="e3V-y3-BaG" secondAttribute="bottom" constant="24" id="tBR-rv-bRh"/>
+                                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="width" secondItem="BSl-5K-qHy" secondAttribute="width" multiplier="0.8" id="xC3-76-UHz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="yiq-8z-6pw" secondAttribute="height" multiplier="1:1" id="TZA-3B-9UB"/>
-                                    <constraint firstAttribute="height" constant="60" id="guB-d8-mTQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="BSl-5K-qHy" secondAttribute="bottom" id="6bW-KA-nWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="BSl-5K-qHy" secondAttribute="trailing" id="ifR-61-yhP"/>
+                                    <constraint firstItem="BSl-5K-qHy" firstAttribute="top" secondItem="VYB-5H-fte" secondAttribute="top" id="kAq-4r-9Aj"/>
+                                    <constraint firstItem="BSl-5K-qHy" firstAttribute="leading" secondItem="VYB-5H-fte" secondAttribute="leading" id="spo-0d-4cI"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AvanadeAIProject 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-y3-BaG">
-                                <rect key="frame" x="107" y="100" width="161" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Say something about our project and team." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-Xa-Fd3">
-                                <rect key="frame" x="37.5" y="121" width="300" height="33"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="375" height="1500"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="top" secondItem="e3V-y3-BaG" secondAttribute="bottom" id="3zE-8b-O0E"/>
-                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="centerX" secondItem="y9t-to-As4" secondAttribute="centerX" id="9xe-Ce-J1g"/>
-                            <constraint firstItem="e3V-y3-BaG" firstAttribute="top" secondItem="yiq-8z-6pw" secondAttribute="bottom" constant="20" id="DYR-KI-YW8"/>
-                            <constraint firstItem="yiq-8z-6pw" firstAttribute="top" secondItem="toe-UQ-PA3" secondAttribute="top" constant="20" id="Qpc-ga-K8J"/>
-                            <constraint firstItem="nfJ-Xa-Fd3" firstAttribute="width" secondItem="y9t-to-As4" secondAttribute="width" multiplier="0.8" id="aSO-MZ-H1x"/>
-                            <constraint firstItem="e3V-y3-BaG" firstAttribute="centerX" secondItem="y9t-to-As4" secondAttribute="centerX" id="icx-Aa-gxm"/>
-                            <constraint firstItem="yiq-8z-6pw" firstAttribute="centerX" secondItem="y9t-to-As4" secondAttribute="centerX" id="rtY-Rm-aeU"/>
+                            <constraint firstItem="VYB-5H-fte" firstAttribute="leading" secondItem="toe-UQ-PA3" secondAttribute="leading" id="0zI-ik-dhP"/>
+                            <constraint firstItem="BSl-5K-qHy" firstAttribute="width" secondItem="toe-UQ-PA3" secondAttribute="width" id="Q7R-Bn-Z5D"/>
+                            <constraint firstItem="VYB-5H-fte" firstAttribute="top" secondItem="toe-UQ-PA3" secondAttribute="top" id="fSV-5S-drc"/>
+                            <constraint firstItem="VYB-5H-fte" firstAttribute="bottom" secondItem="toe-UQ-PA3" secondAttribute="bottom" id="gK9-04-h4Q"/>
+                            <constraint firstItem="VYB-5H-fte" firstAttribute="trailing" secondItem="toe-UQ-PA3" secondAttribute="trailing" id="xSO-d6-KaW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="toe-UQ-PA3"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUf-D0-cn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613.60000000000002" y="-176.76161919040482"/>
+            <point key="canvasLocation" x="613.60000000000002" y="-177.66116941529236"/>
         </scene>
     </scenes>
     <resources>
