@@ -139,6 +139,9 @@
                                                         <state key="normal" title="Forget password?">
                                                             <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="onForgetPasswordPressed:" destination="byD-IC-AWu" eventType="touchUpInside" id="gzf-eQ-mHo"/>
+                                                        </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-BB-uih">
                                                         <rect key="frame" x="0.0" y="147.99999999999997" width="330.66666666666669" height="30"/>
@@ -678,6 +681,6 @@
         <image name="BackgroundImage" width="500" height="281"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G3i-mi-Koq"/>
+        <segue reference="9EL-Iv-hBT"/>
     </inferredMetricsTieBreakers>
 </document>

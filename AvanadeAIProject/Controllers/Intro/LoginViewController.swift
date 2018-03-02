@@ -61,6 +61,15 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func onForgetPasswordPressed(_ sender: UIButton) {
+        startWaitActivity()
+        DataManager.sharedInstance.getPasswordResetUrl { (url, error) in
+            self.endWaitactivity()
+            if !self.handleError(error, handleUnauthorized: false) {
+                UIApplication.shared.open(URL(string: url!)!, options: [:], completionHandler: nil)
+            }
+        }
+    }
     
     private func configStatusBarBackground(_ backgroundOn:Bool) {
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView

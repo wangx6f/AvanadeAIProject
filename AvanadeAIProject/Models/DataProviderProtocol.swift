@@ -35,12 +35,15 @@ protocol DataProviderProtocol {
     
     func getBookmarkList(token:String?,completion:@escaping artworkListCompletion)
     
+    func getPasswordResetUrl(completion:@escaping urlCompletion)
+    
     typealias authCompletion =  (Bool?,String?,Error?)->Void
     typealias profileCompletion = (User?,Error?)->Void
     typealias artworkListCompletion = ([Artwork]?,Error?)->Void
     typealias errorHandler = (Error?)->Void
     typealias commentListCompletion = ([Comment]?,Error?)->Void
     typealias artworkCompletion = (Artwork?,Error?)->Void
+    typealias urlCompletion = (String?,Error?)->Void
 
 }
 

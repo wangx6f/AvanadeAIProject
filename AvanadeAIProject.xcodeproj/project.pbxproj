@@ -74,7 +74,7 @@
 		2546C5482002EF5F0099A165 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2546C54A20030B600099A165 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 		2546C54D20030C0C0099A165 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
-		2551C0152001A1A400FE28C9 /* AvanadeAIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvanadeAIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2551C0152001A1A400FE28C9 /* Art Machina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Machina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2551C0182001A1A400FE28C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		2551C01C2001A1A400FE28C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		2551C0162001A1A400FE28C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2551C0152001A1A400FE28C9 /* AvanadeAIProject.app */,
+				2551C0152001A1A400FE28C9 /* Art Machina.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 			);
 			name = AvanadeAIProject;
 			productName = AvanadeAIProject;
-			productReference = 2551C0152001A1A400FE28C9 /* AvanadeAIProject.app */;
+			productReference = 2551C0152001A1A400FE28C9 /* Art Machina.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -656,8 +656,8 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AvanadeAIProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.AvanadeAIProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.ArtMachina;
+				PRODUCT_NAME = "Art Machina";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -679,8 +679,8 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/AvanadeAIProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.AvanadeAIProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cpp.ArtMachina;
+				PRODUCT_NAME = "Art Machina";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

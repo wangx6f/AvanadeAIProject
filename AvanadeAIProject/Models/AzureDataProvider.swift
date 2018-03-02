@@ -12,6 +12,8 @@ import Gloss
 
 class AzureDataProvider : DataProviderProtocol {
 
+    
+
     private var client: MSClient?
     
     init(){
@@ -19,6 +21,21 @@ class AzureDataProvider : DataProviderProtocol {
         client = MSClient(
             applicationURLString:"https://avanademobileapp.azurewebsites.net"
         )
+    }
+    
+    func getPasswordResetUrl(completion: @escaping DataProviderProtocol.urlCompletion) {
+        client?.invokeAPI("password", body: nil, httpMethod: "GET", parameters: nil, headers: nil, completion: { (result, response, error) in
+            if response == nil {
+                completion(nil,error)
+                return
+            }
+            
+            if response?.statusCode != 200 {
+                completion(nil,HTTPResponseError((response?.statusCode)!, description: (error?.localizedDescription)!))
+                return
+            }
+            completion((result as? NSDictionary)?.value(forKey: "url") as? String,nil)
+        })
     }
     
     func login(email: String, password: String, completion: @escaping authCompletion) {

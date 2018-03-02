@@ -81,6 +81,10 @@ final class DataManager {
         return getToken() != nil
     }
     
+    public func getPasswordResetUrl(completion:@escaping DataProviderProtocol.urlCompletion) {
+        dataProvider.getPasswordResetUrl(completion: completion)
+    }
+    
     public func login(email:String,password:String,completion:@escaping DataProviderProtocol.authCompletion){
         dataProvider.login(email: email, password: password) { (success, message,error) in
             self.authCompletionHandler(success: success, message: message, error: error, completion: completion)
