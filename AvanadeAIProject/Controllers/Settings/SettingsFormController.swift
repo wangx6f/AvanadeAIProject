@@ -139,7 +139,7 @@ class SettingsFormController: FormViewController {
     }
     
     private func showAcknowledgements(){
-        let viewController = AcknowListViewController()
+        let viewController = AcknowListViewController(fileNamed: "Pods-AvanadeAIProject-acknowledgements")
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

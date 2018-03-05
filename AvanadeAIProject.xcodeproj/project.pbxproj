@@ -33,7 +33,7 @@
 		2565670D201838EB00CB203F /* AddCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565670C201838EB00CB203F /* AddCommentViewController.swift */; };
 		2577589C200EF6CE004430D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577589B200EF6CE004430D1 /* Constants.swift */; };
 		257758A2200F0E2B004430D1 /* SimplePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */; };
-		259406F6201FEED20015256F /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */; };
+		257BBA4E204D230F008A42DD /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 257BBA4D204D230F008A42DD /* Pods-AvanadeAIProject-acknowledgements.plist */; };
 		259406F8202008C10015256F /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259406F7202008C10015256F /* DetailImageView.swift */; };
 		2595FE81200895BD00ED2160 /* CommentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2595FE7F200895BD00ED2160 /* CommentTableCell.swift */; };
 		2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2595FE80200895BD00ED2160 /* CommentTableCell.xib */; };
@@ -83,7 +83,7 @@
 		2565670C201838EB00CB203F /* AddCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentViewController.swift; sourceTree = "<group>"; };
 		2577589B200EF6CE004430D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		257758A1200F0E2B004430D1 /* SimplePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePickerTextField.swift; sourceTree = "<group>"; };
-		259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-AvanadeAIProject-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
+		257BBA4D204D230F008A42DD /* Pods-AvanadeAIProject-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pods-AvanadeAIProject-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		259406F7202008C10015256F /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		2595FE7F200895BD00ED2160 /* CommentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableCell.swift; sourceTree = "<group>"; };
 		2595FE80200895BD00ED2160 /* CommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableCell.xib; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		25BDD5CC200BF2E200FBE393 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				259406F5201FEED10015256F /* Pods-AvanadeAIProject-acknowledgements.plist */,
+				257BBA4D204D230F008A42DD /* Pods-AvanadeAIProject-acknowledgements.plist */,
 				2551C0262001A1A400FE28C9 /* Info.plist */,
 				2577589B200EF6CE004430D1 /* Constants.swift */,
 			);
@@ -389,12 +389,12 @@
 			files = (
 				25C4B009201588F0008D85DE /* Main.storyboard in Resources */,
 				25AE57402008769E0035F748 /* DetailTableCell.xib in Resources */,
+				257BBA4E204D230F008A42DD /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */,
 				25C42D6320084C7300F7D727 /* Gallery.storyboard in Resources */,
 				2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */,
 				2546C5432002EC660099A165 /* Detail.storyboard in Resources */,
 				2595FE82200895BD00ED2160 /* CommentTableCell.xib in Resources */,
 				2546C54B20030B600099A165 /* ImageCollectionCell.xib in Resources */,
-				259406F6201FEED20015256F /* Pods-AvanadeAIProject-acknowledgements.plist in Resources */,
 				2546C53A2001B7E80099A165 /* Intro.storyboard in Resources */,
 				2527D8D62025961A00F5DC12 /* Bookmark.storyboard in Resources */,
 				2527D8D42025866300F5DC12 /* Search.storyboard in Resources */,
