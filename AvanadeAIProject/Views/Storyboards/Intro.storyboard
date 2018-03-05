@@ -14,7 +14,7 @@
         <!--Login-->
         <scene sceneID="XO2-mF-mQI">
             <objects>
-                <viewController title="Sign In" id="byD-IC-AWu" userLabel="Login" customClass="LoginViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sign In" id="byD-IC-AWu" userLabel="Login" customClass="LoginViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BNL-3a-hFx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,7 +270,7 @@
         <!--Register-->
         <scene sceneID="a3v-ra-GKb">
             <objects>
-                <viewController id="oou-72-Gef" userLabel="Register" customClass="RegisterViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oou-72-Gef" userLabel="Register" customClass="RegisterViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bEh-fq-trl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +476,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-Qf-MpC" userLabel="Gender Text Field" customClass="SimplePickerTextField" customModule="AvanadeAIProject" customModuleProvider="target">
+                                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2k-Qf-MpC" userLabel="Gender Text Field" customClass="SimplePickerTextField" customModule="Art_Machina" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="370" width="331.33333333333331" height="44"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
@@ -511,7 +511,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-l4-ab3" userLabel="Major Text Field" customClass="SimplePickerTextField" customModule="AvanadeAIProject" customModuleProvider="target">
+                                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oq-l4-ab3" userLabel="Major Text Field" customClass="SimplePickerTextField" customModule="Art_Machina" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="444" width="331.33333333333331" height="44"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="textColor"/>
