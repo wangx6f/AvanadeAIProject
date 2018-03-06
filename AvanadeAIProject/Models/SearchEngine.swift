@@ -50,7 +50,9 @@ class SearchEngine {
         var result = [Artwork]()
         if searchHistory != nil {
             for id in searchHistory! {
-                result.append(artworkTable![id]!)
+                if let artworkName = artworkTable![id] {
+                    result.append(artworkName)
+                }
             }
         }
         return result

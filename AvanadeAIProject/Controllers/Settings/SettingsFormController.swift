@@ -129,7 +129,7 @@ class SettingsFormController: FormViewController {
     
     private func saveProfile(){
         startWaitActivity()
-        DataManager.sharedInstance.updateProfile(profile: User(json: form.values())!) { (error) in
+        DataManager.sharedInstance.updateProfile(profile: User(json: form.values() as JSON)!) { (error) in
             self.endWaitactivity()
             if self.handleError(error) {
                 return

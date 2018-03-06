@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string></string>
+	<key>UILaunchStoryboardName</key>
+	<string>Intro</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Intro</string>
 	<key>UIRequiredDeviceCapabilities</key>
