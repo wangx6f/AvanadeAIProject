@@ -137,6 +137,12 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
+    func reportComment(token: String?, commentId: String?, completion: @escaping errorHandler) {
+        client?.invokeAPI("report", body:["commentId":commentId!], httpMethod: "POST", parameters:nil , headers: generateHeader(token), completion: { (result, response, error) in
+            self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
+    
     func getBookmarkList(token: String?, completion: @escaping DataProviderProtocol.artworkListCompletion) {
         client?.invokeAPI("bookmark", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             self.artworkListResponseHandler(result: result, response: response, error: error, completion: completion)

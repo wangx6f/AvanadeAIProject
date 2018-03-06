@@ -14,7 +14,7 @@
         <!--Add Comment View Controller-->
         <scene sceneID="45o-d0-nnL">
             <objects>
-                <viewController id="8KJ-aq-EtP" customClass="AddCommentViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8KJ-aq-EtP" customClass="AddCommentViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k08-6K-2uv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
         <!--Detail-->
         <scene sceneID="YAc-ib-M3q">
             <objects>
-                <tableViewController id="u56-Lp-teX" userLabel="Detail" customClass="DetailViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="u56-Lp-teX" userLabel="Detail" customClass="DetailViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U9E-w7-gHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
                                     <rect key="frame" x="177" y="40" width="20" height="20"/>
                                 </activityIndicatorView>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f63-9G-OdO">
-                                    <rect key="frame" x="138" y="40" width="99" height="21"/>
+                                    <rect key="frame" x="138" y="39.5" width="99" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -209,7 +209,7 @@
         <!--Comment Detail View Controller-->
         <scene sceneID="rtv-nD-hBN">
             <objects>
-                <viewController id="8wr-5P-KSg" customClass="CommentDetailViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8wr-5P-KSg" customClass="CommentDetailViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7P-gU-5vK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,7 +302,7 @@
         <!--All Comments-->
         <scene sceneID="bhj-Fc-UdF">
             <objects>
-                <tableViewController id="78F-BN-8VZ" customClass="AllCommentsViewController" customModule="AvanadeAIProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="78F-BN-8VZ" customClass="AllCommentsViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V77-GJ-Np8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

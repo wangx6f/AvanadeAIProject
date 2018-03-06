@@ -27,6 +27,8 @@ protocol DataProviderProtocol {
     
     func deleteComment(token:String?,commentId:String?,completion:@escaping errorHandler)
     
+    func reportComment(token:String?,commentId:String?,completion:@escaping errorHandler)
+    
     func getArtwork(token:String?,artworkId:String?,completion:@escaping artworkCompletion)
     
     func updateBookmark(token:String?,artworkId:String?,newBookmarkState:Bool?,completion:@escaping errorHandler)

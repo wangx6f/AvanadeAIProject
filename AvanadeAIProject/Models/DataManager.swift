@@ -190,6 +190,17 @@ final class DataManager {
         }
     }
     
+    public func reportComment(comment:Comment?,completion: @escaping DataProviderProtocol.errorHandler) {
+        if let delegate = detailDelegate, let comment = comment {
+            dataProvider.reportComment(token: getToken(), commentId: comment.id, completion: { (error) in
+                if error != nil {
+                    delegate.errorDidOccur(error!)
+                }
+                completion(error)
+            })
+        }
+    }
+    
     public func search(keyword:String,completion:@escaping DataProviderProtocol.artworkListCompletion) {
         if searchEngine != nil {
             completion(searchEngine?.search(keyword: keyword),nil)
@@ -288,6 +299,6 @@ final class DataManager {
         
     }
     
-
+    
 
 }
