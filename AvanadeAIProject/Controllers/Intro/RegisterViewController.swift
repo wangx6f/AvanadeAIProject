@@ -20,10 +20,8 @@ class RegisterViewController: UIViewController{
     
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
-    @IBOutlet weak var genderTextField: SimplePickerTextField!
-
-    @IBOutlet weak var majorTextField: SimplePickerTextField!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var companyTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +45,8 @@ class RegisterViewController: UIViewController{
         passwordTextField.delegate = self
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
-        ageTextField.delegate = self
-        genderTextField.setOptions(Constants.genderOptions)
-        majorTextField.setOptions(Constants.majorOptions)
+        titleTextField.delegate = self
+        companyTextField.delegate = self
     }
     
     @IBAction func onRegisterPressed(_ sender: TransitionButton) {
@@ -74,14 +71,9 @@ class RegisterViewController: UIViewController{
             return
         }
         
-        guard let age = Int(ageTextField.text!) else {
-            self.view.makeToast("Invalid age.")
-            return
-        }
-        
         view.makeToastActivity(ToastPosition.center)
         view.isUserInteractionEnabled = false
-        let user = User(email: email, fName: firstName, lName: lastName, major: majorTextField.text!, gender: genderTextField.text!, age: age)
+        let user = User(email: email, fName: firstName, lName: lastName, title: titleTextField.text!, company: companyTextField.text!)
         DataManager.sharedInstance.register(newUser: user, password: passwordTextField.text!) { (success, message,error) in
             
             self.endWaitactivity()
