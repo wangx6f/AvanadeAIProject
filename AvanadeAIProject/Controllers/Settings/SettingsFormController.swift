@@ -53,11 +53,11 @@ class SettingsFormController: FormViewController {
                 row.tag = User.JSON_LAST_NAME
                 row.title = "Last Name"
             }
-            <<< PushRow<String>() { row in
+            <<< NameRow() { row in
                 row.tag = User.JSON_TITLE
-                row.title = "Gender"
+                row.title = "Title"
                 }
-            <<< PushRow<String>() { row in
+            <<< NameRow() { row in
                 row.tag = User.JSON_COMPANY
                 row.title = "Company"
         }
