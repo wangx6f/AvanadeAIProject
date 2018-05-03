@@ -49,6 +49,9 @@ class DetailTableCell: UITableViewCell {
             loadImageAsync(url: artwork.afterImageURL!) { (image) in
                 self.artworkImageView.loadImage(after: image)
             }
+            loadImageAsync(url: artwork.artistImageURL!) { (image) in
+                self.artworkImageView.loadImage(artist: image)
+            }
             refreshArtwork(artwork)
             
         }
@@ -147,9 +150,13 @@ class DetailTableCell: UITableViewCell {
     @IBAction func switchImage(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            switchImageViewMode(mode: DisplayMode.before)
+            switchImageViewMode(mode: DisplayMode.before) //segment 0 is content (before image we need to alter)
+        case 1:
+            switchImageViewMode(mode: DisplayMode.artist) //segment 1 is style, the artist's original artwork
         case 2:
-            switchImageViewMode(mode: DisplayMode.compare)
+            switchImageViewMode(mode: DisplayMode.after) //segment 2 is merge, the new art
+        case 3:
+            switchImageViewMode(mode: DisplayMode.compare) //segment 3 is the animation
         default:
             switchImageViewMode(mode: DisplayMode.after)
         }

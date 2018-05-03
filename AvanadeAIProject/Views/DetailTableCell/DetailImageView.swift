@@ -9,12 +9,14 @@
 import UIKit
 
 enum DisplayMode {
-    case before,after,compare
+    case artist,before,after,compare
 }
 
 class DetailImageView: UIImageView,CAAnimationDelegate{
     
     private let duration = CFTimeInterval(exactly: 4.0)
+    
+    private var artistImage: CGImage?
     
     private var beforeImage: CGImage?
     
@@ -36,7 +38,10 @@ class DetailImageView: UIImageView,CAAnimationDelegate{
         setup()
     }
 
-    public func loadImage(before:CGImage? = nil,after:CGImage? = nil){
+    public func loadImage(artist:CGImage? = nil, before:CGImage? = nil,after:CGImage? = nil){
+        if let artist = artist {
+            artistImage = artist
+        }
         if let before = before {
             beforeImage = before
         }
@@ -49,6 +54,12 @@ class DetailImageView: UIImageView,CAAnimationDelegate{
     public func switchDisplay(mode:DisplayMode){
         currentMode = mode
         switch mode {
+        case .artist:
+            if let loadedImage = artistImage {
+                staticImageLoaded(loadedImage: loadedImage)
+            } else {
+                imageLoading()
+            }
         case .before:
             if let loadedImage = beforeImage {
                 staticImageLoaded(loadedImage: loadedImage)
