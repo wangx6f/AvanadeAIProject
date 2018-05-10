@@ -49,9 +49,10 @@ class DetailTableCell: UITableViewCell {
             loadImageAsync(url: artwork.afterImageURL!) { (image) in
                 self.artworkImageView.loadImage(after: image)
             }
-            /*loadImageAsync(url: artwork.artistImageURL!) { (image) in
+            loadImageAsync(url: artwork.referenceImageURL!) { (image) in
                 self.artworkImageView.loadImage(artist: image)
-            }*/
+            
+            }
             refreshArtwork(artwork)
             
         }
