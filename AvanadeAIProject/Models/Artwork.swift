@@ -27,6 +27,9 @@ class Artwork : JSONDecodable {
     private var _width : Float?
     static public let JSON_WIDTH = "width"
     
+    private var _referenceImageURL: String? //added for original artist's artwork
+    static public let JSON_REFERENCE_URL = "referenceImageUrl"
+    
     private var _sourceImageURL: String?
     static public let JSON_SOURCE_URL = "sourceImageUrl"
     
@@ -74,6 +77,10 @@ class Artwork : JSONDecodable {
         get {return _width}
     }
     
+    var referenceImageURL : String? { //added to get the artist's original image (i.e the real "The Starry Night")
+        get {return _referenceImageURL}
+    }
+    
     var sourceImageURL : String? {
         get {return _sourceImageURL}
     }
@@ -116,6 +123,7 @@ class Artwork : JSONDecodable {
         _description = Artwork.JSON_DESCRIPTION <~~ json
         _height = Artwork.JSON_HEIGTH <~~ json
         _width = Artwork.JSON_WIDTH <~~ json
+        _referenceImageURL = Artwork.JSON_REFERENCE_URL <~~ json
         _sourceImageURL = Artwork.JSON_SOURCE_URL <~~ json
         _afterImageURL = Artwork.JSON_AFTER_URL <~~ json
         _author = Artwork.JSON_AUTHOR <~~ json
