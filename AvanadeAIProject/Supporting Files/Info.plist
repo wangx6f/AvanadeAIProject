@@ -25,7 +25,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Intro</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Intro</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

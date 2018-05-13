@@ -11,7 +11,7 @@ import JWTDecode
 
 class SearchEngine {
     
-    private let userId : String
+    private var userId : String?
     
     private var artworkTable : [String:Artwork]?
     
@@ -20,15 +20,20 @@ class SearchEngine {
 
     
     init?(token:String?,artworkList:[Artwork]?){
-        do {
-            userId = try decode(jwt: token!).claim(name: "id").string!
-            updateArtworkTable(artworkList: artworkList!)
-            if let historyList = UserDefaults.standard.array(forKey: userId) as! [String]? {
-                searchHistory = Set(historyList)
+        if token != nil {
+            do {
+                let jwt = try decode(jwt: token!)
+                if let id = jwt.claim(name: "id").string {
+                    userId = id
+                    if let historyList = UserDefaults.standard.array(forKey: userId!) as! [String]? {
+                        searchHistory = Set(historyList)
+                    }
+                }
+            } catch {
+                return nil
             }
-        } catch {
-            return nil
         }
+        self.updateArtworkTable(artworkList: artworkList!)
     }
     
     public func updateArtworkTable(artworkList:[Artwork]) {
@@ -39,11 +44,13 @@ class SearchEngine {
     }
     
     public func addHistory(artwork:Artwork) {
-        if searchHistory == nil {
-            searchHistory = Set()
+        if(userId != nil) {
+            if searchHistory == nil {
+                searchHistory = Set()
+            }
+            searchHistory?.insert(artwork.id!)
+            UserDefaults.standard.set(Array(searchHistory!),forKey:userId!)
         }
-        searchHistory?.insert(artwork.id!)
-        UserDefaults.standard.set(Array(searchHistory!),forKey:userId)
     }
     
     public func getHistory() -> [Artwork] {
@@ -59,9 +66,9 @@ class SearchEngine {
     }
     
     public func clearHistory() {
-        if searchHistory != nil {
+        if (userId != nil && searchHistory != nil) {
             searchHistory?.removeAll()
-            UserDefaults.standard.set(Array(searchHistory!),forKey:userId)
+            UserDefaults.standard.set(Array(searchHistory!), forKey: userId!)
         }
     }
     

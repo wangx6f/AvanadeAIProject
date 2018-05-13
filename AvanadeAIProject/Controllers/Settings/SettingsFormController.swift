@@ -44,60 +44,104 @@ class SettingsFormController: FormViewController {
         
         navigationOptions = RowNavigationOptions.Disabled
         
-        form +++ Section("Profile")
-            <<< NameRow() { row in
+        
+        if DataManager.sharedInstance.loginStatus() {
+            form +++ Section("Profile")
+                <<< NameRow() { row in
                     row.tag = User.JSON_FIRST_NAME
                     row.title = "First Name"
-            }
-            <<< NameRow() { row in
-                row.tag = User.JSON_LAST_NAME
-                row.title = "Last Name"
-            }
-            <<< NameRow() { row in
-                row.tag = User.JSON_TITLE
-                row.title = "Title"
                 }
-            <<< NameRow() { row in
-                row.tag = User.JSON_COMPANY
-                row.title = "Company"
-        }
-            
-        +++ Section("Support")
-            <<< LabelRow() { row in
-                row.title = "About"
-                row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-                row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
-                row.onCellSelection({ (cell, row) in
-                    cell.setSelected(false, animated: true)
-                    self.performSegue(withIdentifier: self.aboutSegueIdentifier, sender: self)
-                })
+                <<< NameRow() { row in
+                    row.tag = User.JSON_LAST_NAME
+                    row.title = "Last Name"
+                }
+                <<< NameRow() { row in
+                    row.tag = User.JSON_TITLE
+                    row.title = "Title"
+                }
+                <<< NameRow() { row in
+                    row.tag = User.JSON_COMPANY
+                    row.title = "Company"
+                }
                 
-        }
-            <<< LabelRow() { row in
-                row.title = "Acknowledgements"
-                row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-                row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
-                row.onCellSelection({ (cell, row) in
-                    cell.setSelected(false, animated: true)
-                    self.showAcknowledgements()
-                })
-        }
-        
-        form +++ ButtonRow() { row in
+                +++ Section("Support")
+                <<< LabelRow() { row in
+                    row.title = "About"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        self.performSegue(withIdentifier: self.aboutSegueIdentifier, sender: self)
+                    })
+                    
+                }
+                <<< LabelRow() { row in
+                    row.title = "Acknowledgements"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        self.showAcknowledgements()
+                    })
+            }
+            
+            form +++ ButtonRow() { row in
                 row.title = "Clear Search History"
                 row.onCellSelection({ _,_ in
                     DataManager.sharedInstance.clearSearchHistory()
                     self.view.makeToast("Done!")
                     
                 })
-        }
-        
-         form +++ ButtonRow() { row in
+            }
+            
+            form +++ ButtonRow() { row in
                 row.title = "Log Out"
                 row.onCellSelection({ _,_ in
                     self.logOut()
                 })
+            }
         }
+        else {
+            form
+                +++ Section("Support")
+                <<< LabelRow() { row in
+                    row.title = "About"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        self.performSegue(withIdentifier: self.aboutSegueIdentifier, sender: self)
+                    })
+                    
+                }
+                <<< LabelRow() { row in
+                    row.title = "Acknowledgements"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        self.showAcknowledgements()
+                    })
+            }
+            
+            form +++ ButtonRow() { row in
+                row.title = "Clear Search History"
+                row.onCellSelection({ _,_ in
+                    DataManager.sharedInstance.clearSearchHistory()
+                    self.view.makeToast("Done!")
+                    
+                })
+            }
+            
+            form +++ ButtonRow() { row in
+                row.title = "Log In"
+                row.onCellSelection({ _,_ in
+                    self.view.makeToast("Go To Login")
+                })
+            }
+        }
+        
+        
     }
     
     

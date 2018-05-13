@@ -23,11 +23,12 @@ extension UIViewController {
     func handleError(_ error:Error?,handleUnauthorized:Bool = true) -> Bool {
         if let _error = error {
             if let responseError = _error as? HTTPResponseError {
-                self.view.makeToast("\(responseError.statusCode): \(responseError.description)", completion: { _ in
-                    if responseError.statusCode == 401 && handleUnauthorized {
-                        self.logOut()
-                    }
-                })
+                if responseError.statusCode == 401 && handleUnauthorized {
+                    routeToLoginOrOut(httpResponseError: responseError)
+                }
+                else {
+                    self.view.makeToast(_error.localizedDescription)
+                }
             } else {
                 self.view.makeToast(_error.localizedDescription)
             }
@@ -36,9 +37,18 @@ extension UIViewController {
         return false
     }
     
+    func routeToLoginOrOut(httpResponseError: HTTPResponseError) {
+        let alert = UIAlertController(title: "Account Required", message: "In order to perform that action you must login.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { _ in
+            self.view.makeToast("Go to login")
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
+            self.logOut()
+        }))
+        self.present(alert, animated: true)
+    }
+    
     func logOut() {
         DataManager.sharedInstance.logOut()
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-        
     }
 }
