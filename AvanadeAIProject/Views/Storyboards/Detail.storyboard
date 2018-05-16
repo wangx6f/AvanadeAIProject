@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8KJ-aq-EtP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ld1-37-3fz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="cCw-qK-hKw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="9sV-mH-VXi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ah-DP-XQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2251" y="-797"/>
+        </scene>
         <!--Add Comment View Controller-->
         <scene sceneID="45o-d0-nnL">
             <objects>
                 <viewController id="8KJ-aq-EtP" customClass="AddCommentViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k08-6K-2uv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWf-mz-GHm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                                 <connections>
-                                    <segue destination="Ld1-37-3fz" kind="embed" id="snB-3a-lNJ"/>
+                                    <segue destination="u56-Lp-teX" kind="embed" id="XdP-EN-Cw7"/>
                                 </connections>
                             </containerView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU1-5E-3Dt">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="mDC-UH-UNc"/>
                                 </constraints>
@@ -106,15 +114,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NL5-no-JNI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cQq-gn-I8J">
+                        <barButtonItem key="leftBarButtonItem" title="Gallery" image="ChevronIcon" id="WYk-eg-Xvs">
+                            <connections>
+                                <segue destination="9sV-mH-VXi" kind="showDetail" id="FNk-Lf-8wh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="ygR-r9-TtQ">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="8KJ-aq-EtP" id="JLn-wQ-aWD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bottomConstraint" destination="ZGv-2h-8RB" id="vSH-MH-bEh"/>
                         <outlet property="commentInputField" destination="qQ6-4z-lZv" id="lda-pR-yEt"/>
                         <outlet property="containerView" destination="IWf-mz-GHm" id="9lA-KI-3pY"/>
+                        <segue destination="Q4v-uW-ZC1" kind="show" identifier="goToLogin" id="sa7-4S-j8T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbl-gJ-zWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="-251"/>
+            <point key="canvasLocation" x="1724" y="-270"/>
         </scene>
         <!--Detail-->
         <scene sceneID="YAc-ib-M3q">
@@ -183,18 +204,6 @@
                             <outlet property="delegate" destination="u56-Lp-teX" id="56a-Za-2ol"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="OXO-sQ-ywL">
-                        <barButtonItem key="leftBarButtonItem" image="ChevronIcon" id="RFT-NO-mWn">
-                            <connections>
-                                <action selector="onBackPressed:" destination="u56-Lp-teX" id="Axr-xb-bwX"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fgC-UM-6AO">
-                            <connections>
-                                <action selector="onSharePressed:" destination="u56-Lp-teX" id="v5q-it-yBN"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="footerView" destination="8V4-Pd-Lyi" id="sdu-hr-Bwb"/>
                         <outlet property="loadingIndicator" destination="S4l-Ts-2pd" id="Jc2-cl-S8c"/>
@@ -204,14 +213,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iX-rL-ju3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2468" y="-270.31484257871068"/>
+            <point key="canvasLocation" x="2817" y="-201"/>
+        </scene>
+        <!--Intro-->
+        <scene sceneID="tMH-WN-Rir">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" id="Q4v-uW-ZC1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdr-Lu-ig4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2420" y="-585"/>
         </scene>
         <!--Comment Detail View Controller-->
         <scene sceneID="rtv-nD-hBN">
             <objects>
                 <viewController id="8wr-5P-KSg" customClass="CommentDetailViewController" customModule="Art_Machina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7P-gU-5vK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM0-xJ-nJ8">
@@ -224,7 +241,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="stP-yJ-T0Q">
-                                <rect key="frame" x="16" y="106" width="343" height="497"/>
+                                <rect key="frame" x="16" y="106" width="343" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -280,11 +297,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7w-gH-1tS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324" y="-153.37331334332833"/>
+            <point key="canvasLocation" x="3604" y="219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fIh-EU-MFV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDm-kf-xrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ld1-37-3fz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="BL5-Uc-6Px">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -292,12 +310,11 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="u56-Lp-teX" kind="relationship" relationship="rootViewController" id="kf3-qb-XN3"/>
+                        <segue destination="8KJ-aq-EtP" kind="relationship" relationship="rootViewController" id="MNO-dL-gd9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fDm-kf-xrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519" y="-270"/>
+            <point key="canvasLocation" x="954" y="-270"/>
         </scene>
         <!--All Comments-->
         <scene sceneID="bhj-Fc-UdF">

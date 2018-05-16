@@ -118,15 +118,6 @@ class DetailViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    // MARK: UI methods
-    @IBAction func onBackPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func onSharePressed(_ sender: UIBarButtonItem) {
-        showActivityVC()
-    }
-    
     // MARK: private methods
     private func configTableView() {
         // register cells
@@ -158,14 +149,6 @@ class DetailViewController: UITableViewController {
         cell?.textLabel?.text = "View all \(number) of comments"
         return cell!
     }
-    
-    private func showActivityVC(){
-        if let artwork = DataManager.sharedInstance.selectedArtwork {
-            let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: (artwork.afterImageURL)!)], applicationActivities: nil)
-            present(shareViewController, animated: true, completion:nil)
-        }
-
-    }
 }
 
 extension DetailViewController : DetailTableCellDelegate {
@@ -190,6 +173,7 @@ extension DetailViewController : DetailTableCellDelegate {
     }
     
     func didPressBookmark(updateButtonState: (Bool) -> Void) {
+        print("isBookmarkToggle")
         DataManager.sharedInstance.toggleBookmark()
     }
     
@@ -248,8 +232,5 @@ extension DetailViewController : DetailDelegate {
         }
         noCommentLabel.isHidden = !noComment
     }
-
-    
-    
 }
 

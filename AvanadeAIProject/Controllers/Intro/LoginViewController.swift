@@ -34,7 +34,6 @@ class LoginViewController: UIViewController {
         autoLogin()
     }
     
-    
     @IBAction func onLoginPressed(_ sender: TransitionButton) {
         view.endEditing(true)
         let email = emailTextField.text!, password = passwordTextField.text!

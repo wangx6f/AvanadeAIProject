@@ -40,10 +40,15 @@ extension UIViewController {
     func routeToLoginOrOut(httpResponseError: HTTPResponseError) {
         let alert = UIAlertController(title: "Account Required", message: "In order to perform that action you must login.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { _ in
-            self.view.makeToast("Go to login")
+            if self is DetailViewController {
+                self.parent?.performSegue(withIdentifier: "goToLogin", sender: self.parent)
+            }
+            else {
+                self.performSegue(withIdentifier: "goToLogin", sender: self)
+            }
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
-            self.logOut()
+            // nothing to do
         }))
         self.present(alert, animated: true)
     }

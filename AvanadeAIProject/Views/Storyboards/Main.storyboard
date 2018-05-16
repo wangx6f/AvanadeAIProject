@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
                 <viewControllerPlaceholder storyboardName="Bookmark" id="T6w-0i-hGf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edP-ZI-kcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2018" y="810"/>
+            <point key="canvasLocation" x="-907" y="1276"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="GI0-NE-BHg">
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765.60000000000002" y="361.16941529235385"/>
+            <point key="canvasLocation" x="830" y="758"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Egd-cY-DBg">
@@ -100,7 +100,7 @@
                 <viewControllerPlaceholder storyboardName="Settings" id="vci-UW-Hxh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK5-kc-gLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="-318"/>
+            <point key="canvasLocation" x="1498" y="-81"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -116,6 +116,7 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Kwk-nx-wDi" kind="relationship" relationship="viewControllers" id="Lxg-ct-Jd3"/>
                         <segue destination="YU3-EM-e53" kind="relationship" relationship="viewControllers" id="jh9-y1-fsh"/>
+                        <segue destination="FMG-HM-NNr" kind="show" identifier="goToLogin" id="sP3-ew-FbS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -128,7 +129,7 @@
                 <viewControllerPlaceholder storyboardName="Gallery" id="vYw-cU-zju" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9U1-7g-1b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="925"/>
+            <point key="canvasLocation" x="398" y="757"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="BLU-aI-CMF">
@@ -168,6 +169,14 @@
             </objects>
             <point key="canvasLocation" x="-132" y="758"/>
         </scene>
+        <!--Intro-->
+        <scene sceneID="JW7-T8-9Es">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" id="FMG-HM-NNr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgA-r5-a6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="70"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="myw-Se-Z3s">
             <objects>
@@ -204,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5b-rj-0ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="-356"/>
+            <point key="canvasLocation" x="830" y="-81"/>
         </scene>
         <!--Search-->
         <scene sceneID="Zjn-13-r7w">
@@ -212,7 +221,7 @@
                 <viewControllerPlaceholder storyboardName="Search" id="TT0-kQ-EoE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKR-zk-Y7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373" y="316"/>
+            <point key="canvasLocation" x="1492" y="757"/>
         </scene>
     </scenes>
     <resources>

@@ -12,14 +12,18 @@ import Gloss
 import AcknowList
 import Toast_Swift
 
-class SettingsFormController: FormViewController {
+class SettingsFormController: FormViewController, UINavigationControllerDelegate {
 
     private let aboutSegueIdentifier = "goToAbout"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configForm()
+        self.navigationController?.delegate = self
         reloadProfile()
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        configForm()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +48,7 @@ class SettingsFormController: FormViewController {
         
         navigationOptions = RowNavigationOptions.Disabled
         
+        form.removeAll()
         
         if DataManager.sharedInstance.loginStatus() {
             form +++ Section("Profile")
@@ -98,6 +103,7 @@ class SettingsFormController: FormViewController {
                 row.title = "Log Out"
                 row.onCellSelection({ _,_ in
                     self.logOut()
+                    self.configForm()
                 })
             }
         }
@@ -136,7 +142,7 @@ class SettingsFormController: FormViewController {
             form +++ ButtonRow() { row in
                 row.title = "Log In"
                 row.onCellSelection({ _,_ in
-                    self.view.makeToast("Go To Login")
+                    self.performSegue(withIdentifier: "goToLogin", sender: self)
                 })
             }
         }

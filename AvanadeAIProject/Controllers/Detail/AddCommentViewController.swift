@@ -30,6 +30,9 @@ class AddCommentViewController: UIViewController {
         commentInputField.text = ""
         commentInputField.endEditing(true)
     }
+    @IBAction func shareButtonPressed(_ sender: Any) {
+        showActivityVC()
+    }
     
     @objc func handleTap(sender: UITapGestureRecognizer) {
         commentInputField.endEditing(true)
@@ -57,6 +60,13 @@ class AddCommentViewController: UIViewController {
         }
     }
     
+    private func showActivityVC(){
+        if let artwork = DataManager.sharedInstance.selectedArtwork {
+            let shareViewController : UIActivityViewController = UIActivityViewController(activityItems: [ShareActivityItemProvider(url: (artwork.afterImageURL)!)], applicationActivities: nil)
+            present(shareViewController, animated: true, completion:nil)
+        }
+        
+    }
 }
 
 extension AddCommentViewController : UITextFieldDelegate {

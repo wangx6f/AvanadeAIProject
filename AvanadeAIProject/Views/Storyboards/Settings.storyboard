@@ -29,6 +29,14 @@
             </objects>
             <point key="canvasLocation" x="-1409" y="-169"/>
         </scene>
+        <!--Intro-->
+        <scene sceneID="2DD-Eq-mtt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Intro" id="YKE-Qm-u3b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTS-oQ-q2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="313"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="b34-1q-SYa">
             <objects>
@@ -54,6 +62,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="uuA-l6-lhk" kind="show" identifier="goToAbout" id="OSb-qH-Iva"/>
+                        <segue destination="YKE-Qm-u3b" kind="presentation" identifier="goToLogin" id="FBo-zU-iOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLe-eo-MMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
