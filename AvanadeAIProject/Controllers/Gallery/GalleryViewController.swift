@@ -30,6 +30,16 @@ class GalleryViewController: UICollectionViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         DataManager.sharedInstance.updateArtworkList(filter: filter)
+        if(!DataManager.sharedInstance.isPrivacyConfirmed()) {
+            let alert = UIAlertController(title: "Terms of Use Agreement", message: "By using this app you agree to the Avanade terms of use", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Terms of Use", style: .default, handler: { action in
+                UIApplication.shared.open(URL(string: Constants.AVANADE_TERMS_URL)!, options: [:], completionHandler: nil)
+            }))
+            alert.addAction(UIAlertAction(title: "Accept", style: .cancel, handler: { action in
+                DataManager.sharedInstance.update(privacyConfirmed: true)
+            }))
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {

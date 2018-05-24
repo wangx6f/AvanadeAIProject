@@ -111,4 +111,8 @@ struct Constants {
                                       "Zoology"]
     
     static public let lightBlue = UIColor(red: CGFloat(0.24), green: CGFloat(0.47), blue: CGFloat(0.85), alpha: CGFloat(1))
+    
+    static public let AVANADE_TERMS_URL = "https://www.avanade.com/en/utility/terms-of-use"
+    
+    static public let AVANADE_HOME_URL = "https://www.avanade.com/"
 }

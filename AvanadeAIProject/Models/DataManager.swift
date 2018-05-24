@@ -52,6 +52,8 @@ final class DataManager {
     
     private let TOKEN_KEYCHAIN_KEY = "token"
     
+    private let PREFERENCES_KEY = "prefs"
+    
     private let keychain : KeychainSwift
     
     private var searchEngine : SearchEngine?
@@ -240,6 +242,17 @@ final class DataManager {
 
     }
     
+    public func isPrivacyConfirmed() -> Bool {
+        let preferences = UserDefaults.standard
+        return preferences.bool(forKey: PREFERENCES_KEY)
+    }
+    
+    public func update(privacyConfirmed: Bool) {
+        let preferences = UserDefaults.standard
+        preferences.set(privacyConfirmed, forKey: PREFERENCES_KEY)
+        preferences.synchronize()
+    }
+    
     private func filterArtworkList(artworkList:[Artwork]?,filter:GalleryFilter) -> [Artwork] {
         if artworkList == nil {
             return []
@@ -298,7 +311,5 @@ final class DataManager {
         completion(success,message,error)
         
     }
-    
-    
 
 }

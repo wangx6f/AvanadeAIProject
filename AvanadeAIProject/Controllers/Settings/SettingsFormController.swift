@@ -69,7 +69,7 @@ class SettingsFormController: FormViewController, UINavigationControllerDelegate
                     row.title = "Company"
                 }
                 
-                +++ Section("Support")
+            +++ Section("Support")
                 <<< LabelRow() { row in
                     row.title = "About"
                     row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
@@ -88,7 +88,17 @@ class SettingsFormController: FormViewController, UINavigationControllerDelegate
                         cell.setSelected(false, animated: true)
                         self.showAcknowledgements()
                     })
-            }
+                }
+                
+                <<< LabelRow() { row in
+                    row.title = "Avanade"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        UIApplication.shared.open(URL(string: Constants.AVANADE_HOME_URL)!, options: [:], completionHandler: nil)
+                    })
+                }
             
             form +++ ButtonRow() { row in
                 row.title = "Clear Search History"
@@ -128,7 +138,17 @@ class SettingsFormController: FormViewController, UINavigationControllerDelegate
                         cell.setSelected(false, animated: true)
                         self.showAcknowledgements()
                     })
-            }
+                }
+            
+                <<< LabelRow() { row in
+                    row.title = "Avanade"
+                    row.baseCell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+                    row.baseCell.selectionStyle = UITableViewCellSelectionStyle.gray
+                    row.onCellSelection({ (cell, row) in
+                        cell.setSelected(false, animated: true)
+                        UIApplication.shared.open(URL(string: Constants.AVANADE_HOME_URL)!, options: [:], completionHandler: nil)
+                    })
+                }
             
             form +++ ButtonRow() { row in
                 row.title = "Clear Search History"
