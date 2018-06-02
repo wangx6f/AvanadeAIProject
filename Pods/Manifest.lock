@@ -1,5 +1,6 @@
 PODS:
   - AcknowList (1.5)
+  - Alamofire (4.7.2)
   - CHTCollectionViewWaterfallLayout (0.9.7):
     - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.7)
   - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - AcknowList
+  - Alamofire (~> 4.7)
   - CHTCollectionViewWaterfallLayout
   - Cosmos (~> 13.0)
   - Eureka
@@ -36,8 +38,29 @@ DEPENDENCIES:
   - TransitionButton
   - UIImageViewAlignedSwift
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AcknowList
+    - Alamofire
+    - CHTCollectionViewWaterfallLayout
+    - Cosmos
+    - Eureka
+    - Gloss
+    - IQKeyboardManagerSwift
+    - JWTDecode
+    - KeychainSwift
+    - Kingfisher
+    - LGButton
+    - MicrosoftAzureMobile
+    - SimpleImageViewer
+    - SkyFloatingLabelTextField
+    - Toast-Swift
+    - TransitionButton
+    - UIImageViewAlignedSwift
+
 SPEC CHECKSUMS:
   AcknowList: 93c5dbde36f37ba7f74c8a92c8d9cfb52ed73e47
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
   Cosmos: af3973becc045af335b64498c9812034876b7661
   Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
@@ -54,6 +77,6 @@ SPEC CHECKSUMS:
   TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
   UIImageViewAlignedSwift: 2e09096e6081ad26b848e19b4bc35a7d69165740
 
-PODFILE CHECKSUM: 476300334d7a2d95c23472061ddca09f510b1cf4
+PODFILE CHECKSUM: f85d30c75b5bb756143ad7ab70753d9426bfb539
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.2

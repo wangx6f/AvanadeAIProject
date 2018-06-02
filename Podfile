@@ -26,5 +26,6 @@ target 'AvanadeAIProject' do
   pod 'Gloss', '~> 2.0'
   pod 'KeychainSwift', '~> 10.0'
   pod 'JWTDecode', '~> 2.1'
+  pod 'Alamofire', '~> 4.7'
 
 end

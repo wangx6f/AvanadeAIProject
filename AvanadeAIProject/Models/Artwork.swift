@@ -22,19 +22,19 @@ class Artwork : JSONDecodable {
     static public let JSON_DESCRIPTION = "description"
     
     private var _height : Float?
-    static public let JSON_HEIGTH = "height"
+    static public let JSON_HEIGTH = "processed_image_height"
     
     private var _width : Float?
-    static public let JSON_WIDTH = "width"
+    static public let JSON_WIDTH = "processed_image_width"
     
     private var _referenceImageURL: String? //added for original artist's artwork
-    static public let JSON_REFERENCE_URL = "referenceImageUrl"
+    static public let JSON_REFERENCE_URL = "reference_image_url"
     
     private var _sourceImageURL: String?
-    static public let JSON_SOURCE_URL = "sourceImageUrl"
+    static public let JSON_SOURCE_URL = "source_image_url"
     
     private var _afterImageURL: String?
-    static public let JSON_AFTER_URL = "afterImageUrl"
+    static public let JSON_AFTER_URL = "processed_image_url"
 
     private var _author: String?
     static public let JSON_AUTHOR = "author"
@@ -43,19 +43,19 @@ class Artwork : JSONDecodable {
     static public let JSON_RATING = "rating"
     
     private var _ratingCount : Int?
-    static public let JSON_RATING_COUNT = "ratingCount"
+    static public let JSON_RATING_COUNT = "rating_count"
     
     private var _commentCount : Int?
-    static public let JSON_COMMENT_COUNT = "commentCount"
+    static public let JSON_COMMENT_COUNT = "comment_count"
     
     private var _viewCount : Int?
-    static public let JSON_VIEW_COUNT = "viewCount"
+    static public let JSON_VIEW_COUNT = "view_count"
     
     private var _bookmarked : Bool?
-    static public let JSON_BOOKMARKED = "isBookmarked"
+    static public let JSON_BOOKMARKED = "is_bookmarked"
     
     private var _curRating : Int?
-    static public let JSON_CUR_RATING = "myRating"
+    static public let JSON_CUR_RATING = "my_rating"
 
     var id: String? {
         get { return _id }
@@ -118,7 +118,9 @@ class Artwork : JSONDecodable {
     }
     
     required init?(json: JSON) {
-        _id = Artwork.JSON_ID <~~ json
+        if let id: Int = Artwork.JSON_ID <~~ json {
+            _id = String(id)
+        }
         _title = Artwork.JSON_TITLE <~~ json
         _description = Artwork.JSON_DESCRIPTION <~~ json
         _height = Artwork.JSON_HEIGTH <~~ json

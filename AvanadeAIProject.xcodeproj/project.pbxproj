@@ -29,6 +29,7 @@
 		2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551C01A2001A1A400FE28C9 /* GalleryViewController.swift */; };
 		2551C01D2001A1A400FE28C9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2551C01C2001A1A400FE28C9 /* SearchViewController.swift */; };
 		2551C0222001A1A400FE28C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2551C0212001A1A400FE28C9 /* Assets.xcassets */; };
+		25627A3520B290D9004741D9 /* AzureWebServiceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25627A3420B290D9004741D9 /* AzureWebServiceDataProvider.swift */; };
 		256566FD20180CFE00CB203F /* ShareActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256566FC20180CFE00CB203F /* ShareActivityItemProvider.swift */; };
 		2565670D201838EB00CB203F /* AddCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565670C201838EB00CB203F /* AddCommentViewController.swift */; };
 		2577589C200EF6CE004430D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577589B200EF6CE004430D1 /* Constants.swift */; };
@@ -42,7 +43,6 @@
 		25AE574220087BA80035F748 /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE574120087BA80035F748 /* DetailTableCell.swift */; };
 		25BDD5BB200B452B00FBE393 /* AllCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */; };
 		25BDD5BD200B4F3700FBE393 /* CommentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */; };
-		25C1D6B920279907006BCF1A /* AzureDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D6B820279907006BCF1A /* AzureDataProvider.swift */; };
 		25C1D6BF2027FC9C006BCF1A /* HTTPResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D6BE2027FC9C006BCF1A /* HTTPResponseError.swift */; };
 		25C1D6C12028314B006BCF1A /* UIViewController+APICallHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D6C02028314B006BCF1A /* UIViewController+APICallHelper.swift */; };
 		25C1D6C3202831DB006BCF1A /* UIViewController+KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C1D6C2202831DB006BCF1A /* UIViewController+KeyboardDismiss.swift */; };
@@ -79,6 +79,7 @@
 		2551C01C2001A1A400FE28C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2551C0212001A1A400FE28C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2551C0262001A1A400FE28C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25627A3420B290D9004741D9 /* AzureWebServiceDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureWebServiceDataProvider.swift; sourceTree = "<group>"; };
 		256566FC20180CFE00CB203F /* ShareActivityItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityItemProvider.swift; sourceTree = "<group>"; };
 		2565670C201838EB00CB203F /* AddCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentViewController.swift; sourceTree = "<group>"; };
 		2577589B200EF6CE004430D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		25AE574120087BA80035F748 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
 		25BDD5BA200B452B00FBE393 /* AllCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCommentsViewController.swift; sourceTree = "<group>"; };
 		25BDD5BC200B4F3700FBE393 /* CommentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDetailViewController.swift; sourceTree = "<group>"; };
-		25C1D6B820279907006BCF1A /* AzureDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureDataProvider.swift; sourceTree = "<group>"; };
 		25C1D6BE2027FC9C006BCF1A /* HTTPResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseError.swift; sourceTree = "<group>"; };
 		25C1D6C02028314B006BCF1A /* UIViewController+APICallHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+APICallHelper.swift"; sourceTree = "<group>"; };
 		25C1D6C2202831DB006BCF1A /* UIViewController+KeyboardDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardDismiss.swift"; sourceTree = "<group>"; };
@@ -207,10 +207,10 @@
 				22F25393200DEAEA00A0064C /* User.swift */,
 				22F2538F200DEA4300A0064C /* Artwork.swift */,
 				25169B662011CB300007E848 /* GalleryFilter.swift */,
-				25C1D6B820279907006BCF1A /* AzureDataProvider.swift */,
 				25C1D6BE2027FC9C006BCF1A /* HTTPResponseError.swift */,
 				2542C83A203516DA00591EEF /* Comment.swift */,
 				25ADE74120421E99003EE114 /* SearchEngine.swift */,
+				25627A3420B290D9004741D9 /* AzureWebServiceDataProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,7 +337,6 @@
 				2551C0122001A1A400FE28C9 /* Frameworks */,
 				2551C0132001A1A400FE28C9 /* Resources */,
 				07D16E26D08FD972695E4B8F /* [CP] Embed Pods Frameworks */,
-				D166CBCB9895C1A945AD2D49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,8 +353,8 @@
 		2551C00D2001A1A400FE28C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Avanade;
 				TargetAttributes = {
 					2551C0142001A1A400FE28C9 = {
@@ -413,6 +412,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AcknowList/AcknowList.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
@@ -432,6 +432,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AcknowList.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
@@ -471,21 +472,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D166CBCB9895C1A945AD2D49 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AvanadeAIProject/Pods-AvanadeAIProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -509,7 +495,6 @@
 				25E73D9D20072DD700610A74 /* UIView+IBInspectable.swift in Sources */,
 				2551C01D2001A1A400FE28C9 /* SearchViewController.swift in Sources */,
 				2551C0192001A1A400FE28C9 /* AppDelegate.swift in Sources */,
-				25C1D6B920279907006BCF1A /* AzureDataProvider.swift in Sources */,
 				2551C01B2001A1A400FE28C9 /* GalleryViewController.swift in Sources */,
 				25169B652011472C0007E848 /* FilterViewController.swift in Sources */,
 				22F25390200DEA4300A0064C /* Artwork.swift in Sources */,
@@ -520,6 +505,7 @@
 				2527D8D2202585E500F5DC12 /* SearchViewTableCell.swift in Sources */,
 				25ADE74220421E99003EE114 /* SearchEngine.swift in Sources */,
 				256566FD20180CFE00CB203F /* ShareActivityItemProvider.swift in Sources */,
+				25627A3520B290D9004741D9 /* AzureWebServiceDataProvider.swift in Sources */,
 				2542C83B203516DA00591EEF /* Comment.swift in Sources */,
 				2527D8D9202596F900F5DC12 /* BookmarkViewController.swift in Sources */,
 				2546C5492002EF5F0099A165 /* DetailViewController.swift in Sources */,
@@ -545,6 +531,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -552,6 +539,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -602,6 +590,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -609,6 +598,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -646,7 +636,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -670,7 +660,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

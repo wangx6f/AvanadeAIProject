@@ -27,7 +27,7 @@ extension UIViewController {
                     routeToLoginOrOut(httpResponseError: responseError)
                 }
                 else {
-                    self.view.makeToast(_error.localizedDescription)
+                    self.view.makeToast(responseError.description)
                 }
             } else {
                 self.view.makeToast(_error.localizedDescription)

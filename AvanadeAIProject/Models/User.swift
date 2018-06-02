@@ -15,10 +15,10 @@ class User : JSONDecodable,Glossy{
     static public let JSON_EMAIL = "email"
     
     private var _fName: String?
-    static public let JSON_FIRST_NAME = "firstName"
+    static public let JSON_FIRST_NAME = "first_name"
     
     private var _lName: String?
-    static public let JSON_LAST_NAME = "lastName"
+    static public let JSON_LAST_NAME = "last_name"
     
     private var _title: String?
     static public let JSON_TITLE = "title"

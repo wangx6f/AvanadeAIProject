@@ -59,7 +59,7 @@ final class DataManager {
     private var _selectedArtwork : Artwork?
     
     private init() {
-        dataProvider = AzureDataProvider();
+        dataProvider = AzureWebServiceDataProvider();
         keychain = KeychainSwift();
     }
     

@@ -15,7 +15,7 @@ class Comment : JSONDecodable {
     static public let JSON_ID = "id"
     
     private var _reviewer : String?
-    static public let JSON_REVIEWER = "reviewer"
+    static public let JSON_REVIEWER = "reviewer_name"
     
     private var _editable : Bool?
     static public let JSON_EDITABLE = "editable"
@@ -40,7 +40,9 @@ class Comment : JSONDecodable {
     }
     
     required init?(json: JSON) {
-        _id = Comment.JSON_ID <~~ json
+        if let id: Int = Comment.JSON_ID <~~ json {
+            _id = String(id)
+        }
         _reviewer = Comment.JSON_REVIEWER <~~ json
         _editable = Comment.JSON_EDITABLE <~~ json
         _content = Comment.JSON_CONTENT <~~ json
