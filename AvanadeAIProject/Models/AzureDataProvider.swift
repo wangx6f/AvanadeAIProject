@@ -74,6 +74,17 @@ class AzureDataProvider : DataProviderProtocol {
         })
     }
     
+    func updateGoogleProfile(profile: User, completion: @escaping DataProviderProtocol.authCompletion) {
+        client?.invokeAPI("googleauth", body: profile.toJSON(), httpMethod: "PUT", parameters: nil, headers: nil, completion: { (result, response, error) in
+            self.authResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
+    
+    func updateFacebookProfile(profile: User, completion: @escaping DataProviderProtocol.authCompletion) {
+        client?.invokeAPI("facebookauth", body: profile.toJSON(), httpMethod: "PUT", parameters: nil, headers: nil, completion: { (result, response, error) in
+            self.authResponseHandler(result: result, response: response, error: error, completion: completion)
+        })
+    }
     
     func getArtworkList(token: String?, completion: @escaping artworkListCompletion) {
         client?.invokeAPI("artworks", body: nil, httpMethod: "GET", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
@@ -96,13 +107,13 @@ class AzureDataProvider : DataProviderProtocol {
     }
     
     func updateBookmark(token: String?, artworkId: String?, newBookmarkState: Bool?, completion: @escaping DataProviderProtocol.errorHandler) {
-        client?.invokeAPI("bookmark", body: ["artworkId":artworkId!,"isBookmarked":newBookmarkState!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+        client?.invokeAPI("bookmark", body: ["id":artworkId!,"isBookmarked":newBookmarkState!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }
     
     func updateRating(token: String?, artworkId: String?, newRating: Int?, completion: @escaping DataProviderProtocol.errorHandler) {
-        client?.invokeAPI("rating", body: ["artworkId":artworkId!,"rating":newRating!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
+        client?.invokeAPI("rating", body: ["id":artworkId!,"rating":newRating!], httpMethod: "POST", parameters: nil, headers: generateHeader(token), completion: { (result, response, error) in
             self.errorOnlyResponseHandler(result: result, response: response, error: error, completion: completion)
         })
     }

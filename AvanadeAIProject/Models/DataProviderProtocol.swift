@@ -19,6 +19,10 @@ protocol DataProviderProtocol {
     
     func updateProfile(token:String?,profile:User,completion:@escaping errorHandler)
     
+    func updateGoogleProfile(profile:User,completion:@escaping authCompletion)
+    
+    func updateFacebookProfile(profile:User,completion:@escaping authCompletion)
+    
     func getArtworkList(token:String?,completion:@escaping artworkListCompletion)
     
     func getCommentList(token:String?,artworkId:String?,completion:@escaping commentListCompletion)

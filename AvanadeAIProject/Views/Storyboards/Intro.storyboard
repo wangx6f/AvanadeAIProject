@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1W-J1-WJR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1W-J1-WJR">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,7 +84,7 @@
                                                 <rect key="frame" x="0.0" y="83.333333333333343" width="414" height="416.66666666666663"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cj2-eF-8PS">
-                                                        <rect key="frame" x="42" y="0.0" width="330.66666666666669" height="278"/>
+                                                        <rect key="frame" x="42" y="0.0" width="330.66666666666669" height="478"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-5O-5go" userLabel="Email Text Field" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                                 <rect key="frame" x="0.0" y="0.0" width="330.66666666666669" height="44"/>
@@ -177,57 +177,103 @@
                                                                     <constraint firstAttribute="height" constant="30" id="OyJ-M8-JuT"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-i4-LdN">
-                                                                <rect key="frame" x="0.0" y="177.99999999999997" width="330.66666666666669" height="100.00000000000003"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IPe-K4-fRJ">
+                                                                <rect key="frame" x="0.0" y="178" width="330.66666666666669" height="300"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-Jp-OdR" userLabel="Register Button" customClass="TransitionButton" customModule="TransitionButton">
-                                                                        <rect key="frame" x="0.0" y="60" width="330" height="40"/>
-                                                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                        <state key="normal" title="Register">
-                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </state>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                <real key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                        <connections>
-                                                                            <segue destination="oou-72-Gef" kind="show" identifier="goToRegister" id="sGR-Lg-lGH"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsv-VM-gR7" userLabel="Login Button" customClass="TransitionButton" customModule="TransitionButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="40"/>
-                                                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-i4-LdN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="330.66666666666669" height="300"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-Jp-OdR" userLabel="Register Button" customClass="TransitionButton" customModule="TransitionButton">
+                                                                                <rect key="frame" x="0.0" y="140" width="330" height="40"/>
+                                                                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                                <state key="normal" title="Register">
+                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <segue destination="oou-72-Gef" kind="show" identifier="goToRegister" id="sGR-Lg-lGH"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsv-VM-gR7" userLabel="Login Button" customClass="TransitionButton" customModule="TransitionButton">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="330" height="40"/>
+                                                                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="ixT-QV-QWT"/>
+                                                                                </constraints>
+                                                                                <viewLayoutGuide key="safeArea" id="34a-Pm-KS5"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                                <state key="normal" title="Login">
+                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="onLoginPressed:" destination="byD-IC-AWu" eventType="touchUpInside" id="EYc-Yn-Rj0"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlU-4W-cul" customClass="GIDSignInButton">
+                                                                                <rect key="frame" x="0.0" y="48" width="161.33333333333334" height="40"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="95w-Qx-6hB"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="3"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqx-u4-VFb">
+                                                                                <rect key="frame" x="169.33333333333331" y="52" width="161.33333333333331" height="40"/>
+                                                                                <color key="backgroundColor" red="0.1538024405" green="0.56589682860000001" blue="0.83535055049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="lCP-nA-NHa"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                                <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                                <state key="normal" title="Facebook" image="Facebook">
+                                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                </state>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="2"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="facebookButtonDidPress:" destination="byD-IC-AWu" eventType="touchUpInside" id="ofO-bv-jXa"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="40" id="ixT-QV-QWT"/>
+                                                                            <constraint firstItem="tlU-4W-cul" firstAttribute="top" secondItem="qsv-VM-gR7" secondAttribute="bottom" constant="8" id="2Of-4h-XUZ"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="qsv-VM-gR7" secondAttribute="trailing" id="3WW-nR-rY1"/>
+                                                                            <constraint firstItem="Ggf-Jp-OdR" firstAttribute="height" secondItem="qsv-VM-gR7" secondAttribute="height" id="AlV-QM-coX"/>
+                                                                            <constraint firstItem="tlU-4W-cul" firstAttribute="leading" secondItem="cfv-i4-LdN" secondAttribute="leading" id="B6A-ym-wkw"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="Ggf-Jp-OdR" secondAttribute="trailing" id="Dsm-Tp-zIB"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="tqx-u4-VFb" secondAttribute="trailing" id="OmP-JH-IY2"/>
+                                                                            <constraint firstItem="tqx-u4-VFb" firstAttribute="leading" secondItem="tlU-4W-cul" secondAttribute="trailing" constant="8" id="Tyz-DS-p99"/>
+                                                                            <constraint firstItem="tqx-u4-VFb" firstAttribute="top" secondItem="qsv-VM-gR7" secondAttribute="bottom" constant="12" id="V2E-4T-aux"/>
+                                                                            <constraint firstItem="Ggf-Jp-OdR" firstAttribute="leading" secondItem="cfv-i4-LdN" secondAttribute="leading" id="VDp-cJ-NZr"/>
+                                                                            <constraint firstItem="qsv-VM-gR7" firstAttribute="top" secondItem="cfv-i4-LdN" secondAttribute="top" id="YJG-dk-a6X"/>
+                                                                            <constraint firstItem="qsv-VM-gR7" firstAttribute="leading" secondItem="cfv-i4-LdN" secondAttribute="leading" id="bbW-uJ-4Ts"/>
+                                                                            <constraint firstItem="Ggf-Jp-OdR" firstAttribute="top" secondItem="qsv-VM-gR7" secondAttribute="bottom" constant="100" id="q4y-CM-gMf"/>
+                                                                            <constraint firstItem="tqx-u4-VFb" firstAttribute="width" secondItem="tlU-4W-cul" secondAttribute="width" id="sQU-g9-02v"/>
                                                                         </constraints>
-                                                                        <viewLayoutGuide key="safeArea" id="34a-Pm-KS5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                        <state key="normal" title="Login">
-                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        </state>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                <real key="value" value="5"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                        <connections>
-                                                                            <action selector="onLoginPressed:" destination="byD-IC-AWu" eventType="touchUpInside" id="EYc-Yn-Rj0"/>
-                                                                        </connections>
-                                                                    </button>
+                                                                    </view>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="qsv-VM-gR7" secondAttribute="trailing" id="3WW-nR-rY1"/>
-                                                                    <constraint firstItem="Ggf-Jp-OdR" firstAttribute="height" secondItem="qsv-VM-gR7" secondAttribute="height" id="AlV-QM-coX"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="Ggf-Jp-OdR" secondAttribute="trailing" id="Dsm-Tp-zIB"/>
-                                                                    <constraint firstItem="Ggf-Jp-OdR" firstAttribute="leading" secondItem="cfv-i4-LdN" secondAttribute="leading" id="VDp-cJ-NZr"/>
-                                                                    <constraint firstItem="qsv-VM-gR7" firstAttribute="top" secondItem="cfv-i4-LdN" secondAttribute="top" id="YJG-dk-a6X"/>
-                                                                    <constraint firstItem="qsv-VM-gR7" firstAttribute="leading" secondItem="cfv-i4-LdN" secondAttribute="leading" id="bbW-uJ-4Ts"/>
-                                                                    <constraint firstAttribute="height" constant="100" id="gT1-Xt-Gay"/>
-                                                                    <constraint firstItem="Ggf-Jp-OdR" firstAttribute="top" secondItem="qsv-VM-gR7" secondAttribute="bottom" constant="20" id="q4y-CM-gMf"/>
+                                                                    <constraint firstAttribute="height" constant="300" id="Eez-3g-5aY"/>
                                                                 </constraints>
-                                                            </view>
+                                                            </stackView>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="dcP-BB-uih" secondAttribute="trailing" id="7rm-fB-k2b"/>
@@ -293,6 +339,7 @@
                     <connections>
                         <outlet property="bottomContainer" destination="AHe-tp-HgL" id="djJ-qy-Yd3"/>
                         <outlet property="emailTextField" destination="QeO-5O-5go" id="pkI-yh-4CR"/>
+                        <outlet property="facebookLoginButton" destination="tqx-u4-VFb" id="A4w-GO-6rQ"/>
                         <outlet property="loginButton" destination="qsv-VM-gR7" id="SsD-90-fBb"/>
                         <outlet property="passwordTextField" destination="gMu-TP-fTE" id="84T-PL-Tq9"/>
                         <segue destination="m9q-HT-j3c" kind="showDetail" identifier="goToMain" id="9EL-Iv-hBT"/>
@@ -300,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQA-2G-xMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-24.800000000000001" y="156.65024630541873"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="155.70652173913044"/>
         </scene>
         <!--Main Storyboard Reference-->
         <scene sceneID="5AJ-Kc-AZn">
@@ -689,6 +736,7 @@
     <resources>
         <image name="BackgroundImage" width="500" height="281"/>
         <image name="ChevronIcon" width="22" height="22"/>
+        <image name="Facebook" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9EL-Iv-hBT"/>

@@ -26,6 +26,15 @@ class User : JSONDecodable,Glossy{
     private var _company: String?
     static public let JSON_COMPANY = "company"
     
+    private var _deviceType = "ios"
+    static public let JSON_DEVICE_TYPE = "deviceType"
+    
+    private var _googleToken: String?
+    static public let JSON_GOOGLE_TOKEN = "googleToken"
+    
+    private var _facebookToken: String?
+    static public let JSON_FACEBOOK_TOKEN = "facebookToken"
+    
     var email: String? {
         get { return _email }
     }
@@ -41,6 +50,22 @@ class User : JSONDecodable,Glossy{
     var company: String? {
         get { return _company }
     }
+    var googleToken: String? {
+        get {
+            return _googleToken
+        }
+        set {
+            self._googleToken = newValue
+        }
+    }
+    var facebookToken: String? {
+        get {
+            return _facebookToken
+        }
+        set {
+            self._facebookToken = newValue
+        }
+    }
     
     required init?(json: JSON) {
         _email = User.JSON_EMAIL <~~ json
@@ -48,9 +73,11 @@ class User : JSONDecodable,Glossy{
         _lName = User.JSON_LAST_NAME <~~ json
         _title = User.JSON_TITLE <~~ json
         _company = User.JSON_COMPANY <~~ json
+        _googleToken = User.JSON_GOOGLE_TOKEN <~~ json
+        _facebookToken = User.JSON_FACEBOOK_TOKEN <~~ json
     }
     
-    public init(email: String, fName: String, lName: String, title: String, company: String) {
+    public init(email: String, fName: String, lName: String, title: String?, company: String?) {
         _email = email
         _fName = fName
         _lName = lName
@@ -64,7 +91,10 @@ class User : JSONDecodable,Glossy{
                         User.JSON_LAST_NAME~~>lName,
                         User.JSON_FIRST_NAME~~>fName,
                         User.JSON_TITLE~~>_title,
-                        User.JSON_COMPANY~~>_company
+                        User.JSON_COMPANY~~>_company,
+                        User.JSON_DEVICE_TYPE~~>_deviceType,
+                        User.JSON_GOOGLE_TOKEN~~>_googleToken,
+                        User.JSON_FACEBOOK_TOKEN~~>_facebookToken
                         ])
     }
     

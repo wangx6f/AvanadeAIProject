@@ -6,7 +6,7 @@ target 'AvanadeAIProject' do
   source 'https://github.com/CocoaPods/Specs.git'
   platform :ios, '9.0'
   use_frameworks!
-  
+
   inhibit_all_warnings!
 
   # Pods for AvanadeAIProject
@@ -26,5 +26,8 @@ target 'AvanadeAIProject' do
   pod 'Gloss', '~> 2.0'
   pod 'KeychainSwift', '~> 10.0'
   pod 'JWTDecode', '~> 2.1'
+  pod 'GoogleSignIn'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 
 end

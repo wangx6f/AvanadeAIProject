@@ -11,6 +11,7 @@ import Eureka
 import Gloss
 import AcknowList
 import Toast_Swift
+import GoogleSignIn
 
 class SettingsFormController: FormViewController, UINavigationControllerDelegate {
 
@@ -114,6 +115,7 @@ class SettingsFormController: FormViewController, UINavigationControllerDelegate
                 row.onCellSelection({ _,_ in
                     self.logOut()
                     self.configForm()
+                    GIDSignIn.sharedInstance().signOut()
                 })
             }
         }

@@ -135,6 +135,7 @@ final class DataManager {
     public func toggleBookmark() {
         if let artwork = _selectedArtwork {
             dataProvider.updateBookmark(token: getToken(), artworkId: artwork.id, newBookmarkState: artwork.bookmarked == nil ? nil : !artwork.bookmarked!, completion: { (error) in
+                let tempToken = self.getToken()
                 if let error = error, let detailDelegate = self.detailDelegate {
                     detailDelegate.errorDidOccur(error)
                     return
@@ -233,6 +234,17 @@ final class DataManager {
         dataProvider.updateProfile(token: getToken(), profile: profile, completion: completion)
     }
     
+    public func updateGoogleProfile(profile:User, completion: @escaping DataProviderProtocol.authCompletion) {
+        dataProvider.updateGoogleProfile(profile: profile) { (success, message, error) in
+            self.authCompletionHandler(success: success, message: message, error: error, completion: completion)
+        }
+    }
+    
+    public func updateFacebookProfile(profile:User, completion: @escaping DataProviderProtocol.authCompletion) {
+        dataProvider.updateFacebookProfile(profile: profile) { (success, message, error) in
+            self.authCompletionHandler(success: success, message: message, error: error, completion: completion)
+        }
+    }
     
     // todo: clear all cache
     public func logOut() {
